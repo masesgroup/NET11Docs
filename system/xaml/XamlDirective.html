@@ -215,7 +215,7 @@ extends <a href="../../system/xaml/XamlMember.html" title="class in system.xaml"
 <td class="colOne"><code><span class="memberNameLink"><a href="../../system/xaml/XamlDirective.html#XamlDirective-system.collections.generic.IEnumerable_1-java.lang.String-system.xaml.XamlType-system.xaml.schema.XamlValueConverter_1-system.xaml.schema.AllowedMemberLocations-">XamlDirective</a></span>(<a href="../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;xamlNamespaces,
              java.lang.String&nbsp;name,
              <a href="../../system/xaml/XamlType.html" title="class in system.xaml">XamlType</a>&nbsp;xamlType,
-             <a href="../../system/xaml/schema/XamlValueConverter_1.html" title="class in system.xaml.schema">XamlValueConverter_1</a>&nbsp;typeConverter,
+             <a href="../../system/xaml/schema/XamlValueConverter_1.html" title="class in system.xaml.schema">XamlValueConverter_1</a>&lt;<a href="../../system/componentmodel/TypeConverter.html" title="class in system.componentmodel">TypeConverter</a>&gt;&nbsp;typeConverter,
              <a href="../../system/xaml/schema/AllowedMemberLocations.html" title="class in system.xaml.schema">AllowedMemberLocations</a>&nbsp;allowedLocation)</code>
 <div class="block">Initializes a new instance by invoking the .NET constructor.</div>
 </td>
@@ -419,7 +419,7 @@ extends <a href="../../system/xaml/XamlMember.html" title="class in system.xaml"
 <pre>public&nbsp;XamlDirective(<a href="../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;xamlNamespaces,
                      java.lang.String&nbsp;name,
                      <a href="../../system/xaml/XamlType.html" title="class in system.xaml">XamlType</a>&nbsp;xamlType,
-                     <a href="../../system/xaml/schema/XamlValueConverter_1.html" title="class in system.xaml.schema">XamlValueConverter_1</a>&nbsp;typeConverter,
+                     <a href="../../system/xaml/schema/XamlValueConverter_1.html" title="class in system.xaml.schema">XamlValueConverter_1</a>&lt;<a href="../../system/componentmodel/TypeConverter.html" title="class in system.componentmodel">TypeConverter</a>&gt;&nbsp;typeConverter,
                      <a href="../../system/xaml/schema/AllowedMemberLocations.html" title="class in system.xaml.schema">AllowedMemberLocations</a>&nbsp;allowedLocation)
               throws java.lang.Throwable,
                      <a href="../../system/MissingMemberException.html" title="class in system">MissingMemberException</a>,
@@ -441,7 +441,7 @@ extends <a href="../../system/xaml/XamlMember.html" title="class in system.xaml"
 <dd><code>xamlNamespaces</code> - the argument of type <code>IEnumerable_1</code></dd>
 <dd><code>name</code> - the argument of type <code>java.lang.String</code></dd>
 <dd><code>xamlType</code> - the argument of type <code>XamlType</code></dd>
-<dd><code>typeConverter</code> - the argument of type <code>XamlValueConverter_1</code></dd>
+<dd><code>typeConverter</code> - the argument of type <code>XamlValueConverter_1&lt;TypeConverter&gt;</code></dd>
 <dd><code>allowedLocation</code> - the argument of type <code>AllowedMemberLocations</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code> - if the .NET constructor fails</dd>

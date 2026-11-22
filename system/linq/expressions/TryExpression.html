@@ -259,7 +259,7 @@ extends <a href="../../../system/linq/expressions/Expression.html" title="class 
 </td>
 </tr>
 <tr id="i4" class="altColor">
-<td class="colFirst"><code><a href="../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a></code></td>
+<td class="colFirst"><code><a href="../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&lt;<a href="../../../system/linq/expressions/CatchBlock.html" title="class in system.linq.expressions">CatchBlock</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/linq/expressions/TryExpression.html#getHandlers--">getHandlers</a></span>()</code>
 <div class="block">Gets the value of the .NET property Handlers.</div>
 </td>
@@ -303,7 +303,7 @@ extends <a href="../../../system/linq/expressions/Expression.html" title="class 
 <tr id="i11" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/linq/expressions/TryExpression.html" title="class in system.linq.expressions">TryExpression</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/linq/expressions/TryExpression.html#Update-system.linq.expressions.Expression-system.collections.generic.IEnumerable_1-system.linq.expressions.Expression-system.linq.expressions.Expression-">Update</a></span>(<a href="../../../system/linq/expressions/Expression.html" title="class in system.linq.expressions">Expression</a>&nbsp;body,
-      <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;handlers,
+      <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/linq/expressions/CatchBlock.html" title="class in system.linq.expressions">CatchBlock</a>&gt;&nbsp;handlers,
       <a href="../../../system/linq/expressions/Expression.html" title="class in system.linq.expressions">Expression</a>&nbsp;_finally,
       <a href="../../../system/linq/expressions/Expression.html" title="class in system.linq.expressions">Expression</a>&nbsp;fault)</code>
 <div class="block">Invokes the .NET member Update.</div>
@@ -526,8 +526,8 @@ extends <a href="../../../system/linq/expressions/Expression.html" title="class 
 <ul class="blockList">
 <li class="blockList">
 <h4>getHandlers</h4>
-<pre>public&nbsp;<a href="../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&nbsp;getHandlers()
-                                 throws java.lang.Throwable</pre>
+<pre>public&nbsp;<a href="../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&lt;<a href="../../../system/linq/expressions/CatchBlock.html" title="class in system.linq.expressions">CatchBlock</a>&gt;&nbsp;getHandlers()
+                                             throws java.lang.Throwable</pre>
 <div class="block">Gets the value of the .NET property Handlers.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -658,7 +658,7 @@ extends <a href="../../../system/linq/expressions/Expression.html" title="class 
 <li class="blockList">
 <h4>Update</h4>
 <pre>public&nbsp;<a href="../../../system/linq/expressions/TryExpression.html" title="class in system.linq.expressions">TryExpression</a>&nbsp;Update(<a href="../../../system/linq/expressions/Expression.html" title="class in system.linq.expressions">Expression</a>&nbsp;body,
-                            <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;handlers,
+                            <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/linq/expressions/CatchBlock.html" title="class in system.linq.expressions">CatchBlock</a>&gt;&nbsp;handlers,
                             <a href="../../../system/linq/expressions/Expression.html" title="class in system.linq.expressions">Expression</a>&nbsp;_finally,
                             <a href="../../../system/linq/expressions/Expression.html" title="class in system.linq.expressions">Expression</a>&nbsp;fault)
                      throws java.lang.Throwable,
@@ -678,7 +678,7 @@ extends <a href="../../../system/linq/expressions/Expression.html" title="class 
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>body</code> - the argument of type <code>Expression</code></dd>
-<dd><code>handlers</code> - the argument of type <code>IEnumerable_1</code></dd>
+<dd><code>handlers</code> - the argument of type <code>IEnumerable_1&lt;CatchBlock&gt;</code></dd>
 <dd><code>_finally</code> - the argument of type <code>Expression</code></dd>
 <dd><code>fault</code> - the argument of type <code>Expression</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>

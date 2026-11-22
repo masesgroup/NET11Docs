@@ -243,7 +243,7 @@ extends <a href="../../../system/collections/concurrent/Partitioner_1.html" titl
 </td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code><a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a></code></td>
+<td class="colFirst"><code><a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/collections/concurrent/OrderablePartitioner_1.html" title="type parameter in OrderablePartitioner_1">TSource</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/collections/concurrent/OrderablePartitioner_1.html#GetDynamicPartitions--">GetDynamicPartitions</a></span>()</code>
 <div class="block">Invokes the .NET member GetDynamicPartitions.</div>
 </td>
@@ -309,7 +309,7 @@ extends <a href="../../../system/collections/concurrent/Partitioner_1.html" titl
 </td>
 </tr>
 <tr id="i12" class="altColor">
-<td class="colFirst"><code><a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a></code></td>
+<td class="colFirst"><code><a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&lt;<a href="../../../system/collections/generic/IEnumerator_1.html" title="interface in system.collections.generic">IEnumerator_1</a>&lt;<a href="../../../system/collections/concurrent/OrderablePartitioner_1.html" title="type parameter in OrderablePartitioner_1">TSource</a>&gt;&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/collections/concurrent/OrderablePartitioner_1.html#GetPartitions-int-">GetPartitions</a></span>(int&nbsp;partitionCount)</code>
 <div class="block">Invokes the .NET member GetPartitions.</div>
 </td>
@@ -480,16 +480,16 @@ extends <a href="../../../system/collections/concurrent/Partitioner_1.html" titl
 <ul class="blockList">
 <li class="blockList">
 <h4>GetDynamicPartitions</h4>
-<pre>public&nbsp;<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;GetDynamicPartitions()
-                                   throws java.lang.Throwable,
-                                          <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                                          <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
-                                          <a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
-                                          <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                                          <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                                          <a href="../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
-                                          <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
-                                          <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></pre>
+<pre>public&nbsp;<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/collections/concurrent/OrderablePartitioner_1.html" title="type parameter in OrderablePartitioner_1">TSource</a>&gt;&nbsp;GetDynamicPartitions()
+                                            throws java.lang.Throwable,
+                                                   <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                                   <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                                   <a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                                   <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                                   <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                                   <a href="../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+                                                   <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                                   <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></pre>
 <div class="block">Invokes the .NET member GetDynamicPartitions.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
@@ -725,17 +725,17 @@ extends <a href="../../../system/collections/concurrent/Partitioner_1.html" titl
 <ul class="blockList">
 <li class="blockList">
 <h4>GetPartitions</h4>
-<pre>public&nbsp;<a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&nbsp;GetPartitions(int&nbsp;partitionCount)
-                      throws java.lang.Throwable,
-                             <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
-                             <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                             <a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
-                             <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                             <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
-                             <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                             <a href="../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
-                             <a href="../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
-                             <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></pre>
+<pre>public&nbsp;<a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&lt;<a href="../../../system/collections/generic/IEnumerator_1.html" title="interface in system.collections.generic">IEnumerator_1</a>&lt;<a href="../../../system/collections/concurrent/OrderablePartitioner_1.html" title="type parameter in OrderablePartitioner_1">TSource</a>&gt;&gt;&nbsp;GetPartitions(int&nbsp;partitionCount)
+                                              throws java.lang.Throwable,
+                                                     <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                                     <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                                     <a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                                     <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                                     <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                                     <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                                     <a href="../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                                                     <a href="../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+                                                     <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></pre>
 <div class="block">Invokes the .NET member GetPartitions.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>

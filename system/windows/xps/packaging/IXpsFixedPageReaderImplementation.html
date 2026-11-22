@@ -250,7 +250,7 @@ implements <a href="../../../../system/windows/xps/packaging/IXpsFixedPageReader
 </td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code><a href="../../../../system/collections/generic/ICollection_1.html" title="interface in system.collections.generic">ICollection_1</a></code></td>
+<td class="colFirst"><code><a href="../../../../system/collections/generic/ICollection_1.html" title="interface in system.collections.generic">ICollection_1</a>&lt;<a href="../../../../system/windows/xps/packaging/XpsColorContext.html" title="class in system.windows.xps.packaging">XpsColorContext</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/xps/packaging/IXpsFixedPageReaderImplementation.html#getColorContexts--">getColorContexts</a></span>()</code>
 <div class="block">Gets the value of the .NET property ColorContexts.</div>
 </td>
@@ -262,7 +262,7 @@ implements <a href="../../../../system/windows/xps/packaging/IXpsFixedPageReader
 </td>
 </tr>
 <tr id="i4" class="altColor">
-<td class="colFirst"><code><a href="../../../../system/collections/generic/ICollection_1.html" title="interface in system.collections.generic">ICollection_1</a></code></td>
+<td class="colFirst"><code><a href="../../../../system/collections/generic/ICollection_1.html" title="interface in system.collections.generic">ICollection_1</a>&lt;<a href="../../../../system/windows/xps/packaging/XpsFont.html" title="class in system.windows.xps.packaging">XpsFont</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/xps/packaging/IXpsFixedPageReaderImplementation.html#getFonts--">getFonts</a></span>()</code>
 <div class="block">Gets the value of the .NET property Fonts.</div>
 </td>
@@ -274,7 +274,7 @@ implements <a href="../../../../system/windows/xps/packaging/IXpsFixedPageReader
 </td>
 </tr>
 <tr id="i6" class="altColor">
-<td class="colFirst"><code><a href="../../../../system/collections/generic/ICollection_1.html" title="interface in system.collections.generic">ICollection_1</a></code></td>
+<td class="colFirst"><code><a href="../../../../system/collections/generic/ICollection_1.html" title="interface in system.collections.generic">ICollection_1</a>&lt;<a href="../../../../system/windows/xps/packaging/XpsImage.html" title="class in system.windows.xps.packaging">XpsImage</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/xps/packaging/IXpsFixedPageReaderImplementation.html#getImages--">getImages</a></span>()</code>
 <div class="block">Gets the value of the .NET property Images.</div>
 </td>
@@ -328,7 +328,7 @@ implements <a href="../../../../system/windows/xps/packaging/IXpsFixedPageReader
 </td>
 </tr>
 <tr id="i15" class="rowColor">
-<td class="colFirst"><code><a href="../../../../system/collections/generic/ICollection_1.html" title="interface in system.collections.generic">ICollection_1</a></code></td>
+<td class="colFirst"><code><a href="../../../../system/collections/generic/ICollection_1.html" title="interface in system.collections.generic">ICollection_1</a>&lt;<a href="../../../../system/windows/xps/packaging/XpsResourceDictionary.html" title="class in system.windows.xps.packaging">XpsResourceDictionary</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/xps/packaging/IXpsFixedPageReaderImplementation.html#getResourceDictionaries--">getResourceDictionaries</a></span>()</code>
 <div class="block">Gets the value of the .NET property ResourceDictionaries.</div>
 </td>
@@ -540,8 +540,8 @@ implements <a href="../../../../system/windows/xps/packaging/IXpsFixedPageReader
 <ul class="blockList">
 <li class="blockList">
 <h4>getColorContexts</h4>
-<pre>public&nbsp;<a href="../../../../system/collections/generic/ICollection_1.html" title="interface in system.collections.generic">ICollection_1</a>&nbsp;getColorContexts()
-                               throws java.lang.Throwable</pre>
+<pre>public&nbsp;<a href="../../../../system/collections/generic/ICollection_1.html" title="interface in system.collections.generic">ICollection_1</a>&lt;<a href="../../../../system/windows/xps/packaging/XpsColorContext.html" title="class in system.windows.xps.packaging">XpsColorContext</a>&gt;&nbsp;getColorContexts()
+                                                throws java.lang.Throwable</pre>
 <div class="block">Gets the value of the .NET property ColorContexts.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
@@ -584,8 +584,8 @@ implements <a href="../../../../system/windows/xps/packaging/IXpsFixedPageReader
 <ul class="blockList">
 <li class="blockList">
 <h4>getFonts</h4>
-<pre>public&nbsp;<a href="../../../../system/collections/generic/ICollection_1.html" title="interface in system.collections.generic">ICollection_1</a>&nbsp;getFonts()
-                       throws java.lang.Throwable</pre>
+<pre>public&nbsp;<a href="../../../../system/collections/generic/ICollection_1.html" title="interface in system.collections.generic">ICollection_1</a>&lt;<a href="../../../../system/windows/xps/packaging/XpsFont.html" title="class in system.windows.xps.packaging">XpsFont</a>&gt;&nbsp;getFonts()
+                                throws java.lang.Throwable</pre>
 <div class="block">Gets the value of the .NET property Fonts.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
@@ -628,8 +628,8 @@ implements <a href="../../../../system/windows/xps/packaging/IXpsFixedPageReader
 <ul class="blockList">
 <li class="blockList">
 <h4>getImages</h4>
-<pre>public&nbsp;<a href="../../../../system/collections/generic/ICollection_1.html" title="interface in system.collections.generic">ICollection_1</a>&nbsp;getImages()
-                        throws java.lang.Throwable</pre>
+<pre>public&nbsp;<a href="../../../../system/collections/generic/ICollection_1.html" title="interface in system.collections.generic">ICollection_1</a>&lt;<a href="../../../../system/windows/xps/packaging/XpsImage.html" title="class in system.windows.xps.packaging">XpsImage</a>&gt;&nbsp;getImages()
+                                  throws java.lang.Throwable</pre>
 <div class="block">Gets the value of the .NET property Images.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
@@ -829,8 +829,8 @@ implements <a href="../../../../system/windows/xps/packaging/IXpsFixedPageReader
 <ul class="blockList">
 <li class="blockList">
 <h4>getResourceDictionaries</h4>
-<pre>public&nbsp;<a href="../../../../system/collections/generic/ICollection_1.html" title="interface in system.collections.generic">ICollection_1</a>&nbsp;getResourceDictionaries()
-                                      throws java.lang.Throwable</pre>
+<pre>public&nbsp;<a href="../../../../system/collections/generic/ICollection_1.html" title="interface in system.collections.generic">ICollection_1</a>&lt;<a href="../../../../system/windows/xps/packaging/XpsResourceDictionary.html" title="class in system.windows.xps.packaging">XpsResourceDictionary</a>&gt;&nbsp;getResourceDictionaries()
+                                                             throws java.lang.Throwable</pre>
 <div class="block">Gets the value of the .NET property ResourceDictionaries.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>

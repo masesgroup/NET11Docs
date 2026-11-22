@@ -242,7 +242,7 @@ extends <a href="../../../system/xml/XmlResolver.html" title="class in system.xm
 <tr class="rowColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../system/xml/resolvers/XmlPreloadedResolver.html#XmlPreloadedResolver-system.xml.XmlResolver-system.xml.resolvers.XmlKnownDtds-system.collections.generic.IEqualityComparer_1-">XmlPreloadedResolver</a></span>(<a href="../../../system/xml/XmlResolver.html" title="class in system.xml">XmlResolver</a>&nbsp;fallbackResolver,
                     <a href="../../../system/xml/resolvers/XmlKnownDtds.html" title="class in system.xml.resolvers">XmlKnownDtds</a>&nbsp;preloadedDtds,
-                    <a href="../../../system/collections/generic/IEqualityComparer_1.html" title="interface in system.collections.generic">IEqualityComparer_1</a>&nbsp;uriComparer)</code>
+                    <a href="../../../system/collections/generic/IEqualityComparer_1.html" title="interface in system.collections.generic">IEqualityComparer_1</a>&lt;<a href="../../../system/Uri.html" title="class in system">Uri</a>&gt;&nbsp;uriComparer)</code>
 <div class="block">Initializes a new instance by invoking the .NET constructor.</div>
 </td>
 </tr>
@@ -322,7 +322,7 @@ extends <a href="../../../system/xml/XmlResolver.html" title="class in system.xm
 </td>
 </tr>
 <tr id="i8" class="altColor">
-<td class="colFirst"><code><a href="../../../system/threading/tasks/Task_1.html" title="class in system.threading.tasks">Task_1</a></code></td>
+<td class="colFirst"><code><a href="../../../system/threading/tasks/Task_1.html" title="class in system.threading.tasks">Task_1</a>&lt;<a href="../../../system/Object.html" title="class in system">Object</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/xml/resolvers/XmlPreloadedResolver.html#GetEntityAsync-system.Uri-java.lang.String-org.mases.jcobridge.netreflection.NetType-">GetEntityAsync</a></span>(<a href="../../../system/Uri.html" title="class in system">Uri</a>&nbsp;absoluteUri,
               java.lang.String&nbsp;role,
               <a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;ofObjectToReturn)</code>
@@ -360,7 +360,7 @@ extends <a href="../../../system/xml/XmlResolver.html" title="class in system.xm
 </td>
 </tr>
 <tr id="i14" class="altColor">
-<td class="colFirst"><code><a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a></code></td>
+<td class="colFirst"><code><a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/Uri.html" title="class in system">Uri</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/xml/resolvers/XmlPreloadedResolver.html#getPreloadedUris--">getPreloadedUris</a></span>()</code>
 <div class="block">Gets the value of the .NET property PreloadedUris.</div>
 </td>
@@ -680,7 +680,7 @@ extends <a href="../../../system/xml/XmlResolver.html" title="class in system.xm
 <h4>XmlPreloadedResolver</h4>
 <pre>public&nbsp;XmlPreloadedResolver(<a href="../../../system/xml/XmlResolver.html" title="class in system.xml">XmlResolver</a>&nbsp;fallbackResolver,
                             <a href="../../../system/xml/resolvers/XmlKnownDtds.html" title="class in system.xml.resolvers">XmlKnownDtds</a>&nbsp;preloadedDtds,
-                            <a href="../../../system/collections/generic/IEqualityComparer_1.html" title="interface in system.collections.generic">IEqualityComparer_1</a>&nbsp;uriComparer)
+                            <a href="../../../system/collections/generic/IEqualityComparer_1.html" title="interface in system.collections.generic">IEqualityComparer_1</a>&lt;<a href="../../../system/Uri.html" title="class in system">Uri</a>&gt;&nbsp;uriComparer)
                      throws java.lang.Throwable,
                             <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
                             <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
@@ -698,7 +698,7 @@ extends <a href="../../../system/xml/XmlResolver.html" title="class in system.xm
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>fallbackResolver</code> - the argument of type <code>XmlResolver</code></dd>
 <dd><code>preloadedDtds</code> - the argument of type <code>XmlKnownDtds</code></dd>
-<dd><code>uriComparer</code> - the argument of type <code>IEqualityComparer_1</code></dd>
+<dd><code>uriComparer</code> - the argument of type <code>IEqualityComparer_1&lt;Uri&gt;</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code> - if the .NET constructor fails</dd>
 <dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code> - if the .NET member raises it</dd>
@@ -1037,21 +1037,21 @@ extends <a href="../../../system/xml/XmlResolver.html" title="class in system.xm
 <ul class="blockList">
 <li class="blockList">
 <h4>GetEntityAsync</h4>
-<pre>public&nbsp;<a href="../../../system/threading/tasks/Task_1.html" title="class in system.threading.tasks">Task_1</a>&nbsp;GetEntityAsync(<a href="../../../system/Uri.html" title="class in system">Uri</a>&nbsp;absoluteUri,
-                             java.lang.String&nbsp;role,
-                             <a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;ofObjectToReturn)
-                      throws java.lang.Throwable,
-                             <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
-                             <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                             <a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
-                             <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                             <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
-                             <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
-                             <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                             <a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a>,
-                             <a href="../../../system/FormatException.html" title="class in system">FormatException</a>,
-                             <a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a>,
-                             <a href="../../../system/xml/XmlException.html" title="class in system.xml">XmlException</a></pre>
+<pre>public&nbsp;<a href="../../../system/threading/tasks/Task_1.html" title="class in system.threading.tasks">Task_1</a>&lt;<a href="../../../system/Object.html" title="class in system">Object</a>&gt;&nbsp;GetEntityAsync(<a href="../../../system/Uri.html" title="class in system">Uri</a>&nbsp;absoluteUri,
+                                     java.lang.String&nbsp;role,
+                                     <a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;ofObjectToReturn)
+                              throws java.lang.Throwable,
+                                     <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                     <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                     <a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                     <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                     <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                     <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                     <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                     <a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a>,
+                                     <a href="../../../system/FormatException.html" title="class in system">FormatException</a>,
+                                     <a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a>,
+                                     <a href="../../../system/xml/XmlException.html" title="class in system.xml">XmlException</a></pre>
 <div class="block">Invokes the .NET member GetEntityAsync.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
@@ -1181,13 +1181,13 @@ extends <a href="../../../system/xml/XmlResolver.html" title="class in system.xm
 <ul class="blockList">
 <li class="blockList">
 <h4>getPreloadedUris</h4>
-<pre>public&nbsp;<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;getPreloadedUris()
-                               throws java.lang.Throwable,
-                                      <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
-                                      <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                                      <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
-                                      <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                                      <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></pre>
+<pre>public&nbsp;<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/Uri.html" title="class in system">Uri</a>&gt;&nbsp;getPreloadedUris()
+                                    throws java.lang.Throwable,
+                                           <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                           <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                           <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                           <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                           <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></pre>
 <div class="block">Gets the value of the .NET property PreloadedUris.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>

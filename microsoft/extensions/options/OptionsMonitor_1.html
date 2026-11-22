@@ -211,9 +211,9 @@ implements java.lang.AutoCloseable</pre>
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../microsoft/extensions/options/OptionsMonitor_1.html#OptionsMonitor_1--">OptionsMonitor_1</a></span>()</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../microsoft/extensions/options/OptionsMonitor_1.html#OptionsMonitor_1-microsoft.extensions.options.IOptionsFactory_1-system.collections.generic.IEnumerable_1-microsoft.extensions.options.IOptionsMonitorCache_1-">OptionsMonitor_1</a></span>(<a href="../../../microsoft/extensions/options/IOptionsFactory_1.html" title="interface in microsoft.extensions.options">IOptionsFactory_1</a>&nbsp;factory,
-                <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;sources,
-                <a href="../../../microsoft/extensions/options/IOptionsMonitorCache_1.html" title="interface in microsoft.extensions.options">IOptionsMonitorCache_1</a>&nbsp;cache)</code>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../microsoft/extensions/options/OptionsMonitor_1.html#OptionsMonitor_1-microsoft.extensions.options.IOptionsFactory_1-system.collections.generic.IEnumerable_1-microsoft.extensions.options.IOptionsMonitorCache_1-">OptionsMonitor_1</a></span>(<a href="../../../microsoft/extensions/options/IOptionsFactory_1.html" title="interface in microsoft.extensions.options">IOptionsFactory_1</a>&lt;<a href="../../../microsoft/extensions/options/OptionsMonitor_1.html" title="type parameter in OptionsMonitor_1">TOptions</a>&gt;&nbsp;factory,
+                <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../microsoft/extensions/options/IOptionsChangeTokenSource_1.html" title="interface in microsoft.extensions.options">IOptionsChangeTokenSource_1</a>&lt;<a href="../../../microsoft/extensions/options/OptionsMonitor_1.html" title="type parameter in OptionsMonitor_1">TOptions</a>&gt;&gt;&nbsp;sources,
+                <a href="../../../microsoft/extensions/options/IOptionsMonitorCache_1.html" title="interface in microsoft.extensions.options">IOptionsMonitorCache_1</a>&lt;<a href="../../../microsoft/extensions/options/OptionsMonitor_1.html" title="type parameter in OptionsMonitor_1">TOptions</a>&gt;&nbsp;cache)</code>
 <div class="block">Initializes a new instance by invoking the .NET constructor.</div>
 </td>
 </tr>
@@ -416,9 +416,9 @@ implements java.lang.AutoCloseable</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>OptionsMonitor_1</h4>
-<pre>public&nbsp;OptionsMonitor_1(<a href="../../../microsoft/extensions/options/IOptionsFactory_1.html" title="interface in microsoft.extensions.options">IOptionsFactory_1</a>&nbsp;factory,
-                        <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;sources,
-                        <a href="../../../microsoft/extensions/options/IOptionsMonitorCache_1.html" title="interface in microsoft.extensions.options">IOptionsMonitorCache_1</a>&nbsp;cache)
+<pre>public&nbsp;OptionsMonitor_1(<a href="../../../microsoft/extensions/options/IOptionsFactory_1.html" title="interface in microsoft.extensions.options">IOptionsFactory_1</a>&lt;<a href="../../../microsoft/extensions/options/OptionsMonitor_1.html" title="type parameter in OptionsMonitor_1">TOptions</a>&gt;&nbsp;factory,
+                        <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../microsoft/extensions/options/IOptionsChangeTokenSource_1.html" title="interface in microsoft.extensions.options">IOptionsChangeTokenSource_1</a>&lt;<a href="../../../microsoft/extensions/options/OptionsMonitor_1.html" title="type parameter in OptionsMonitor_1">TOptions</a>&gt;&gt;&nbsp;sources,
+                        <a href="../../../microsoft/extensions/options/IOptionsMonitorCache_1.html" title="interface in microsoft.extensions.options">IOptionsMonitorCache_1</a>&lt;<a href="../../../microsoft/extensions/options/OptionsMonitor_1.html" title="type parameter in OptionsMonitor_1">TOptions</a>&gt;&nbsp;cache)
                  throws java.lang.Throwable,
                         <a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
                         <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
@@ -430,9 +430,9 @@ implements java.lang.AutoCloseable</pre>
 <div class="block">Initializes a new instance by invoking the .NET constructor.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>factory</code> - the argument of type <code>IOptionsFactory_1</code></dd>
-<dd><code>sources</code> - the argument of type <code>IEnumerable_1</code></dd>
-<dd><code>cache</code> - the argument of type <code>IOptionsMonitorCache_1</code></dd>
+<dd><code>factory</code> - the argument of type <code>IOptionsFactory_1&lt;TOptions&gt;</code></dd>
+<dd><code>sources</code> - the argument of type <code>IEnumerable_1&lt;IOptionsChangeTokenSource_1&lt;TOptions&gt;&gt;</code></dd>
+<dd><code>cache</code> - the argument of type <code>IOptionsMonitorCache_1&lt;TOptions&gt;</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code> - if the .NET constructor fails</dd>
 <dd><code><a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code> - if the .NET member raises it</dd>

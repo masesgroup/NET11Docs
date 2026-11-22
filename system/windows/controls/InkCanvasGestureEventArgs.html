@@ -225,7 +225,7 @@ extends <a href="../../../system/windows/RoutedEventArgs.html" title="class in s
 </tr>
 <tr class="altColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../system/windows/controls/InkCanvasGestureEventArgs.html#InkCanvasGestureEventArgs-system.windows.ink.StrokeCollection-system.collections.generic.IEnumerable_1-">InkCanvasGestureEventArgs</a></span>(<a href="../../../system/windows/ink/StrokeCollection.html" title="class in system.windows.ink">StrokeCollection</a>&nbsp;strokes,
-                         <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;gestureRecognitionResults)</code>
+                         <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/windows/ink/GestureRecognitionResult.html" title="class in system.windows.ink">GestureRecognitionResult</a>&gt;&nbsp;gestureRecognitionResults)</code>
 <div class="block">Initializes a new instance by invoking the .NET constructor.</div>
 </td>
 </tr>
@@ -257,7 +257,7 @@ extends <a href="../../../system/windows/RoutedEventArgs.html" title="class in s
 </td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code><a href="../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a></code></td>
+<td class="colFirst"><code><a href="../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&lt;<a href="../../../system/windows/ink/GestureRecognitionResult.html" title="class in system.windows.ink">GestureRecognitionResult</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/controls/InkCanvasGestureEventArgs.html#GetGestureRecognitionResults--">GetGestureRecognitionResults</a></span>()</code>
 <div class="block">Invokes the .NET member GetGestureRecognitionResults.</div>
 </td>
@@ -444,7 +444,7 @@ extends <a href="../../../system/windows/RoutedEventArgs.html" title="class in s
 <li class="blockList">
 <h4>InkCanvasGestureEventArgs</h4>
 <pre>public&nbsp;InkCanvasGestureEventArgs(<a href="../../../system/windows/ink/StrokeCollection.html" title="class in system.windows.ink">StrokeCollection</a>&nbsp;strokes,
-                                 <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;gestureRecognitionResults)
+                                 <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/windows/ink/GestureRecognitionResult.html" title="class in system.windows.ink">GestureRecognitionResult</a>&gt;&nbsp;gestureRecognitionResults)
                           throws java.lang.Throwable,
                                  <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
                                  <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
@@ -458,7 +458,7 @@ extends <a href="../../../system/windows/RoutedEventArgs.html" title="class in s
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>strokes</code> - the argument of type <code>StrokeCollection</code></dd>
-<dd><code>gestureRecognitionResults</code> - the argument of type <code>IEnumerable_1</code></dd>
+<dd><code>gestureRecognitionResults</code> - the argument of type <code>IEnumerable_1&lt;GestureRecognitionResult&gt;</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code> - if the .NET constructor fails</dd>
 <dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code> - if the .NET member raises it</dd>
@@ -526,15 +526,15 @@ extends <a href="../../../system/windows/RoutedEventArgs.html" title="class in s
 <ul class="blockList">
 <li class="blockList">
 <h4>GetGestureRecognitionResults</h4>
-<pre>public&nbsp;<a href="../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&nbsp;GetGestureRecognitionResults()
-                                                  throws java.lang.Throwable,
-                                                         <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
-                                                         <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                                                         <a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
-                                                         <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                                                         <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
-                                                         <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
-                                                         <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></pre>
+<pre>public&nbsp;<a href="../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&lt;<a href="../../../system/windows/ink/GestureRecognitionResult.html" title="class in system.windows.ink">GestureRecognitionResult</a>&gt;&nbsp;GetGestureRecognitionResults()
+                                                                            throws java.lang.Throwable,
+                                                                                   <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                                                                   <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                                                                   <a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                                                                   <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                                                                   <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                                                                   <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                                                                   <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></pre>
 <div class="block">Invokes the .NET member GetGestureRecognitionResults.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>

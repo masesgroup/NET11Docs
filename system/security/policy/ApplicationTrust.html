@@ -236,7 +236,7 @@ extends <a href="../../../system/security/policy/EvidenceBase.html" title="class
 </tr>
 <tr class="rowColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../system/security/policy/ApplicationTrust.html#ApplicationTrust-system.security.PermissionSet-system.collections.generic.IEnumerable_1-">ApplicationTrust</a></span>(<a href="../../../system/security/PermissionSet.html" title="class in system.security">PermissionSet</a>&nbsp;defaultGrantSet,
-                <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;fullTrustAssemblies)</code>
+                <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/security/policy/StrongName.html" title="class in system.security.policy">StrongName</a>&gt;&nbsp;fullTrustAssemblies)</code>
 <div class="block">Initializes a new instance by invoking the .NET constructor.</div>
 </td>
 </tr>
@@ -286,7 +286,7 @@ extends <a href="../../../system/security/policy/EvidenceBase.html" title="class
 </td>
 </tr>
 <tr id="i5" class="rowColor">
-<td class="colFirst"><code><a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a></code></td>
+<td class="colFirst"><code><a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&lt;<a href="../../../system/security/policy/StrongName.html" title="class in system.security.policy">StrongName</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/security/policy/ApplicationTrust.html#getFullTrustAssemblies--">getFullTrustAssemblies</a></span>()</code>
 <div class="block">Gets the value of the .NET property FullTrustAssemblies.</div>
 </td>
@@ -531,13 +531,13 @@ extends <a href="../../../system/security/policy/EvidenceBase.html" title="class
 <li class="blockList">
 <h4>ApplicationTrust</h4>
 <pre>public&nbsp;ApplicationTrust(<a href="../../../system/security/PermissionSet.html" title="class in system.security">PermissionSet</a>&nbsp;defaultGrantSet,
-                        <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;fullTrustAssemblies)
+                        <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/security/policy/StrongName.html" title="class in system.security.policy">StrongName</a>&gt;&nbsp;fullTrustAssemblies)
                  throws java.lang.Throwable</pre>
 <div class="block">Initializes a new instance by invoking the .NET constructor.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>defaultGrantSet</code> - the argument of type <code>PermissionSet</code></dd>
-<dd><code>fullTrustAssemblies</code> - the argument of type <code>IEnumerable_1</code></dd>
+<dd><code>fullTrustAssemblies</code> - the argument of type <code>IEnumerable_1&lt;StrongName&gt;</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code> - if the .NET constructor fails</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
@@ -654,8 +654,8 @@ extends <a href="../../../system/security/policy/EvidenceBase.html" title="class
 <ul class="blockList">
 <li class="blockList">
 <h4>getFullTrustAssemblies</h4>
-<pre>public&nbsp;<a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&nbsp;getFullTrustAssemblies()
-                               throws java.lang.Throwable</pre>
+<pre>public&nbsp;<a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&lt;<a href="../../../system/security/policy/StrongName.html" title="class in system.security.policy">StrongName</a>&gt;&nbsp;getFullTrustAssemblies()
+                                           throws java.lang.Throwable</pre>
 <div class="block">Gets the value of the .NET property FullTrustAssemblies.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>

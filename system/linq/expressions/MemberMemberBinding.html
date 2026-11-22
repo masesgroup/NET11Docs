@@ -238,7 +238,7 @@ extends <a href="../../../system/linq/expressions/MemberBinding.html" title="cla
 </td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code><a href="../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a></code></td>
+<td class="colFirst"><code><a href="../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&lt;<a href="../../../system/linq/expressions/MemberBinding.html" title="class in system.linq.expressions">MemberBinding</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/linq/expressions/MemberMemberBinding.html#getBindings--">getBindings</a></span>()</code>
 <div class="block">Gets the value of the .NET property Bindings.</div>
 </td>
@@ -281,7 +281,7 @@ extends <a href="../../../system/linq/expressions/MemberBinding.html" title="cla
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="../../../system/linq/expressions/MemberMemberBinding.html" title="class in system.linq.expressions">MemberMemberBinding</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/linq/expressions/MemberMemberBinding.html#Update-system.collections.generic.IEnumerable_1-">Update</a></span>(<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;bindings)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/linq/expressions/MemberMemberBinding.html#Update-system.collections.generic.IEnumerable_1-">Update</a></span>(<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/linq/expressions/MemberBinding.html" title="class in system.linq.expressions">MemberBinding</a>&gt;&nbsp;bindings)</code>
 <div class="block">Invokes the .NET member Update.</div>
 </td>
 </tr>
@@ -445,8 +445,8 @@ extends <a href="../../../system/linq/expressions/MemberBinding.html" title="cla
 <ul class="blockList">
 <li class="blockList">
 <h4>getBindings</h4>
-<pre>public&nbsp;<a href="../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&nbsp;getBindings()
-                                 throws java.lang.Throwable</pre>
+<pre>public&nbsp;<a href="../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&lt;<a href="../../../system/linq/expressions/MemberBinding.html" title="class in system.linq.expressions">MemberBinding</a>&gt;&nbsp;getBindings()
+                                                throws java.lang.Throwable</pre>
 <div class="block">Gets the value of the .NET property Bindings.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -576,7 +576,7 @@ extends <a href="../../../system/linq/expressions/MemberBinding.html" title="cla
 <ul class="blockListLast">
 <li class="blockList">
 <h4>Update</h4>
-<pre>public&nbsp;<a href="../../../system/linq/expressions/MemberMemberBinding.html" title="class in system.linq.expressions">MemberMemberBinding</a>&nbsp;Update(<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;bindings)
+<pre>public&nbsp;<a href="../../../system/linq/expressions/MemberMemberBinding.html" title="class in system.linq.expressions">MemberMemberBinding</a>&nbsp;Update(<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/linq/expressions/MemberBinding.html" title="class in system.linq.expressions">MemberBinding</a>&gt;&nbsp;bindings)
                            throws java.lang.Throwable,
                                   <a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
                                   <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
@@ -593,7 +593,7 @@ extends <a href="../../../system/linq/expressions/MemberBinding.html" title="cla
 <div class="block">Invokes the .NET member Update.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>bindings</code> - the argument of type <code>IEnumerable_1</code></dd>
+<dd><code>bindings</code> - the argument of type <code>IEnumerable_1&lt;MemberBinding&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>

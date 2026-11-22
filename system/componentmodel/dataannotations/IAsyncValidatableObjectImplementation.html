@@ -260,13 +260,13 @@ implements <a href="../../../system/componentmodel/dataannotations/IAsyncValidat
 </td>
 </tr>
 <tr id="i6" class="altColor">
-<td class="colFirst"><code><a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a></code></td>
+<td class="colFirst"><code><a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/componentmodel/dataannotations/ValidationResult.html" title="class in system.componentmodel.dataannotations">ValidationResult</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/componentmodel/dataannotations/IAsyncValidatableObjectImplementation.html#Validate-system.componentmodel.dataannotations.ValidationContext-">Validate</a></span>(<a href="../../../system/componentmodel/dataannotations/ValidationContext.html" title="class in system.componentmodel.dataannotations">ValidationContext</a>&nbsp;validationContext)</code>
 <div class="block">Invokes the .NET member Validate.</div>
 </td>
 </tr>
 <tr id="i7" class="rowColor">
-<td class="colFirst"><code><a href="../../../system/collections/generic/IAsyncEnumerable_1.html" title="interface in system.collections.generic">IAsyncEnumerable_1</a></code></td>
+<td class="colFirst"><code><a href="../../../system/collections/generic/IAsyncEnumerable_1.html" title="interface in system.collections.generic">IAsyncEnumerable_1</a>&lt;<a href="../../../system/componentmodel/dataannotations/ValidationResult.html" title="class in system.componentmodel.dataannotations">ValidationResult</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/componentmodel/dataannotations/IAsyncValidatableObjectImplementation.html#ValidateAsync-system.componentmodel.dataannotations.ValidationContext-system.threading.CancellationToken-">ValidateAsync</a></span>(<a href="../../../system/componentmodel/dataannotations/ValidationContext.html" title="class in system.componentmodel.dataannotations">ValidationContext</a>&nbsp;validationContext,
              <a href="../../../system/threading/CancellationToken.html" title="class in system.threading">CancellationToken</a>&nbsp;cancellationToken)</code>
 <div class="block">Invokes the .NET member ValidateAsync.</div>
@@ -535,8 +535,8 @@ implements <a href="../../../system/componentmodel/dataannotations/IAsyncValidat
 <ul class="blockList">
 <li class="blockList">
 <h4>Validate</h4>
-<pre>public&nbsp;<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;Validate(<a href="../../../system/componentmodel/dataannotations/ValidationContext.html" title="class in system.componentmodel.dataannotations">ValidationContext</a>&nbsp;validationContext)
-                       throws java.lang.Throwable</pre>
+<pre>public&nbsp;<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/componentmodel/dataannotations/ValidationResult.html" title="class in system.componentmodel.dataannotations">ValidationResult</a>&gt;&nbsp;Validate(<a href="../../../system/componentmodel/dataannotations/ValidationContext.html" title="class in system.componentmodel.dataannotations">ValidationContext</a>&nbsp;validationContext)
+                                         throws java.lang.Throwable</pre>
 <div class="block">Invokes the .NET member Validate.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
@@ -558,9 +558,9 @@ implements <a href="../../../system/componentmodel/dataannotations/IAsyncValidat
 <ul class="blockListLast">
 <li class="blockList">
 <h4>ValidateAsync</h4>
-<pre>public&nbsp;<a href="../../../system/collections/generic/IAsyncEnumerable_1.html" title="interface in system.collections.generic">IAsyncEnumerable_1</a>&nbsp;ValidateAsync(<a href="../../../system/componentmodel/dataannotations/ValidationContext.html" title="class in system.componentmodel.dataannotations">ValidationContext</a>&nbsp;validationContext,
-                                        <a href="../../../system/threading/CancellationToken.html" title="class in system.threading">CancellationToken</a>&nbsp;cancellationToken)
-                                 throws java.lang.Throwable</pre>
+<pre>public&nbsp;<a href="../../../system/collections/generic/IAsyncEnumerable_1.html" title="interface in system.collections.generic">IAsyncEnumerable_1</a>&lt;<a href="../../../system/componentmodel/dataannotations/ValidationResult.html" title="class in system.componentmodel.dataannotations">ValidationResult</a>&gt;&nbsp;ValidateAsync(<a href="../../../system/componentmodel/dataannotations/ValidationContext.html" title="class in system.componentmodel.dataannotations">ValidationContext</a>&nbsp;validationContext,
+                                                          <a href="../../../system/threading/CancellationToken.html" title="class in system.threading">CancellationToken</a>&nbsp;cancellationToken)
+                                                   throws java.lang.Throwable</pre>
 <div class="block">Invokes the .NET member ValidateAsync.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>

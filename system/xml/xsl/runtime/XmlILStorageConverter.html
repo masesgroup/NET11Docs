@@ -338,14 +338,14 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 </td>
 </tr>
 <tr id="i14" class="altColor">
-<td class="colFirst"><code>static <a href="../../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/xml/xsl/runtime/XmlILStorageConverter.html#ItemsToNavigators-system.collections.generic.IList_1-">ItemsToNavigators</a></span>(<a href="../../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&nbsp;listItems)</code>
+<td class="colFirst"><code>static <a href="../../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&lt;<a href="../../../../system/xml/xpath/XPathNavigator.html" title="class in system.xml.xpath">XPathNavigator</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/xml/xsl/runtime/XmlILStorageConverter.html#ItemsToNavigators-system.collections.generic.IList_1-">ItemsToNavigators</a></span>(<a href="../../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&lt;<a href="../../../../system/xml/xpath/XPathItem.html" title="class in system.xml.xpath">XPathItem</a>&gt;&nbsp;listItems)</code>
 <div class="block">Invokes the .NET member ItemsToNavigators.</div>
 </td>
 </tr>
 <tr id="i15" class="rowColor">
-<td class="colFirst"><code>static <a href="../../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/xml/xsl/runtime/XmlILStorageConverter.html#NavigatorsToItems-system.collections.generic.IList_1-">NavigatorsToItems</a></span>(<a href="../../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&nbsp;listNavigators)</code>
+<td class="colFirst"><code>static <a href="../../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&lt;<a href="../../../../system/xml/xpath/XPathItem.html" title="class in system.xml.xpath">XPathItem</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/xml/xsl/runtime/XmlILStorageConverter.html#NavigatorsToItems-system.collections.generic.IList_1-">NavigatorsToItems</a></span>(<a href="../../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&lt;<a href="../../../../system/xml/xpath/XPathNavigator.html" title="class in system.xml.xpath">XPathNavigator</a>&gt;&nbsp;listNavigators)</code>
 <div class="block">Invokes the .NET member NavigatorsToItems.</div>
 </td>
 </tr>
@@ -915,14 +915,14 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <ul class="blockList">
 <li class="blockList">
 <h4>ItemsToNavigators</h4>
-<pre>public static&nbsp;<a href="../../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&nbsp;ItemsToNavigators(<a href="../../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&nbsp;listItems)
-                                 throws java.lang.Throwable,
-                                        <a href="../../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
-                                        <a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></pre>
+<pre>public static&nbsp;<a href="../../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&lt;<a href="../../../../system/xml/xpath/XPathNavigator.html" title="class in system.xml.xpath">XPathNavigator</a>&gt;&nbsp;ItemsToNavigators(<a href="../../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&lt;<a href="../../../../system/xml/xpath/XPathItem.html" title="class in system.xml.xpath">XPathItem</a>&gt;&nbsp;listItems)
+                                                 throws java.lang.Throwable,
+                                                        <a href="../../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                                        <a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></pre>
 <div class="block">Invokes the .NET member ItemsToNavigators.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>listItems</code> - the argument of type <code>IList_1</code></dd>
+<dd><code>listItems</code> - the argument of type <code>IList_1&lt;XPathItem&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -940,13 +940,13 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <ul class="blockList">
 <li class="blockList">
 <h4>NavigatorsToItems</h4>
-<pre>public static&nbsp;<a href="../../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&nbsp;NavigatorsToItems(<a href="../../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&nbsp;listNavigators)
-                                 throws java.lang.Throwable,
-                                        <a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></pre>
+<pre>public static&nbsp;<a href="../../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&lt;<a href="../../../../system/xml/xpath/XPathItem.html" title="class in system.xml.xpath">XPathItem</a>&gt;&nbsp;NavigatorsToItems(<a href="../../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&lt;<a href="../../../../system/xml/xpath/XPathNavigator.html" title="class in system.xml.xpath">XPathNavigator</a>&gt;&nbsp;listNavigators)
+                                            throws java.lang.Throwable,
+                                                   <a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></pre>
 <div class="block">Invokes the .NET member NavigatorsToItems.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>listNavigators</code> - the argument of type <code>IList_1</code></dd>
+<dd><code>listNavigators</code> - the argument of type <code>IList_1&lt;XPathNavigator&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>

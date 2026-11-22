@@ -114,6 +114,10 @@
 <meta name="keywords" content="removeSelectedIndexChanged()">
 <meta name="keywords" content="addTextChanged()">
 <meta name="keywords" content="removeTextChanged()">
+<meta name="keywords" content="addGroupCollapsedStateChanged()">
+<meta name="keywords" content="removeGroupCollapsedStateChanged()">
+<meta name="keywords" content="addGroupTaskLinkClick()">
+<meta name="keywords" content="removeGroupTaskLinkClick()">
 <meta name="keywords" content="addCacheVirtualItems()">
 <meta name="keywords" content="removeCacheVirtualItems()">
 <meta name="keywords" content="addColumnClick()">
@@ -165,7 +169,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10,"i29":10,"i30":9,"i31":10,"i32":10,"i33":10,"i34":10,"i35":10,"i36":10,"i37":10,"i38":10,"i39":10,"i40":10,"i41":10,"i42":10,"i43":10,"i44":10,"i45":10,"i46":10,"i47":10,"i48":10,"i49":10,"i50":10,"i51":10,"i52":10,"i53":10,"i54":10,"i55":10,"i56":10,"i57":10,"i58":10,"i59":10,"i60":10,"i61":10,"i62":10,"i63":10,"i64":10,"i65":10,"i66":10,"i67":10,"i68":10,"i69":10,"i70":10,"i71":10,"i72":10,"i73":10,"i74":10,"i75":10,"i76":10,"i77":10,"i78":10,"i79":10,"i80":10,"i81":10,"i82":10,"i83":10,"i84":10,"i85":10,"i86":10,"i87":10,"i88":10,"i89":10,"i90":10,"i91":10,"i92":10,"i93":10,"i94":10,"i95":10,"i96":10,"i97":10,"i98":10,"i99":10,"i100":10,"i101":10,"i102":10,"i103":10,"i104":10,"i105":10,"i106":10,"i107":10,"i108":10,"i109":10,"i110":10,"i111":10,"i112":10,"i113":10,"i114":10,"i115":10,"i116":10,"i117":10,"i118":10,"i119":10,"i120":10,"i121":10,"i122":10,"i123":10,"i124":10,"i125":10,"i126":10,"i127":10,"i128":10,"i129":10,"i130":10,"i131":10,"i132":10,"i133":10,"i134":10,"i135":10,"i136":10,"i137":10,"i138":10,"i139":10,"i140":10,"i141":10,"i142":10,"i143":10,"i144":10,"i145":10,"i146":10,"i147":10,"i148":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10,"i29":10,"i30":10,"i31":10,"i32":9,"i33":10,"i34":10,"i35":10,"i36":10,"i37":10,"i38":10,"i39":10,"i40":10,"i41":10,"i42":10,"i43":10,"i44":10,"i45":10,"i46":10,"i47":10,"i48":10,"i49":10,"i50":10,"i51":10,"i52":10,"i53":10,"i54":10,"i55":10,"i56":10,"i57":10,"i58":10,"i59":10,"i60":10,"i61":10,"i62":10,"i63":10,"i64":10,"i65":10,"i66":10,"i67":10,"i68":10,"i69":10,"i70":10,"i71":10,"i72":10,"i73":10,"i74":10,"i75":10,"i76":10,"i77":10,"i78":10,"i79":10,"i80":10,"i81":10,"i82":10,"i83":10,"i84":10,"i85":10,"i86":10,"i87":10,"i88":10,"i89":10,"i90":10,"i91":10,"i92":10,"i93":10,"i94":10,"i95":10,"i96":10,"i97":10,"i98":10,"i99":10,"i100":10,"i101":10,"i102":10,"i103":10,"i104":10,"i105":10,"i106":10,"i107":10,"i108":10,"i109":10,"i110":10,"i111":10,"i112":10,"i113":10,"i114":10,"i115":10,"i116":10,"i117":10,"i118":10,"i119":10,"i120":10,"i121":10,"i122":10,"i123":10,"i124":10,"i125":10,"i126":10,"i127":10,"i128":10,"i129":10,"i130":10,"i131":10,"i132":10,"i133":10,"i134":10,"i135":10,"i136":10,"i137":10,"i138":10,"i139":10,"i140":10,"i141":10,"i142":10,"i143":10,"i144":10,"i145":10,"i146":10,"i147":10,"i148":10,"i149":10,"i150":10,"i151":10,"i152":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -445,150 +449,162 @@ extends <a href="../../../system/windows/forms/Control.html" title="class in sys
 </tr>
 <tr id="i11" class="rowColor">
 <td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/ListView.html#addGroupCollapsedStateChanged-system.EventHandler_1-">addGroupCollapsedStateChanged</a></span>(<a href="../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../system/windows/forms/ListViewGroupEventArgs.html" title="class in system.windows.forms">ListViewGroupEventArgs</a>&gt;&nbsp;handler)</code>
+<div class="block">Invokes the .NET member addGroupCollapsedStateChanged.</div>
+</td>
+</tr>
+<tr id="i12" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/ListView.html#addGroupTaskLinkClick-system.EventHandler_1-">addGroupTaskLinkClick</a></span>(<a href="../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../system/windows/forms/ListViewGroupEventArgs.html" title="class in system.windows.forms">ListViewGroupEventArgs</a>&gt;&nbsp;handler)</code>
+<div class="block">Invokes the .NET member addGroupTaskLinkClick.</div>
+</td>
+</tr>
+<tr id="i13" class="rowColor">
+<td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/ListView.html#addItemActivate-system.EventHandler-">addItemActivate</a></span>(<a href="../../../system/EventHandler.html" title="class in system">EventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member addItemActivate.</div>
 </td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/ListView.html#addItemCheck-system.windows.forms.ItemCheckEventHandler-">addItemCheck</a></span>(<a href="../../../system/windows/forms/ItemCheckEventHandler.html" title="class in system.windows.forms">ItemCheckEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member addItemCheck.</div>
 </td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/ListView.html#addItemChecked-system.windows.forms.ItemCheckedEventHandler-">addItemChecked</a></span>(<a href="../../../system/windows/forms/ItemCheckedEventHandler.html" title="class in system.windows.forms">ItemCheckedEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member addItemChecked.</div>
 </td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/ListView.html#addItemDrag-system.windows.forms.ItemDragEventHandler-">addItemDrag</a></span>(<a href="../../../system/windows/forms/ItemDragEventHandler.html" title="class in system.windows.forms">ItemDragEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member addItemDrag.</div>
 </td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/ListView.html#addItemMouseHover-system.windows.forms.ListViewItemMouseHoverEventHandler-">addItemMouseHover</a></span>(<a href="../../../system/windows/forms/ListViewItemMouseHoverEventHandler.html" title="class in system.windows.forms">ListViewItemMouseHoverEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member addItemMouseHover.</div>
 </td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i18" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/ListView.html#addItemSelectionChanged-system.windows.forms.ListViewItemSelectionChangedEventHandler-">addItemSelectionChanged</a></span>(<a href="../../../system/windows/forms/ListViewItemSelectionChangedEventHandler.html" title="class in system.windows.forms">ListViewItemSelectionChangedEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member addItemSelectionChanged.</div>
 </td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/ListView.html#addPaddingChanged-system.EventHandler-">addPaddingChanged</a></span>(<a href="../../../system/EventHandler.html" title="class in system">EventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member addPaddingChanged.</div>
 </td>
 </tr>
-<tr id="i18" class="altColor">
+<tr id="i20" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/ListView.html#addPaint-system.windows.forms.PaintEventHandler-">addPaint</a></span>(<a href="../../../system/windows/forms/PaintEventHandler.html" title="class in system.windows.forms">PaintEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member addPaint.</div>
 </td>
 </tr>
-<tr id="i19" class="rowColor">
+<tr id="i21" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/ListView.html#addRetrieveVirtualItem-system.windows.forms.RetrieveVirtualItemEventHandler-">addRetrieveVirtualItem</a></span>(<a href="../../../system/windows/forms/RetrieveVirtualItemEventHandler.html" title="class in system.windows.forms">RetrieveVirtualItemEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member addRetrieveVirtualItem.</div>
 </td>
 </tr>
-<tr id="i20" class="altColor">
+<tr id="i22" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/ListView.html#addRightToLeftLayoutChanged-system.EventHandler-">addRightToLeftLayoutChanged</a></span>(<a href="../../../system/EventHandler.html" title="class in system">EventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member addRightToLeftLayoutChanged.</div>
 </td>
 </tr>
-<tr id="i21" class="rowColor">
+<tr id="i23" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/ListView.html#addSearchForVirtualItem-system.windows.forms.SearchForVirtualItemEventHandler-">addSearchForVirtualItem</a></span>(<a href="../../../system/windows/forms/SearchForVirtualItemEventHandler.html" title="class in system.windows.forms">SearchForVirtualItemEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member addSearchForVirtualItem.</div>
 </td>
 </tr>
-<tr id="i22" class="altColor">
+<tr id="i24" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/ListView.html#addSelectedIndexChanged-system.EventHandler-">addSelectedIndexChanged</a></span>(<a href="../../../system/EventHandler.html" title="class in system">EventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member addSelectedIndexChanged.</div>
 </td>
 </tr>
-<tr id="i23" class="rowColor">
+<tr id="i25" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/ListView.html#addTextChanged-system.EventHandler-">addTextChanged</a></span>(<a href="../../../system/EventHandler.html" title="class in system">EventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member addTextChanged.</div>
 </td>
 </tr>
-<tr id="i24" class="altColor">
+<tr id="i26" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/ListView.html#addVirtualItemsSelectionRangeChanged-system.windows.forms.ListViewVirtualItemsSelectionRangeChangedEventHandler-">addVirtualItemsSelectionRangeChanged</a></span>(<a href="../../../system/windows/forms/ListViewVirtualItemsSelectionRangeChangedEventHandler.html" title="class in system.windows.forms">ListViewVirtualItemsSelectionRangeChangedEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member addVirtualItemsSelectionRangeChanged.</div>
 </td>
 </tr>
-<tr id="i25" class="rowColor">
+<tr id="i27" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/ListView.html#ArrangeIcons--">ArrangeIcons</a></span>()</code>
 <div class="block">Invokes the .NET member ArrangeIcons.</div>
 </td>
 </tr>
-<tr id="i26" class="altColor">
+<tr id="i28" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/ListView.html#ArrangeIcons-system.windows.forms.ListViewAlignment-">ArrangeIcons</a></span>(<a href="../../../system/windows/forms/ListViewAlignment.html" title="class in system.windows.forms">ListViewAlignment</a>&nbsp;value)</code>
 <div class="block">Invokes the .NET member ArrangeIcons.</div>
 </td>
 </tr>
-<tr id="i27" class="rowColor">
+<tr id="i29" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/ListView.html#AutoResizeColumn-int-system.windows.forms.ColumnHeaderAutoResizeStyle-">AutoResizeColumn</a></span>(int&nbsp;columnIndex,
                 <a href="../../../system/windows/forms/ColumnHeaderAutoResizeStyle.html" title="class in system.windows.forms">ColumnHeaderAutoResizeStyle</a>&nbsp;headerAutoResize)</code>
 <div class="block">Invokes the .NET member AutoResizeColumn.</div>
 </td>
 </tr>
-<tr id="i28" class="altColor">
+<tr id="i30" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/ListView.html#AutoResizeColumns-system.windows.forms.ColumnHeaderAutoResizeStyle-">AutoResizeColumns</a></span>(<a href="../../../system/windows/forms/ColumnHeaderAutoResizeStyle.html" title="class in system.windows.forms">ColumnHeaderAutoResizeStyle</a>&nbsp;headerAutoResize)</code>
 <div class="block">Invokes the .NET member AutoResizeColumns.</div>
 </td>
 </tr>
-<tr id="i29" class="rowColor">
+<tr id="i31" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/ListView.html#BeginUpdate--">BeginUpdate</a></span>()</code>
 <div class="block">Invokes the .NET member BeginUpdate.</div>
 </td>
 </tr>
-<tr id="i30" class="altColor">
+<tr id="i32" class="altColor">
 <td class="colFirst"><code>static <a href="../../../system/windows/forms/ListView.html" title="class in system.windows.forms">ListView</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/ListView.html#cast-org.mases.jcobridge.netreflection.IJCOBridgeReflected-">cast</a></span>(<a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&nbsp;from)</code>
 <div class="block">Try to cast the <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection"><code>IJCOBridgeReflected</code></a> instance into <a href="../../../system/windows/forms/ListView.html" title="class in system.windows.forms"><code>ListView</code></a>, a cast assert is made to check if types are compatible.</div>
 </td>
 </tr>
-<tr id="i31" class="rowColor">
+<tr id="i33" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/ListView.html#Clear--">Clear</a></span>()</code>
 <div class="block">Invokes the .NET member Clear.</div>
 </td>
 </tr>
-<tr id="i32" class="altColor">
+<tr id="i34" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/ListView.html#EndUpdate--">EndUpdate</a></span>()</code>
 <div class="block">Invokes the .NET member EndUpdate.</div>
 </td>
 </tr>
-<tr id="i33" class="rowColor">
+<tr id="i35" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/ListView.html#EnsureVisible-int-">EnsureVisible</a></span>(int&nbsp;index)</code>
 <div class="block">Invokes the .NET member EnsureVisible.</div>
 </td>
 </tr>
-<tr id="i34" class="altColor">
+<tr id="i36" class="altColor">
 <td class="colFirst"><code><a href="../../../system/windows/forms/ListViewItem.html" title="class in system.windows.forms">ListViewItem</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/ListView.html#FindItemWithText-java.lang.String-">FindItemWithText</a></span>(java.lang.String&nbsp;text)</code>
 <div class="block">Invokes the .NET member FindItemWithText.</div>
 </td>
 </tr>
-<tr id="i35" class="rowColor">
+<tr id="i37" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/windows/forms/ListViewItem.html" title="class in system.windows.forms">ListViewItem</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/ListView.html#FindItemWithText-java.lang.String-boolean-int-">FindItemWithText</a></span>(java.lang.String&nbsp;text,
                 boolean&nbsp;includeSubItemsInSearch,
@@ -596,7 +612,7 @@ extends <a href="../../../system/windows/forms/Control.html" title="class in sys
 <div class="block">Invokes the .NET member FindItemWithText.</div>
 </td>
 </tr>
-<tr id="i36" class="altColor">
+<tr id="i38" class="altColor">
 <td class="colFirst"><code><a href="../../../system/windows/forms/ListViewItem.html" title="class in system.windows.forms">ListViewItem</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/ListView.html#FindItemWithText-java.lang.String-boolean-int-boolean-">FindItemWithText</a></span>(java.lang.String&nbsp;text,
                 boolean&nbsp;includeSubItemsInSearch,
@@ -605,7 +621,7 @@ extends <a href="../../../system/windows/forms/Control.html" title="class in sys
 <div class="block">Invokes the .NET member FindItemWithText.</div>
 </td>
 </tr>
-<tr id="i37" class="rowColor">
+<tr id="i39" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/windows/forms/ListViewItem.html" title="class in system.windows.forms">ListViewItem</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/ListView.html#FindNearestItem-system.windows.forms.SearchDirectionHint-int-int-">FindNearestItem</a></span>(<a href="../../../system/windows/forms/SearchDirectionHint.html" title="class in system.windows.forms">SearchDirectionHint</a>&nbsp;searchDirection,
                int&nbsp;x,
@@ -613,299 +629,299 @@ extends <a href="../../../system/windows/forms/Control.html" title="class in sys
 <div class="block">Invokes the .NET member FindNearestItem.</div>
 </td>
 </tr>
-<tr id="i38" class="altColor">
+<tr id="i40" class="altColor">
 <td class="colFirst"><code><a href="../../../system/windows/forms/ListViewItem.html" title="class in system.windows.forms">ListViewItem</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/ListView.html#FindNearestItem-system.windows.forms.SearchDirectionHint-system.drawing.Point-">FindNearestItem</a></span>(<a href="../../../system/windows/forms/SearchDirectionHint.html" title="class in system.windows.forms">SearchDirectionHint</a>&nbsp;dir,
                <a href="../../../system/drawing/Point.html" title="class in system.drawing">Point</a>&nbsp;point)</code>
 <div class="block">Invokes the .NET member FindNearestItem.</div>
 </td>
 </tr>
-<tr id="i39" class="rowColor">
+<tr id="i41" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/windows/forms/ItemActivation.html" title="class in system.windows.forms">ItemActivation</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/ListView.html#getActivation--">getActivation</a></span>()</code>
 <div class="block">Gets the value of the .NET property Activation.</div>
 </td>
 </tr>
-<tr id="i40" class="altColor">
+<tr id="i42" class="altColor">
 <td class="colFirst"><code><a href="../../../system/windows/forms/ListViewAlignment.html" title="class in system.windows.forms">ListViewAlignment</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/ListView.html#getAlignment--">getAlignment</a></span>()</code>
 <div class="block">Gets the value of the .NET property Alignment.</div>
 </td>
 </tr>
-<tr id="i41" class="rowColor">
+<tr id="i43" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/ListView.html#getAllowColumnReorder--">getAllowColumnReorder</a></span>()</code>
 <div class="block">Gets the value of the .NET property AllowColumnReorder.</div>
 </td>
 </tr>
-<tr id="i42" class="altColor">
+<tr id="i44" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/ListView.html#getAutoArrange--">getAutoArrange</a></span>()</code>
 <div class="block">Gets the value of the .NET property AutoArrange.</div>
 </td>
 </tr>
-<tr id="i43" class="rowColor">
+<tr id="i45" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/ListView.html#getBackgroundImageTiled--">getBackgroundImageTiled</a></span>()</code>
 <div class="block">Gets the value of the .NET property BackgroundImageTiled.</div>
 </td>
 </tr>
-<tr id="i44" class="altColor">
+<tr id="i46" class="altColor">
 <td class="colFirst"><code><a href="../../../system/windows/forms/BorderStyle.html" title="class in system.windows.forms">BorderStyle</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/ListView.html#getBorderStyle--">getBorderStyle</a></span>()</code>
 <div class="block">Gets the value of the .NET property BorderStyle.</div>
 </td>
 </tr>
-<tr id="i45" class="rowColor">
+<tr id="i47" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/ListView.html#getCheckBoxes--">getCheckBoxes</a></span>()</code>
 <div class="block">Gets the value of the .NET property CheckBoxes.</div>
 </td>
 </tr>
-<tr id="i46" class="altColor">
+<tr id="i48" class="altColor">
 <td class="colFirst"><code><a href="../../../system/windows/forms/ListViewItem.html" title="class in system.windows.forms">ListViewItem</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/ListView.html#getFocusedItem--">getFocusedItem</a></span>()</code>
 <div class="block">Gets the value of the .NET property FocusedItem.</div>
 </td>
 </tr>
-<tr id="i47" class="rowColor">
+<tr id="i49" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/ListView.html#getFullRowSelect--">getFullRowSelect</a></span>()</code>
 <div class="block">Gets the value of the .NET property FullRowSelect.</div>
 </td>
 </tr>
-<tr id="i48" class="altColor">
+<tr id="i50" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/ListView.html#getGridLines--">getGridLines</a></span>()</code>
 <div class="block">Gets the value of the .NET property GridLines.</div>
 </td>
 </tr>
-<tr id="i49" class="rowColor">
+<tr id="i51" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/windows/forms/ImageList.html" title="class in system.windows.forms">ImageList</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/ListView.html#getGroupImageList--">getGroupImageList</a></span>()</code>
 <div class="block">Gets the value of the .NET property GroupImageList.</div>
 </td>
 </tr>
-<tr id="i50" class="altColor">
+<tr id="i52" class="altColor">
 <td class="colFirst"><code><a href="../../../system/windows/forms/ListViewGroupCollection.html" title="class in system.windows.forms">ListViewGroupCollection</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/ListView.html#getGroups--">getGroups</a></span>()</code>
 <div class="block">Gets the value of the .NET property Groups.</div>
 </td>
 </tr>
-<tr id="i51" class="rowColor">
+<tr id="i53" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/windows/forms/ColumnHeaderStyle.html" title="class in system.windows.forms">ColumnHeaderStyle</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/ListView.html#getHeaderStyle--">getHeaderStyle</a></span>()</code>
 <div class="block">Gets the value of the .NET property HeaderStyle.</div>
 </td>
 </tr>
-<tr id="i52" class="altColor">
+<tr id="i54" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/ListView.html#getHideSelection--">getHideSelection</a></span>()</code>
 <div class="block">Gets the value of the .NET property HideSelection.</div>
 </td>
 </tr>
-<tr id="i53" class="rowColor">
+<tr id="i55" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/ListView.html#getHotTracking--">getHotTracking</a></span>()</code>
 <div class="block">Gets the value of the .NET property HotTracking.</div>
 </td>
 </tr>
-<tr id="i54" class="altColor">
+<tr id="i56" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/ListView.html#getHoverSelection--">getHoverSelection</a></span>()</code>
 <div class="block">Gets the value of the .NET property HoverSelection.</div>
 </td>
 </tr>
-<tr id="i55" class="rowColor">
+<tr id="i57" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/windows/forms/ListViewInsertionMark.html" title="class in system.windows.forms">ListViewInsertionMark</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/ListView.html#getInsertionMark--">getInsertionMark</a></span>()</code>
 <div class="block">Gets the value of the .NET property InsertionMark.</div>
 </td>
 </tr>
-<tr id="i56" class="altColor">
+<tr id="i58" class="altColor">
 <td class="colFirst"><code><a href="../../../system/windows/forms/ListViewItem.html" title="class in system.windows.forms">ListViewItem</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/ListView.html#GetItemAt-int-int-">GetItemAt</a></span>(int&nbsp;x,
          int&nbsp;y)</code>
 <div class="block">Invokes the .NET member GetItemAt.</div>
 </td>
 </tr>
-<tr id="i57" class="rowColor">
+<tr id="i59" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/drawing/Rectangle.html" title="class in system.drawing">Rectangle</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/ListView.html#GetItemRect-int-">GetItemRect</a></span>(int&nbsp;index)</code>
 <div class="block">Invokes the .NET member GetItemRect.</div>
 </td>
 </tr>
-<tr id="i58" class="altColor">
+<tr id="i60" class="altColor">
 <td class="colFirst"><code><a href="../../../system/drawing/Rectangle.html" title="class in system.drawing">Rectangle</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/ListView.html#GetItemRect-int-system.windows.forms.ItemBoundsPortion-">GetItemRect</a></span>(int&nbsp;index,
            <a href="../../../system/windows/forms/ItemBoundsPortion.html" title="class in system.windows.forms">ItemBoundsPortion</a>&nbsp;portion)</code>
 <div class="block">Invokes the .NET member GetItemRect.</div>
 </td>
 </tr>
-<tr id="i59" class="rowColor">
+<tr id="i61" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/ListView.html#getJCOAssemblyName--">getJCOAssemblyName</a></span>()</code>
 <div class="block">Returns the full name of the assembly of the .NET type.</div>
 </td>
 </tr>
-<tr id="i60" class="altColor">
+<tr id="i62" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/ListView.html#getJCOClassName--">getJCOClassName</a></span>()</code>
 <div class="block">Returns the full name of the .NET type.</div>
 </td>
 </tr>
-<tr id="i61" class="rowColor">
+<tr id="i63" class="rowColor">
 <td class="colFirst"><code>java.lang.Object</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/ListView.html#getJCOInstance--">getJCOInstance</a></span>()</code>
 <div class="block">Returns the underlying object managed by the bridge.</div>
 </td>
 </tr>
-<tr id="i62" class="altColor">
+<tr id="i64" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/ListView.html#getJCOObjectName--">getJCOObjectName</a></span>()</code>
 <div class="block">Returns the name of the .NET type qualified with its assembly.</div>
 </td>
 </tr>
-<tr id="i63" class="rowColor">
+<tr id="i65" class="rowColor">
 <td class="colFirst"><code><a href="https://www.jcobridge.com/api-java_2.6.10/org/mases/jcobridge/JCType.html?is-external=true" title="class or interface in org.mases.jcobridge">JCType</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/ListView.html#getJCOType--">getJCOType</a></span>()</code>
 <div class="block">Returns the <a href="https://www.jcobridge.com/api-java_2.6.10/org/mases/jcobridge/JCType.html?is-external=true" title="class or interface in org.mases.jcobridge"><code>JCType</code></a> of the .NET type.</div>
 </td>
 </tr>
-<tr id="i64" class="altColor">
+<tr id="i66" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/ListView.html#getLabelEdit--">getLabelEdit</a></span>()</code>
 <div class="block">Gets the value of the .NET property LabelEdit.</div>
 </td>
 </tr>
-<tr id="i65" class="rowColor">
+<tr id="i67" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/ListView.html#getLabelWrap--">getLabelWrap</a></span>()</code>
 <div class="block">Gets the value of the .NET property LabelWrap.</div>
 </td>
 </tr>
-<tr id="i66" class="altColor">
+<tr id="i68" class="altColor">
 <td class="colFirst"><code><a href="../../../system/windows/forms/ImageList.html" title="class in system.windows.forms">ImageList</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/ListView.html#getLargeImageList--">getLargeImageList</a></span>()</code>
 <div class="block">Gets the value of the .NET property LargeImageList.</div>
 </td>
 </tr>
-<tr id="i67" class="rowColor">
+<tr id="i69" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/collections/IComparer.html" title="interface in system.collections">IComparer</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/ListView.html#getListViewItemSorter--">getListViewItemSorter</a></span>()</code>
 <div class="block">Gets the value of the .NET property ListViewItemSorter.</div>
 </td>
 </tr>
-<tr id="i68" class="altColor">
+<tr id="i70" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/ListView.html#getMultiSelect--">getMultiSelect</a></span>()</code>
 <div class="block">Gets the value of the .NET property MultiSelect.</div>
 </td>
 </tr>
-<tr id="i69" class="rowColor">
+<tr id="i71" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/ListView.html#getOwnerDraw--">getOwnerDraw</a></span>()</code>
 <div class="block">Gets the value of the .NET property OwnerDraw.</div>
 </td>
 </tr>
-<tr id="i70" class="altColor">
+<tr id="i72" class="altColor">
 <td class="colFirst"><code><a href="../../../system/windows/forms/Padding.html" title="class in system.windows.forms">Padding</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/ListView.html#getPadding--">getPadding</a></span>()</code>
 <div class="block">Gets the value of the .NET property Padding.</div>
 </td>
 </tr>
-<tr id="i71" class="rowColor">
+<tr id="i73" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/ListView.html#getRightToLeftLayout--">getRightToLeftLayout</a></span>()</code>
 <div class="block">Gets the value of the .NET property RightToLeftLayout.</div>
 </td>
 </tr>
-<tr id="i72" class="altColor">
+<tr id="i74" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/ListView.html#getScrollable--">getScrollable</a></span>()</code>
 <div class="block">Gets the value of the .NET property Scrollable.</div>
 </td>
 </tr>
-<tr id="i73" class="rowColor">
+<tr id="i75" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/ListView.html#getShowGroups--">getShowGroups</a></span>()</code>
 <div class="block">Gets the value of the .NET property ShowGroups.</div>
 </td>
 </tr>
-<tr id="i74" class="altColor">
+<tr id="i76" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/ListView.html#getShowItemToolTips--">getShowItemToolTips</a></span>()</code>
 <div class="block">Gets the value of the .NET property ShowItemToolTips.</div>
 </td>
 </tr>
-<tr id="i75" class="rowColor">
+<tr id="i77" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/windows/forms/ImageList.html" title="class in system.windows.forms">ImageList</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/ListView.html#getSmallImageList--">getSmallImageList</a></span>()</code>
 <div class="block">Gets the value of the .NET property SmallImageList.</div>
 </td>
 </tr>
-<tr id="i76" class="altColor">
+<tr id="i78" class="altColor">
 <td class="colFirst"><code><a href="../../../system/windows/forms/SortOrder.html" title="class in system.windows.forms">SortOrder</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/ListView.html#getSorting--">getSorting</a></span>()</code>
 <div class="block">Gets the value of the .NET property Sorting.</div>
 </td>
 </tr>
-<tr id="i77" class="rowColor">
+<tr id="i79" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/windows/forms/ImageList.html" title="class in system.windows.forms">ImageList</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/ListView.html#getStateImageList--">getStateImageList</a></span>()</code>
 <div class="block">Gets the value of the .NET property StateImageList.</div>
 </td>
 </tr>
-<tr id="i78" class="altColor">
+<tr id="i80" class="altColor">
 <td class="colFirst"><code><a href="../../../system/drawing/Size.html" title="class in system.drawing">Size</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/ListView.html#getTileSize--">getTileSize</a></span>()</code>
 <div class="block">Gets the value of the .NET property TileSize.</div>
 </td>
 </tr>
-<tr id="i79" class="rowColor">
+<tr id="i81" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/windows/forms/ListViewItem.html" title="class in system.windows.forms">ListViewItem</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/ListView.html#getTopItem--">getTopItem</a></span>()</code>
 <div class="block">Gets the value of the .NET property TopItem.</div>
 </td>
 </tr>
-<tr id="i80" class="altColor">
+<tr id="i82" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/ListView.html#getUseCompatibleStateImageBehavior--">getUseCompatibleStateImageBehavior</a></span>()</code>
 <div class="block">Gets the value of the .NET property UseCompatibleStateImageBehavior.</div>
 </td>
 </tr>
-<tr id="i81" class="rowColor">
+<tr id="i83" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/windows/forms/View.html" title="class in system.windows.forms">View</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/ListView.html#getView--">getView</a></span>()</code>
 <div class="block">Gets the value of the .NET property View.</div>
 </td>
 </tr>
-<tr id="i82" class="altColor">
+<tr id="i84" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/ListView.html#getVirtualListSize--">getVirtualListSize</a></span>()</code>
 <div class="block">Gets the value of the .NET property VirtualListSize.</div>
 </td>
 </tr>
-<tr id="i83" class="rowColor">
+<tr id="i85" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/ListView.html#getVirtualMode--">getVirtualMode</a></span>()</code>
 <div class="block">Gets the value of the .NET property VirtualMode.</div>
 </td>
 </tr>
-<tr id="i84" class="altColor">
+<tr id="i86" class="altColor">
 <td class="colFirst"><code><a href="../../../system/windows/forms/ListViewHitTestInfo.html" title="class in system.windows.forms">ListViewHitTestInfo</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/ListView.html#HitTest-int-int-">HitTest</a></span>(int&nbsp;x,
        int&nbsp;y)</code>
 <div class="block">Invokes the .NET member HitTest.</div>
 </td>
 </tr>
-<tr id="i85" class="rowColor">
+<tr id="i87" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/windows/forms/ListViewHitTestInfo.html" title="class in system.windows.forms">ListViewHitTestInfo</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/ListView.html#HitTest-system.drawing.Point-">HitTest</a></span>(<a href="../../../system/drawing/Point.html" title="class in system.drawing">Point</a>&nbsp;point)</code>
 <div class="block">Invokes the .NET member HitTest.</div>
 </td>
 </tr>
-<tr id="i86" class="altColor">
+<tr id="i88" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/ListView.html#RedrawItems-int-int-boolean-">RedrawItems</a></span>(int&nbsp;startIndex,
            int&nbsp;endIndex,
@@ -913,373 +929,385 @@ extends <a href="../../../system/windows/forms/Control.html" title="class in sys
 <div class="block">Invokes the .NET member RedrawItems.</div>
 </td>
 </tr>
-<tr id="i87" class="rowColor">
+<tr id="i89" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/ListView.html#removeAfterLabelEdit-system.windows.forms.LabelEditEventHandler-">removeAfterLabelEdit</a></span>(<a href="../../../system/windows/forms/LabelEditEventHandler.html" title="class in system.windows.forms">LabelEditEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removeAfterLabelEdit.</div>
 </td>
 </tr>
-<tr id="i88" class="altColor">
+<tr id="i90" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/ListView.html#removeBackgroundImageLayoutChanged-system.EventHandler-">removeBackgroundImageLayoutChanged</a></span>(<a href="../../../system/EventHandler.html" title="class in system">EventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removeBackgroundImageLayoutChanged.</div>
 </td>
 </tr>
-<tr id="i89" class="rowColor">
+<tr id="i91" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/ListView.html#removeBeforeLabelEdit-system.windows.forms.LabelEditEventHandler-">removeBeforeLabelEdit</a></span>(<a href="../../../system/windows/forms/LabelEditEventHandler.html" title="class in system.windows.forms">LabelEditEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removeBeforeLabelEdit.</div>
 </td>
 </tr>
-<tr id="i90" class="altColor">
+<tr id="i92" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/ListView.html#removeCacheVirtualItems-system.windows.forms.CacheVirtualItemsEventHandler-">removeCacheVirtualItems</a></span>(<a href="../../../system/windows/forms/CacheVirtualItemsEventHandler.html" title="class in system.windows.forms">CacheVirtualItemsEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removeCacheVirtualItems.</div>
 </td>
 </tr>
-<tr id="i91" class="rowColor">
+<tr id="i93" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/ListView.html#removeColumnClick-system.windows.forms.ColumnClickEventHandler-">removeColumnClick</a></span>(<a href="../../../system/windows/forms/ColumnClickEventHandler.html" title="class in system.windows.forms">ColumnClickEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removeColumnClick.</div>
 </td>
 </tr>
-<tr id="i92" class="altColor">
+<tr id="i94" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/ListView.html#removeColumnReordered-system.windows.forms.ColumnReorderedEventHandler-">removeColumnReordered</a></span>(<a href="../../../system/windows/forms/ColumnReorderedEventHandler.html" title="class in system.windows.forms">ColumnReorderedEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removeColumnReordered.</div>
 </td>
 </tr>
-<tr id="i93" class="rowColor">
+<tr id="i95" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/ListView.html#removeColumnWidthChanged-system.windows.forms.ColumnWidthChangedEventHandler-">removeColumnWidthChanged</a></span>(<a href="../../../system/windows/forms/ColumnWidthChangedEventHandler.html" title="class in system.windows.forms">ColumnWidthChangedEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removeColumnWidthChanged.</div>
 </td>
 </tr>
-<tr id="i94" class="altColor">
+<tr id="i96" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/ListView.html#removeColumnWidthChanging-system.windows.forms.ColumnWidthChangingEventHandler-">removeColumnWidthChanging</a></span>(<a href="../../../system/windows/forms/ColumnWidthChangingEventHandler.html" title="class in system.windows.forms">ColumnWidthChangingEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removeColumnWidthChanging.</div>
 </td>
 </tr>
-<tr id="i95" class="rowColor">
+<tr id="i97" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/ListView.html#removeDrawColumnHeader-system.windows.forms.DrawListViewColumnHeaderEventHandler-">removeDrawColumnHeader</a></span>(<a href="../../../system/windows/forms/DrawListViewColumnHeaderEventHandler.html" title="class in system.windows.forms">DrawListViewColumnHeaderEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removeDrawColumnHeader.</div>
 </td>
 </tr>
-<tr id="i96" class="altColor">
+<tr id="i98" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/ListView.html#removeDrawItem-system.windows.forms.DrawListViewItemEventHandler-">removeDrawItem</a></span>(<a href="../../../system/windows/forms/DrawListViewItemEventHandler.html" title="class in system.windows.forms">DrawListViewItemEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removeDrawItem.</div>
 </td>
 </tr>
-<tr id="i97" class="rowColor">
+<tr id="i99" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/ListView.html#removeDrawSubItem-system.windows.forms.DrawListViewSubItemEventHandler-">removeDrawSubItem</a></span>(<a href="../../../system/windows/forms/DrawListViewSubItemEventHandler.html" title="class in system.windows.forms">DrawListViewSubItemEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removeDrawSubItem.</div>
 </td>
 </tr>
-<tr id="i98" class="altColor">
+<tr id="i100" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/ListView.html#removeGroupCollapsedStateChanged-system.EventHandler_1-">removeGroupCollapsedStateChanged</a></span>(<a href="../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../system/windows/forms/ListViewGroupEventArgs.html" title="class in system.windows.forms">ListViewGroupEventArgs</a>&gt;&nbsp;handler)</code>
+<div class="block">Invokes the .NET member removeGroupCollapsedStateChanged.</div>
+</td>
+</tr>
+<tr id="i101" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/ListView.html#removeGroupTaskLinkClick-system.EventHandler_1-">removeGroupTaskLinkClick</a></span>(<a href="../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../system/windows/forms/ListViewGroupEventArgs.html" title="class in system.windows.forms">ListViewGroupEventArgs</a>&gt;&nbsp;handler)</code>
+<div class="block">Invokes the .NET member removeGroupTaskLinkClick.</div>
+</td>
+</tr>
+<tr id="i102" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/ListView.html#removeItemActivate-system.EventHandler-">removeItemActivate</a></span>(<a href="../../../system/EventHandler.html" title="class in system">EventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removeItemActivate.</div>
 </td>
 </tr>
-<tr id="i99" class="rowColor">
+<tr id="i103" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/ListView.html#removeItemCheck-system.windows.forms.ItemCheckEventHandler-">removeItemCheck</a></span>(<a href="../../../system/windows/forms/ItemCheckEventHandler.html" title="class in system.windows.forms">ItemCheckEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removeItemCheck.</div>
 </td>
 </tr>
-<tr id="i100" class="altColor">
+<tr id="i104" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/ListView.html#removeItemChecked-system.windows.forms.ItemCheckedEventHandler-">removeItemChecked</a></span>(<a href="../../../system/windows/forms/ItemCheckedEventHandler.html" title="class in system.windows.forms">ItemCheckedEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removeItemChecked.</div>
 </td>
 </tr>
-<tr id="i101" class="rowColor">
+<tr id="i105" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/ListView.html#removeItemDrag-system.windows.forms.ItemDragEventHandler-">removeItemDrag</a></span>(<a href="../../../system/windows/forms/ItemDragEventHandler.html" title="class in system.windows.forms">ItemDragEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removeItemDrag.</div>
 </td>
 </tr>
-<tr id="i102" class="altColor">
+<tr id="i106" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/ListView.html#removeItemMouseHover-system.windows.forms.ListViewItemMouseHoverEventHandler-">removeItemMouseHover</a></span>(<a href="../../../system/windows/forms/ListViewItemMouseHoverEventHandler.html" title="class in system.windows.forms">ListViewItemMouseHoverEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removeItemMouseHover.</div>
 </td>
 </tr>
-<tr id="i103" class="rowColor">
+<tr id="i107" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/ListView.html#removeItemSelectionChanged-system.windows.forms.ListViewItemSelectionChangedEventHandler-">removeItemSelectionChanged</a></span>(<a href="../../../system/windows/forms/ListViewItemSelectionChangedEventHandler.html" title="class in system.windows.forms">ListViewItemSelectionChangedEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removeItemSelectionChanged.</div>
 </td>
 </tr>
-<tr id="i104" class="altColor">
+<tr id="i108" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/ListView.html#removePaddingChanged-system.EventHandler-">removePaddingChanged</a></span>(<a href="../../../system/EventHandler.html" title="class in system">EventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removePaddingChanged.</div>
 </td>
 </tr>
-<tr id="i105" class="rowColor">
+<tr id="i109" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/ListView.html#removePaint-system.windows.forms.PaintEventHandler-">removePaint</a></span>(<a href="../../../system/windows/forms/PaintEventHandler.html" title="class in system.windows.forms">PaintEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removePaint.</div>
 </td>
 </tr>
-<tr id="i106" class="altColor">
+<tr id="i110" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/ListView.html#removeRetrieveVirtualItem-system.windows.forms.RetrieveVirtualItemEventHandler-">removeRetrieveVirtualItem</a></span>(<a href="../../../system/windows/forms/RetrieveVirtualItemEventHandler.html" title="class in system.windows.forms">RetrieveVirtualItemEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removeRetrieveVirtualItem.</div>
 </td>
 </tr>
-<tr id="i107" class="rowColor">
+<tr id="i111" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/ListView.html#removeRightToLeftLayoutChanged-system.EventHandler-">removeRightToLeftLayoutChanged</a></span>(<a href="../../../system/EventHandler.html" title="class in system">EventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removeRightToLeftLayoutChanged.</div>
 </td>
 </tr>
-<tr id="i108" class="altColor">
+<tr id="i112" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/ListView.html#removeSearchForVirtualItem-system.windows.forms.SearchForVirtualItemEventHandler-">removeSearchForVirtualItem</a></span>(<a href="../../../system/windows/forms/SearchForVirtualItemEventHandler.html" title="class in system.windows.forms">SearchForVirtualItemEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removeSearchForVirtualItem.</div>
 </td>
 </tr>
-<tr id="i109" class="rowColor">
+<tr id="i113" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/ListView.html#removeSelectedIndexChanged-system.EventHandler-">removeSelectedIndexChanged</a></span>(<a href="../../../system/EventHandler.html" title="class in system">EventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removeSelectedIndexChanged.</div>
 </td>
 </tr>
-<tr id="i110" class="altColor">
+<tr id="i114" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/ListView.html#removeTextChanged-system.EventHandler-">removeTextChanged</a></span>(<a href="../../../system/EventHandler.html" title="class in system">EventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removeTextChanged.</div>
 </td>
 </tr>
-<tr id="i111" class="rowColor">
+<tr id="i115" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/ListView.html#removeVirtualItemsSelectionRangeChanged-system.windows.forms.ListViewVirtualItemsSelectionRangeChangedEventHandler-">removeVirtualItemsSelectionRangeChanged</a></span>(<a href="../../../system/windows/forms/ListViewVirtualItemsSelectionRangeChangedEventHandler.html" title="class in system.windows.forms">ListViewVirtualItemsSelectionRangeChangedEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removeVirtualItemsSelectionRangeChanged.</div>
 </td>
 </tr>
-<tr id="i112" class="altColor">
+<tr id="i116" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/ListView.html#setActivation-system.windows.forms.ItemActivation-">setActivation</a></span>(<a href="../../../system/windows/forms/ItemActivation.html" title="class in system.windows.forms">ItemActivation</a>&nbsp;Activation)</code>
 <div class="block">Sets the value of the .NET property Activation.</div>
 </td>
 </tr>
-<tr id="i113" class="rowColor">
+<tr id="i117" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/ListView.html#setAlignment-system.windows.forms.ListViewAlignment-">setAlignment</a></span>(<a href="../../../system/windows/forms/ListViewAlignment.html" title="class in system.windows.forms">ListViewAlignment</a>&nbsp;Alignment)</code>
 <div class="block">Sets the value of the .NET property Alignment.</div>
 </td>
 </tr>
-<tr id="i114" class="altColor">
+<tr id="i118" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/ListView.html#setAllowColumnReorder-boolean-">setAllowColumnReorder</a></span>(boolean&nbsp;AllowColumnReorder)</code>
 <div class="block">Sets the value of the .NET property AllowColumnReorder.</div>
 </td>
 </tr>
-<tr id="i115" class="rowColor">
+<tr id="i119" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/ListView.html#setAutoArrange-boolean-">setAutoArrange</a></span>(boolean&nbsp;AutoArrange)</code>
 <div class="block">Sets the value of the .NET property AutoArrange.</div>
 </td>
 </tr>
-<tr id="i116" class="altColor">
+<tr id="i120" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/ListView.html#setBackgroundImageTiled-boolean-">setBackgroundImageTiled</a></span>(boolean&nbsp;BackgroundImageTiled)</code>
 <div class="block">Sets the value of the .NET property BackgroundImageTiled.</div>
 </td>
 </tr>
-<tr id="i117" class="rowColor">
+<tr id="i121" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/ListView.html#setBorderStyle-system.windows.forms.BorderStyle-">setBorderStyle</a></span>(<a href="../../../system/windows/forms/BorderStyle.html" title="class in system.windows.forms">BorderStyle</a>&nbsp;BorderStyle)</code>
 <div class="block">Sets the value of the .NET property BorderStyle.</div>
 </td>
 </tr>
-<tr id="i118" class="altColor">
+<tr id="i122" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/ListView.html#setCheckBoxes-boolean-">setCheckBoxes</a></span>(boolean&nbsp;CheckBoxes)</code>
 <div class="block">Sets the value of the .NET property CheckBoxes.</div>
 </td>
 </tr>
-<tr id="i119" class="rowColor">
+<tr id="i123" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/ListView.html#setFocusedItem-system.windows.forms.ListViewItem-">setFocusedItem</a></span>(<a href="../../../system/windows/forms/ListViewItem.html" title="class in system.windows.forms">ListViewItem</a>&nbsp;FocusedItem)</code>
 <div class="block">Sets the value of the .NET property FocusedItem.</div>
 </td>
 </tr>
-<tr id="i120" class="altColor">
+<tr id="i124" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/ListView.html#setFullRowSelect-boolean-">setFullRowSelect</a></span>(boolean&nbsp;FullRowSelect)</code>
 <div class="block">Sets the value of the .NET property FullRowSelect.</div>
 </td>
 </tr>
-<tr id="i121" class="rowColor">
+<tr id="i125" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/ListView.html#setGridLines-boolean-">setGridLines</a></span>(boolean&nbsp;GridLines)</code>
 <div class="block">Sets the value of the .NET property GridLines.</div>
 </td>
 </tr>
-<tr id="i122" class="altColor">
+<tr id="i126" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/ListView.html#setGroupImageList-system.windows.forms.ImageList-">setGroupImageList</a></span>(<a href="../../../system/windows/forms/ImageList.html" title="class in system.windows.forms">ImageList</a>&nbsp;GroupImageList)</code>
 <div class="block">Sets the value of the .NET property GroupImageList.</div>
 </td>
 </tr>
-<tr id="i123" class="rowColor">
+<tr id="i127" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/ListView.html#setHeaderStyle-system.windows.forms.ColumnHeaderStyle-">setHeaderStyle</a></span>(<a href="../../../system/windows/forms/ColumnHeaderStyle.html" title="class in system.windows.forms">ColumnHeaderStyle</a>&nbsp;HeaderStyle)</code>
 <div class="block">Sets the value of the .NET property HeaderStyle.</div>
 </td>
 </tr>
-<tr id="i124" class="altColor">
+<tr id="i128" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/ListView.html#setHideSelection-boolean-">setHideSelection</a></span>(boolean&nbsp;HideSelection)</code>
 <div class="block">Sets the value of the .NET property HideSelection.</div>
 </td>
 </tr>
-<tr id="i125" class="rowColor">
+<tr id="i129" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/ListView.html#setHotTracking-boolean-">setHotTracking</a></span>(boolean&nbsp;HotTracking)</code>
 <div class="block">Sets the value of the .NET property HotTracking.</div>
 </td>
 </tr>
-<tr id="i126" class="altColor">
+<tr id="i130" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/ListView.html#setHoverSelection-boolean-">setHoverSelection</a></span>(boolean&nbsp;HoverSelection)</code>
 <div class="block">Sets the value of the .NET property HoverSelection.</div>
 </td>
 </tr>
-<tr id="i127" class="rowColor">
+<tr id="i131" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/ListView.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(<a href="https://www.jcobridge.com/api-java_2.6.10/org/mases/jcobridge/JCObject.html?is-external=true" title="class or interface in org.mases.jcobridge">JCObject</a>&nbsp;instance)</code>
 <div class="block">Sets the underlying object managed by the bridge.</div>
 </td>
 </tr>
-<tr id="i128" class="altColor">
+<tr id="i132" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/ListView.html#setLabelEdit-boolean-">setLabelEdit</a></span>(boolean&nbsp;LabelEdit)</code>
 <div class="block">Sets the value of the .NET property LabelEdit.</div>
 </td>
 </tr>
-<tr id="i129" class="rowColor">
+<tr id="i133" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/ListView.html#setLabelWrap-boolean-">setLabelWrap</a></span>(boolean&nbsp;LabelWrap)</code>
 <div class="block">Sets the value of the .NET property LabelWrap.</div>
 </td>
 </tr>
-<tr id="i130" class="altColor">
+<tr id="i134" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/ListView.html#setLargeImageList-system.windows.forms.ImageList-">setLargeImageList</a></span>(<a href="../../../system/windows/forms/ImageList.html" title="class in system.windows.forms">ImageList</a>&nbsp;LargeImageList)</code>
 <div class="block">Sets the value of the .NET property LargeImageList.</div>
 </td>
 </tr>
-<tr id="i131" class="rowColor">
+<tr id="i135" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/ListView.html#setListViewItemSorter-system.collections.IComparer-">setListViewItemSorter</a></span>(<a href="../../../system/collections/IComparer.html" title="interface in system.collections">IComparer</a>&nbsp;ListViewItemSorter)</code>
 <div class="block">Sets the value of the .NET property ListViewItemSorter.</div>
 </td>
 </tr>
-<tr id="i132" class="altColor">
+<tr id="i136" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/ListView.html#setMultiSelect-boolean-">setMultiSelect</a></span>(boolean&nbsp;MultiSelect)</code>
 <div class="block">Sets the value of the .NET property MultiSelect.</div>
 </td>
 </tr>
-<tr id="i133" class="rowColor">
+<tr id="i137" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/ListView.html#setOwnerDraw-boolean-">setOwnerDraw</a></span>(boolean&nbsp;OwnerDraw)</code>
 <div class="block">Sets the value of the .NET property OwnerDraw.</div>
 </td>
 </tr>
-<tr id="i134" class="altColor">
+<tr id="i138" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/ListView.html#setPadding-system.windows.forms.Padding-">setPadding</a></span>(<a href="../../../system/windows/forms/Padding.html" title="class in system.windows.forms">Padding</a>&nbsp;Padding)</code>
 <div class="block">Sets the value of the .NET property Padding.</div>
 </td>
 </tr>
-<tr id="i135" class="rowColor">
+<tr id="i139" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/ListView.html#setRightToLeftLayout-boolean-">setRightToLeftLayout</a></span>(boolean&nbsp;RightToLeftLayout)</code>
 <div class="block">Sets the value of the .NET property RightToLeftLayout.</div>
 </td>
 </tr>
-<tr id="i136" class="altColor">
+<tr id="i140" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/ListView.html#setScrollable-boolean-">setScrollable</a></span>(boolean&nbsp;Scrollable)</code>
 <div class="block">Sets the value of the .NET property Scrollable.</div>
 </td>
 </tr>
-<tr id="i137" class="rowColor">
+<tr id="i141" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/ListView.html#setShowGroups-boolean-">setShowGroups</a></span>(boolean&nbsp;ShowGroups)</code>
 <div class="block">Sets the value of the .NET property ShowGroups.</div>
 </td>
 </tr>
-<tr id="i138" class="altColor">
+<tr id="i142" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/ListView.html#setShowItemToolTips-boolean-">setShowItemToolTips</a></span>(boolean&nbsp;ShowItemToolTips)</code>
 <div class="block">Sets the value of the .NET property ShowItemToolTips.</div>
 </td>
 </tr>
-<tr id="i139" class="rowColor">
+<tr id="i143" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/ListView.html#setSmallImageList-system.windows.forms.ImageList-">setSmallImageList</a></span>(<a href="../../../system/windows/forms/ImageList.html" title="class in system.windows.forms">ImageList</a>&nbsp;SmallImageList)</code>
 <div class="block">Sets the value of the .NET property SmallImageList.</div>
 </td>
 </tr>
-<tr id="i140" class="altColor">
+<tr id="i144" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/ListView.html#setSorting-system.windows.forms.SortOrder-">setSorting</a></span>(<a href="../../../system/windows/forms/SortOrder.html" title="class in system.windows.forms">SortOrder</a>&nbsp;Sorting)</code>
 <div class="block">Sets the value of the .NET property Sorting.</div>
 </td>
 </tr>
-<tr id="i141" class="rowColor">
+<tr id="i145" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/ListView.html#setStateImageList-system.windows.forms.ImageList-">setStateImageList</a></span>(<a href="../../../system/windows/forms/ImageList.html" title="class in system.windows.forms">ImageList</a>&nbsp;StateImageList)</code>
 <div class="block">Sets the value of the .NET property StateImageList.</div>
 </td>
 </tr>
-<tr id="i142" class="altColor">
+<tr id="i146" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/ListView.html#setTileSize-system.drawing.Size-">setTileSize</a></span>(<a href="../../../system/drawing/Size.html" title="class in system.drawing">Size</a>&nbsp;TileSize)</code>
 <div class="block">Sets the value of the .NET property TileSize.</div>
 </td>
 </tr>
-<tr id="i143" class="rowColor">
+<tr id="i147" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/ListView.html#setTopItem-system.windows.forms.ListViewItem-">setTopItem</a></span>(<a href="../../../system/windows/forms/ListViewItem.html" title="class in system.windows.forms">ListViewItem</a>&nbsp;TopItem)</code>
 <div class="block">Sets the value of the .NET property TopItem.</div>
 </td>
 </tr>
-<tr id="i144" class="altColor">
+<tr id="i148" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/ListView.html#setUseCompatibleStateImageBehavior-boolean-">setUseCompatibleStateImageBehavior</a></span>(boolean&nbsp;UseCompatibleStateImageBehavior)</code>
 <div class="block">Sets the value of the .NET property UseCompatibleStateImageBehavior.</div>
 </td>
 </tr>
-<tr id="i145" class="rowColor">
+<tr id="i149" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/ListView.html#setView-system.windows.forms.View-">setView</a></span>(<a href="../../../system/windows/forms/View.html" title="class in system.windows.forms">View</a>&nbsp;View)</code>
 <div class="block">Sets the value of the .NET property View.</div>
 </td>
 </tr>
-<tr id="i146" class="altColor">
+<tr id="i150" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/ListView.html#setVirtualListSize-int-">setVirtualListSize</a></span>(int&nbsp;VirtualListSize)</code>
 <div class="block">Sets the value of the .NET property VirtualListSize.</div>
 </td>
 </tr>
-<tr id="i147" class="rowColor">
+<tr id="i151" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/ListView.html#setVirtualMode-boolean-">setVirtualMode</a></span>(boolean&nbsp;VirtualMode)</code>
 <div class="block">Sets the value of the .NET property VirtualMode.</div>
 </td>
 </tr>
-<tr id="i148" class="altColor">
+<tr id="i152" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/ListView.html#Sort--">Sort</a></span>()</code>
 <div class="block">Invokes the .NET member Sort.</div>
@@ -1663,6 +1691,44 @@ extends <a href="../../../system/windows/forms/Control.html" title="class in sys
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>handler</code> - the argument of type <code>DrawListViewSubItemEventHandler</code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/DOCUMENTATION_MEMBER_NAME" target="_top">.NET documentation</a></dd>
+</dl>
+</li>
+</ul>
+<a name="addGroupCollapsedStateChanged-system.EventHandler_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addGroupCollapsedStateChanged</h4>
+<pre>public&nbsp;void&nbsp;addGroupCollapsedStateChanged(<a href="../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../system/windows/forms/ListViewGroupEventArgs.html" title="class in system.windows.forms">ListViewGroupEventArgs</a>&gt;&nbsp;handler)
+                                   throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member addGroupCollapsedStateChanged.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>handler</code> - the argument of type <code>EventHandler_1&lt;ListViewGroupEventArgs&gt;</code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/DOCUMENTATION_MEMBER_NAME" target="_top">.NET documentation</a></dd>
+</dl>
+</li>
+</ul>
+<a name="addGroupTaskLinkClick-system.EventHandler_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addGroupTaskLinkClick</h4>
+<pre>public&nbsp;void&nbsp;addGroupTaskLinkClick(<a href="../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../system/windows/forms/ListViewGroupEventArgs.html" title="class in system.windows.forms">ListViewGroupEventArgs</a>&gt;&nbsp;handler)
+                           throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member addGroupTaskLinkClick.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>handler</code> - the argument of type <code>EventHandler_1&lt;ListViewGroupEventArgs&gt;</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
@@ -3898,6 +3964,44 @@ extends <a href="../../../system/windows/forms/Control.html" title="class in sys
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>handler</code> - the argument of type <code>DrawListViewSubItemEventHandler</code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/DOCUMENTATION_MEMBER_NAME" target="_top">.NET documentation</a></dd>
+</dl>
+</li>
+</ul>
+<a name="removeGroupCollapsedStateChanged-system.EventHandler_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>removeGroupCollapsedStateChanged</h4>
+<pre>public&nbsp;void&nbsp;removeGroupCollapsedStateChanged(<a href="../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../system/windows/forms/ListViewGroupEventArgs.html" title="class in system.windows.forms">ListViewGroupEventArgs</a>&gt;&nbsp;handler)
+                                      throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member removeGroupCollapsedStateChanged.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>handler</code> - the argument of type <code>EventHandler_1&lt;ListViewGroupEventArgs&gt;</code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/DOCUMENTATION_MEMBER_NAME" target="_top">.NET documentation</a></dd>
+</dl>
+</li>
+</ul>
+<a name="removeGroupTaskLinkClick-system.EventHandler_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>removeGroupTaskLinkClick</h4>
+<pre>public&nbsp;void&nbsp;removeGroupTaskLinkClick(<a href="../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../system/windows/forms/ListViewGroupEventArgs.html" title="class in system.windows.forms">ListViewGroupEventArgs</a>&gt;&nbsp;handler)
+                              throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member removeGroupTaskLinkClick.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>handler</code> - the argument of type <code>EventHandler_1&lt;ListViewGroupEventArgs&gt;</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
 <dt><span class="seeLabel">See Also:</span></dt>

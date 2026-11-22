@@ -294,14 +294,14 @@ extends <a href="../../../system/windows/data/BindingBase.html" title="class in 
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>static void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/data/Binding.html#AddSourceUpdatedHandler-system.windows.DependencyObject-system.EventHandler_1-">AddSourceUpdatedHandler</a></span>(<a href="../../../system/windows/DependencyObject.html" title="class in system.windows">DependencyObject</a>&nbsp;element,
-                       <a href="../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&nbsp;handler)</code>
+                       <a href="../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../system/windows/data/DataTransferEventArgs.html" title="class in system.windows.data">DataTransferEventArgs</a>&gt;&nbsp;handler)</code>
 <div class="block">Invokes the .NET member AddSourceUpdatedHandler.</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>static void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/data/Binding.html#AddTargetUpdatedHandler-system.windows.DependencyObject-system.EventHandler_1-">AddTargetUpdatedHandler</a></span>(<a href="../../../system/windows/DependencyObject.html" title="class in system.windows">DependencyObject</a>&nbsp;element,
-                       <a href="../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&nbsp;handler)</code>
+                       <a href="../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../system/windows/data/DataTransferEventArgs.html" title="class in system.windows.data">DataTransferEventArgs</a>&gt;&nbsp;handler)</code>
 <div class="block">Invokes the .NET member AddTargetUpdatedHandler.</div>
 </td>
 </tr>
@@ -456,7 +456,7 @@ extends <a href="../../../system/windows/data/BindingBase.html" title="class in 
 </td>
 </tr>
 <tr id="i27" class="rowColor">
-<td class="colFirst"><code><a href="../../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a></code></td>
+<td class="colFirst"><code><a href="../../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a>&lt;<a href="../../../system/windows/controls/ValidationRule.html" title="class in system.windows.controls">ValidationRule</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/data/Binding.html#getValidationRules--">getValidationRules</a></span>()</code>
 <div class="block">Gets the value of the .NET property ValidationRules.</div>
 </td>
@@ -476,14 +476,14 @@ extends <a href="../../../system/windows/data/BindingBase.html" title="class in 
 <tr id="i30" class="altColor">
 <td class="colFirst"><code>static void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/data/Binding.html#RemoveSourceUpdatedHandler-system.windows.DependencyObject-system.EventHandler_1-">RemoveSourceUpdatedHandler</a></span>(<a href="../../../system/windows/DependencyObject.html" title="class in system.windows">DependencyObject</a>&nbsp;element,
-                          <a href="../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&nbsp;handler)</code>
+                          <a href="../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../system/windows/data/DataTransferEventArgs.html" title="class in system.windows.data">DataTransferEventArgs</a>&gt;&nbsp;handler)</code>
 <div class="block">Invokes the .NET member RemoveSourceUpdatedHandler.</div>
 </td>
 </tr>
 <tr id="i31" class="rowColor">
 <td class="colFirst"><code>static void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/data/Binding.html#RemoveTargetUpdatedHandler-system.windows.DependencyObject-system.EventHandler_1-">RemoveTargetUpdatedHandler</a></span>(<a href="../../../system/windows/DependencyObject.html" title="class in system.windows">DependencyObject</a>&nbsp;element,
-                          <a href="../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&nbsp;handler)</code>
+                          <a href="../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../system/windows/data/DataTransferEventArgs.html" title="class in system.windows.data">DataTransferEventArgs</a>&gt;&nbsp;handler)</code>
 <div class="block">Invokes the .NET member RemoveTargetUpdatedHandler.</div>
 </td>
 </tr>
@@ -834,7 +834,7 @@ extends <a href="../../../system/windows/data/BindingBase.html" title="class in 
 <li class="blockList">
 <h4>AddSourceUpdatedHandler</h4>
 <pre>public static&nbsp;void&nbsp;AddSourceUpdatedHandler(<a href="../../../system/windows/DependencyObject.html" title="class in system.windows">DependencyObject</a>&nbsp;element,
-                                           <a href="../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&nbsp;handler)
+                                           <a href="../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../system/windows/data/DataTransferEventArgs.html" title="class in system.windows.data">DataTransferEventArgs</a>&gt;&nbsp;handler)
                                     throws java.lang.Throwable,
                                            <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
                                            <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
@@ -847,7 +847,7 @@ extends <a href="../../../system/windows/data/BindingBase.html" title="class in 
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>element</code> - the argument of type <code>DependencyObject</code></dd>
-<dd><code>handler</code> - the argument of type <code>EventHandler_1</code></dd>
+<dd><code>handler</code> - the argument of type <code>EventHandler_1&lt;DataTransferEventArgs&gt;</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
 <dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code> - if the .NET member raises it</dd>
@@ -869,7 +869,7 @@ extends <a href="../../../system/windows/data/BindingBase.html" title="class in 
 <li class="blockList">
 <h4>AddTargetUpdatedHandler</h4>
 <pre>public static&nbsp;void&nbsp;AddTargetUpdatedHandler(<a href="../../../system/windows/DependencyObject.html" title="class in system.windows">DependencyObject</a>&nbsp;element,
-                                           <a href="../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&nbsp;handler)
+                                           <a href="../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../system/windows/data/DataTransferEventArgs.html" title="class in system.windows.data">DataTransferEventArgs</a>&gt;&nbsp;handler)
                                     throws java.lang.Throwable,
                                            <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
                                            <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
@@ -882,7 +882,7 @@ extends <a href="../../../system/windows/data/BindingBase.html" title="class in 
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>element</code> - the argument of type <code>DependencyObject</code></dd>
-<dd><code>handler</code> - the argument of type <code>EventHandler_1</code></dd>
+<dd><code>handler</code> - the argument of type <code>EventHandler_1&lt;DataTransferEventArgs&gt;</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
 <dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code> - if the .NET member raises it</dd>
@@ -1440,17 +1440,17 @@ extends <a href="../../../system/windows/data/BindingBase.html" title="class in 
 <ul class="blockList">
 <li class="blockList">
 <h4>getValidationRules</h4>
-<pre>public&nbsp;<a href="../../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a>&nbsp;getValidationRules()
-                                throws java.lang.Throwable,
-                                       <a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
-                                       <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                                       <a href="../../../system/RankException.html" title="class in system">RankException</a>,
-                                       <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                                       <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
-                                       <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
-                                       <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                                       <a href="../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
-                                       <a href="../../../system/InvalidCastException.html" title="class in system">InvalidCastException</a></pre>
+<pre>public&nbsp;<a href="../../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a>&lt;<a href="../../../system/windows/controls/ValidationRule.html" title="class in system.windows.controls">ValidationRule</a>&gt;&nbsp;getValidationRules()
+                                                throws java.lang.Throwable,
+                                                       <a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                                       <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                                       <a href="../../../system/RankException.html" title="class in system">RankException</a>,
+                                                       <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                                       <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                                       <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                                       <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                                       <a href="../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                                                       <a href="../../../system/InvalidCastException.html" title="class in system">InvalidCastException</a></pre>
 <div class="block">Gets the value of the .NET property ValidationRules.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -1536,7 +1536,7 @@ extends <a href="../../../system/windows/data/BindingBase.html" title="class in 
 <li class="blockList">
 <h4>RemoveSourceUpdatedHandler</h4>
 <pre>public static&nbsp;void&nbsp;RemoveSourceUpdatedHandler(<a href="../../../system/windows/DependencyObject.html" title="class in system.windows">DependencyObject</a>&nbsp;element,
-                                              <a href="../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&nbsp;handler)
+                                              <a href="../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../system/windows/data/DataTransferEventArgs.html" title="class in system.windows.data">DataTransferEventArgs</a>&gt;&nbsp;handler)
                                        throws java.lang.Throwable,
                                               <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
                                               <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
@@ -1551,7 +1551,7 @@ extends <a href="../../../system/windows/data/BindingBase.html" title="class in 
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>element</code> - the argument of type <code>DependencyObject</code></dd>
-<dd><code>handler</code> - the argument of type <code>EventHandler_1</code></dd>
+<dd><code>handler</code> - the argument of type <code>EventHandler_1&lt;DataTransferEventArgs&gt;</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
 <dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code> - if the .NET member raises it</dd>
@@ -1575,7 +1575,7 @@ extends <a href="../../../system/windows/data/BindingBase.html" title="class in 
 <li class="blockList">
 <h4>RemoveTargetUpdatedHandler</h4>
 <pre>public static&nbsp;void&nbsp;RemoveTargetUpdatedHandler(<a href="../../../system/windows/DependencyObject.html" title="class in system.windows">DependencyObject</a>&nbsp;element,
-                                              <a href="../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&nbsp;handler)
+                                              <a href="../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../system/windows/data/DataTransferEventArgs.html" title="class in system.windows.data">DataTransferEventArgs</a>&gt;&nbsp;handler)
                                        throws java.lang.Throwable,
                                               <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
                                               <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
@@ -1590,7 +1590,7 @@ extends <a href="../../../system/windows/data/BindingBase.html" title="class in 
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>element</code> - the argument of type <code>DependencyObject</code></dd>
-<dd><code>handler</code> - the argument of type <code>EventHandler_1</code></dd>
+<dd><code>handler</code> - the argument of type <code>EventHandler_1&lt;DataTransferEventArgs&gt;</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
 <dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code> - if the .NET member raises it</dd>

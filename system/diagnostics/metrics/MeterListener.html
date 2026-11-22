@@ -267,7 +267,7 @@ implements java.lang.AutoCloseable</pre>
 </td>
 </tr>
 <tr id="i5" class="rowColor">
-<td class="colFirst"><code><a href="../../../system/Action_2.html" title="class in system">Action_2</a></code></td>
+<td class="colFirst"><code><a href="../../../system/Action_2.html" title="class in system">Action_2</a>&lt;<a href="../../../system/diagnostics/metrics/Instrument.html" title="class in system.diagnostics.metrics">Instrument</a>,<a href="../../../system/diagnostics/metrics/MeterListener.html" title="class in system.diagnostics.metrics">MeterListener</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/diagnostics/metrics/MeterListener.html#getInstrumentPublished--">getInstrumentPublished</a></span>()</code>
 <div class="block">Gets the value of the .NET property InstrumentPublished.</div>
 </td>
@@ -303,7 +303,7 @@ implements java.lang.AutoCloseable</pre>
 </td>
 </tr>
 <tr id="i11" class="rowColor">
-<td class="colFirst"><code><a href="../../../system/Action_2.html" title="class in system">Action_2</a></code></td>
+<td class="colFirst"><code><a href="../../../system/Action_2.html" title="class in system">Action_2</a>&lt;<a href="../../../system/diagnostics/metrics/Instrument.html" title="class in system.diagnostics.metrics">Instrument</a>,<a href="../../../system/Object.html" title="class in system">Object</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/diagnostics/metrics/MeterListener.html#getMeasurementsCompleted--">getMeasurementsCompleted</a></span>()</code>
 <div class="block">Gets the value of the .NET property MeasurementsCompleted.</div>
 </td>
@@ -316,7 +316,7 @@ implements java.lang.AutoCloseable</pre>
 </tr>
 <tr id="i13" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/diagnostics/metrics/MeterListener.html#setInstrumentPublished-system.Action_2-">setInstrumentPublished</a></span>(<a href="../../../system/Action_2.html" title="class in system">Action_2</a>&nbsp;InstrumentPublished)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/diagnostics/metrics/MeterListener.html#setInstrumentPublished-system.Action_2-">setInstrumentPublished</a></span>(<a href="../../../system/Action_2.html" title="class in system">Action_2</a>&lt;<a href="../../../system/diagnostics/metrics/Instrument.html" title="class in system.diagnostics.metrics">Instrument</a>,<a href="../../../system/diagnostics/metrics/MeterListener.html" title="class in system.diagnostics.metrics">MeterListener</a>&gt;&nbsp;InstrumentPublished)</code>
 <div class="block">Sets the value of the .NET property InstrumentPublished.</div>
 </td>
 </tr>
@@ -328,7 +328,7 @@ implements java.lang.AutoCloseable</pre>
 </tr>
 <tr id="i15" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/diagnostics/metrics/MeterListener.html#setMeasurementsCompleted-system.Action_2-">setMeasurementsCompleted</a></span>(<a href="../../../system/Action_2.html" title="class in system">Action_2</a>&nbsp;MeasurementsCompleted)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/diagnostics/metrics/MeterListener.html#setMeasurementsCompleted-system.Action_2-">setMeasurementsCompleted</a></span>(<a href="../../../system/Action_2.html" title="class in system">Action_2</a>&lt;<a href="../../../system/diagnostics/metrics/Instrument.html" title="class in system.diagnostics.metrics">Instrument</a>,<a href="../../../system/Object.html" title="class in system">Object</a>&gt;&nbsp;MeasurementsCompleted)</code>
 <div class="block">Sets the value of the .NET property MeasurementsCompleted.</div>
 </td>
 </tr>
@@ -655,8 +655,8 @@ implements java.lang.AutoCloseable</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>getInstrumentPublished</h4>
-<pre>public&nbsp;<a href="../../../system/Action_2.html" title="class in system">Action_2</a>&nbsp;getInstrumentPublished()
-                                throws java.lang.Throwable</pre>
+<pre>public&nbsp;<a href="../../../system/Action_2.html" title="class in system">Action_2</a>&lt;<a href="../../../system/diagnostics/metrics/Instrument.html" title="class in system.diagnostics.metrics">Instrument</a>,<a href="../../../system/diagnostics/metrics/MeterListener.html" title="class in system.diagnostics.metrics">MeterListener</a>&gt;&nbsp;getInstrumentPublished()
+                                                          throws java.lang.Throwable</pre>
 <div class="block">Gets the value of the .NET property InstrumentPublished.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -769,8 +769,8 @@ implements java.lang.AutoCloseable</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>getMeasurementsCompleted</h4>
-<pre>public&nbsp;<a href="../../../system/Action_2.html" title="class in system">Action_2</a>&nbsp;getMeasurementsCompleted()
-                                  throws java.lang.Throwable</pre>
+<pre>public&nbsp;<a href="../../../system/Action_2.html" title="class in system">Action_2</a>&lt;<a href="../../../system/diagnostics/metrics/Instrument.html" title="class in system.diagnostics.metrics">Instrument</a>,<a href="../../../system/Object.html" title="class in system">Object</a>&gt;&nbsp;getMeasurementsCompleted()
+                                                     throws java.lang.Throwable</pre>
 <div class="block">Gets the value of the .NET property MeasurementsCompleted.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -825,7 +825,7 @@ implements java.lang.AutoCloseable</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>setInstrumentPublished</h4>
-<pre>public&nbsp;void&nbsp;setInstrumentPublished(<a href="../../../system/Action_2.html" title="class in system">Action_2</a>&nbsp;InstrumentPublished)
+<pre>public&nbsp;void&nbsp;setInstrumentPublished(<a href="../../../system/Action_2.html" title="class in system">Action_2</a>&lt;<a href="../../../system/diagnostics/metrics/Instrument.html" title="class in system.diagnostics.metrics">Instrument</a>,<a href="../../../system/diagnostics/metrics/MeterListener.html" title="class in system.diagnostics.metrics">MeterListener</a>&gt;&nbsp;InstrumentPublished)
                             throws java.lang.Throwable</pre>
 <div class="block">Sets the value of the .NET property InstrumentPublished.</div>
 <dl>
@@ -861,7 +861,7 @@ implements java.lang.AutoCloseable</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>setMeasurementsCompleted</h4>
-<pre>public&nbsp;void&nbsp;setMeasurementsCompleted(<a href="../../../system/Action_2.html" title="class in system">Action_2</a>&nbsp;MeasurementsCompleted)
+<pre>public&nbsp;void&nbsp;setMeasurementsCompleted(<a href="../../../system/Action_2.html" title="class in system">Action_2</a>&lt;<a href="../../../system/diagnostics/metrics/Instrument.html" title="class in system.diagnostics.metrics">Instrument</a>,<a href="../../../system/Object.html" title="class in system">Object</a>&gt;&nbsp;MeasurementsCompleted)
                               throws java.lang.Throwable</pre>
 <div class="block">Sets the value of the .NET property MeasurementsCompleted.</div>
 <dl>

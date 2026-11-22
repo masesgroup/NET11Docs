@@ -275,7 +275,7 @@ extends <a href="../../../system/componentmodel/CancelEventArgs.html" title="cla
 </td>
 </tr>
 <tr id="i6" class="altColor">
-<td class="colFirst"><code><a href="../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a></code></td>
+<td class="colFirst"><code><a href="../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&lt;<a href="../../../system/windows/UIElement.html" title="class in system.windows">UIElement</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/controls/InkCanvasSelectionChangingEventArgs.html#GetSelectedElements--">GetSelectedElements</a></span>()</code>
 <div class="block">Invokes the .NET member GetSelectedElements.</div>
 </td>
@@ -294,7 +294,7 @@ extends <a href="../../../system/componentmodel/CancelEventArgs.html" title="cla
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/controls/InkCanvasSelectionChangingEventArgs.html#SetSelectedElements-system.collections.generic.IEnumerable_1-">SetSelectedElements</a></span>(<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;selectedElements)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/controls/InkCanvasSelectionChangingEventArgs.html#SetSelectedElements-system.collections.generic.IEnumerable_1-">SetSelectedElements</a></span>(<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/windows/UIElement.html" title="class in system.windows">UIElement</a>&gt;&nbsp;selectedElements)</code>
 <div class="block">Invokes the .NET member SetSelectedElements.</div>
 </td>
 </tr>
@@ -559,15 +559,15 @@ extends <a href="../../../system/componentmodel/CancelEventArgs.html" title="cla
 <ul class="blockList">
 <li class="blockList">
 <h4>GetSelectedElements</h4>
-<pre>public&nbsp;<a href="../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&nbsp;GetSelectedElements()
-                                         throws java.lang.Throwable,
-                                                <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
-                                                <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                                                <a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
-                                                <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                                                <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
-                                                <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
-                                                <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></pre>
+<pre>public&nbsp;<a href="../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&lt;<a href="../../../system/windows/UIElement.html" title="class in system.windows">UIElement</a>&gt;&nbsp;GetSelectedElements()
+                                                    throws java.lang.Throwable,
+                                                           <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                                           <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                                           <a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                                           <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                                           <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                                           <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                                           <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></pre>
 <div class="block">Invokes the .NET member GetSelectedElements.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -650,7 +650,7 @@ extends <a href="../../../system/componentmodel/CancelEventArgs.html" title="cla
 <ul class="blockList">
 <li class="blockList">
 <h4>SetSelectedElements</h4>
-<pre>public&nbsp;void&nbsp;SetSelectedElements(<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;selectedElements)
+<pre>public&nbsp;void&nbsp;SetSelectedElements(<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/windows/UIElement.html" title="class in system.windows">UIElement</a>&gt;&nbsp;selectedElements)
                          throws java.lang.Throwable,
                                 <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
                                 <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
@@ -663,7 +663,7 @@ extends <a href="../../../system/componentmodel/CancelEventArgs.html" title="cla
 <div class="block">Invokes the .NET member SetSelectedElements.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>selectedElements</code> - the argument of type <code>IEnumerable_1</code></dd>
+<dd><code>selectedElements</code> - the argument of type <code>IEnumerable_1&lt;UIElement&gt;</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
 <dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code> - if the .NET member raises it</dd>

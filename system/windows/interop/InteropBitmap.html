@@ -299,7 +299,7 @@ extends <a href="../../../system/windows/media/imaging/BitmapSource.html" title=
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/interop/InteropBitmap.html#Invalidate-system.Nullable_1-">Invalidate</a></span>(<a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;dirtyRect)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/interop/InteropBitmap.html#Invalidate-system.Nullable_1-">Invalidate</a></span>(<a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&lt;<a href="../../../system/windows/Int32Rect.html" title="class in system.windows">Int32Rect</a>&gt;&nbsp;dirtyRect)</code>
 <div class="block">Invokes the .NET member Invalidate.</div>
 </td>
 </tr>
@@ -315,7 +315,7 @@ extends <a href="../../../system/windows/media/imaging/BitmapSource.html" title=
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;system.windows.media.imaging.<a href="../../../system/windows/media/imaging/BitmapSource.html" title="class in system.windows.media.imaging">BitmapSource</a></h3>
-<code><a href="../../../system/windows/media/imaging/BitmapSource.html#addDownloadCompleted-system.EventHandler-">addDownloadCompleted</a>, <a href="../../../system/windows/media/imaging/BitmapSource.html#CloneCurrentValueNewBitmapSource--">CloneCurrentValueNewBitmapSource</a>, <a href="../../../system/windows/media/imaging/BitmapSource.html#CloneNewBitmapSource--">CloneNewBitmapSource</a>, <a href="../../../system/windows/media/imaging/BitmapSource.html#CopyPixels-system.Array-int-int-">CopyPixels</a>, <a href="../../../system/windows/media/imaging/BitmapSource.html#CopyPixels-system.windows.Int32Rect-system.Array-int-int-">CopyPixels</a>, <a href="../../../system/windows/media/imaging/BitmapSource.html#Create-int-int-double-double-system.windows.media.PixelFormat-system.windows.media.imaging.BitmapPalette-system.Array-int-">Create</a>, <a href="../../../system/windows/media/imaging/BitmapSource.html#getDpiX--">getDpiX</a>, <a href="../../../system/windows/media/imaging/BitmapSource.html#getDpiY--">getDpiY</a>, <a href="../../../system/windows/media/imaging/BitmapSource.html#getFormat--">getFormat</a>, <a href="../../../system/windows/media/imaging/BitmapSource.html#getIsDownloading--">getIsDownloading</a>, <a href="../../../system/windows/media/imaging/BitmapSource.html#getPalette--">getPalette</a>, <a href="../../../system/windows/media/imaging/BitmapSource.html#getPixelHeight--">getPixelHeight</a>, <a href="../../../system/windows/media/imaging/BitmapSource.html#getPixelWidth--">getPixelWidth</a>, <a href="../../../system/windows/media/imaging/BitmapSource.html#removeDownloadCompleted-system.EventHandler-">removeDownloadCompleted</a></code></li>
+<code><a href="../../../system/windows/media/imaging/BitmapSource.html#addDecodeFailed-system.EventHandler_1-">addDecodeFailed</a>, <a href="../../../system/windows/media/imaging/BitmapSource.html#addDownloadCompleted-system.EventHandler-">addDownloadCompleted</a>, <a href="../../../system/windows/media/imaging/BitmapSource.html#addDownloadFailed-system.EventHandler_1-">addDownloadFailed</a>, <a href="../../../system/windows/media/imaging/BitmapSource.html#addDownloadProgress-system.EventHandler_1-">addDownloadProgress</a>, <a href="../../../system/windows/media/imaging/BitmapSource.html#CloneCurrentValueNewBitmapSource--">CloneCurrentValueNewBitmapSource</a>, <a href="../../../system/windows/media/imaging/BitmapSource.html#CloneNewBitmapSource--">CloneNewBitmapSource</a>, <a href="../../../system/windows/media/imaging/BitmapSource.html#CopyPixels-system.Array-int-int-">CopyPixels</a>, <a href="../../../system/windows/media/imaging/BitmapSource.html#CopyPixels-system.windows.Int32Rect-system.Array-int-int-">CopyPixels</a>, <a href="../../../system/windows/media/imaging/BitmapSource.html#Create-int-int-double-double-system.windows.media.PixelFormat-system.windows.media.imaging.BitmapPalette-system.Array-int-">Create</a>, <a href="../../../system/windows/media/imaging/BitmapSource.html#getDpiX--">getDpiX</a>, <a href="../../../system/windows/media/imaging/BitmapSource.html#getDpiY--">getDpiY</a>, <a href="../../../system/windows/media/imaging/BitmapSource.html#getFormat--">getFormat</a>, <a href="../../../system/windows/media/imaging/BitmapSource.html#getIsDownloading--">getIsDownloading</a>, <a href="../../../system/windows/media/imaging/BitmapSource.html#getPalette--">getPalette</a>, <a href="../../../system/windows/media/imaging/BitmapSource.html#getPixelHeight--">getPixelHeight</a>, <a href="../../../system/windows/media/imaging/BitmapSource.html#getPixelWidth--">getPixelWidth</a>, <a href="../../../system/windows/media/imaging/BitmapSource.html#removeDecodeFailed-system.EventHandler_1-">removeDecodeFailed</a>, <a href="../../../system/windows/media/imaging/BitmapSource.html#removeDownloadCompleted-system.EventHandler-">removeDownloadCompleted</a>, <a href="../../../system/windows/media/imaging/BitmapSource.html#removeDownloadFailed-system.EventHandler_1-">removeDownloadFailed</a>, <a href="../../../system/windows/media/imaging/BitmapSource.html#removeDownloadProgress-system.EventHandler_1-">removeDownloadProgress</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.system.windows.media.ImageSource">
@@ -646,7 +646,7 @@ extends <a href="../../../system/windows/media/imaging/BitmapSource.html" title=
 <ul class="blockList">
 <li class="blockList">
 <h4>Invalidate</h4>
-<pre>public&nbsp;void&nbsp;Invalidate(<a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;dirtyRect)
+<pre>public&nbsp;void&nbsp;Invalidate(<a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&lt;<a href="../../../system/windows/Int32Rect.html" title="class in system.windows">Int32Rect</a>&gt;&nbsp;dirtyRect)
                 throws java.lang.Throwable,
                        <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
                        <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
@@ -671,7 +671,7 @@ extends <a href="../../../system/windows/media/imaging/BitmapSource.html" title=
 <div class="block">Invokes the .NET member Invalidate.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>dirtyRect</code> - the argument of type <code>Nullable_1</code></dd>
+<dd><code>dirtyRect</code> - the argument of type <code>Nullable_1&lt;Int32Rect&gt;</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
 <dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code> - if the .NET member raises it</dd>

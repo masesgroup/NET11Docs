@@ -32,6 +32,10 @@
 <meta name="keywords" content="getCurrentContextualReflectionContext()">
 <meta name="keywords" content="getDefault()">
 <meta name="keywords" content="getName()">
+<meta name="keywords" content="addUnloading()">
+<meta name="keywords" content="removeUnloading()">
+<meta name="keywords" content="addResolving()">
+<meta name="keywords" content="removeResolving()">
 <link rel="stylesheet" type="text/css" href="../../../stylesheet.css" title="Style">
 <script type="text/javascript" src="../../../script.js"></script>
 </head>
@@ -45,7 +49,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":9,"i2":10,"i3":9,"i4":9,"i5":9,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":9,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":9,"i20":10,"i21":10,"i22":10,"i23":10};
+var methods = {"i0":10,"i1":10,"i2":9,"i3":9,"i4":10,"i5":9,"i6":9,"i7":9,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":9,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":9,"i24":10,"i25":10,"i26":10,"i27":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -247,146 +251,170 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/loader/AssemblyLoadContext.html#addResolving-system.Func_3-">addResolving</a></span>(<a href="../../../system/Func_3.html" title="class in system">Func_3</a>&lt;<a href="../../../system/runtime/loader/AssemblyLoadContext.html" title="class in system.runtime.loader">AssemblyLoadContext</a>,<a href="../../../system/reflection/AssemblyName.html" title="class in system.reflection">AssemblyName</a>,<a href="../../../system/reflection/Assembly.html" title="class in system.reflection">Assembly</a>&gt;&nbsp;handler)</code>
+<div class="block">Invokes the .NET member addResolving.</div>
+</td>
+</tr>
+<tr id="i1" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/loader/AssemblyLoadContext.html#addUnloading-system.Action_1-">addUnloading</a></span>(<a href="../../../system/Action_1.html" title="class in system">Action_1</a>&lt;<a href="../../../system/runtime/loader/AssemblyLoadContext.html" title="class in system.runtime.loader">AssemblyLoadContext</a>&gt;&nbsp;handler)</code>
+<div class="block">Invokes the .NET member addUnloading.</div>
+</td>
+</tr>
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>static <a href="../../../system/runtime/loader/AssemblyLoadContext.html" title="class in system.runtime.loader">AssemblyLoadContext</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/loader/AssemblyLoadContext.html#cast-org.mases.jcobridge.netreflection.IJCOBridgeReflected-">cast</a></span>(<a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&nbsp;from)</code>
 <div class="block">Try to cast the <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection"><code>IJCOBridgeReflected</code></a> instance into <a href="../../../system/runtime/loader/AssemblyLoadContext.html" title="class in system.runtime.loader"><code>AssemblyLoadContext</code></a>, a cast assert is made to check if types are compatible.</div>
 </td>
 </tr>
-<tr id="i1" class="rowColor">
-<td class="colFirst"><code>static <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a></code></td>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code>static <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/runtime/loader/AssemblyLoadContext.html" title="class in system.runtime.loader">AssemblyLoadContext</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/loader/AssemblyLoadContext.html#getAll--">getAll</a></span>()</code>
 <div class="block">Gets the value of the .NET property All.</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
-<td class="colFirst"><code><a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a></code></td>
+<tr id="i4" class="altColor">
+<td class="colFirst"><code><a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/reflection/Assembly.html" title="class in system.reflection">Assembly</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/loader/AssemblyLoadContext.html#getAssemblies--">getAssemblies</a></span>()</code>
 <div class="block">Gets the value of the .NET property Assemblies.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../system/reflection/AssemblyName.html" title="class in system.reflection">AssemblyName</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/loader/AssemblyLoadContext.html#GetAssemblyName-java.lang.String-">GetAssemblyName</a></span>(java.lang.String&nbsp;assemblyPath)</code>
 <div class="block">Invokes the .NET member GetAssemblyName.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>static <a href="../../../system/runtime/loader/AssemblyLoadContext.html" title="class in system.runtime.loader">AssemblyLoadContext</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/loader/AssemblyLoadContext.html#getCurrentContextualReflectionContext--">getCurrentContextualReflectionContext</a></span>()</code>
 <div class="block">Gets the value of the .NET property CurrentContextualReflectionContext.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../system/runtime/loader/AssemblyLoadContext.html" title="class in system.runtime.loader">AssemblyLoadContext</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/loader/AssemblyLoadContext.html#getDefault--">getDefault</a></span>()</code>
 <div class="block">Gets the value of the .NET property Default.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/loader/AssemblyLoadContext.html#getIsCollectible--">getIsCollectible</a></span>()</code>
 <div class="block">Gets the value of the .NET property IsCollectible.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/loader/AssemblyLoadContext.html#getJCOAssemblyName--">getJCOAssemblyName</a></span>()</code>
 <div class="block">Returns the full name of the assembly of the .NET type.</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/loader/AssemblyLoadContext.html#getJCOClassName--">getJCOClassName</a></span>()</code>
 <div class="block">Returns the full name of the .NET type.</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>java.lang.Object</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/loader/AssemblyLoadContext.html#getJCOInstance--">getJCOInstance</a></span>()</code>
 <div class="block">Returns the underlying object managed by the bridge.</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/loader/AssemblyLoadContext.html#getJCOObjectName--">getJCOObjectName</a></span>()</code>
 <div class="block">Returns the name of the .NET type qualified with its assembly.</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code><a href="https://www.jcobridge.com/api-java_2.6.10/org/mases/jcobridge/JCType.html?is-external=true" title="class or interface in org.mases.jcobridge">JCType</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/loader/AssemblyLoadContext.html#getJCOType--">getJCOType</a></span>()</code>
 <div class="block">Returns the <a href="https://www.jcobridge.com/api-java_2.6.10/org/mases/jcobridge/JCType.html?is-external=true" title="class or interface in org.mases.jcobridge"><code>JCType</code></a> of the .NET type.</div>
 </td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>static <a href="../../../system/runtime/loader/AssemblyLoadContext.html" title="class in system.runtime.loader">AssemblyLoadContext</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/loader/AssemblyLoadContext.html#GetLoadContext-system.reflection.Assembly-">GetLoadContext</a></span>(<a href="../../../system/reflection/Assembly.html" title="class in system.reflection">Assembly</a>&nbsp;assembly)</code>
 <div class="block">Invokes the .NET member GetLoadContext.</div>
 </td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/loader/AssemblyLoadContext.html#getName--">getName</a></span>()</code>
 <div class="block">Gets the value of the .NET property Name.</div>
 </td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code><a href="../../../system/reflection/Assembly.html" title="class in system.reflection">Assembly</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/loader/AssemblyLoadContext.html#LoadFromAssemblyName-system.reflection.AssemblyName-">LoadFromAssemblyName</a></span>(<a href="../../../system/reflection/AssemblyName.html" title="class in system.reflection">AssemblyName</a>&nbsp;assemblyName)</code>
 <div class="block">Invokes the .NET member LoadFromAssemblyName.</div>
 </td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/reflection/Assembly.html" title="class in system.reflection">Assembly</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/loader/AssemblyLoadContext.html#LoadFromAssemblyPath-java.lang.String-">LoadFromAssemblyPath</a></span>(java.lang.String&nbsp;assemblyPath)</code>
 <div class="block">Invokes the .NET member LoadFromAssemblyPath.</div>
 </td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i18" class="altColor">
 <td class="colFirst"><code><a href="../../../system/reflection/Assembly.html" title="class in system.reflection">Assembly</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/loader/AssemblyLoadContext.html#LoadFromNativeImagePath-java.lang.String-java.lang.String-">LoadFromNativeImagePath</a></span>(java.lang.String&nbsp;nativeImagePath,
                        java.lang.String&nbsp;assemblyPath)</code>
 <div class="block">Invokes the .NET member LoadFromNativeImagePath.</div>
 </td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/reflection/Assembly.html" title="class in system.reflection">Assembly</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/loader/AssemblyLoadContext.html#LoadFromStream-system.io.Stream-">LoadFromStream</a></span>(<a href="../../../system/io/Stream.html" title="class in system.io">Stream</a>&nbsp;assembly)</code>
 <div class="block">Invokes the .NET member LoadFromStream.</div>
 </td>
 </tr>
-<tr id="i18" class="altColor">
+<tr id="i20" class="altColor">
 <td class="colFirst"><code><a href="../../../system/reflection/Assembly.html" title="class in system.reflection">Assembly</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/loader/AssemblyLoadContext.html#LoadFromStream-system.io.Stream-system.io.Stream-">LoadFromStream</a></span>(<a href="../../../system/io/Stream.html" title="class in system.io">Stream</a>&nbsp;assembly,
               <a href="../../../system/io/Stream.html" title="class in system.io">Stream</a>&nbsp;assemblySymbols)</code>
 <div class="block">Invokes the .NET member LoadFromStream.</div>
 </td>
 </tr>
-<tr id="i19" class="rowColor">
+<tr id="i21" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/loader/AssemblyLoadContext.html#removeResolving-system.Func_3-">removeResolving</a></span>(<a href="../../../system/Func_3.html" title="class in system">Func_3</a>&lt;<a href="../../../system/runtime/loader/AssemblyLoadContext.html" title="class in system.runtime.loader">AssemblyLoadContext</a>,<a href="../../../system/reflection/AssemblyName.html" title="class in system.reflection">AssemblyName</a>,<a href="../../../system/reflection/Assembly.html" title="class in system.reflection">Assembly</a>&gt;&nbsp;handler)</code>
+<div class="block">Invokes the .NET member removeResolving.</div>
+</td>
+</tr>
+<tr id="i22" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/loader/AssemblyLoadContext.html#removeUnloading-system.Action_1-">removeUnloading</a></span>(<a href="../../../system/Action_1.html" title="class in system">Action_1</a>&lt;<a href="../../../system/runtime/loader/AssemblyLoadContext.html" title="class in system.runtime.loader">AssemblyLoadContext</a>&gt;&nbsp;handler)</code>
+<div class="block">Invokes the .NET member removeUnloading.</div>
+</td>
+</tr>
+<tr id="i23" class="rowColor">
 <td class="colFirst"><code>static void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/loader/AssemblyLoadContext.html#SetAssemblyLocationOverride-system.Func_3-">SetAssemblyLocationOverride</a></span>(<a href="../../../system/Func_3.html" title="class in system">Func_3</a>&nbsp;locationOverride)</code>
 <div class="block">Invokes the .NET member SetAssemblyLocationOverride.</div>
 </td>
 </tr>
-<tr id="i20" class="altColor">
+<tr id="i24" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/loader/AssemblyLoadContext.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(<a href="https://www.jcobridge.com/api-java_2.6.10/org/mases/jcobridge/JCObject.html?is-external=true" title="class or interface in org.mases.jcobridge">JCObject</a>&nbsp;instance)</code>
 <div class="block">Sets the underlying object managed by the bridge.</div>
 </td>
 </tr>
-<tr id="i21" class="rowColor">
+<tr id="i25" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/loader/AssemblyLoadContext.html#SetProfileOptimizationRoot-java.lang.String-">SetProfileOptimizationRoot</a></span>(java.lang.String&nbsp;directoryPath)</code>
 <div class="block">Invokes the .NET member SetProfileOptimizationRoot.</div>
 </td>
 </tr>
-<tr id="i22" class="altColor">
+<tr id="i26" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/loader/AssemblyLoadContext.html#StartProfileOptimization-java.lang.String-">StartProfileOptimization</a></span>(java.lang.String&nbsp;profile)</code>
 <div class="block">Invokes the .NET member StartProfileOptimization.</div>
 </td>
 </tr>
-<tr id="i23" class="rowColor">
+<tr id="i27" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/loader/AssemblyLoadContext.html#Unload--">Unload</a></span>()</code>
 <div class="block">Invokes the .NET member Unload.</div>
@@ -563,6 +591,44 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <!--   -->
 </a>
 <h3>Method Detail</h3>
+<a name="addResolving-system.Func_3-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addResolving</h4>
+<pre>public&nbsp;void&nbsp;addResolving(<a href="../../../system/Func_3.html" title="class in system">Func_3</a>&lt;<a href="../../../system/runtime/loader/AssemblyLoadContext.html" title="class in system.runtime.loader">AssemblyLoadContext</a>,<a href="../../../system/reflection/AssemblyName.html" title="class in system.reflection">AssemblyName</a>,<a href="../../../system/reflection/Assembly.html" title="class in system.reflection">Assembly</a>&gt;&nbsp;handler)
+                  throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member addResolving.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>handler</code> - the argument of type <code>Func_3&lt;AssemblyLoadContext, AssemblyName, Assembly&gt;</code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/DOCUMENTATION_MEMBER_NAME" target="_top">.NET documentation</a></dd>
+</dl>
+</li>
+</ul>
+<a name="addUnloading-system.Action_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addUnloading</h4>
+<pre>public&nbsp;void&nbsp;addUnloading(<a href="../../../system/Action_1.html" title="class in system">Action_1</a>&lt;<a href="../../../system/runtime/loader/AssemblyLoadContext.html" title="class in system.runtime.loader">AssemblyLoadContext</a>&gt;&nbsp;handler)
+                  throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member addUnloading.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>handler</code> - the argument of type <code>Action_1&lt;AssemblyLoadContext&gt;</code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/DOCUMENTATION_MEMBER_NAME" target="_top">.NET documentation</a></dd>
+</dl>
+</li>
+</ul>
 <a name="cast-org.mases.jcobridge.netreflection.IJCOBridgeReflected-">
 <!--   -->
 </a>
@@ -588,8 +654,8 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <ul class="blockList">
 <li class="blockList">
 <h4>getAll</h4>
-<pre>public static&nbsp;<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;getAll()
-                            throws java.lang.Throwable</pre>
+<pre>public static&nbsp;<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/runtime/loader/AssemblyLoadContext.html" title="class in system.runtime.loader">AssemblyLoadContext</a>&gt;&nbsp;getAll()
+                                                 throws java.lang.Throwable</pre>
 <div class="block">Gets the value of the .NET property All.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -607,8 +673,8 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <ul class="blockList">
 <li class="blockList">
 <h4>getAssemblies</h4>
-<pre>public&nbsp;<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;getAssemblies()
-                            throws java.lang.Throwable</pre>
+<pre>public&nbsp;<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/reflection/Assembly.html" title="class in system.reflection">Assembly</a>&gt;&nbsp;getAssemblies()
+                                      throws java.lang.Throwable</pre>
 <div class="block">Gets the value of the .NET property Assemblies.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -1051,6 +1117,44 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <dd><code><a href="../../../system/io/IOException.html" title="class in system.io">IOException</a></code> - if the .NET member raises it</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="https://learn.microsoft.com/dotnet/api/System.Runtime.Loader.AssemblyLoadContext.LoadFromStream" target="_top">.NET documentation</a></dd>
+</dl>
+</li>
+</ul>
+<a name="removeResolving-system.Func_3-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>removeResolving</h4>
+<pre>public&nbsp;void&nbsp;removeResolving(<a href="../../../system/Func_3.html" title="class in system">Func_3</a>&lt;<a href="../../../system/runtime/loader/AssemblyLoadContext.html" title="class in system.runtime.loader">AssemblyLoadContext</a>,<a href="../../../system/reflection/AssemblyName.html" title="class in system.reflection">AssemblyName</a>,<a href="../../../system/reflection/Assembly.html" title="class in system.reflection">Assembly</a>&gt;&nbsp;handler)
+                     throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member removeResolving.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>handler</code> - the argument of type <code>Func_3&lt;AssemblyLoadContext, AssemblyName, Assembly&gt;</code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/DOCUMENTATION_MEMBER_NAME" target="_top">.NET documentation</a></dd>
+</dl>
+</li>
+</ul>
+<a name="removeUnloading-system.Action_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>removeUnloading</h4>
+<pre>public&nbsp;void&nbsp;removeUnloading(<a href="../../../system/Action_1.html" title="class in system">Action_1</a>&lt;<a href="../../../system/runtime/loader/AssemblyLoadContext.html" title="class in system.runtime.loader">AssemblyLoadContext</a>&gt;&nbsp;handler)
+                     throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member removeUnloading.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>handler</code> - the argument of type <code>Action_1&lt;AssemblyLoadContext&gt;</code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/DOCUMENTATION_MEMBER_NAME" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

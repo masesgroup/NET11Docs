@@ -261,7 +261,7 @@ implements java.lang.AutoCloseable</pre>
 </td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code>static <a href="../../system/IObservable_1.html" title="interface in system">IObservable_1</a></code></td>
+<td class="colFirst"><code>static <a href="../../system/IObservable_1.html" title="interface in system">IObservable_1</a>&lt;<a href="../../system/diagnostics/DiagnosticListener.html" title="class in system.diagnostics">DiagnosticListener</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/diagnostics/DiagnosticListener.html#getAllListeners--">getAllListeners</a></span>()</code>
 <div class="block">Gets the value of the .NET property AllListeners.</div>
 </td>
@@ -359,8 +359,8 @@ implements java.lang.AutoCloseable</pre>
 <td class="colFirst"><code><a href="../../system/IDisposable.html" title="interface in system">IDisposable</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/diagnostics/DiagnosticListener.html#Subscribe-system.IObserver_1-system.Func_4-system.Action_2-system.Action_2-">Subscribe</a></span>(<a href="../../system/IObserver_1.html" title="interface in system">IObserver_1</a>&nbsp;observer,
          <a href="../../system/Func_4.html" title="class in system">Func_4</a>&nbsp;isEnabled,
-         <a href="../../system/Action_2.html" title="class in system">Action_2</a>&nbsp;onActivityImport,
-         <a href="../../system/Action_2.html" title="class in system">Action_2</a>&nbsp;onActivityExport)</code>
+         <a href="../../system/Action_2.html" title="class in system">Action_2</a>&lt;<a href="../../system/diagnostics/Activity.html" title="class in system.diagnostics">Activity</a>,<a href="../../system/Object.html" title="class in system">Object</a>&gt;&nbsp;onActivityImport,
+         <a href="../../system/Action_2.html" title="class in system">Action_2</a>&lt;<a href="../../system/diagnostics/Activity.html" title="class in system.diagnostics">Activity</a>,<a href="../../system/Object.html" title="class in system">Object</a>&gt;&nbsp;onActivityExport)</code>
 <div class="block">Invokes the .NET member Subscribe.</div>
 </td>
 </tr>
@@ -646,15 +646,15 @@ implements java.lang.AutoCloseable</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>getAllListeners</h4>
-<pre>public static&nbsp;<a href="../../system/IObservable_1.html" title="interface in system">IObservable_1</a>&nbsp;getAllListeners()
-                                     throws java.lang.Throwable,
-                                            <a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
-                                            <a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                                            <a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
-                                            <a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                                            <a href="../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
-                                            <a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
-                                            <a href="../../system/NullReferenceException.html" title="class in system">NullReferenceException</a></pre>
+<pre>public static&nbsp;<a href="../../system/IObservable_1.html" title="interface in system">IObservable_1</a>&lt;<a href="../../system/diagnostics/DiagnosticListener.html" title="class in system.diagnostics">DiagnosticListener</a>&gt;&nbsp;getAllListeners()
+                                                         throws java.lang.Throwable,
+                                                                <a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                                                <a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                                                <a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                                                <a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                                                <a href="../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                                                <a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                                                <a href="../../system/NullReferenceException.html" title="class in system">NullReferenceException</a></pre>
 <div class="block">Gets the value of the .NET property AllListeners.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -995,8 +995,8 @@ implements java.lang.AutoCloseable</pre>
 <h4>Subscribe</h4>
 <pre>public&nbsp;<a href="../../system/IDisposable.html" title="interface in system">IDisposable</a>&nbsp;Subscribe(<a href="../../system/IObserver_1.html" title="interface in system">IObserver_1</a>&nbsp;observer,
                              <a href="../../system/Func_4.html" title="class in system">Func_4</a>&nbsp;isEnabled,
-                             <a href="../../system/Action_2.html" title="class in system">Action_2</a>&nbsp;onActivityImport,
-                             <a href="../../system/Action_2.html" title="class in system">Action_2</a>&nbsp;onActivityExport)
+                             <a href="../../system/Action_2.html" title="class in system">Action_2</a>&lt;<a href="../../system/diagnostics/Activity.html" title="class in system.diagnostics">Activity</a>,<a href="../../system/Object.html" title="class in system">Object</a>&gt;&nbsp;onActivityImport,
+                             <a href="../../system/Action_2.html" title="class in system">Action_2</a>&lt;<a href="../../system/diagnostics/Activity.html" title="class in system.diagnostics">Activity</a>,<a href="../../system/Object.html" title="class in system">Object</a>&gt;&nbsp;onActivityExport)
                       throws java.lang.Throwable,
                              <a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
                              <a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
@@ -1009,8 +1009,8 @@ implements java.lang.AutoCloseable</pre>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>observer</code> - the argument of type <code>IObserver_1</code></dd>
 <dd><code>isEnabled</code> - the argument of type <code>Func_4</code></dd>
-<dd><code>onActivityImport</code> - the argument of type <code>Action_2</code></dd>
-<dd><code>onActivityExport</code> - the argument of type <code>Action_2</code></dd>
+<dd><code>onActivityImport</code> - the argument of type <code>Action_2&lt;Activity, Object&gt;</code></dd>
+<dd><code>onActivityExport</code> - the argument of type <code>Action_2&lt;Activity, Object&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>

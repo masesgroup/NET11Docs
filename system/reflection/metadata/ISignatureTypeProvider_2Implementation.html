@@ -256,14 +256,14 @@ implements <a href="../../../system/reflection/metadata/ISignatureTypeProvider_2
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/reflection/metadata/ISignatureTypeProvider_2Implementation.html" title="type parameter in ISignatureTypeProvider_2Implementation">TType</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/reflection/metadata/ISignatureTypeProvider_2Implementation.html#GetFunctionPointerType-system.reflection.metadata.MethodSignature_1-">GetFunctionPointerType</a></span>(<a href="../../../system/reflection/metadata/MethodSignature_1.html" title="class in system.reflection.metadata">MethodSignature_1</a>&nbsp;signature)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/reflection/metadata/ISignatureTypeProvider_2Implementation.html#GetFunctionPointerType-system.reflection.metadata.MethodSignature_1-">GetFunctionPointerType</a></span>(<a href="../../../system/reflection/metadata/MethodSignature_1.html" title="class in system.reflection.metadata">MethodSignature_1</a>&lt;<a href="../../../system/reflection/metadata/ISignatureTypeProvider_2Implementation.html" title="type parameter in ISignatureTypeProvider_2Implementation">TType</a>&gt;&nbsp;signature)</code>
 <div class="block">Invokes the .NET member GetFunctionPointerType.</div>
 </td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="../../../system/reflection/metadata/ISignatureTypeProvider_2Implementation.html" title="type parameter in ISignatureTypeProvider_2Implementation">TType</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/reflection/metadata/ISignatureTypeProvider_2Implementation.html#GetGenericInstantiation-TType-system.collections.immutable.ImmutableArray_1-">GetGenericInstantiation</a></span>(<a href="../../../system/reflection/metadata/ISignatureTypeProvider_2Implementation.html" title="type parameter in ISignatureTypeProvider_2Implementation">TType</a>&nbsp;genericType,
-                       <a href="../../../system/collections/immutable/ImmutableArray_1.html" title="class in system.collections.immutable">ImmutableArray_1</a>&nbsp;typeArguments)</code>
+                       <a href="../../../system/collections/immutable/ImmutableArray_1.html" title="class in system.collections.immutable">ImmutableArray_1</a>&lt;<a href="../../../system/reflection/metadata/ISignatureTypeProvider_2Implementation.html" title="type parameter in ISignatureTypeProvider_2Implementation">TType</a>&gt;&nbsp;typeArguments)</code>
 <div class="block">Invokes the .NET member GetGenericInstantiation.</div>
 </td>
 </tr>
@@ -587,14 +587,14 @@ implements <a href="../../../system/reflection/metadata/ISignatureTypeProvider_2
 <ul class="blockList">
 <li class="blockList">
 <h4>GetFunctionPointerType</h4>
-<pre>public&nbsp;<a href="../../../system/reflection/metadata/ISignatureTypeProvider_2Implementation.html" title="type parameter in ISignatureTypeProvider_2Implementation">TType</a>&nbsp;GetFunctionPointerType(<a href="../../../system/reflection/metadata/MethodSignature_1.html" title="class in system.reflection.metadata">MethodSignature_1</a>&nbsp;signature)
+<pre>public&nbsp;<a href="../../../system/reflection/metadata/ISignatureTypeProvider_2Implementation.html" title="type parameter in ISignatureTypeProvider_2Implementation">TType</a>&nbsp;GetFunctionPointerType(<a href="../../../system/reflection/metadata/MethodSignature_1.html" title="class in system.reflection.metadata">MethodSignature_1</a>&lt;<a href="../../../system/reflection/metadata/ISignatureTypeProvider_2Implementation.html" title="type parameter in ISignatureTypeProvider_2Implementation">TType</a>&gt;&nbsp;signature)
                              throws java.lang.Throwable</pre>
 <div class="block">Invokes the .NET member GetFunctionPointerType.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../system/reflection/metadata/ISignatureTypeProvider_2.html#GetFunctionPointerType-system.reflection.metadata.MethodSignature_1-">GetFunctionPointerType</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/reflection/metadata/ISignatureTypeProvider_2.html" title="interface in system.reflection.metadata">ISignatureTypeProvider_2</a>&lt;<a href="../../../system/reflection/metadata/ISignatureTypeProvider_2Implementation.html" title="type parameter in ISignatureTypeProvider_2Implementation">TType</a> extends <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>,<a href="../../../system/reflection/metadata/ISignatureTypeProvider_2Implementation.html" title="type parameter in ISignatureTypeProvider_2Implementation">TGenericContext</a> extends <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;</code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>signature</code> - the argument of type <code>MethodSignature_1</code></dd>
+<dd><code>signature</code> - the argument of type <code>MethodSignature_1&lt;TType&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -613,7 +613,7 @@ implements <a href="../../../system/reflection/metadata/ISignatureTypeProvider_2
 <li class="blockList">
 <h4>GetGenericInstantiation</h4>
 <pre>public&nbsp;<a href="../../../system/reflection/metadata/ISignatureTypeProvider_2Implementation.html" title="type parameter in ISignatureTypeProvider_2Implementation">TType</a>&nbsp;GetGenericInstantiation(<a href="../../../system/reflection/metadata/ISignatureTypeProvider_2Implementation.html" title="type parameter in ISignatureTypeProvider_2Implementation">TType</a>&nbsp;genericType,
-                                     <a href="../../../system/collections/immutable/ImmutableArray_1.html" title="class in system.collections.immutable">ImmutableArray_1</a>&nbsp;typeArguments)
+                                     <a href="../../../system/collections/immutable/ImmutableArray_1.html" title="class in system.collections.immutable">ImmutableArray_1</a>&lt;<a href="../../../system/reflection/metadata/ISignatureTypeProvider_2Implementation.html" title="type parameter in ISignatureTypeProvider_2Implementation">TType</a>&gt;&nbsp;typeArguments)
                               throws java.lang.Throwable</pre>
 <div class="block">Invokes the .NET member GetGenericInstantiation.</div>
 <dl>
@@ -621,7 +621,7 @@ implements <a href="../../../system/reflection/metadata/ISignatureTypeProvider_2
 <dd><code><a href="../../../system/reflection/metadata/IConstructedTypeProvider_1.html#GetGenericInstantiation-TType-system.collections.immutable.ImmutableArray_1-">GetGenericInstantiation</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/reflection/metadata/IConstructedTypeProvider_1.html" title="interface in system.reflection.metadata">IConstructedTypeProvider_1</a>&lt;<a href="../../../system/reflection/metadata/ISignatureTypeProvider_2Implementation.html" title="type parameter in ISignatureTypeProvider_2Implementation">TType</a> extends <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;</code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>genericType</code> - the argument of type <code>TType</code></dd>
-<dd><code>typeArguments</code> - the argument of type <code>ImmutableArray_1</code></dd>
+<dd><code>typeArguments</code> - the argument of type <code>ImmutableArray_1&lt;TType&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>

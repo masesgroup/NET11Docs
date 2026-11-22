@@ -212,8 +212,8 @@ extends <a href="../../../system/ValueType.html" title="class in system">ValueTy
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../system/reflection/metadata/CustomAttributeValue_1.html#CustomAttributeValue_1--">CustomAttributeValue_1</a></span>()</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../system/reflection/metadata/CustomAttributeValue_1.html#CustomAttributeValue_1-system.collections.immutable.ImmutableArray_1-system.collections.immutable.ImmutableArray_1-">CustomAttributeValue_1</a></span>(<a href="../../../system/collections/immutable/ImmutableArray_1.html" title="class in system.collections.immutable">ImmutableArray_1</a>&nbsp;fixedArguments,
-                      <a href="../../../system/collections/immutable/ImmutableArray_1.html" title="class in system.collections.immutable">ImmutableArray_1</a>&nbsp;namedArguments)</code>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../system/reflection/metadata/CustomAttributeValue_1.html#CustomAttributeValue_1-system.collections.immutable.ImmutableArray_1-system.collections.immutable.ImmutableArray_1-">CustomAttributeValue_1</a></span>(<a href="../../../system/collections/immutable/ImmutableArray_1.html" title="class in system.collections.immutable">ImmutableArray_1</a>&lt;<a href="../../../system/reflection/metadata/CustomAttributeTypedArgument_1.html" title="class in system.reflection.metadata">CustomAttributeTypedArgument_1</a>&lt;<a href="../../../system/reflection/metadata/CustomAttributeValue_1.html" title="type parameter in CustomAttributeValue_1">TType</a>&gt;&gt;&nbsp;fixedArguments,
+                      <a href="../../../system/collections/immutable/ImmutableArray_1.html" title="class in system.collections.immutable">ImmutableArray_1</a>&lt;<a href="../../../system/reflection/metadata/CustomAttributeNamedArgument_1.html" title="class in system.reflection.metadata">CustomAttributeNamedArgument_1</a>&lt;<a href="../../../system/reflection/metadata/CustomAttributeValue_1.html" title="type parameter in CustomAttributeValue_1">TType</a>&gt;&gt;&nbsp;namedArguments)</code>
 <div class="block">Initializes a new instance by invoking the .NET constructor.</div>
 </td>
 </tr>
@@ -244,7 +244,7 @@ extends <a href="../../../system/ValueType.html" title="class in system">ValueTy
 </td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code><a href="../../../system/collections/immutable/ImmutableArray_1.html" title="class in system.collections.immutable">ImmutableArray_1</a></code></td>
+<td class="colFirst"><code><a href="../../../system/collections/immutable/ImmutableArray_1.html" title="class in system.collections.immutable">ImmutableArray_1</a>&lt;<a href="../../../system/reflection/metadata/CustomAttributeTypedArgument_1.html" title="class in system.reflection.metadata">CustomAttributeTypedArgument_1</a>&lt;<a href="../../../system/reflection/metadata/CustomAttributeValue_1.html" title="type parameter in CustomAttributeValue_1">TType</a>&gt;&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/reflection/metadata/CustomAttributeValue_1.html#getFixedArguments--">getFixedArguments</a></span>()</code>
 <div class="block">Gets the value of the .NET property FixedArguments.</div>
 </td>
@@ -280,7 +280,7 @@ extends <a href="../../../system/ValueType.html" title="class in system">ValueTy
 </td>
 </tr>
 <tr id="i7" class="rowColor">
-<td class="colFirst"><code><a href="../../../system/collections/immutable/ImmutableArray_1.html" title="class in system.collections.immutable">ImmutableArray_1</a></code></td>
+<td class="colFirst"><code><a href="../../../system/collections/immutable/ImmutableArray_1.html" title="class in system.collections.immutable">ImmutableArray_1</a>&lt;<a href="../../../system/reflection/metadata/CustomAttributeNamedArgument_1.html" title="class in system.reflection.metadata">CustomAttributeNamedArgument_1</a>&lt;<a href="../../../system/reflection/metadata/CustomAttributeValue_1.html" title="type parameter in CustomAttributeValue_1">TType</a>&gt;&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/reflection/metadata/CustomAttributeValue_1.html#getNamedArguments--">getNamedArguments</a></span>()</code>
 <div class="block">Gets the value of the .NET property NamedArguments.</div>
 </td>
@@ -400,14 +400,14 @@ extends <a href="../../../system/ValueType.html" title="class in system">ValueTy
 <ul class="blockList">
 <li class="blockList">
 <h4>CustomAttributeValue_1</h4>
-<pre>public&nbsp;CustomAttributeValue_1(<a href="../../../system/collections/immutable/ImmutableArray_1.html" title="class in system.collections.immutable">ImmutableArray_1</a>&nbsp;fixedArguments,
-                              <a href="../../../system/collections/immutable/ImmutableArray_1.html" title="class in system.collections.immutable">ImmutableArray_1</a>&nbsp;namedArguments)
+<pre>public&nbsp;CustomAttributeValue_1(<a href="../../../system/collections/immutable/ImmutableArray_1.html" title="class in system.collections.immutable">ImmutableArray_1</a>&lt;<a href="../../../system/reflection/metadata/CustomAttributeTypedArgument_1.html" title="class in system.reflection.metadata">CustomAttributeTypedArgument_1</a>&lt;<a href="../../../system/reflection/metadata/CustomAttributeValue_1.html" title="type parameter in CustomAttributeValue_1">TType</a>&gt;&gt;&nbsp;fixedArguments,
+                              <a href="../../../system/collections/immutable/ImmutableArray_1.html" title="class in system.collections.immutable">ImmutableArray_1</a>&lt;<a href="../../../system/reflection/metadata/CustomAttributeNamedArgument_1.html" title="class in system.reflection.metadata">CustomAttributeNamedArgument_1</a>&lt;<a href="../../../system/reflection/metadata/CustomAttributeValue_1.html" title="type parameter in CustomAttributeValue_1">TType</a>&gt;&gt;&nbsp;namedArguments)
                        throws java.lang.Throwable</pre>
 <div class="block">Initializes a new instance by invoking the .NET constructor.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>fixedArguments</code> - the argument of type <code>ImmutableArray_1</code></dd>
-<dd><code>namedArguments</code> - the argument of type <code>ImmutableArray_1</code></dd>
+<dd><code>fixedArguments</code> - the argument of type <code>ImmutableArray_1&lt;CustomAttributeTypedArgument_1&lt;TType&gt;&gt;</code></dd>
+<dd><code>namedArguments</code> - the argument of type <code>ImmutableArray_1&lt;CustomAttributeNamedArgument_1&lt;TType&gt;&gt;</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code> - if the .NET constructor fails</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
@@ -465,8 +465,8 @@ extends <a href="../../../system/ValueType.html" title="class in system">ValueTy
 <ul class="blockList">
 <li class="blockList">
 <h4>getFixedArguments</h4>
-<pre>public&nbsp;<a href="../../../system/collections/immutable/ImmutableArray_1.html" title="class in system.collections.immutable">ImmutableArray_1</a>&nbsp;getFixedArguments()
-                                   throws java.lang.Throwable</pre>
+<pre>public&nbsp;<a href="../../../system/collections/immutable/ImmutableArray_1.html" title="class in system.collections.immutable">ImmutableArray_1</a>&lt;<a href="../../../system/reflection/metadata/CustomAttributeTypedArgument_1.html" title="class in system.reflection.metadata">CustomAttributeTypedArgument_1</a>&lt;<a href="../../../system/reflection/metadata/CustomAttributeValue_1.html" title="type parameter in CustomAttributeValue_1">TType</a>&gt;&gt;&nbsp;getFixedArguments()
+                                                                          throws java.lang.Throwable</pre>
 <div class="block">Gets the value of the .NET property FixedArguments.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -579,8 +579,8 @@ extends <a href="../../../system/ValueType.html" title="class in system">ValueTy
 <ul class="blockList">
 <li class="blockList">
 <h4>getNamedArguments</h4>
-<pre>public&nbsp;<a href="../../../system/collections/immutable/ImmutableArray_1.html" title="class in system.collections.immutable">ImmutableArray_1</a>&nbsp;getNamedArguments()
-                                   throws java.lang.Throwable</pre>
+<pre>public&nbsp;<a href="../../../system/collections/immutable/ImmutableArray_1.html" title="class in system.collections.immutable">ImmutableArray_1</a>&lt;<a href="../../../system/reflection/metadata/CustomAttributeNamedArgument_1.html" title="class in system.reflection.metadata">CustomAttributeNamedArgument_1</a>&lt;<a href="../../../system/reflection/metadata/CustomAttributeValue_1.html" title="type parameter in CustomAttributeValue_1">TType</a>&gt;&gt;&nbsp;getNamedArguments()
+                                                                          throws java.lang.Throwable</pre>
 <div class="block">Gets the value of the .NET property NamedArguments.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>

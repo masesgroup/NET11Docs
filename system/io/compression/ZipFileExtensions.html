@@ -254,7 +254,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 </td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code>static <a href="../../../system/threading/tasks/Task_1.html" title="class in system.threading.tasks">Task_1</a></code></td>
+<td class="colFirst"><code>static <a href="../../../system/threading/tasks/Task_1.html" title="class in system.threading.tasks">Task_1</a>&lt;<a href="../../../system/io/compression/ZipArchiveEntry.html" title="class in system.io.compression">ZipArchiveEntry</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/io/compression/ZipFileExtensions.html#CreateEntryFromFileAsync-system.io.compression.ZipArchive-java.lang.String-java.lang.String-system.threading.CancellationToken-">CreateEntryFromFileAsync</a></span>(<a href="../../../system/io/compression/ZipArchive.html" title="class in system.io.compression">ZipArchive</a>&nbsp;destination,
                         java.lang.String&nbsp;sourceFileName,
                         java.lang.String&nbsp;entryName,
@@ -263,7 +263,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 </td>
 </tr>
 <tr id="i4" class="altColor">
-<td class="colFirst"><code>static <a href="../../../system/threading/tasks/Task_1.html" title="class in system.threading.tasks">Task_1</a></code></td>
+<td class="colFirst"><code>static <a href="../../../system/threading/tasks/Task_1.html" title="class in system.threading.tasks">Task_1</a>&lt;<a href="../../../system/io/compression/ZipArchiveEntry.html" title="class in system.io.compression">ZipArchiveEntry</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/io/compression/ZipFileExtensions.html#CreateEntryFromFileAsync-system.io.compression.ZipArchive-java.lang.String-java.lang.String-system.io.compression.CompressionLevel-system.threading.CancellationToken-">CreateEntryFromFileAsync</a></span>(<a href="../../../system/io/compression/ZipArchive.html" title="class in system.io.compression">ZipArchive</a>&nbsp;destination,
                         java.lang.String&nbsp;sourceFileName,
                         java.lang.String&nbsp;entryName,
@@ -273,7 +273,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 </td>
 </tr>
 <tr id="i5" class="rowColor">
-<td class="colFirst"><code>static <a href="../../../system/threading/tasks/Task_1.html" title="class in system.threading.tasks">Task_1</a></code></td>
+<td class="colFirst"><code>static <a href="../../../system/threading/tasks/Task_1.html" title="class in system.threading.tasks">Task_1</a>&lt;<a href="../../../system/io/compression/ZipArchiveEntry.html" title="class in system.io.compression">ZipArchiveEntry</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/io/compression/ZipFileExtensions.html#CreateEntryFromFileAsync-system.io.compression.ZipArchive-java.lang.String-java.lang.String-system.io.compression.CompressionLevel-system.ReadOnlyMemory_1-system.io.compression.ZipEncryptionMethod-system.threading.CancellationToken-">CreateEntryFromFileAsync</a></span>(<a href="../../../system/io/compression/ZipArchive.html" title="class in system.io.compression">ZipArchive</a>&nbsp;destination,
                         java.lang.String&nbsp;sourceFileName,
                         java.lang.String&nbsp;entryName,
@@ -285,7 +285,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 </td>
 </tr>
 <tr id="i6" class="altColor">
-<td class="colFirst"><code>static <a href="../../../system/threading/tasks/Task_1.html" title="class in system.threading.tasks">Task_1</a></code></td>
+<td class="colFirst"><code>static <a href="../../../system/threading/tasks/Task_1.html" title="class in system.threading.tasks">Task_1</a>&lt;<a href="../../../system/io/compression/ZipArchiveEntry.html" title="class in system.io.compression">ZipArchiveEntry</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/io/compression/ZipFileExtensions.html#CreateEntryFromFileAsync-system.io.compression.ZipArchive-java.lang.String-java.lang.String-system.ReadOnlyMemory_1-system.io.compression.ZipEncryptionMethod-system.threading.CancellationToken-">CreateEntryFromFileAsync</a></span>(<a href="../../../system/io/compression/ZipArchive.html" title="class in system.io.compression">ZipArchive</a>&nbsp;destination,
                         java.lang.String&nbsp;sourceFileName,
                         java.lang.String&nbsp;entryName,
@@ -690,25 +690,25 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <ul class="blockList">
 <li class="blockList">
 <h4>CreateEntryFromFileAsync</h4>
-<pre>public static&nbsp;<a href="../../../system/threading/tasks/Task_1.html" title="class in system.threading.tasks">Task_1</a>&nbsp;CreateEntryFromFileAsync(<a href="../../../system/io/compression/ZipArchive.html" title="class in system.io.compression">ZipArchive</a>&nbsp;destination,
-                                              java.lang.String&nbsp;sourceFileName,
-                                              java.lang.String&nbsp;entryName,
-                                              <a href="../../../system/threading/CancellationToken.html" title="class in system.threading">CancellationToken</a>&nbsp;cancellationToken)
-                                       throws java.lang.Throwable,
-                                              <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
-                                              <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                                              <a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
-                                              <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                                              <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
-                                              <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
-                                              <a href="../../../system/OperationCanceledException.html" title="class in system">OperationCanceledException</a>,
-                                              <a href="../../../system/runtime/serialization/SerializationException.html" title="class in system.runtime.serialization">SerializationException</a>,
-                                              <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
-                                              <a href="../../../system/io/IOException.html" title="class in system.io">IOException</a>,
-                                              <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                                              <a href="../../../system/io/InvalidDataException.html" title="class in system.io">InvalidDataException</a>,
-                                              <a href="../../../system/security/cryptography/CryptographicException.html" title="class in system.security.cryptography">CryptographicException</a>,
-                                              <a href="../../../system/UnauthorizedAccessException.html" title="class in system">UnauthorizedAccessException</a></pre>
+<pre>public static&nbsp;<a href="../../../system/threading/tasks/Task_1.html" title="class in system.threading.tasks">Task_1</a>&lt;<a href="../../../system/io/compression/ZipArchiveEntry.html" title="class in system.io.compression">ZipArchiveEntry</a>&gt;&nbsp;CreateEntryFromFileAsync(<a href="../../../system/io/compression/ZipArchive.html" title="class in system.io.compression">ZipArchive</a>&nbsp;destination,
+                                                               java.lang.String&nbsp;sourceFileName,
+                                                               java.lang.String&nbsp;entryName,
+                                                               <a href="../../../system/threading/CancellationToken.html" title="class in system.threading">CancellationToken</a>&nbsp;cancellationToken)
+                                                        throws java.lang.Throwable,
+                                                               <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                                               <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                                               <a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                                               <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                                               <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                                               <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                                               <a href="../../../system/OperationCanceledException.html" title="class in system">OperationCanceledException</a>,
+                                                               <a href="../../../system/runtime/serialization/SerializationException.html" title="class in system.runtime.serialization">SerializationException</a>,
+                                                               <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                                               <a href="../../../system/io/IOException.html" title="class in system.io">IOException</a>,
+                                                               <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                                               <a href="../../../system/io/InvalidDataException.html" title="class in system.io">InvalidDataException</a>,
+                                                               <a href="../../../system/security/cryptography/CryptographicException.html" title="class in system.security.cryptography">CryptographicException</a>,
+                                                               <a href="../../../system/UnauthorizedAccessException.html" title="class in system">UnauthorizedAccessException</a></pre>
 <div class="block">Invokes the .NET member CreateEntryFromFileAsync.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -745,26 +745,26 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <ul class="blockList">
 <li class="blockList">
 <h4>CreateEntryFromFileAsync</h4>
-<pre>public static&nbsp;<a href="../../../system/threading/tasks/Task_1.html" title="class in system.threading.tasks">Task_1</a>&nbsp;CreateEntryFromFileAsync(<a href="../../../system/io/compression/ZipArchive.html" title="class in system.io.compression">ZipArchive</a>&nbsp;destination,
-                                              java.lang.String&nbsp;sourceFileName,
-                                              java.lang.String&nbsp;entryName,
-                                              <a href="../../../system/io/compression/CompressionLevel.html" title="class in system.io.compression">CompressionLevel</a>&nbsp;compressionLevel,
-                                              <a href="../../../system/threading/CancellationToken.html" title="class in system.threading">CancellationToken</a>&nbsp;cancellationToken)
-                                       throws java.lang.Throwable,
-                                              <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
-                                              <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                                              <a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
-                                              <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                                              <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
-                                              <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
-                                              <a href="../../../system/OperationCanceledException.html" title="class in system">OperationCanceledException</a>,
-                                              <a href="../../../system/runtime/serialization/SerializationException.html" title="class in system.runtime.serialization">SerializationException</a>,
-                                              <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
-                                              <a href="../../../system/io/IOException.html" title="class in system.io">IOException</a>,
-                                              <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                                              <a href="../../../system/io/InvalidDataException.html" title="class in system.io">InvalidDataException</a>,
-                                              <a href="../../../system/security/cryptography/CryptographicException.html" title="class in system.security.cryptography">CryptographicException</a>,
-                                              <a href="../../../system/UnauthorizedAccessException.html" title="class in system">UnauthorizedAccessException</a></pre>
+<pre>public static&nbsp;<a href="../../../system/threading/tasks/Task_1.html" title="class in system.threading.tasks">Task_1</a>&lt;<a href="../../../system/io/compression/ZipArchiveEntry.html" title="class in system.io.compression">ZipArchiveEntry</a>&gt;&nbsp;CreateEntryFromFileAsync(<a href="../../../system/io/compression/ZipArchive.html" title="class in system.io.compression">ZipArchive</a>&nbsp;destination,
+                                                               java.lang.String&nbsp;sourceFileName,
+                                                               java.lang.String&nbsp;entryName,
+                                                               <a href="../../../system/io/compression/CompressionLevel.html" title="class in system.io.compression">CompressionLevel</a>&nbsp;compressionLevel,
+                                                               <a href="../../../system/threading/CancellationToken.html" title="class in system.threading">CancellationToken</a>&nbsp;cancellationToken)
+                                                        throws java.lang.Throwable,
+                                                               <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                                               <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                                               <a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                                               <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                                               <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                                               <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                                               <a href="../../../system/OperationCanceledException.html" title="class in system">OperationCanceledException</a>,
+                                                               <a href="../../../system/runtime/serialization/SerializationException.html" title="class in system.runtime.serialization">SerializationException</a>,
+                                                               <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                                               <a href="../../../system/io/IOException.html" title="class in system.io">IOException</a>,
+                                                               <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                                               <a href="../../../system/io/InvalidDataException.html" title="class in system.io">InvalidDataException</a>,
+                                                               <a href="../../../system/security/cryptography/CryptographicException.html" title="class in system.security.cryptography">CryptographicException</a>,
+                                                               <a href="../../../system/UnauthorizedAccessException.html" title="class in system">UnauthorizedAccessException</a></pre>
 <div class="block">Invokes the .NET member CreateEntryFromFileAsync.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -802,28 +802,28 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <ul class="blockList">
 <li class="blockList">
 <h4>CreateEntryFromFileAsync</h4>
-<pre>public static&nbsp;<a href="../../../system/threading/tasks/Task_1.html" title="class in system.threading.tasks">Task_1</a>&nbsp;CreateEntryFromFileAsync(<a href="../../../system/io/compression/ZipArchive.html" title="class in system.io.compression">ZipArchive</a>&nbsp;destination,
-                                              java.lang.String&nbsp;sourceFileName,
-                                              java.lang.String&nbsp;entryName,
-                                              <a href="../../../system/io/compression/CompressionLevel.html" title="class in system.io.compression">CompressionLevel</a>&nbsp;compressionLevel,
-                                              <a href="../../../system/ReadOnlyMemory_1.html" title="class in system">ReadOnlyMemory_1</a>&nbsp;password,
-                                              <a href="../../../system/io/compression/ZipEncryptionMethod.html" title="class in system.io.compression">ZipEncryptionMethod</a>&nbsp;encryption,
-                                              <a href="../../../system/threading/CancellationToken.html" title="class in system.threading">CancellationToken</a>&nbsp;cancellationToken)
-                                       throws java.lang.Throwable,
-                                              <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
-                                              <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                                              <a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
-                                              <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                                              <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
-                                              <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
-                                              <a href="../../../system/OperationCanceledException.html" title="class in system">OperationCanceledException</a>,
-                                              <a href="../../../system/runtime/serialization/SerializationException.html" title="class in system.runtime.serialization">SerializationException</a>,
-                                              <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
-                                              <a href="../../../system/io/IOException.html" title="class in system.io">IOException</a>,
-                                              <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                                              <a href="../../../system/io/InvalidDataException.html" title="class in system.io">InvalidDataException</a>,
-                                              <a href="../../../system/security/cryptography/CryptographicException.html" title="class in system.security.cryptography">CryptographicException</a>,
-                                              <a href="../../../system/UnauthorizedAccessException.html" title="class in system">UnauthorizedAccessException</a></pre>
+<pre>public static&nbsp;<a href="../../../system/threading/tasks/Task_1.html" title="class in system.threading.tasks">Task_1</a>&lt;<a href="../../../system/io/compression/ZipArchiveEntry.html" title="class in system.io.compression">ZipArchiveEntry</a>&gt;&nbsp;CreateEntryFromFileAsync(<a href="../../../system/io/compression/ZipArchive.html" title="class in system.io.compression">ZipArchive</a>&nbsp;destination,
+                                                               java.lang.String&nbsp;sourceFileName,
+                                                               java.lang.String&nbsp;entryName,
+                                                               <a href="../../../system/io/compression/CompressionLevel.html" title="class in system.io.compression">CompressionLevel</a>&nbsp;compressionLevel,
+                                                               <a href="../../../system/ReadOnlyMemory_1.html" title="class in system">ReadOnlyMemory_1</a>&nbsp;password,
+                                                               <a href="../../../system/io/compression/ZipEncryptionMethod.html" title="class in system.io.compression">ZipEncryptionMethod</a>&nbsp;encryption,
+                                                               <a href="../../../system/threading/CancellationToken.html" title="class in system.threading">CancellationToken</a>&nbsp;cancellationToken)
+                                                        throws java.lang.Throwable,
+                                                               <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                                               <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                                               <a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                                               <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                                               <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                                               <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                                               <a href="../../../system/OperationCanceledException.html" title="class in system">OperationCanceledException</a>,
+                                                               <a href="../../../system/runtime/serialization/SerializationException.html" title="class in system.runtime.serialization">SerializationException</a>,
+                                                               <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                                               <a href="../../../system/io/IOException.html" title="class in system.io">IOException</a>,
+                                                               <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                                               <a href="../../../system/io/InvalidDataException.html" title="class in system.io">InvalidDataException</a>,
+                                                               <a href="../../../system/security/cryptography/CryptographicException.html" title="class in system.security.cryptography">CryptographicException</a>,
+                                                               <a href="../../../system/UnauthorizedAccessException.html" title="class in system">UnauthorizedAccessException</a></pre>
 <div class="block">Invokes the .NET member CreateEntryFromFileAsync.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -863,27 +863,27 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <ul class="blockList">
 <li class="blockList">
 <h4>CreateEntryFromFileAsync</h4>
-<pre>public static&nbsp;<a href="../../../system/threading/tasks/Task_1.html" title="class in system.threading.tasks">Task_1</a>&nbsp;CreateEntryFromFileAsync(<a href="../../../system/io/compression/ZipArchive.html" title="class in system.io.compression">ZipArchive</a>&nbsp;destination,
-                                              java.lang.String&nbsp;sourceFileName,
-                                              java.lang.String&nbsp;entryName,
-                                              <a href="../../../system/ReadOnlyMemory_1.html" title="class in system">ReadOnlyMemory_1</a>&nbsp;password,
-                                              <a href="../../../system/io/compression/ZipEncryptionMethod.html" title="class in system.io.compression">ZipEncryptionMethod</a>&nbsp;encryption,
-                                              <a href="../../../system/threading/CancellationToken.html" title="class in system.threading">CancellationToken</a>&nbsp;cancellationToken)
-                                       throws java.lang.Throwable,
-                                              <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
-                                              <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                                              <a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
-                                              <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                                              <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
-                                              <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
-                                              <a href="../../../system/OperationCanceledException.html" title="class in system">OperationCanceledException</a>,
-                                              <a href="../../../system/runtime/serialization/SerializationException.html" title="class in system.runtime.serialization">SerializationException</a>,
-                                              <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
-                                              <a href="../../../system/io/IOException.html" title="class in system.io">IOException</a>,
-                                              <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                                              <a href="../../../system/io/InvalidDataException.html" title="class in system.io">InvalidDataException</a>,
-                                              <a href="../../../system/security/cryptography/CryptographicException.html" title="class in system.security.cryptography">CryptographicException</a>,
-                                              <a href="../../../system/UnauthorizedAccessException.html" title="class in system">UnauthorizedAccessException</a></pre>
+<pre>public static&nbsp;<a href="../../../system/threading/tasks/Task_1.html" title="class in system.threading.tasks">Task_1</a>&lt;<a href="../../../system/io/compression/ZipArchiveEntry.html" title="class in system.io.compression">ZipArchiveEntry</a>&gt;&nbsp;CreateEntryFromFileAsync(<a href="../../../system/io/compression/ZipArchive.html" title="class in system.io.compression">ZipArchive</a>&nbsp;destination,
+                                                               java.lang.String&nbsp;sourceFileName,
+                                                               java.lang.String&nbsp;entryName,
+                                                               <a href="../../../system/ReadOnlyMemory_1.html" title="class in system">ReadOnlyMemory_1</a>&nbsp;password,
+                                                               <a href="../../../system/io/compression/ZipEncryptionMethod.html" title="class in system.io.compression">ZipEncryptionMethod</a>&nbsp;encryption,
+                                                               <a href="../../../system/threading/CancellationToken.html" title="class in system.threading">CancellationToken</a>&nbsp;cancellationToken)
+                                                        throws java.lang.Throwable,
+                                                               <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                                               <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                                               <a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                                               <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                                               <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                                               <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                                               <a href="../../../system/OperationCanceledException.html" title="class in system">OperationCanceledException</a>,
+                                                               <a href="../../../system/runtime/serialization/SerializationException.html" title="class in system.runtime.serialization">SerializationException</a>,
+                                                               <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                                               <a href="../../../system/io/IOException.html" title="class in system.io">IOException</a>,
+                                                               <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                                               <a href="../../../system/io/InvalidDataException.html" title="class in system.io">InvalidDataException</a>,
+                                                               <a href="../../../system/security/cryptography/CryptographicException.html" title="class in system.security.cryptography">CryptographicException</a>,
+                                                               <a href="../../../system/UnauthorizedAccessException.html" title="class in system">UnauthorizedAccessException</a></pre>
 <div class="block">Invokes the .NET member CreateEntryFromFileAsync.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>

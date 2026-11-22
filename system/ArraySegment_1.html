@@ -256,7 +256,7 @@ extends <a href="../system/ValueType.html" title="class in system">ValueType</a>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../system/ArraySegment_1.html#CopyTo-system.ArraySegment_1-">CopyTo</a></span>(<a href="../system/ArraySegment_1.html" title="class in system">ArraySegment_1</a>&nbsp;destination)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../system/ArraySegment_1.html#CopyTo-system.ArraySegment_1-">CopyTo</a></span>(<a href="../system/ArraySegment_1.html" title="class in system">ArraySegment_1</a>&lt;<a href="../system/ArraySegment_1.html" title="type parameter in ArraySegment_1">T</a>&gt;&nbsp;destination)</code>
 <div class="block">Invokes the .NET member CopyTo.</div>
 </td>
 </tr>
@@ -334,13 +334,13 @@ extends <a href="../system/ValueType.html" title="class in system">ValueType</a>
 </td>
 </tr>
 <tr id="i14" class="altColor">
-<td class="colFirst"><code><a href="../system/ArraySegment_1.html" title="class in system">ArraySegment_1</a></code></td>
+<td class="colFirst"><code><a href="../system/ArraySegment_1.html" title="class in system">ArraySegment_1</a>&lt;<a href="../system/ArraySegment_1.html" title="type parameter in ArraySegment_1">T</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../system/ArraySegment_1.html#Slice-int-">Slice</a></span>(int&nbsp;index)</code>
 <div class="block">Invokes the .NET member Slice.</div>
 </td>
 </tr>
 <tr id="i15" class="rowColor">
-<td class="colFirst"><code><a href="../system/ArraySegment_1.html" title="class in system">ArraySegment_1</a></code></td>
+<td class="colFirst"><code><a href="../system/ArraySegment_1.html" title="class in system">ArraySegment_1</a>&lt;<a href="../system/ArraySegment_1.html" title="type parameter in ArraySegment_1">T</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../system/ArraySegment_1.html#Slice-int-int-">Slice</a></span>(int&nbsp;index,
      int&nbsp;count)</code>
 <div class="block">Invokes the .NET member Slice.</div>
@@ -581,7 +581,7 @@ extends <a href="../system/ValueType.html" title="class in system">ValueType</a>
 <ul class="blockList">
 <li class="blockList">
 <h4>CopyTo</h4>
-<pre>public&nbsp;void&nbsp;CopyTo(<a href="../system/ArraySegment_1.html" title="class in system">ArraySegment_1</a>&nbsp;destination)
+<pre>public&nbsp;void&nbsp;CopyTo(<a href="../system/ArraySegment_1.html" title="class in system">ArraySegment_1</a>&lt;<a href="../system/ArraySegment_1.html" title="type parameter in ArraySegment_1">T</a>&gt;&nbsp;destination)
             throws java.lang.Throwable,
                    <a href="../system/ArgumentException.html" title="class in system">ArgumentException</a>,
                    <a href="../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
@@ -590,7 +590,7 @@ extends <a href="../system/ValueType.html" title="class in system">ValueType</a>
 <div class="block">Invokes the .NET member CopyTo.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>destination</code> - the argument of type <code>ArraySegment_1</code></dd>
+<dd><code>destination</code> - the argument of type <code>ArraySegment_1&lt;T&gt;</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
 <dd><code><a href="../system/ArgumentException.html" title="class in system">ArgumentException</a></code> - if the .NET member raises it</dd>
@@ -856,12 +856,12 @@ extends <a href="../system/ValueType.html" title="class in system">ValueType</a>
 <ul class="blockList">
 <li class="blockList">
 <h4>Slice</h4>
-<pre>public&nbsp;<a href="../system/ArraySegment_1.html" title="class in system">ArraySegment_1</a>&nbsp;Slice(int&nbsp;index)
-                     throws java.lang.Throwable,
-                            <a href="../system/ArgumentException.html" title="class in system">ArgumentException</a>,
-                            <a href="../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                            <a href="../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
-                            <a href="../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></pre>
+<pre>public&nbsp;<a href="../system/ArraySegment_1.html" title="class in system">ArraySegment_1</a>&lt;<a href="../system/ArraySegment_1.html" title="type parameter in ArraySegment_1">T</a>&gt;&nbsp;Slice(int&nbsp;index)
+                        throws java.lang.Throwable,
+                               <a href="../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                               <a href="../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                               <a href="../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                               <a href="../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></pre>
 <div class="block">Invokes the .NET member Slice.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -885,13 +885,13 @@ extends <a href="../system/ValueType.html" title="class in system">ValueType</a>
 <ul class="blockList">
 <li class="blockList">
 <h4>Slice</h4>
-<pre>public&nbsp;<a href="../system/ArraySegment_1.html" title="class in system">ArraySegment_1</a>&nbsp;Slice(int&nbsp;index,
-                            int&nbsp;count)
-                     throws java.lang.Throwable,
-                            <a href="../system/ArgumentException.html" title="class in system">ArgumentException</a>,
-                            <a href="../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                            <a href="../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
-                            <a href="../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></pre>
+<pre>public&nbsp;<a href="../system/ArraySegment_1.html" title="class in system">ArraySegment_1</a>&lt;<a href="../system/ArraySegment_1.html" title="type parameter in ArraySegment_1">T</a>&gt;&nbsp;Slice(int&nbsp;index,
+                               int&nbsp;count)
+                        throws java.lang.Throwable,
+                               <a href="../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                               <a href="../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                               <a href="../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                               <a href="../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></pre>
 <div class="block">Invokes the .NET member Slice.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>

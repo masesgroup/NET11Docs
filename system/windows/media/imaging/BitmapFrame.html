@@ -285,7 +285,7 @@ extends <a href="../../../../system/windows/media/imaging/BitmapSource.html" tit
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/media/imaging/BitmapFrame.html#Create-system.windows.media.imaging.BitmapSource-system.windows.media.imaging.BitmapSource-system.windows.media.imaging.BitmapMetadata-system.collections.objectmodel.ReadOnlyCollection_1-">Create</a></span>(<a href="../../../../system/windows/media/imaging/BitmapSource.html" title="class in system.windows.media.imaging">BitmapSource</a>&nbsp;source,
       <a href="../../../../system/windows/media/imaging/BitmapSource.html" title="class in system.windows.media.imaging">BitmapSource</a>&nbsp;thumbnail,
       <a href="../../../../system/windows/media/imaging/BitmapMetadata.html" title="class in system.windows.media.imaging">BitmapMetadata</a>&nbsp;metadata,
-      <a href="../../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&nbsp;colorContexts)</code>
+      <a href="../../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&lt;<a href="../../../../system/windows/media/ColorContext.html" title="class in system.windows.media">ColorContext</a>&gt;&nbsp;colorContexts)</code>
 <div class="block">Invokes the .NET member Create.</div>
 </td>
 </tr>
@@ -346,7 +346,7 @@ extends <a href="../../../../system/windows/media/imaging/BitmapSource.html" tit
 </td>
 </tr>
 <tr id="i12" class="altColor">
-<td class="colFirst"><code><a href="../../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a></code></td>
+<td class="colFirst"><code><a href="../../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&lt;<a href="../../../../system/windows/media/ColorContext.html" title="class in system.windows.media">ColorContext</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/media/imaging/BitmapFrame.html#getColorContexts--">getColorContexts</a></span>()</code>
 <div class="block">Gets the value of the .NET property ColorContexts.</div>
 </td>
@@ -411,7 +411,7 @@ extends <a href="../../../../system/windows/media/imaging/BitmapSource.html" tit
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;system.windows.media.imaging.<a href="../../../../system/windows/media/imaging/BitmapSource.html" title="class in system.windows.media.imaging">BitmapSource</a></h3>
-<code><a href="../../../../system/windows/media/imaging/BitmapSource.html#addDownloadCompleted-system.EventHandler-">addDownloadCompleted</a>, <a href="../../../../system/windows/media/imaging/BitmapSource.html#CloneCurrentValueNewBitmapSource--">CloneCurrentValueNewBitmapSource</a>, <a href="../../../../system/windows/media/imaging/BitmapSource.html#CloneNewBitmapSource--">CloneNewBitmapSource</a>, <a href="../../../../system/windows/media/imaging/BitmapSource.html#CopyPixels-system.Array-int-int-">CopyPixels</a>, <a href="../../../../system/windows/media/imaging/BitmapSource.html#CopyPixels-system.windows.Int32Rect-system.Array-int-int-">CopyPixels</a>, <a href="../../../../system/windows/media/imaging/BitmapSource.html#Create-int-int-double-double-system.windows.media.PixelFormat-system.windows.media.imaging.BitmapPalette-system.Array-int-">Create</a>, <a href="../../../../system/windows/media/imaging/BitmapSource.html#getDpiX--">getDpiX</a>, <a href="../../../../system/windows/media/imaging/BitmapSource.html#getDpiY--">getDpiY</a>, <a href="../../../../system/windows/media/imaging/BitmapSource.html#getFormat--">getFormat</a>, <a href="../../../../system/windows/media/imaging/BitmapSource.html#getIsDownloading--">getIsDownloading</a>, <a href="../../../../system/windows/media/imaging/BitmapSource.html#getPalette--">getPalette</a>, <a href="../../../../system/windows/media/imaging/BitmapSource.html#getPixelHeight--">getPixelHeight</a>, <a href="../../../../system/windows/media/imaging/BitmapSource.html#getPixelWidth--">getPixelWidth</a>, <a href="../../../../system/windows/media/imaging/BitmapSource.html#removeDownloadCompleted-system.EventHandler-">removeDownloadCompleted</a></code></li>
+<code><a href="../../../../system/windows/media/imaging/BitmapSource.html#addDecodeFailed-system.EventHandler_1-">addDecodeFailed</a>, <a href="../../../../system/windows/media/imaging/BitmapSource.html#addDownloadCompleted-system.EventHandler-">addDownloadCompleted</a>, <a href="../../../../system/windows/media/imaging/BitmapSource.html#addDownloadFailed-system.EventHandler_1-">addDownloadFailed</a>, <a href="../../../../system/windows/media/imaging/BitmapSource.html#addDownloadProgress-system.EventHandler_1-">addDownloadProgress</a>, <a href="../../../../system/windows/media/imaging/BitmapSource.html#CloneCurrentValueNewBitmapSource--">CloneCurrentValueNewBitmapSource</a>, <a href="../../../../system/windows/media/imaging/BitmapSource.html#CloneNewBitmapSource--">CloneNewBitmapSource</a>, <a href="../../../../system/windows/media/imaging/BitmapSource.html#CopyPixels-system.Array-int-int-">CopyPixels</a>, <a href="../../../../system/windows/media/imaging/BitmapSource.html#CopyPixels-system.windows.Int32Rect-system.Array-int-int-">CopyPixels</a>, <a href="../../../../system/windows/media/imaging/BitmapSource.html#Create-int-int-double-double-system.windows.media.PixelFormat-system.windows.media.imaging.BitmapPalette-system.Array-int-">Create</a>, <a href="../../../../system/windows/media/imaging/BitmapSource.html#getDpiX--">getDpiX</a>, <a href="../../../../system/windows/media/imaging/BitmapSource.html#getDpiY--">getDpiY</a>, <a href="../../../../system/windows/media/imaging/BitmapSource.html#getFormat--">getFormat</a>, <a href="../../../../system/windows/media/imaging/BitmapSource.html#getIsDownloading--">getIsDownloading</a>, <a href="../../../../system/windows/media/imaging/BitmapSource.html#getPalette--">getPalette</a>, <a href="../../../../system/windows/media/imaging/BitmapSource.html#getPixelHeight--">getPixelHeight</a>, <a href="../../../../system/windows/media/imaging/BitmapSource.html#getPixelWidth--">getPixelWidth</a>, <a href="../../../../system/windows/media/imaging/BitmapSource.html#removeDecodeFailed-system.EventHandler_1-">removeDecodeFailed</a>, <a href="../../../../system/windows/media/imaging/BitmapSource.html#removeDownloadCompleted-system.EventHandler-">removeDownloadCompleted</a>, <a href="../../../../system/windows/media/imaging/BitmapSource.html#removeDownloadFailed-system.EventHandler_1-">removeDownloadFailed</a>, <a href="../../../../system/windows/media/imaging/BitmapSource.html#removeDownloadProgress-system.EventHandler_1-">removeDownloadProgress</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.system.windows.media.ImageSource">
@@ -687,7 +687,7 @@ extends <a href="../../../../system/windows/media/imaging/BitmapSource.html" tit
 <pre>public static&nbsp;<a href="../../../../system/windows/media/imaging/BitmapFrame.html" title="class in system.windows.media.imaging">BitmapFrame</a>&nbsp;Create(<a href="../../../../system/windows/media/imaging/BitmapSource.html" title="class in system.windows.media.imaging">BitmapSource</a>&nbsp;source,
                                  <a href="../../../../system/windows/media/imaging/BitmapSource.html" title="class in system.windows.media.imaging">BitmapSource</a>&nbsp;thumbnail,
                                  <a href="../../../../system/windows/media/imaging/BitmapMetadata.html" title="class in system.windows.media.imaging">BitmapMetadata</a>&nbsp;metadata,
-                                 <a href="../../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&nbsp;colorContexts)
+                                 <a href="../../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&lt;<a href="../../../../system/windows/media/ColorContext.html" title="class in system.windows.media">ColorContext</a>&gt;&nbsp;colorContexts)
                           throws java.lang.Throwable,
                                  <a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
                                  <a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
@@ -706,7 +706,7 @@ extends <a href="../../../../system/windows/media/imaging/BitmapSource.html" tit
 <dd><code>source</code> - the argument of type <code>BitmapSource</code></dd>
 <dd><code>thumbnail</code> - the argument of type <code>BitmapSource</code></dd>
 <dd><code>metadata</code> - the argument of type <code>BitmapMetadata</code></dd>
-<dd><code>colorContexts</code> - the argument of type <code>ReadOnlyCollection_1</code></dd>
+<dd><code>colorContexts</code> - the argument of type <code>ReadOnlyCollection_1&lt;ColorContext&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -1181,8 +1181,8 @@ extends <a href="../../../../system/windows/media/imaging/BitmapSource.html" tit
 <ul class="blockList">
 <li class="blockList">
 <h4>getColorContexts</h4>
-<pre>public&nbsp;<a href="../../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&nbsp;getColorContexts()
-                                      throws java.lang.Throwable</pre>
+<pre>public&nbsp;<a href="../../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&lt;<a href="../../../../system/windows/media/ColorContext.html" title="class in system.windows.media">ColorContext</a>&gt;&nbsp;getColorContexts()
+                                                    throws java.lang.Throwable</pre>
 <div class="block">Gets the value of the .NET property ColorContexts.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>

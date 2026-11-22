@@ -298,13 +298,13 @@ implements java.lang.AutoCloseable</pre>
 </td>
 </tr>
 <tr id="i9" class="rowColor">
-<td class="colFirst"><code><a href="../../../system/threading/tasks/Task_1.html" title="class in system.threading.tasks">Task_1</a></code></td>
+<td class="colFirst"><code><a href="../../../system/threading/tasks/Task_1.html" title="class in system.threading.tasks">Task_1</a>&lt;<a href="../../../system/data/common/DbDataReader.html" title="class in system.data.common">DbDataReader</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/common/DbBatch.html#ExecuteReaderAsync-system.threading.CancellationToken-">ExecuteReaderAsync</a></span>(<a href="../../../system/threading/CancellationToken.html" title="class in system.threading">CancellationToken</a>&nbsp;cancellationToken)</code>
 <div class="block">Invokes the .NET member ExecuteReaderAsync.</div>
 </td>
 </tr>
 <tr id="i10" class="altColor">
-<td class="colFirst"><code><a href="../../../system/threading/tasks/Task_1.html" title="class in system.threading.tasks">Task_1</a></code></td>
+<td class="colFirst"><code><a href="../../../system/threading/tasks/Task_1.html" title="class in system.threading.tasks">Task_1</a>&lt;<a href="../../../system/data/common/DbDataReader.html" title="class in system.data.common">DbDataReader</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/common/DbBatch.html#ExecuteReaderAsync-system.data.CommandBehavior-system.threading.CancellationToken-">ExecuteReaderAsync</a></span>(<a href="../../../system/data/CommandBehavior.html" title="class in system.data">CommandBehavior</a>&nbsp;behavior,
                   <a href="../../../system/threading/CancellationToken.html" title="class in system.threading">CancellationToken</a>&nbsp;cancellationToken)</code>
 <div class="block">Invokes the .NET member ExecuteReaderAsync.</div>
@@ -317,7 +317,7 @@ implements java.lang.AutoCloseable</pre>
 </td>
 </tr>
 <tr id="i12" class="altColor">
-<td class="colFirst"><code><a href="../../../system/threading/tasks/Task_1.html" title="class in system.threading.tasks">Task_1</a></code></td>
+<td class="colFirst"><code><a href="../../../system/threading/tasks/Task_1.html" title="class in system.threading.tasks">Task_1</a>&lt;<a href="../../../system/Object.html" title="class in system">Object</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/common/DbBatch.html#ExecuteScalarAsync-system.threading.CancellationToken-">ExecuteScalarAsync</a></span>(<a href="../../../system/threading/CancellationToken.html" title="class in system.threading">CancellationToken</a>&nbsp;cancellationToken)</code>
 <div class="block">Invokes the .NET member ExecuteScalarAsync.</div>
 </td>
@@ -714,8 +714,8 @@ implements java.lang.AutoCloseable</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>ExecuteReaderAsync</h4>
-<pre>public&nbsp;<a href="../../../system/threading/tasks/Task_1.html" title="class in system.threading.tasks">Task_1</a>&nbsp;ExecuteReaderAsync(<a href="../../../system/threading/CancellationToken.html" title="class in system.threading">CancellationToken</a>&nbsp;cancellationToken)
-                          throws java.lang.Throwable</pre>
+<pre>public&nbsp;<a href="../../../system/threading/tasks/Task_1.html" title="class in system.threading.tasks">Task_1</a>&lt;<a href="../../../system/data/common/DbDataReader.html" title="class in system.data.common">DbDataReader</a>&gt;&nbsp;ExecuteReaderAsync(<a href="../../../system/threading/CancellationToken.html" title="class in system.threading">CancellationToken</a>&nbsp;cancellationToken)
+                                        throws java.lang.Throwable</pre>
 <div class="block">Invokes the .NET member ExecuteReaderAsync.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -735,9 +735,9 @@ implements java.lang.AutoCloseable</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>ExecuteReaderAsync</h4>
-<pre>public&nbsp;<a href="../../../system/threading/tasks/Task_1.html" title="class in system.threading.tasks">Task_1</a>&nbsp;ExecuteReaderAsync(<a href="../../../system/data/CommandBehavior.html" title="class in system.data">CommandBehavior</a>&nbsp;behavior,
-                                 <a href="../../../system/threading/CancellationToken.html" title="class in system.threading">CancellationToken</a>&nbsp;cancellationToken)
-                          throws java.lang.Throwable</pre>
+<pre>public&nbsp;<a href="../../../system/threading/tasks/Task_1.html" title="class in system.threading.tasks">Task_1</a>&lt;<a href="../../../system/data/common/DbDataReader.html" title="class in system.data.common">DbDataReader</a>&gt;&nbsp;ExecuteReaderAsync(<a href="../../../system/data/CommandBehavior.html" title="class in system.data">CommandBehavior</a>&nbsp;behavior,
+                                               <a href="../../../system/threading/CancellationToken.html" title="class in system.threading">CancellationToken</a>&nbsp;cancellationToken)
+                                        throws java.lang.Throwable</pre>
 <div class="block">Invokes the .NET member ExecuteReaderAsync.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -777,8 +777,8 @@ implements java.lang.AutoCloseable</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>ExecuteScalarAsync</h4>
-<pre>public&nbsp;<a href="../../../system/threading/tasks/Task_1.html" title="class in system.threading.tasks">Task_1</a>&nbsp;ExecuteScalarAsync(<a href="../../../system/threading/CancellationToken.html" title="class in system.threading">CancellationToken</a>&nbsp;cancellationToken)
-                          throws java.lang.Throwable</pre>
+<pre>public&nbsp;<a href="../../../system/threading/tasks/Task_1.html" title="class in system.threading.tasks">Task_1</a>&lt;<a href="../../../system/Object.html" title="class in system">Object</a>&gt;&nbsp;ExecuteScalarAsync(<a href="../../../system/threading/CancellationToken.html" title="class in system.threading">CancellationToken</a>&nbsp;cancellationToken)
+                                  throws java.lang.Throwable</pre>
 <div class="block">Invokes the .NET member ExecuteScalarAsync.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>

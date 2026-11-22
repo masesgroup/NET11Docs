@@ -239,7 +239,7 @@ implements <a href="../../../system/collections/generic/IDictionary_2.html" titl
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/collections/generic/IDictionary_2Implementation.html#Add-system.collections.generic.KeyValuePair_2-">Add</a></span>(<a href="../../../system/collections/generic/KeyValuePair_2.html" title="class in system.collections.generic">KeyValuePair_2</a>&nbsp;item)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/collections/generic/IDictionary_2Implementation.html#Add-system.collections.generic.KeyValuePair_2-">Add</a></span>(<a href="../../../system/collections/generic/KeyValuePair_2.html" title="class in system.collections.generic">KeyValuePair_2</a>&lt;<a href="../../../system/collections/generic/IDictionary_2Implementation.html" title="type parameter in IDictionary_2Implementation">TKey</a>,<a href="../../../system/collections/generic/IDictionary_2Implementation.html" title="type parameter in IDictionary_2Implementation">TValue</a>&gt;&nbsp;item)</code>
 <div class="block">Invokes the .NET member Add.</div>
 </td>
 </tr>
@@ -264,7 +264,7 @@ implements <a href="../../../system/collections/generic/IDictionary_2.html" titl
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/collections/generic/IDictionary_2Implementation.html#Contains-system.collections.generic.KeyValuePair_2-">Contains</a></span>(<a href="../../../system/collections/generic/KeyValuePair_2.html" title="class in system.collections.generic">KeyValuePair_2</a>&nbsp;item)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/collections/generic/IDictionary_2Implementation.html#Contains-system.collections.generic.KeyValuePair_2-">Contains</a></span>(<a href="../../../system/collections/generic/KeyValuePair_2.html" title="class in system.collections.generic">KeyValuePair_2</a>&lt;<a href="../../../system/collections/generic/IDictionary_2Implementation.html" title="type parameter in IDictionary_2Implementation">TKey</a>,<a href="../../../system/collections/generic/IDictionary_2Implementation.html" title="type parameter in IDictionary_2Implementation">TValue</a>&gt;&nbsp;item)</code>
 <div class="block">Invokes the .NET member Contains.</div>
 </td>
 </tr>
@@ -324,20 +324,20 @@ implements <a href="../../../system/collections/generic/IDictionary_2.html" titl
 </td>
 </tr>
 <tr id="i14" class="altColor">
-<td class="colFirst"><code><a href="../../../system/collections/generic/ICollection_1.html" title="interface in system.collections.generic">ICollection_1</a></code></td>
+<td class="colFirst"><code><a href="../../../system/collections/generic/ICollection_1.html" title="interface in system.collections.generic">ICollection_1</a>&lt;<a href="../../../system/collections/generic/IDictionary_2Implementation.html" title="type parameter in IDictionary_2Implementation">TKey</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/collections/generic/IDictionary_2Implementation.html#getKeys--">getKeys</a></span>()</code>
 <div class="block">Gets the value of the .NET property Keys.</div>
 </td>
 </tr>
 <tr id="i15" class="rowColor">
-<td class="colFirst"><code><a href="../../../system/collections/generic/ICollection_1.html" title="interface in system.collections.generic">ICollection_1</a></code></td>
+<td class="colFirst"><code><a href="../../../system/collections/generic/ICollection_1.html" title="interface in system.collections.generic">ICollection_1</a>&lt;<a href="../../../system/collections/generic/IDictionary_2Implementation.html" title="type parameter in IDictionary_2Implementation">TValue</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/collections/generic/IDictionary_2Implementation.html#getValues--">getValues</a></span>()</code>
 <div class="block">Gets the value of the .NET property Values.</div>
 </td>
 </tr>
 <tr id="i16" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/collections/generic/IDictionary_2Implementation.html#Remove-system.collections.generic.KeyValuePair_2-">Remove</a></span>(<a href="../../../system/collections/generic/KeyValuePair_2.html" title="class in system.collections.generic">KeyValuePair_2</a>&nbsp;item)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/collections/generic/IDictionary_2Implementation.html#Remove-system.collections.generic.KeyValuePair_2-">Remove</a></span>(<a href="../../../system/collections/generic/KeyValuePair_2.html" title="class in system.collections.generic">KeyValuePair_2</a>&lt;<a href="../../../system/collections/generic/IDictionary_2Implementation.html" title="type parameter in IDictionary_2Implementation">TKey</a>,<a href="../../../system/collections/generic/IDictionary_2Implementation.html" title="type parameter in IDictionary_2Implementation">TValue</a>&gt;&nbsp;item)</code>
 <div class="block">Invokes the .NET member Remove.</div>
 </td>
 </tr>
@@ -516,12 +516,12 @@ implements <a href="../../../system/collections/generic/IDictionary_2.html" titl
 <ul class="blockList">
 <li class="blockList">
 <h4>Add</h4>
-<pre>public&nbsp;void&nbsp;Add(<a href="../../../system/collections/generic/KeyValuePair_2.html" title="class in system.collections.generic">KeyValuePair_2</a>&nbsp;item)
+<pre>public&nbsp;void&nbsp;Add(<a href="../../../system/collections/generic/KeyValuePair_2.html" title="class in system.collections.generic">KeyValuePair_2</a>&lt;<a href="../../../system/collections/generic/IDictionary_2Implementation.html" title="type parameter in IDictionary_2Implementation">TKey</a>,<a href="../../../system/collections/generic/IDictionary_2Implementation.html" title="type parameter in IDictionary_2Implementation">TValue</a>&gt;&nbsp;item)
          throws java.lang.Throwable</pre>
 <div class="block">Invokes the .NET member Add.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>item</code> - the argument of type <code>KeyValuePair_2</code></dd>
+<dd><code>item</code> - the argument of type <code>KeyValuePair_2&lt;TKey, TValue&gt;</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
@@ -598,14 +598,14 @@ implements <a href="../../../system/collections/generic/IDictionary_2.html" titl
 <ul class="blockList">
 <li class="blockList">
 <h4>Contains</h4>
-<pre>public&nbsp;boolean&nbsp;Contains(<a href="../../../system/collections/generic/KeyValuePair_2.html" title="class in system.collections.generic">KeyValuePair_2</a>&nbsp;item)
+<pre>public&nbsp;boolean&nbsp;Contains(<a href="../../../system/collections/generic/KeyValuePair_2.html" title="class in system.collections.generic">KeyValuePair_2</a>&lt;<a href="../../../system/collections/generic/IDictionary_2Implementation.html" title="type parameter in IDictionary_2Implementation">TKey</a>,<a href="../../../system/collections/generic/IDictionary_2Implementation.html" title="type parameter in IDictionary_2Implementation">TValue</a>&gt;&nbsp;item)
                  throws java.lang.Throwable</pre>
 <div class="block">Invokes the .NET member Contains.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../system/collections/generic/ICollection_1.html#Contains-T-">Contains</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/collections/generic/ICollection_1.html" title="interface in system.collections.generic">ICollection_1</a>&lt;<a href="../../../system/collections/generic/KeyValuePair_2.html" title="class in system.collections.generic">KeyValuePair_2</a>&lt;<a href="../../../system/collections/generic/IDictionary_2Implementation.html" title="type parameter in IDictionary_2Implementation">TKey</a> extends <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>,<a href="../../../system/collections/generic/IDictionary_2Implementation.html" title="type parameter in IDictionary_2Implementation">TValue</a> extends <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;&gt;</code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>item</code> - the argument of type <code>KeyValuePair_2</code></dd>
+<dd><code>item</code> - the argument of type <code>KeyValuePair_2&lt;TKey, TValue&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -836,8 +836,8 @@ implements <a href="../../../system/collections/generic/IDictionary_2.html" titl
 <ul class="blockList">
 <li class="blockList">
 <h4>getKeys</h4>
-<pre>public&nbsp;<a href="../../../system/collections/generic/ICollection_1.html" title="interface in system.collections.generic">ICollection_1</a>&nbsp;getKeys()
-                      throws java.lang.Throwable</pre>
+<pre>public&nbsp;<a href="../../../system/collections/generic/ICollection_1.html" title="interface in system.collections.generic">ICollection_1</a>&lt;<a href="../../../system/collections/generic/IDictionary_2Implementation.html" title="type parameter in IDictionary_2Implementation">TKey</a>&gt;&nbsp;getKeys()
+                            throws java.lang.Throwable</pre>
 <div class="block">Gets the value of the .NET property Keys.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
@@ -857,8 +857,8 @@ implements <a href="../../../system/collections/generic/IDictionary_2.html" titl
 <ul class="blockList">
 <li class="blockList">
 <h4>getValues</h4>
-<pre>public&nbsp;<a href="../../../system/collections/generic/ICollection_1.html" title="interface in system.collections.generic">ICollection_1</a>&nbsp;getValues()
-                        throws java.lang.Throwable</pre>
+<pre>public&nbsp;<a href="../../../system/collections/generic/ICollection_1.html" title="interface in system.collections.generic">ICollection_1</a>&lt;<a href="../../../system/collections/generic/IDictionary_2Implementation.html" title="type parameter in IDictionary_2Implementation">TValue</a>&gt;&nbsp;getValues()
+                                throws java.lang.Throwable</pre>
 <div class="block">Gets the value of the .NET property Values.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
@@ -878,12 +878,12 @@ implements <a href="../../../system/collections/generic/IDictionary_2.html" titl
 <ul class="blockList">
 <li class="blockList">
 <h4>Remove</h4>
-<pre>public&nbsp;boolean&nbsp;Remove(<a href="../../../system/collections/generic/KeyValuePair_2.html" title="class in system.collections.generic">KeyValuePair_2</a>&nbsp;item)
+<pre>public&nbsp;boolean&nbsp;Remove(<a href="../../../system/collections/generic/KeyValuePair_2.html" title="class in system.collections.generic">KeyValuePair_2</a>&lt;<a href="../../../system/collections/generic/IDictionary_2Implementation.html" title="type parameter in IDictionary_2Implementation">TKey</a>,<a href="../../../system/collections/generic/IDictionary_2Implementation.html" title="type parameter in IDictionary_2Implementation">TValue</a>&gt;&nbsp;item)
                throws java.lang.Throwable</pre>
 <div class="block">Invokes the .NET member Remove.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>item</code> - the argument of type <code>KeyValuePair_2</code></dd>
+<dd><code>item</code> - the argument of type <code>KeyValuePair_2&lt;TKey, TValue&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>

@@ -230,7 +230,7 @@ implements <a href="../../system/linq/IOrderedAsyncEnumerable_1.html" title="int
 </td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code>&lt;TKey extends <a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;<br><a href="../../system/linq/IOrderedAsyncEnumerable_1.html" title="interface in system.linq">IOrderedAsyncEnumerable_1</a></code></td>
+<td class="colFirst"><code>&lt;TKey extends <a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;<br><a href="../../system/linq/IOrderedAsyncEnumerable_1.html" title="interface in system.linq">IOrderedAsyncEnumerable_1</a>&lt;<a href="../../system/linq/IOrderedAsyncEnumerable_1Implementation.html" title="type parameter in IOrderedAsyncEnumerable_1Implementation">TElement</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/linq/IOrderedAsyncEnumerable_1Implementation.html#CreateOrderedAsyncEnumerable-system.Func_2-system.collections.generic.IComparer_1-boolean-">CreateOrderedAsyncEnumerable</a></span>(<a href="../../system/Func_2.html" title="class in system">Func_2</a>&nbsp;keySelector,
                             <a href="../../system/collections/generic/IComparer_1.html" title="interface in system.collections.generic">IComparer_1</a>&nbsp;comparer,
                             boolean&nbsp;descending)</code>
@@ -238,7 +238,7 @@ implements <a href="../../system/linq/IOrderedAsyncEnumerable_1.html" title="int
 </td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code>&lt;TKey extends <a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;<br><a href="../../system/linq/IOrderedAsyncEnumerable_1.html" title="interface in system.linq">IOrderedAsyncEnumerable_1</a></code></td>
+<td class="colFirst"><code>&lt;TKey extends <a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;<br><a href="../../system/linq/IOrderedAsyncEnumerable_1.html" title="interface in system.linq">IOrderedAsyncEnumerable_1</a>&lt;<a href="../../system/linq/IOrderedAsyncEnumerable_1Implementation.html" title="type parameter in IOrderedAsyncEnumerable_1Implementation">TElement</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/linq/IOrderedAsyncEnumerable_1Implementation.html#CreateOrderedAsyncEnumerable-system.Func_3-system.collections.generic.IComparer_1-boolean-">CreateOrderedAsyncEnumerable</a></span>(<a href="../../system/Func_3.html" title="class in system">Func_3</a>&nbsp;keySelector,
                             <a href="../../system/collections/generic/IComparer_1.html" title="interface in system.collections.generic">IComparer_1</a>&nbsp;comparer,
                             boolean&nbsp;descending)</code>
@@ -246,7 +246,7 @@ implements <a href="../../system/linq/IOrderedAsyncEnumerable_1.html" title="int
 </td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code><a href="../../system/collections/generic/IAsyncEnumerator_1.html" title="interface in system.collections.generic">IAsyncEnumerator_1</a></code></td>
+<td class="colFirst"><code><a href="../../system/collections/generic/IAsyncEnumerator_1.html" title="interface in system.collections.generic">IAsyncEnumerator_1</a>&lt;<a href="../../system/linq/IOrderedAsyncEnumerable_1Implementation.html" title="type parameter in IOrderedAsyncEnumerable_1Implementation">TElement</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/linq/IOrderedAsyncEnumerable_1Implementation.html#GetAsyncEnumerator-system.threading.CancellationToken-">GetAsyncEnumerator</a></span>(<a href="../../system/threading/CancellationToken.html" title="class in system.threading">CancellationToken</a>&nbsp;cancellationToken)</code>
 <div class="block">Invokes the .NET member GetAsyncEnumerator.</div>
 </td>
@@ -434,10 +434,10 @@ implements <a href="../../system/linq/IOrderedAsyncEnumerable_1.html" title="int
 <ul class="blockList">
 <li class="blockList">
 <h4>CreateOrderedAsyncEnumerable</h4>
-<pre>public&nbsp;&lt;TKey extends <a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;&nbsp;<a href="../../system/linq/IOrderedAsyncEnumerable_1.html" title="interface in system.linq">IOrderedAsyncEnumerable_1</a>&nbsp;CreateOrderedAsyncEnumerable(<a href="../../system/Func_2.html" title="class in system">Func_2</a>&nbsp;keySelector,
-                                                                                                 <a href="../../system/collections/generic/IComparer_1.html" title="interface in system.collections.generic">IComparer_1</a>&nbsp;comparer,
-                                                                                                 boolean&nbsp;descending)
-                                                                                          throws java.lang.Throwable</pre>
+<pre>public&nbsp;&lt;TKey extends <a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;&nbsp;<a href="../../system/linq/IOrderedAsyncEnumerable_1.html" title="interface in system.linq">IOrderedAsyncEnumerable_1</a>&lt;<a href="../../system/linq/IOrderedAsyncEnumerable_1Implementation.html" title="type parameter in IOrderedAsyncEnumerable_1Implementation">TElement</a>&gt;&nbsp;CreateOrderedAsyncEnumerable(<a href="../../system/Func_2.html" title="class in system">Func_2</a>&nbsp;keySelector,
+                                                                                                           <a href="../../system/collections/generic/IComparer_1.html" title="interface in system.collections.generic">IComparer_1</a>&nbsp;comparer,
+                                                                                                           boolean&nbsp;descending)
+                                                                                                    throws java.lang.Throwable</pre>
 <div class="block">Invokes the .NET member CreateOrderedAsyncEnumerable.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
@@ -463,10 +463,10 @@ implements <a href="../../system/linq/IOrderedAsyncEnumerable_1.html" title="int
 <ul class="blockList">
 <li class="blockList">
 <h4>CreateOrderedAsyncEnumerable</h4>
-<pre>public&nbsp;&lt;TKey extends <a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;&nbsp;<a href="../../system/linq/IOrderedAsyncEnumerable_1.html" title="interface in system.linq">IOrderedAsyncEnumerable_1</a>&nbsp;CreateOrderedAsyncEnumerable(<a href="../../system/Func_3.html" title="class in system">Func_3</a>&nbsp;keySelector,
-                                                                                                 <a href="../../system/collections/generic/IComparer_1.html" title="interface in system.collections.generic">IComparer_1</a>&nbsp;comparer,
-                                                                                                 boolean&nbsp;descending)
-                                                                                          throws java.lang.Throwable</pre>
+<pre>public&nbsp;&lt;TKey extends <a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;&nbsp;<a href="../../system/linq/IOrderedAsyncEnumerable_1.html" title="interface in system.linq">IOrderedAsyncEnumerable_1</a>&lt;<a href="../../system/linq/IOrderedAsyncEnumerable_1Implementation.html" title="type parameter in IOrderedAsyncEnumerable_1Implementation">TElement</a>&gt;&nbsp;CreateOrderedAsyncEnumerable(<a href="../../system/Func_3.html" title="class in system">Func_3</a>&nbsp;keySelector,
+                                                                                                           <a href="../../system/collections/generic/IComparer_1.html" title="interface in system.collections.generic">IComparer_1</a>&nbsp;comparer,
+                                                                                                           boolean&nbsp;descending)
+                                                                                                    throws java.lang.Throwable</pre>
 <div class="block">Invokes the .NET member CreateOrderedAsyncEnumerable.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
@@ -492,8 +492,8 @@ implements <a href="../../system/linq/IOrderedAsyncEnumerable_1.html" title="int
 <ul class="blockList">
 <li class="blockList">
 <h4>GetAsyncEnumerator</h4>
-<pre>public&nbsp;<a href="../../system/collections/generic/IAsyncEnumerator_1.html" title="interface in system.collections.generic">IAsyncEnumerator_1</a>&nbsp;GetAsyncEnumerator(<a href="../../system/threading/CancellationToken.html" title="class in system.threading">CancellationToken</a>&nbsp;cancellationToken)
-                                      throws java.lang.Throwable</pre>
+<pre>public&nbsp;<a href="../../system/collections/generic/IAsyncEnumerator_1.html" title="interface in system.collections.generic">IAsyncEnumerator_1</a>&lt;<a href="../../system/linq/IOrderedAsyncEnumerable_1Implementation.html" title="type parameter in IOrderedAsyncEnumerable_1Implementation">TElement</a>&gt;&nbsp;GetAsyncEnumerator(<a href="../../system/threading/CancellationToken.html" title="class in system.threading">CancellationToken</a>&nbsp;cancellationToken)
+                                                throws java.lang.Throwable</pre>
 <div class="block">Invokes the .NET member GetAsyncEnumerator.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>

@@ -239,7 +239,7 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>static <a href="../../../../microsoft/extensions/dependencyinjection/IServiceCollection.html" title="interface in microsoft.extensions.dependencyinjection">IServiceCollection</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../microsoft/extensions/dependencyinjection/extensions/ServiceCollectionDescriptorExtensions.html#Add-microsoft.extensions.dependencyinjection.IServiceCollection-system.collections.generic.IEnumerable_1-">Add</a></span>(<a href="../../../../microsoft/extensions/dependencyinjection/IServiceCollection.html" title="interface in microsoft.extensions.dependencyinjection">IServiceCollection</a>&nbsp;collection,
-   <a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;descriptors)</code>
+   <a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../../microsoft/extensions/dependencyinjection/ServiceDescriptor.html" title="class in microsoft.extensions.dependencyinjection">ServiceDescriptor</a>&gt;&nbsp;descriptors)</code>
 <div class="block">Invokes the .NET member Add.</div>
 </td>
 </tr>
@@ -330,7 +330,7 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <tr id="i14" class="altColor">
 <td class="colFirst"><code>static void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../microsoft/extensions/dependencyinjection/extensions/ServiceCollectionDescriptorExtensions.html#TryAdd-microsoft.extensions.dependencyinjection.IServiceCollection-system.collections.generic.IEnumerable_1-">TryAdd</a></span>(<a href="../../../../microsoft/extensions/dependencyinjection/IServiceCollection.html" title="interface in microsoft.extensions.dependencyinjection">IServiceCollection</a>&nbsp;collection,
-      <a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;descriptors)</code>
+      <a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../../microsoft/extensions/dependencyinjection/ServiceDescriptor.html" title="class in microsoft.extensions.dependencyinjection">ServiceDescriptor</a>&gt;&nbsp;descriptors)</code>
 <div class="block">Invokes the .NET member TryAdd.</div>
 </td>
 </tr>
@@ -344,7 +344,7 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <tr id="i16" class="altColor">
 <td class="colFirst"><code>static void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../microsoft/extensions/dependencyinjection/extensions/ServiceCollectionDescriptorExtensions.html#TryAddEnumerable-microsoft.extensions.dependencyinjection.IServiceCollection-system.collections.generic.IEnumerable_1-">TryAddEnumerable</a></span>(<a href="../../../../microsoft/extensions/dependencyinjection/IServiceCollection.html" title="interface in microsoft.extensions.dependencyinjection">IServiceCollection</a>&nbsp;services,
-                <a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;descriptors)</code>
+                <a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../../microsoft/extensions/dependencyinjection/ServiceDescriptor.html" title="class in microsoft.extensions.dependencyinjection">ServiceDescriptor</a>&gt;&nbsp;descriptors)</code>
 <div class="block">Invokes the .NET member TryAddEnumerable.</div>
 </td>
 </tr>
@@ -383,7 +383,7 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../microsoft/extensions/dependencyinjection/extensions/ServiceCollectionDescriptorExtensions.html#TryAddKeyedScoped-microsoft.extensions.dependencyinjection.IServiceCollection-org.mases.jcobridge.netreflection.NetType-org.mases.jcobridge.netreflection.NetObject-system.Func_3-">TryAddKeyedScoped</a></span>(<a href="../../../../microsoft/extensions/dependencyinjection/IServiceCollection.html" title="interface in microsoft.extensions.dependencyinjection">IServiceCollection</a>&nbsp;collection,
                  <a href="../../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;service,
                  <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;serviceKey,
-                 <a href="../../../../system/Func_3.html" title="class in system">Func_3</a>&nbsp;implementationFactory)</code>
+                 <a href="../../../../system/Func_3.html" title="class in system">Func_3</a>&lt;<a href="../../../../system/IServiceProvider.html" title="interface in system">IServiceProvider</a>,<a href="../../../../system/Object.html" title="class in system">Object</a>,<a href="../../../../system/Object.html" title="class in system">Object</a>&gt;&nbsp;implementationFactory)</code>
 <div class="block">Invokes the .NET member TryAddKeyedScoped.</div>
 </td>
 </tr>
@@ -432,7 +432,7 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../microsoft/extensions/dependencyinjection/extensions/ServiceCollectionDescriptorExtensions.html#TryAddKeyedSingleton-microsoft.extensions.dependencyinjection.IServiceCollection-org.mases.jcobridge.netreflection.NetType-org.mases.jcobridge.netreflection.NetObject-system.Func_3-">TryAddKeyedSingleton</a></span>(<a href="../../../../microsoft/extensions/dependencyinjection/IServiceCollection.html" title="interface in microsoft.extensions.dependencyinjection">IServiceCollection</a>&nbsp;collection,
                     <a href="../../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;service,
                     <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;serviceKey,
-                    <a href="../../../../system/Func_3.html" title="class in system">Func_3</a>&nbsp;implementationFactory)</code>
+                    <a href="../../../../system/Func_3.html" title="class in system">Func_3</a>&lt;<a href="../../../../system/IServiceProvider.html" title="interface in system">IServiceProvider</a>,<a href="../../../../system/Object.html" title="class in system">Object</a>,<a href="../../../../system/Object.html" title="class in system">Object</a>&gt;&nbsp;implementationFactory)</code>
 <div class="block">Invokes the .NET member TryAddKeyedSingleton.</div>
 </td>
 </tr>
@@ -473,7 +473,7 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../microsoft/extensions/dependencyinjection/extensions/ServiceCollectionDescriptorExtensions.html#TryAddKeyedTransient-microsoft.extensions.dependencyinjection.IServiceCollection-org.mases.jcobridge.netreflection.NetType-org.mases.jcobridge.netreflection.NetObject-system.Func_3-">TryAddKeyedTransient</a></span>(<a href="../../../../microsoft/extensions/dependencyinjection/IServiceCollection.html" title="interface in microsoft.extensions.dependencyinjection">IServiceCollection</a>&nbsp;collection,
                     <a href="../../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;service,
                     <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;serviceKey,
-                    <a href="../../../../system/Func_3.html" title="class in system">Func_3</a>&nbsp;implementationFactory)</code>
+                    <a href="../../../../system/Func_3.html" title="class in system">Func_3</a>&lt;<a href="../../../../system/IServiceProvider.html" title="interface in system">IServiceProvider</a>,<a href="../../../../system/Object.html" title="class in system">Object</a>,<a href="../../../../system/Object.html" title="class in system">Object</a>&gt;&nbsp;implementationFactory)</code>
 <div class="block">Invokes the .NET member TryAddKeyedTransient.</div>
 </td>
 </tr>
@@ -510,7 +510,7 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <td class="colFirst"><code>static void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../microsoft/extensions/dependencyinjection/extensions/ServiceCollectionDescriptorExtensions.html#TryAddScoped-microsoft.extensions.dependencyinjection.IServiceCollection-org.mases.jcobridge.netreflection.NetType-system.Func_2-">TryAddScoped</a></span>(<a href="../../../../microsoft/extensions/dependencyinjection/IServiceCollection.html" title="interface in microsoft.extensions.dependencyinjection">IServiceCollection</a>&nbsp;collection,
             <a href="../../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;service,
-            <a href="../../../../system/Func_2.html" title="class in system">Func_2</a>&nbsp;implementationFactory)</code>
+            <a href="../../../../system/Func_2.html" title="class in system">Func_2</a>&lt;<a href="../../../../system/IServiceProvider.html" title="interface in system">IServiceProvider</a>,<a href="../../../../system/Object.html" title="class in system">Object</a>&gt;&nbsp;implementationFactory)</code>
 <div class="block">Invokes the .NET member TryAddScoped.</div>
 </td>
 </tr>
@@ -546,7 +546,7 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <td class="colFirst"><code>static void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../microsoft/extensions/dependencyinjection/extensions/ServiceCollectionDescriptorExtensions.html#TryAddSingleton-microsoft.extensions.dependencyinjection.IServiceCollection-org.mases.jcobridge.netreflection.NetType-system.Func_2-">TryAddSingleton</a></span>(<a href="../../../../microsoft/extensions/dependencyinjection/IServiceCollection.html" title="interface in microsoft.extensions.dependencyinjection">IServiceCollection</a>&nbsp;collection,
                <a href="../../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;service,
-               <a href="../../../../system/Func_2.html" title="class in system">Func_2</a>&nbsp;implementationFactory)</code>
+               <a href="../../../../system/Func_2.html" title="class in system">Func_2</a>&lt;<a href="../../../../system/IServiceProvider.html" title="interface in system">IServiceProvider</a>,<a href="../../../../system/Object.html" title="class in system">Object</a>&gt;&nbsp;implementationFactory)</code>
 <div class="block">Invokes the .NET member TryAddSingleton.</div>
 </td>
 </tr>
@@ -589,7 +589,7 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <td class="colFirst"><code>static void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../microsoft/extensions/dependencyinjection/extensions/ServiceCollectionDescriptorExtensions.html#TryAddTransient-microsoft.extensions.dependencyinjection.IServiceCollection-org.mases.jcobridge.netreflection.NetType-system.Func_2-">TryAddTransient</a></span>(<a href="../../../../microsoft/extensions/dependencyinjection/IServiceCollection.html" title="interface in microsoft.extensions.dependencyinjection">IServiceCollection</a>&nbsp;collection,
                <a href="../../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;service,
-               <a href="../../../../system/Func_2.html" title="class in system">Func_2</a>&nbsp;implementationFactory)</code>
+               <a href="../../../../system/Func_2.html" title="class in system">Func_2</a>&lt;<a href="../../../../system/IServiceProvider.html" title="interface in system">IServiceProvider</a>,<a href="../../../../system/Object.html" title="class in system">Object</a>&gt;&nbsp;implementationFactory)</code>
 <div class="block">Invokes the .NET member TryAddTransient.</div>
 </td>
 </tr>
@@ -736,7 +736,7 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <li class="blockList">
 <h4>Add</h4>
 <pre>public static&nbsp;<a href="../../../../microsoft/extensions/dependencyinjection/IServiceCollection.html" title="interface in microsoft.extensions.dependencyinjection">IServiceCollection</a>&nbsp;Add(<a href="../../../../microsoft/extensions/dependencyinjection/IServiceCollection.html" title="interface in microsoft.extensions.dependencyinjection">IServiceCollection</a>&nbsp;collection,
-                                     <a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;descriptors)
+                                     <a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../../microsoft/extensions/dependencyinjection/ServiceDescriptor.html" title="class in microsoft.extensions.dependencyinjection">ServiceDescriptor</a>&gt;&nbsp;descriptors)
                               throws java.lang.Throwable,
                                      <a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
                                      <a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
@@ -749,7 +749,7 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>collection</code> - the argument of type <code>IServiceCollection</code></dd>
-<dd><code>descriptors</code> - the argument of type <code>IEnumerable_1</code></dd>
+<dd><code>descriptors</code> - the argument of type <code>IEnumerable_1&lt;ServiceDescriptor&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -1122,7 +1122,7 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <li class="blockList">
 <h4>TryAdd</h4>
 <pre>public static&nbsp;void&nbsp;TryAdd(<a href="../../../../microsoft/extensions/dependencyinjection/IServiceCollection.html" title="interface in microsoft.extensions.dependencyinjection">IServiceCollection</a>&nbsp;collection,
-                          <a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;descriptors)
+                          <a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../../microsoft/extensions/dependencyinjection/ServiceDescriptor.html" title="class in microsoft.extensions.dependencyinjection">ServiceDescriptor</a>&gt;&nbsp;descriptors)
                    throws java.lang.Throwable,
                           <a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
                           <a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
@@ -1135,7 +1135,7 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>collection</code> - the argument of type <code>IServiceCollection</code></dd>
-<dd><code>descriptors</code> - the argument of type <code>IEnumerable_1</code></dd>
+<dd><code>descriptors</code> - the argument of type <code>IEnumerable_1&lt;ServiceDescriptor&gt;</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
 <dd><code><a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code> - if the .NET member raises it</dd>
@@ -1192,7 +1192,7 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <li class="blockList">
 <h4>TryAddEnumerable</h4>
 <pre>public static&nbsp;void&nbsp;TryAddEnumerable(<a href="../../../../microsoft/extensions/dependencyinjection/IServiceCollection.html" title="interface in microsoft.extensions.dependencyinjection">IServiceCollection</a>&nbsp;services,
-                                    <a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;descriptors)
+                                    <a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../../microsoft/extensions/dependencyinjection/ServiceDescriptor.html" title="class in microsoft.extensions.dependencyinjection">ServiceDescriptor</a>&gt;&nbsp;descriptors)
                              throws java.lang.Throwable,
                                     <a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
                                     <a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
@@ -1207,7 +1207,7 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>services</code> - the argument of type <code>IServiceCollection</code></dd>
-<dd><code>descriptors</code> - the argument of type <code>IEnumerable_1</code></dd>
+<dd><code>descriptors</code> - the argument of type <code>IEnumerable_1&lt;ServiceDescriptor&gt;</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
 <dd><code><a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code> - if the .NET member raises it</dd>
@@ -1382,7 +1382,7 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <pre>public static&nbsp;void&nbsp;TryAddKeyedScoped(<a href="../../../../microsoft/extensions/dependencyinjection/IServiceCollection.html" title="interface in microsoft.extensions.dependencyinjection">IServiceCollection</a>&nbsp;collection,
                                      <a href="../../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;service,
                                      <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;serviceKey,
-                                     <a href="../../../../system/Func_3.html" title="class in system">Func_3</a>&nbsp;implementationFactory)
+                                     <a href="../../../../system/Func_3.html" title="class in system">Func_3</a>&lt;<a href="../../../../system/IServiceProvider.html" title="interface in system">IServiceProvider</a>,<a href="../../../../system/Object.html" title="class in system">Object</a>,<a href="../../../../system/Object.html" title="class in system">Object</a>&gt;&nbsp;implementationFactory)
                               throws java.lang.Throwable,
                                      <a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
                                      <a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
@@ -1397,7 +1397,7 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <dd><code>collection</code> - the argument of type <code>IServiceCollection</code></dd>
 <dd><code>service</code> - the argument of type <code>NetType</code></dd>
 <dd><code>serviceKey</code> - the argument of type <code>NetObject</code></dd>
-<dd><code>implementationFactory</code> - the argument of type <code>Func_3</code></dd>
+<dd><code>implementationFactory</code> - the argument of type <code>Func_3&lt;IServiceProvider, Object, Object&gt;</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
 <dd><code><a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code> - if the .NET member raises it</dd>
@@ -1611,7 +1611,7 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <pre>public static&nbsp;void&nbsp;TryAddKeyedSingleton(<a href="../../../../microsoft/extensions/dependencyinjection/IServiceCollection.html" title="interface in microsoft.extensions.dependencyinjection">IServiceCollection</a>&nbsp;collection,
                                         <a href="../../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;service,
                                         <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;serviceKey,
-                                        <a href="../../../../system/Func_3.html" title="class in system">Func_3</a>&nbsp;implementationFactory)
+                                        <a href="../../../../system/Func_3.html" title="class in system">Func_3</a>&lt;<a href="../../../../system/IServiceProvider.html" title="interface in system">IServiceProvider</a>,<a href="../../../../system/Object.html" title="class in system">Object</a>,<a href="../../../../system/Object.html" title="class in system">Object</a>&gt;&nbsp;implementationFactory)
                                  throws java.lang.Throwable,
                                         <a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
                                         <a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
@@ -1626,7 +1626,7 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <dd><code>collection</code> - the argument of type <code>IServiceCollection</code></dd>
 <dd><code>service</code> - the argument of type <code>NetType</code></dd>
 <dd><code>serviceKey</code> - the argument of type <code>NetObject</code></dd>
-<dd><code>implementationFactory</code> - the argument of type <code>Func_3</code></dd>
+<dd><code>implementationFactory</code> - the argument of type <code>Func_3&lt;IServiceProvider, Object, Object&gt;</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
 <dd><code><a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code> - if the .NET member raises it</dd>
@@ -1799,7 +1799,7 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <pre>public static&nbsp;void&nbsp;TryAddKeyedTransient(<a href="../../../../microsoft/extensions/dependencyinjection/IServiceCollection.html" title="interface in microsoft.extensions.dependencyinjection">IServiceCollection</a>&nbsp;collection,
                                         <a href="../../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;service,
                                         <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;serviceKey,
-                                        <a href="../../../../system/Func_3.html" title="class in system">Func_3</a>&nbsp;implementationFactory)
+                                        <a href="../../../../system/Func_3.html" title="class in system">Func_3</a>&lt;<a href="../../../../system/IServiceProvider.html" title="interface in system">IServiceProvider</a>,<a href="../../../../system/Object.html" title="class in system">Object</a>,<a href="../../../../system/Object.html" title="class in system">Object</a>&gt;&nbsp;implementationFactory)
                                  throws java.lang.Throwable,
                                         <a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
                                         <a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
@@ -1814,7 +1814,7 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <dd><code>collection</code> - the argument of type <code>IServiceCollection</code></dd>
 <dd><code>service</code> - the argument of type <code>NetType</code></dd>
 <dd><code>serviceKey</code> - the argument of type <code>NetObject</code></dd>
-<dd><code>implementationFactory</code> - the argument of type <code>Func_3</code></dd>
+<dd><code>implementationFactory</code> - the argument of type <code>Func_3&lt;IServiceProvider, Object, Object&gt;</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
 <dd><code><a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code> - if the .NET member raises it</dd>
@@ -1980,7 +1980,7 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <h4>TryAddScoped</h4>
 <pre>public static&nbsp;void&nbsp;TryAddScoped(<a href="../../../../microsoft/extensions/dependencyinjection/IServiceCollection.html" title="interface in microsoft.extensions.dependencyinjection">IServiceCollection</a>&nbsp;collection,
                                 <a href="../../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;service,
-                                <a href="../../../../system/Func_2.html" title="class in system">Func_2</a>&nbsp;implementationFactory)
+                                <a href="../../../../system/Func_2.html" title="class in system">Func_2</a>&lt;<a href="../../../../system/IServiceProvider.html" title="interface in system">IServiceProvider</a>,<a href="../../../../system/Object.html" title="class in system">Object</a>&gt;&nbsp;implementationFactory)
                          throws java.lang.Throwable,
                                 <a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
                                 <a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
@@ -1994,7 +1994,7 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>collection</code> - the argument of type <code>IServiceCollection</code></dd>
 <dd><code>service</code> - the argument of type <code>NetType</code></dd>
-<dd><code>implementationFactory</code> - the argument of type <code>Func_2</code></dd>
+<dd><code>implementationFactory</code> - the argument of type <code>Func_2&lt;IServiceProvider, Object&gt;</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
 <dd><code><a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code> - if the .NET member raises it</dd>
@@ -2158,7 +2158,7 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <h4>TryAddSingleton</h4>
 <pre>public static&nbsp;void&nbsp;TryAddSingleton(<a href="../../../../microsoft/extensions/dependencyinjection/IServiceCollection.html" title="interface in microsoft.extensions.dependencyinjection">IServiceCollection</a>&nbsp;collection,
                                    <a href="../../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;service,
-                                   <a href="../../../../system/Func_2.html" title="class in system">Func_2</a>&nbsp;implementationFactory)
+                                   <a href="../../../../system/Func_2.html" title="class in system">Func_2</a>&lt;<a href="../../../../system/IServiceProvider.html" title="interface in system">IServiceProvider</a>,<a href="../../../../system/Object.html" title="class in system">Object</a>&gt;&nbsp;implementationFactory)
                             throws java.lang.Throwable,
                                    <a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
                                    <a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
@@ -2172,7 +2172,7 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>collection</code> - the argument of type <code>IServiceCollection</code></dd>
 <dd><code>service</code> - the argument of type <code>NetType</code></dd>
-<dd><code>implementationFactory</code> - the argument of type <code>Func_2</code></dd>
+<dd><code>implementationFactory</code> - the argument of type <code>Func_2&lt;IServiceProvider, Object&gt;</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
 <dd><code><a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code> - if the .NET member raises it</dd>
@@ -2375,7 +2375,7 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <h4>TryAddTransient</h4>
 <pre>public static&nbsp;void&nbsp;TryAddTransient(<a href="../../../../microsoft/extensions/dependencyinjection/IServiceCollection.html" title="interface in microsoft.extensions.dependencyinjection">IServiceCollection</a>&nbsp;collection,
                                    <a href="../../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;service,
-                                   <a href="../../../../system/Func_2.html" title="class in system">Func_2</a>&nbsp;implementationFactory)
+                                   <a href="../../../../system/Func_2.html" title="class in system">Func_2</a>&lt;<a href="../../../../system/IServiceProvider.html" title="interface in system">IServiceProvider</a>,<a href="../../../../system/Object.html" title="class in system">Object</a>&gt;&nbsp;implementationFactory)
                             throws java.lang.Throwable,
                                    <a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
                                    <a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
@@ -2389,7 +2389,7 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>collection</code> - the argument of type <code>IServiceCollection</code></dd>
 <dd><code>service</code> - the argument of type <code>NetType</code></dd>
-<dd><code>implementationFactory</code> - the argument of type <code>Func_2</code></dd>
+<dd><code>implementationFactory</code> - the argument of type <code>Func_2&lt;IServiceProvider, Object&gt;</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
 <dd><code><a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code> - if the .NET member raises it</dd>

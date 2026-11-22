@@ -298,7 +298,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObjectEnumerable.
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/runtime/compilerservices/ConditionalWeakTable_2.html" title="type parameter in ConditionalWeakTable_2">TValue</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/compilerservices/ConditionalWeakTable_2.html#GetOrAdd-TKey-system.Func_2-">GetOrAdd</a></span>(<a href="../../../system/runtime/compilerservices/ConditionalWeakTable_2.html" title="type parameter in ConditionalWeakTable_2">TKey</a>&nbsp;key,
-        <a href="../../../system/Func_2.html" title="class in system">Func_2</a>&nbsp;valueFactory)</code>
+        <a href="../../../system/Func_2.html" title="class in system">Func_2</a>&lt;<a href="../../../system/runtime/compilerservices/ConditionalWeakTable_2.html" title="type parameter in ConditionalWeakTable_2">TKey</a>,<a href="../../../system/runtime/compilerservices/ConditionalWeakTable_2.html" title="type parameter in ConditionalWeakTable_2">TValue</a>&gt;&nbsp;valueFactory)</code>
 <div class="block">Invokes the .NET member GetOrAdd.</div>
 </td>
 </tr>
@@ -758,7 +758,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObjectEnumerable.
 <li class="blockList">
 <h4>GetOrAdd</h4>
 <pre>public&nbsp;<a href="../../../system/runtime/compilerservices/ConditionalWeakTable_2.html" title="type parameter in ConditionalWeakTable_2">TValue</a>&nbsp;GetOrAdd(<a href="../../../system/runtime/compilerservices/ConditionalWeakTable_2.html" title="type parameter in ConditionalWeakTable_2">TKey</a>&nbsp;key,
-                       <a href="../../../system/Func_2.html" title="class in system">Func_2</a>&nbsp;valueFactory)
+                       <a href="../../../system/Func_2.html" title="class in system">Func_2</a>&lt;<a href="../../../system/runtime/compilerservices/ConditionalWeakTable_2.html" title="type parameter in ConditionalWeakTable_2">TKey</a>,<a href="../../../system/runtime/compilerservices/ConditionalWeakTable_2.html" title="type parameter in ConditionalWeakTable_2">TValue</a>&gt;&nbsp;valueFactory)
                 throws java.lang.Throwable,
                        <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
                        <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
@@ -771,7 +771,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObjectEnumerable.
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>key</code> - the argument of type <code>TKey</code></dd>
-<dd><code>valueFactory</code> - the argument of type <code>Func_2</code></dd>
+<dd><code>valueFactory</code> - the argument of type <code>Func_2&lt;TKey, TValue&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>

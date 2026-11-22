@@ -206,7 +206,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../system/net/security/CipherSuitesPolicy.html#CipherSuitesPolicy--">CipherSuitesPolicy</a></span>()</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../system/net/security/CipherSuitesPolicy.html#CipherSuitesPolicy-system.collections.generic.IEnumerable_1-">CipherSuitesPolicy</a></span>(<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;allowedCipherSuites)</code>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../system/net/security/CipherSuitesPolicy.html#CipherSuitesPolicy-system.collections.generic.IEnumerable_1-">CipherSuitesPolicy</a></span>(<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/net/security/TlsCipherSuite.html" title="class in system.net.security">TlsCipherSuite</a>&gt;&nbsp;allowedCipherSuites)</code>
 <div class="block">Initializes a new instance by invoking the .NET constructor.</div>
 </td>
 </tr>
@@ -237,7 +237,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 </td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code><a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a></code></td>
+<td class="colFirst"><code><a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/net/security/TlsCipherSuite.html" title="class in system.net.security">TlsCipherSuite</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/security/CipherSuitesPolicy.html#getAllowedCipherSuites--">getAllowedCipherSuites</a></span>()</code>
 <div class="block">Gets the value of the .NET property AllowedCipherSuites.</div>
 </td>
@@ -387,7 +387,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <ul class="blockList">
 <li class="blockList">
 <h4>CipherSuitesPolicy</h4>
-<pre>public&nbsp;CipherSuitesPolicy(<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;allowedCipherSuites)
+<pre>public&nbsp;CipherSuitesPolicy(<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/net/security/TlsCipherSuite.html" title="class in system.net.security">TlsCipherSuite</a>&gt;&nbsp;allowedCipherSuites)
                    throws java.lang.Throwable,
                           <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
                           <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
@@ -399,7 +399,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <div class="block">Initializes a new instance by invoking the .NET constructor.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>allowedCipherSuites</code> - the argument of type <code>IEnumerable_1</code></dd>
+<dd><code>allowedCipherSuites</code> - the argument of type <code>IEnumerable_1&lt;TlsCipherSuite&gt;</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code> - if the .NET constructor fails</dd>
 <dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code> - if the .NET member raises it</dd>
@@ -464,8 +464,8 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <ul class="blockList">
 <li class="blockList">
 <h4>getAllowedCipherSuites</h4>
-<pre>public&nbsp;<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;getAllowedCipherSuites()
-                                     throws java.lang.Throwable</pre>
+<pre>public&nbsp;<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/net/security/TlsCipherSuite.html" title="class in system.net.security">TlsCipherSuite</a>&gt;&nbsp;getAllowedCipherSuites()
+                                                     throws java.lang.Throwable</pre>
 <div class="block">Gets the value of the .NET property AllowedCipherSuites.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>

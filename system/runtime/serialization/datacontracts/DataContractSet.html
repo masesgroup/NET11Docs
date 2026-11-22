@@ -219,8 +219,8 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 </tr>
 <tr class="altColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../../system/runtime/serialization/datacontracts/DataContractSet.html#DataContractSet-system.runtime.serialization.ISerializationSurrogateProvider-system.collections.generic.IEnumerable_1-system.collections.generic.IEnumerable_1-">DataContractSet</a></span>(<a href="../../../../system/runtime/serialization/ISerializationSurrogateProvider.html" title="interface in system.runtime.serialization">ISerializationSurrogateProvider</a>&nbsp;dataContractSurrogate,
-               <a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;referencedTypes,
-               <a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;referencedCollectionTypes)</code>
+               <a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&gt;&nbsp;referencedTypes,
+               <a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&gt;&nbsp;referencedCollectionTypes)</code>
 <div class="block">Initializes a new instance by invoking the .NET constructor.</div>
 </td>
 </tr>
@@ -251,7 +251,7 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 </td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code><a href="../../../../system/collections/generic/Dictionary_2.html" title="class in system.collections.generic">Dictionary_2</a></code></td>
+<td class="colFirst"><code><a href="../../../../system/collections/generic/Dictionary_2.html" title="class in system.collections.generic">Dictionary_2</a>&lt;<a href="../../../../system/xml/XmlQualifiedName.html" title="class in system.xml">XmlQualifiedName</a>,<a href="../../../../system/runtime/serialization/datacontracts/DataContract.html" title="class in system.runtime.serialization.datacontracts">DataContract</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/runtime/serialization/datacontracts/DataContractSet.html#getContracts--">getContracts</a></span>()</code>
 <div class="block">Gets the value of the .NET property Contracts.</div>
 </td>
@@ -299,13 +299,13 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 </td>
 </tr>
 <tr id="i9" class="rowColor">
-<td class="colFirst"><code><a href="../../../../system/collections/generic/Dictionary_2.html" title="class in system.collections.generic">Dictionary_2</a></code></td>
+<td class="colFirst"><code><a href="../../../../system/collections/generic/Dictionary_2.html" title="class in system.collections.generic">Dictionary_2</a>&lt;<a href="../../../../system/xml/XmlQualifiedName.html" title="class in system.xml">XmlQualifiedName</a>,<a href="../../../../system/runtime/serialization/datacontracts/DataContract.html" title="class in system.runtime.serialization.datacontracts">DataContract</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/runtime/serialization/datacontracts/DataContractSet.html#getKnownTypesForObject--">getKnownTypesForObject</a></span>()</code>
 <div class="block">Gets the value of the .NET property KnownTypesForObject.</div>
 </td>
 </tr>
 <tr id="i10" class="altColor">
-<td class="colFirst"><code><a href="../../../../system/collections/generic/Dictionary_2.html" title="class in system.collections.generic">Dictionary_2</a></code></td>
+<td class="colFirst"><code><a href="../../../../system/collections/generic/Dictionary_2.html" title="class in system.collections.generic">Dictionary_2</a>&lt;<a href="../../../../system/runtime/serialization/datacontracts/DataContract.html" title="class in system.runtime.serialization.datacontracts">DataContract</a>,<a href="../../../../system/Object.html" title="class in system">Object</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/runtime/serialization/datacontracts/DataContractSet.html#getProcessedContracts--">getProcessedContracts</a></span>()</code>
 <div class="block">Gets the value of the .NET property ProcessedContracts.</div>
 </td>
@@ -327,9 +327,9 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 </td>
 </tr>
 <tr id="i13" class="rowColor">
-<td class="colFirst"><code><a href="../../../../system/collections/generic/List_1.html" title="class in system.collections.generic">List_1</a></code></td>
+<td class="colFirst"><code><a href="../../../../system/collections/generic/List_1.html" title="class in system.collections.generic">List_1</a>&lt;<a href="../../../../system/xml/XmlQualifiedName.html" title="class in system.xml">XmlQualifiedName</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/runtime/serialization/datacontracts/DataContractSet.html#ImportSchemaSet-system.xml.schema.XmlSchemaSet-system.collections.generic.IEnumerable_1-boolean-">ImportSchemaSet</a></span>(<a href="../../../../system/xml/schema/XmlSchemaSet.html" title="class in system.xml.schema">XmlSchemaSet</a>&nbsp;schemaSet,
-               <a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;elements,
+               <a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../../system/xml/schema/XmlSchemaElement.html" title="class in system.xml.schema">XmlSchemaElement</a>&gt;&nbsp;elements,
                boolean&nbsp;importXmlDataType)</code>
 <div class="block">Invokes the .NET member ImportSchemaSet.</div>
 </td>
@@ -342,7 +342,7 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 </tr>
 <tr id="i15" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/runtime/serialization/datacontracts/DataContractSet.html#setKnownTypesForObject-system.collections.generic.Dictionary_2-">setKnownTypesForObject</a></span>(<a href="../../../../system/collections/generic/Dictionary_2.html" title="class in system.collections.generic">Dictionary_2</a>&nbsp;KnownTypesForObject)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/runtime/serialization/datacontracts/DataContractSet.html#setKnownTypesForObject-system.collections.generic.Dictionary_2-">setKnownTypesForObject</a></span>(<a href="../../../../system/collections/generic/Dictionary_2.html" title="class in system.collections.generic">Dictionary_2</a>&lt;<a href="../../../../system/xml/XmlQualifiedName.html" title="class in system.xml">XmlQualifiedName</a>,<a href="../../../../system/runtime/serialization/datacontracts/DataContract.html" title="class in system.runtime.serialization.datacontracts">DataContract</a>&gt;&nbsp;KnownTypesForObject)</code>
 <div class="block">Sets the value of the .NET property KnownTypesForObject.</div>
 </td>
 </tr>
@@ -499,8 +499,8 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <li class="blockList">
 <h4>DataContractSet</h4>
 <pre>public&nbsp;DataContractSet(<a href="../../../../system/runtime/serialization/ISerializationSurrogateProvider.html" title="interface in system.runtime.serialization">ISerializationSurrogateProvider</a>&nbsp;dataContractSurrogate,
-                       <a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;referencedTypes,
-                       <a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;referencedCollectionTypes)
+                       <a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&gt;&nbsp;referencedTypes,
+                       <a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&gt;&nbsp;referencedCollectionTypes)
                 throws java.lang.Throwable,
                        <a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
                        <a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
@@ -514,8 +514,8 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>dataContractSurrogate</code> - the argument of type <code>ISerializationSurrogateProvider</code></dd>
-<dd><code>referencedTypes</code> - the argument of type <code>IEnumerable_1</code></dd>
-<dd><code>referencedCollectionTypes</code> - the argument of type <code>IEnumerable_1</code></dd>
+<dd><code>referencedTypes</code> - the argument of type <code>IEnumerable_1&lt;NetType&gt;</code></dd>
+<dd><code>referencedCollectionTypes</code> - the argument of type <code>IEnumerable_1&lt;NetType&gt;</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code> - if the .NET constructor fails</dd>
 <dd><code><a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code> - if the .NET member raises it</dd>
@@ -581,14 +581,14 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <ul class="blockList">
 <li class="blockList">
 <h4>getContracts</h4>
-<pre>public&nbsp;<a href="../../../../system/collections/generic/Dictionary_2.html" title="class in system.collections.generic">Dictionary_2</a>&nbsp;getContracts()
-                          throws java.lang.Throwable,
-                                 <a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
-                                 <a href="../../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                                 <a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
-                                 <a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                                 <a href="../../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
-                                 <a href="../../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></pre>
+<pre>public&nbsp;<a href="../../../../system/collections/generic/Dictionary_2.html" title="class in system.collections.generic">Dictionary_2</a>&lt;<a href="../../../../system/xml/XmlQualifiedName.html" title="class in system.xml">XmlQualifiedName</a>,<a href="../../../../system/runtime/serialization/datacontracts/DataContract.html" title="class in system.runtime.serialization.datacontracts">DataContract</a>&gt;&nbsp;getContracts()
+                                                         throws java.lang.Throwable,
+                                                                <a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                                                <a href="../../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                                                <a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                                                <a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                                                <a href="../../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                                                <a href="../../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></pre>
 <div class="block">Gets the value of the .NET property Contracts.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -789,8 +789,8 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <ul class="blockList">
 <li class="blockList">
 <h4>getKnownTypesForObject</h4>
-<pre>public&nbsp;<a href="../../../../system/collections/generic/Dictionary_2.html" title="class in system.collections.generic">Dictionary_2</a>&nbsp;getKnownTypesForObject()
-                                    throws java.lang.Throwable</pre>
+<pre>public&nbsp;<a href="../../../../system/collections/generic/Dictionary_2.html" title="class in system.collections.generic">Dictionary_2</a>&lt;<a href="../../../../system/xml/XmlQualifiedName.html" title="class in system.xml">XmlQualifiedName</a>,<a href="../../../../system/runtime/serialization/datacontracts/DataContract.html" title="class in system.runtime.serialization.datacontracts">DataContract</a>&gt;&nbsp;getKnownTypesForObject()
+                                                                   throws java.lang.Throwable</pre>
 <div class="block">Gets the value of the .NET property KnownTypesForObject.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -808,14 +808,14 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <ul class="blockList">
 <li class="blockList">
 <h4>getProcessedContracts</h4>
-<pre>public&nbsp;<a href="../../../../system/collections/generic/Dictionary_2.html" title="class in system.collections.generic">Dictionary_2</a>&nbsp;getProcessedContracts()
-                                   throws java.lang.Throwable,
-                                          <a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
-                                          <a href="../../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                                          <a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
-                                          <a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                                          <a href="../../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
-                                          <a href="../../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></pre>
+<pre>public&nbsp;<a href="../../../../system/collections/generic/Dictionary_2.html" title="class in system.collections.generic">Dictionary_2</a>&lt;<a href="../../../../system/runtime/serialization/datacontracts/DataContract.html" title="class in system.runtime.serialization.datacontracts">DataContract</a>,<a href="../../../../system/Object.html" title="class in system">Object</a>&gt;&nbsp;getProcessedContracts()
+                                                        throws java.lang.Throwable,
+                                                               <a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                                               <a href="../../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                                               <a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                                               <a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                                               <a href="../../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                                               <a href="../../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></pre>
 <div class="block">Gets the value of the .NET property ProcessedContracts.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -925,34 +925,34 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <ul class="blockList">
 <li class="blockList">
 <h4>ImportSchemaSet</h4>
-<pre>public&nbsp;<a href="../../../../system/collections/generic/List_1.html" title="class in system.collections.generic">List_1</a>&nbsp;ImportSchemaSet(<a href="../../../../system/xml/schema/XmlSchemaSet.html" title="class in system.xml.schema">XmlSchemaSet</a>&nbsp;schemaSet,
-                              <a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;elements,
-                              boolean&nbsp;importXmlDataType)
-                       throws java.lang.Throwable,
-                              <a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                              <a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                              <a href="../../../../system/threading/ThreadStateException.html" title="class in system.threading">ThreadStateException</a>,
-                              <a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
-                              <a href="../../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
-                              <a href="../../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
-                              <a href="../../../../system/xml/schema/XmlSchemaException.html" title="class in system.xml.schema">XmlSchemaException</a>,
-                              <a href="../../../../system/diagnostics/UnreachableException.html" title="class in system.diagnostics">UnreachableException</a>,
-                              <a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
-                              <a href="../../../../system/UriFormatException.html" title="class in system">UriFormatException</a>,
-                              <a href="../../../../system/xml/XmlException.html" title="class in system.xml">XmlException</a>,
-                              <a href="../../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
-                              <a href="../../../../system/RankException.html" title="class in system">RankException</a>,
-                              <a href="../../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
-                              <a href="../../../../system/NullReferenceException.html" title="class in system">NullReferenceException</a>,
-                              <a href="../../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                              <a href="../../../../system/FormatException.html" title="class in system">FormatException</a>,
-                              <a href="../../../../system/runtime/serialization/InvalidDataContractException.html" title="class in system.runtime.serialization">InvalidDataContractException</a>,
-                              <a href="../../../../system/runtime/serialization/SerializationException.html" title="class in system.runtime.serialization">SerializationException</a></pre>
+<pre>public&nbsp;<a href="../../../../system/collections/generic/List_1.html" title="class in system.collections.generic">List_1</a>&lt;<a href="../../../../system/xml/XmlQualifiedName.html" title="class in system.xml">XmlQualifiedName</a>&gt;&nbsp;ImportSchemaSet(<a href="../../../../system/xml/schema/XmlSchemaSet.html" title="class in system.xml.schema">XmlSchemaSet</a>&nbsp;schemaSet,
+                                                <a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../../system/xml/schema/XmlSchemaElement.html" title="class in system.xml.schema">XmlSchemaElement</a>&gt;&nbsp;elements,
+                                                boolean&nbsp;importXmlDataType)
+                                         throws java.lang.Throwable,
+                                                <a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                                <a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                                <a href="../../../../system/threading/ThreadStateException.html" title="class in system.threading">ThreadStateException</a>,
+                                                <a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                                <a href="../../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+                                                <a href="../../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                                <a href="../../../../system/xml/schema/XmlSchemaException.html" title="class in system.xml.schema">XmlSchemaException</a>,
+                                                <a href="../../../../system/diagnostics/UnreachableException.html" title="class in system.diagnostics">UnreachableException</a>,
+                                                <a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                                <a href="../../../../system/UriFormatException.html" title="class in system">UriFormatException</a>,
+                                                <a href="../../../../system/xml/XmlException.html" title="class in system.xml">XmlException</a>,
+                                                <a href="../../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                                <a href="../../../../system/RankException.html" title="class in system">RankException</a>,
+                                                <a href="../../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                                                <a href="../../../../system/NullReferenceException.html" title="class in system">NullReferenceException</a>,
+                                                <a href="../../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                                <a href="../../../../system/FormatException.html" title="class in system">FormatException</a>,
+                                                <a href="../../../../system/runtime/serialization/InvalidDataContractException.html" title="class in system.runtime.serialization">InvalidDataContractException</a>,
+                                                <a href="../../../../system/runtime/serialization/SerializationException.html" title="class in system.runtime.serialization">SerializationException</a></pre>
 <div class="block">Invokes the .NET member ImportSchemaSet.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>schemaSet</code> - the argument of type <code>XmlSchemaSet</code></dd>
-<dd><code>elements</code> - the argument of type <code>IEnumerable_1</code></dd>
+<dd><code>elements</code> - the argument of type <code>IEnumerable_1&lt;XmlSchemaElement&gt;</code></dd>
 <dd><code>importXmlDataType</code> - the argument of type <code>boolean</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value returned by the .NET member</dd>
@@ -1005,7 +1005,7 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <ul class="blockListLast">
 <li class="blockList">
 <h4>setKnownTypesForObject</h4>
-<pre>public&nbsp;void&nbsp;setKnownTypesForObject(<a href="../../../../system/collections/generic/Dictionary_2.html" title="class in system.collections.generic">Dictionary_2</a>&nbsp;KnownTypesForObject)
+<pre>public&nbsp;void&nbsp;setKnownTypesForObject(<a href="../../../../system/collections/generic/Dictionary_2.html" title="class in system.collections.generic">Dictionary_2</a>&lt;<a href="../../../../system/xml/XmlQualifiedName.html" title="class in system.xml">XmlQualifiedName</a>,<a href="../../../../system/runtime/serialization/datacontracts/DataContract.html" title="class in system.runtime.serialization.datacontracts">DataContract</a>&gt;&nbsp;KnownTypesForObject)
                             throws java.lang.Throwable</pre>
 <div class="block">Sets the value of the .NET property KnownTypesForObject.</div>
 <dl>

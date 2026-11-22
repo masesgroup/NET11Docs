@@ -242,7 +242,7 @@ extends <a href="../../system/windows/media/animation/Animatable.html" title="cl
 </td>
 </tr>
 <tr class="rowColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../system/windows/FreezableCollection_1.html#FreezableCollection_1-system.collections.generic.IEnumerable_1-">FreezableCollection_1</a></span>(<a href="../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;collection)</code>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../system/windows/FreezableCollection_1.html#FreezableCollection_1-system.collections.generic.IEnumerable_1-">FreezableCollection_1</a></span>(<a href="../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../system/windows/FreezableCollection_1.html" title="type parameter in FreezableCollection_1">T</a>&gt;&nbsp;collection)</code>
 <div class="block">Initializes a new instance by invoking the .NET constructor.</div>
 </td>
 </tr>
@@ -290,13 +290,13 @@ extends <a href="../../system/windows/media/animation/Animatable.html" title="cl
 </td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code><a href="../../system/windows/FreezableCollection_1.html" title="class in system.windows">FreezableCollection_1</a></code></td>
+<td class="colFirst"><code><a href="../../system/windows/FreezableCollection_1.html" title="class in system.windows">FreezableCollection_1</a>&lt;<a href="../../system/windows/FreezableCollection_1.html" title="type parameter in FreezableCollection_1">T</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/FreezableCollection_1.html#CloneCurrentValueNewFreezableCollection_1--">CloneCurrentValueNewFreezableCollection_1</a></span>()</code>
 <div class="block">Invokes the .NET member CloneCurrentValueNewFreezableCollection_1.</div>
 </td>
 </tr>
 <tr id="i4" class="altColor">
-<td class="colFirst"><code><a href="../../system/windows/FreezableCollection_1.html" title="class in system.windows">FreezableCollection_1</a></code></td>
+<td class="colFirst"><code><a href="../../system/windows/FreezableCollection_1.html" title="class in system.windows">FreezableCollection_1</a>&lt;<a href="../../system/windows/FreezableCollection_1.html" title="type parameter in FreezableCollection_1">T</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/FreezableCollection_1.html#CloneNewFreezableCollection_1--">CloneNewFreezableCollection_1</a></span>()</code>
 <div class="block">Invokes the .NET member CloneNewFreezableCollection_1.</div>
 </td>
@@ -535,7 +535,7 @@ extends <a href="../../system/windows/media/animation/Animatable.html" title="cl
 <ul class="blockList">
 <li class="blockList">
 <h4>FreezableCollection_1</h4>
-<pre>public&nbsp;FreezableCollection_1(<a href="../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;collection)
+<pre>public&nbsp;FreezableCollection_1(<a href="../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../system/windows/FreezableCollection_1.html" title="type parameter in FreezableCollection_1">T</a>&gt;&nbsp;collection)
                       throws java.lang.Throwable,
                              <a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
                              <a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
@@ -550,7 +550,7 @@ extends <a href="../../system/windows/media/animation/Animatable.html" title="cl
 <div class="block">Initializes a new instance by invoking the .NET constructor.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>collection</code> - the argument of type <code>IEnumerable_1</code></dd>
+<dd><code>collection</code> - the argument of type <code>IEnumerable_1&lt;T&gt;</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code> - if the .NET constructor fails</dd>
 <dd><code><a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code> - if the .NET member raises it</dd>
@@ -727,18 +727,18 @@ extends <a href="../../system/windows/media/animation/Animatable.html" title="cl
 <ul class="blockList">
 <li class="blockList">
 <h4>CloneCurrentValueNewFreezableCollection_1</h4>
-<pre>public&nbsp;<a href="../../system/windows/FreezableCollection_1.html" title="class in system.windows">FreezableCollection_1</a>&nbsp;CloneCurrentValueNewFreezableCollection_1()
-                                                                throws java.lang.Throwable,
-                                                                       <a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
-                                                                       <a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
-                                                                       <a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
-                                                                       <a href="../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
-                                                                       <a href="../../system/security/SecurityException.html" title="class in system.security">SecurityException</a>,
-                                                                       <a href="../../system/io/IOException.html" title="class in system.io">IOException</a>,
-                                                                       <a href="../../system/UnauthorizedAccessException.html" title="class in system">UnauthorizedAccessException</a>,
-                                                                       <a href="../../system/FormatException.html" title="class in system">FormatException</a>,
-                                                                       <a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                                                                       <a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></pre>
+<pre>public&nbsp;<a href="../../system/windows/FreezableCollection_1.html" title="class in system.windows">FreezableCollection_1</a>&lt;<a href="../../system/windows/FreezableCollection_1.html" title="type parameter in FreezableCollection_1">T</a>&gt;&nbsp;CloneCurrentValueNewFreezableCollection_1()
+                                                                   throws java.lang.Throwable,
+                                                                          <a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                                                          <a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                                                          <a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                                                          <a href="../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                                                          <a href="../../system/security/SecurityException.html" title="class in system.security">SecurityException</a>,
+                                                                          <a href="../../system/io/IOException.html" title="class in system.io">IOException</a>,
+                                                                          <a href="../../system/UnauthorizedAccessException.html" title="class in system">UnauthorizedAccessException</a>,
+                                                                          <a href="../../system/FormatException.html" title="class in system">FormatException</a>,
+                                                                          <a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                                                          <a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></pre>
 <div class="block">Invokes the .NET member CloneCurrentValueNewFreezableCollection_1.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -766,18 +766,18 @@ extends <a href="../../system/windows/media/animation/Animatable.html" title="cl
 <ul class="blockList">
 <li class="blockList">
 <h4>CloneNewFreezableCollection_1</h4>
-<pre>public&nbsp;<a href="../../system/windows/FreezableCollection_1.html" title="class in system.windows">FreezableCollection_1</a>&nbsp;CloneNewFreezableCollection_1()
-                                                    throws java.lang.Throwable,
-                                                           <a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
-                                                           <a href="../../system/security/SecurityException.html" title="class in system.security">SecurityException</a>,
-                                                           <a href="../../system/io/IOException.html" title="class in system.io">IOException</a>,
-                                                           <a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
-                                                           <a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                                                           <a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
-                                                           <a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                                                           <a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
-                                                           <a href="../../system/FormatException.html" title="class in system">FormatException</a>,
-                                                           <a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></pre>
+<pre>public&nbsp;<a href="../../system/windows/FreezableCollection_1.html" title="class in system.windows">FreezableCollection_1</a>&lt;<a href="../../system/windows/FreezableCollection_1.html" title="type parameter in FreezableCollection_1">T</a>&gt;&nbsp;CloneNewFreezableCollection_1()
+                                                       throws java.lang.Throwable,
+                                                              <a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                                              <a href="../../system/security/SecurityException.html" title="class in system.security">SecurityException</a>,
+                                                              <a href="../../system/io/IOException.html" title="class in system.io">IOException</a>,
+                                                              <a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                                              <a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                                              <a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                                              <a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                                              <a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                                              <a href="../../system/FormatException.html" title="class in system">FormatException</a>,
+                                                              <a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></pre>
 <div class="block">Invokes the .NET member CloneNewFreezableCollection_1.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>

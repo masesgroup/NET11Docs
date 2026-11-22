@@ -300,7 +300,7 @@ extends <a href="../../../system/linq/expressions/Expression.html" title="class 
 </td>
 </tr>
 <tr id="i7" class="rowColor">
-<td class="colFirst"><code><a href="../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a></code></td>
+<td class="colFirst"><code><a href="../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&lt;<a href="../../../system/linq/expressions/Expression.html" title="class in system.linq.expressions">Expression</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/linq/expressions/DynamicExpression.html#getArguments--">getArguments</a></span>()</code>
 <div class="block">Gets the value of the .NET property Arguments.</div>
 </td>
@@ -415,7 +415,7 @@ extends <a href="../../../system/linq/expressions/Expression.html" title="class 
 </tr>
 <tr id="i23" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/linq/expressions/DynamicExpression.html" title="class in system.linq.expressions">DynamicExpression</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/linq/expressions/DynamicExpression.html#Update-system.collections.generic.IEnumerable_1-">Update</a></span>(<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;arguments)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/linq/expressions/DynamicExpression.html#Update-system.collections.generic.IEnumerable_1-">Update</a></span>(<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/linq/expressions/Expression.html" title="class in system.linq.expressions">Expression</a>&gt;&nbsp;arguments)</code>
 <div class="block">Invokes the .NET member Update.</div>
 </td>
 </tr>
@@ -875,14 +875,14 @@ extends <a href="../../../system/linq/expressions/Expression.html" title="class 
 <ul class="blockList">
 <li class="blockList">
 <h4>getArguments</h4>
-<pre>public&nbsp;<a href="../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&nbsp;getArguments()
-                                  throws java.lang.Throwable,
-                                         <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
-                                         <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                                         <a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
-                                         <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                                         <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
-                                         <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></pre>
+<pre>public&nbsp;<a href="../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&lt;<a href="../../../system/linq/expressions/Expression.html" title="class in system.linq.expressions">Expression</a>&gt;&nbsp;getArguments()
+                                              throws java.lang.Throwable,
+                                                     <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                                     <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                                     <a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                                     <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                                     <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                                     <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></pre>
 <div class="block">Gets the value of the .NET property Arguments.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -1371,7 +1371,7 @@ extends <a href="../../../system/linq/expressions/Expression.html" title="class 
 <ul class="blockListLast">
 <li class="blockList">
 <h4>Update</h4>
-<pre>public&nbsp;<a href="../../../system/linq/expressions/DynamicExpression.html" title="class in system.linq.expressions">DynamicExpression</a>&nbsp;Update(<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;arguments)
+<pre>public&nbsp;<a href="../../../system/linq/expressions/DynamicExpression.html" title="class in system.linq.expressions">DynamicExpression</a>&nbsp;Update(<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/linq/expressions/Expression.html" title="class in system.linq.expressions">Expression</a>&gt;&nbsp;arguments)
                          throws java.lang.Throwable,
                                 <a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
                                 <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
@@ -1387,7 +1387,7 @@ extends <a href="../../../system/linq/expressions/Expression.html" title="class 
 <div class="block">Invokes the .NET member Update.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>arguments</code> - the argument of type <code>IEnumerable_1</code></dd>
+<dd><code>arguments</code> - the argument of type <code>IEnumerable_1&lt;Expression&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>

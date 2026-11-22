@@ -283,7 +283,7 @@ implements <a href="../../../../system/threading/tasks/dataflow/ITargetBlock_1.h
 <td class="colFirst"><code><a href="../../../../system/threading/tasks/dataflow/DataflowMessageStatus.html" title="class in system.threading.tasks.dataflow">DataflowMessageStatus</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/threading/tasks/dataflow/ITargetBlock_1Implementation.html#OfferMessage-system.threading.tasks.dataflow.DataflowMessageHeader-TInput-system.threading.tasks.dataflow.ISourceBlock_1-boolean-">OfferMessage</a></span>(<a href="../../../../system/threading/tasks/dataflow/DataflowMessageHeader.html" title="class in system.threading.tasks.dataflow">DataflowMessageHeader</a>&nbsp;messageHeader,
             <a href="../../../../system/threading/tasks/dataflow/ITargetBlock_1Implementation.html" title="type parameter in ITargetBlock_1Implementation">TInput</a>&nbsp;messageValue,
-            <a href="../../../../system/threading/tasks/dataflow/ISourceBlock_1.html" title="interface in system.threading.tasks.dataflow">ISourceBlock_1</a>&nbsp;source,
+            <a href="../../../../system/threading/tasks/dataflow/ISourceBlock_1.html" title="interface in system.threading.tasks.dataflow">ISourceBlock_1</a>&lt;<a href="../../../../system/threading/tasks/dataflow/ITargetBlock_1Implementation.html" title="type parameter in ITargetBlock_1Implementation">TInput</a>&gt;&nbsp;source,
             boolean&nbsp;consumeToAccept)</code>
 <div class="block">Invokes the .NET member OfferMessage.</div>
 </td>
@@ -621,7 +621,7 @@ implements <a href="../../../../system/threading/tasks/dataflow/ITargetBlock_1.h
 <h4>OfferMessage</h4>
 <pre>public&nbsp;<a href="../../../../system/threading/tasks/dataflow/DataflowMessageStatus.html" title="class in system.threading.tasks.dataflow">DataflowMessageStatus</a>&nbsp;OfferMessage(<a href="../../../../system/threading/tasks/dataflow/DataflowMessageHeader.html" title="class in system.threading.tasks.dataflow">DataflowMessageHeader</a>&nbsp;messageHeader,
                                           <a href="../../../../system/threading/tasks/dataflow/ITargetBlock_1Implementation.html" title="type parameter in ITargetBlock_1Implementation">TInput</a>&nbsp;messageValue,
-                                          <a href="../../../../system/threading/tasks/dataflow/ISourceBlock_1.html" title="interface in system.threading.tasks.dataflow">ISourceBlock_1</a>&nbsp;source,
+                                          <a href="../../../../system/threading/tasks/dataflow/ISourceBlock_1.html" title="interface in system.threading.tasks.dataflow">ISourceBlock_1</a>&lt;<a href="../../../../system/threading/tasks/dataflow/ITargetBlock_1Implementation.html" title="type parameter in ITargetBlock_1Implementation">TInput</a>&gt;&nbsp;source,
                                           boolean&nbsp;consumeToAccept)
                                    throws java.lang.Throwable</pre>
 <div class="block">Invokes the .NET member OfferMessage.</div>
@@ -631,7 +631,7 @@ implements <a href="../../../../system/threading/tasks/dataflow/ITargetBlock_1.h
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>messageHeader</code> - the argument of type <code>DataflowMessageHeader</code></dd>
 <dd><code>messageValue</code> - the argument of type <code>TInput</code></dd>
-<dd><code>source</code> - the argument of type <code>ISourceBlock_1</code></dd>
+<dd><code>source</code> - the argument of type <code>ISourceBlock_1&lt;TInput&gt;</code></dd>
 <dd><code>consumeToAccept</code> - the argument of type <code>boolean</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value returned by the .NET member</dd>

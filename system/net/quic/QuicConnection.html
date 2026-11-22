@@ -238,7 +238,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code><a href="../../../system/threading/tasks/ValueTask_1.html" title="class in system.threading.tasks">ValueTask_1</a></code></td>
+<td class="colFirst"><code><a href="../../../system/threading/tasks/ValueTask_1.html" title="class in system.threading.tasks">ValueTask_1</a>&lt;<a href="../../../system/net/quic/QuicStream.html" title="class in system.net.quic">QuicStream</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/quic/QuicConnection.html#AcceptInboundStreamAsync-system.threading.CancellationToken-">AcceptInboundStreamAsync</a></span>(<a href="../../../system/threading/CancellationToken.html" title="class in system.threading">CancellationToken</a>&nbsp;cancellationToken)</code>
 <div class="block">Invokes the .NET member AcceptInboundStreamAsync.</div>
 </td>
@@ -257,7 +257,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 </td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code>static <a href="../../../system/threading/tasks/ValueTask_1.html" title="class in system.threading.tasks">ValueTask_1</a></code></td>
+<td class="colFirst"><code>static <a href="../../../system/threading/tasks/ValueTask_1.html" title="class in system.threading.tasks">ValueTask_1</a>&lt;<a href="../../../system/net/quic/QuicConnection.html" title="class in system.net.quic">QuicConnection</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/quic/QuicConnection.html#ConnectAsync-system.net.quic.QuicClientConnectionOptions-system.threading.CancellationToken-">ConnectAsync</a></span>(<a href="../../../system/net/quic/QuicClientConnectionOptions.html" title="class in system.net.quic">QuicClientConnectionOptions</a>&nbsp;options,
             <a href="../../../system/threading/CancellationToken.html" title="class in system.threading">CancellationToken</a>&nbsp;cancellationToken)</code>
 <div class="block">Invokes the .NET member ConnectAsync.</div>
@@ -348,7 +348,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 </td>
 </tr>
 <tr id="i18" class="altColor">
-<td class="colFirst"><code><a href="../../../system/threading/tasks/ValueTask_1.html" title="class in system.threading.tasks">ValueTask_1</a></code></td>
+<td class="colFirst"><code><a href="../../../system/threading/tasks/ValueTask_1.html" title="class in system.threading.tasks">ValueTask_1</a>&lt;<a href="../../../system/net/quic/QuicStream.html" title="class in system.net.quic">QuicStream</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/quic/QuicConnection.html#OpenOutboundStreamAsync-system.net.quic.QuicStreamType-system.threading.CancellationToken-">OpenOutboundStreamAsync</a></span>(<a href="../../../system/net/quic/QuicStreamType.html" title="class in system.net.quic">QuicStreamType</a>&nbsp;type,
                        <a href="../../../system/threading/CancellationToken.html" title="class in system.threading">CancellationToken</a>&nbsp;cancellationToken)</code>
 <div class="block">Invokes the .NET member OpenOutboundStreamAsync.</div>
@@ -494,24 +494,24 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <ul class="blockList">
 <li class="blockList">
 <h4>AcceptInboundStreamAsync</h4>
-<pre>public&nbsp;<a href="../../../system/threading/tasks/ValueTask_1.html" title="class in system.threading.tasks">ValueTask_1</a>&nbsp;AcceptInboundStreamAsync(<a href="../../../system/threading/CancellationToken.html" title="class in system.threading">CancellationToken</a>&nbsp;cancellationToken)
-                                     throws java.lang.Throwable,
-                                            <a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
-                                            <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
-                                            <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                                            <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
-                                            <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                                            <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                                            <a href="../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
-                                            <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
-                                            <a href="../../../system/NullReferenceException.html" title="class in system">NullReferenceException</a>,
-                                            <a href="../../../system/diagnostics/tracing/EventSourceException.html" title="class in system.diagnostics.tracing">EventSourceException</a>,
-                                            <a href="../../../system/threading/tasks/TaskSchedulerException.html" title="class in system.threading.tasks">TaskSchedulerException</a>,
-                                            <a href="../../../system/threading/ThreadStateException.html" title="class in system.threading">ThreadStateException</a>,
-                                            <a href="../../../system/OperationCanceledException.html" title="class in system">OperationCanceledException</a>,
-                                            <a href="../../../system/threading/tasks/TaskCanceledException.html" title="class in system.threading.tasks">TaskCanceledException</a>,
-                                            <a href="../../../system/AggregateException.html" title="class in system">AggregateException</a>,
-                                            <a href="../../../system/diagnostics/UnreachableException.html" title="class in system.diagnostics">UnreachableException</a></pre>
+<pre>public&nbsp;<a href="../../../system/threading/tasks/ValueTask_1.html" title="class in system.threading.tasks">ValueTask_1</a>&lt;<a href="../../../system/net/quic/QuicStream.html" title="class in system.net.quic">QuicStream</a>&gt;&nbsp;AcceptInboundStreamAsync(<a href="../../../system/threading/CancellationToken.html" title="class in system.threading">CancellationToken</a>&nbsp;cancellationToken)
+                                                 throws java.lang.Throwable,
+                                                        <a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                                        <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                                        <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                                        <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                                        <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                                        <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                                        <a href="../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+                                                        <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                                        <a href="../../../system/NullReferenceException.html" title="class in system">NullReferenceException</a>,
+                                                        <a href="../../../system/diagnostics/tracing/EventSourceException.html" title="class in system.diagnostics.tracing">EventSourceException</a>,
+                                                        <a href="../../../system/threading/tasks/TaskSchedulerException.html" title="class in system.threading.tasks">TaskSchedulerException</a>,
+                                                        <a href="../../../system/threading/ThreadStateException.html" title="class in system.threading">ThreadStateException</a>,
+                                                        <a href="../../../system/OperationCanceledException.html" title="class in system">OperationCanceledException</a>,
+                                                        <a href="../../../system/threading/tasks/TaskCanceledException.html" title="class in system.threading.tasks">TaskCanceledException</a>,
+                                                        <a href="../../../system/AggregateException.html" title="class in system">AggregateException</a>,
+                                                        <a href="../../../system/diagnostics/UnreachableException.html" title="class in system.diagnostics">UnreachableException</a></pre>
 <div class="block">Invokes the .NET member AcceptInboundStreamAsync.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -625,32 +625,32 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <ul class="blockList">
 <li class="blockList">
 <h4>ConnectAsync</h4>
-<pre>public static&nbsp;<a href="../../../system/threading/tasks/ValueTask_1.html" title="class in system.threading.tasks">ValueTask_1</a>&nbsp;ConnectAsync(<a href="../../../system/net/quic/QuicClientConnectionOptions.html" title="class in system.net.quic">QuicClientConnectionOptions</a>&nbsp;options,
-                                       <a href="../../../system/threading/CancellationToken.html" title="class in system.threading">CancellationToken</a>&nbsp;cancellationToken)
-                                throws java.lang.Throwable,
-                                       <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                                       <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
-                                       <a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
-                                       <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                                       <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                                       <a href="../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
-                                       <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
-                                       <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
-                                       <a href="../../../system/MissingMemberException.html" title="class in system">MissingMemberException</a>,
-                                       <a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a>,
-                                       <a href="../../../system/FormatException.html" title="class in system">FormatException</a>,
-                                       <a href="../../../system/diagnostics/tracing/EventSourceException.html" title="class in system.diagnostics.tracing">EventSourceException</a>,
-                                       <a href="../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
-                                       <a href="../../../system/net/sockets/SocketException.html" title="class in system.net.sockets">SocketException</a>,
-                                       <a href="../../../system/AggregateException.html" title="class in system">AggregateException</a>,
-                                       <a href="../../../system/diagnostics/UnreachableException.html" title="class in system.diagnostics">UnreachableException</a>,
-                                       <a href="../../../system/security/cryptography/CryptographicException.html" title="class in system.security.cryptography">CryptographicException</a>,
-                                       <a href="../../../system/security/authentication/AuthenticationException.html" title="class in system.security.authentication">AuthenticationException</a>,
-                                       <a href="../../../system/net/quic/QuicException.html" title="class in system.net.quic">QuicException</a>,
-                                       <a href="../../../system/threading/LockRecursionException.html" title="class in system.threading">LockRecursionException</a>,
-                                       <a href="../../../system/EntryPointNotFoundException.html" title="class in system">EntryPointNotFoundException</a>,
-                                       <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
-                                       <a href="../../../system/OperationCanceledException.html" title="class in system">OperationCanceledException</a></pre>
+<pre>public static&nbsp;<a href="../../../system/threading/tasks/ValueTask_1.html" title="class in system.threading.tasks">ValueTask_1</a>&lt;<a href="../../../system/net/quic/QuicConnection.html" title="class in system.net.quic">QuicConnection</a>&gt;&nbsp;ConnectAsync(<a href="../../../system/net/quic/QuicClientConnectionOptions.html" title="class in system.net.quic">QuicClientConnectionOptions</a>&nbsp;options,
+                                                       <a href="../../../system/threading/CancellationToken.html" title="class in system.threading">CancellationToken</a>&nbsp;cancellationToken)
+                                                throws java.lang.Throwable,
+                                                       <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                                       <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                                       <a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                                       <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                                       <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                                       <a href="../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+                                                       <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                                       <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                                       <a href="../../../system/MissingMemberException.html" title="class in system">MissingMemberException</a>,
+                                                       <a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a>,
+                                                       <a href="../../../system/FormatException.html" title="class in system">FormatException</a>,
+                                                       <a href="../../../system/diagnostics/tracing/EventSourceException.html" title="class in system.diagnostics.tracing">EventSourceException</a>,
+                                                       <a href="../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                                                       <a href="../../../system/net/sockets/SocketException.html" title="class in system.net.sockets">SocketException</a>,
+                                                       <a href="../../../system/AggregateException.html" title="class in system">AggregateException</a>,
+                                                       <a href="../../../system/diagnostics/UnreachableException.html" title="class in system.diagnostics">UnreachableException</a>,
+                                                       <a href="../../../system/security/cryptography/CryptographicException.html" title="class in system.security.cryptography">CryptographicException</a>,
+                                                       <a href="../../../system/security/authentication/AuthenticationException.html" title="class in system.security.authentication">AuthenticationException</a>,
+                                                       <a href="../../../system/net/quic/QuicException.html" title="class in system.net.quic">QuicException</a>,
+                                                       <a href="../../../system/threading/LockRecursionException.html" title="class in system.threading">LockRecursionException</a>,
+                                                       <a href="../../../system/EntryPointNotFoundException.html" title="class in system">EntryPointNotFoundException</a>,
+                                                       <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                                       <a href="../../../system/OperationCanceledException.html" title="class in system">OperationCanceledException</a></pre>
 <div class="block">Invokes the .NET member ConnectAsync.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -1000,27 +1000,27 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <ul class="blockList">
 <li class="blockList">
 <h4>OpenOutboundStreamAsync</h4>
-<pre>public&nbsp;<a href="../../../system/threading/tasks/ValueTask_1.html" title="class in system.threading.tasks">ValueTask_1</a>&nbsp;OpenOutboundStreamAsync(<a href="../../../system/net/quic/QuicStreamType.html" title="class in system.net.quic">QuicStreamType</a>&nbsp;type,
-                                           <a href="../../../system/threading/CancellationToken.html" title="class in system.threading">CancellationToken</a>&nbsp;cancellationToken)
-                                    throws java.lang.Throwable,
-                                           <a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
-                                           <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
-                                           <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
-                                           <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                                           <a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a>,
-                                           <a href="../../../system/FormatException.html" title="class in system">FormatException</a>,
-                                           <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
-                                           <a href="../../../system/diagnostics/tracing/EventSourceException.html" title="class in system.diagnostics.tracing">EventSourceException</a>,
-                                           <a href="../../../system/MissingMemberException.html" title="class in system">MissingMemberException</a>,
-                                           <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                                           <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                                           <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
-                                           <a href="../../../system/threading/tasks/TaskSchedulerException.html" title="class in system.threading.tasks">TaskSchedulerException</a>,
-                                           <a href="../../../system/threading/ThreadStateException.html" title="class in system.threading">ThreadStateException</a>,
-                                           <a href="../../../system/OperationCanceledException.html" title="class in system">OperationCanceledException</a>,
-                                           <a href="../../../system/threading/tasks/TaskCanceledException.html" title="class in system.threading.tasks">TaskCanceledException</a>,
-                                           <a href="../../../system/AggregateException.html" title="class in system">AggregateException</a>,
-                                           <a href="../../../system/diagnostics/UnreachableException.html" title="class in system.diagnostics">UnreachableException</a></pre>
+<pre>public&nbsp;<a href="../../../system/threading/tasks/ValueTask_1.html" title="class in system.threading.tasks">ValueTask_1</a>&lt;<a href="../../../system/net/quic/QuicStream.html" title="class in system.net.quic">QuicStream</a>&gt;&nbsp;OpenOutboundStreamAsync(<a href="../../../system/net/quic/QuicStreamType.html" title="class in system.net.quic">QuicStreamType</a>&nbsp;type,
+                                                       <a href="../../../system/threading/CancellationToken.html" title="class in system.threading">CancellationToken</a>&nbsp;cancellationToken)
+                                                throws java.lang.Throwable,
+                                                       <a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                                       <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                                       <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                                       <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                                       <a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a>,
+                                                       <a href="../../../system/FormatException.html" title="class in system">FormatException</a>,
+                                                       <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                                       <a href="../../../system/diagnostics/tracing/EventSourceException.html" title="class in system.diagnostics.tracing">EventSourceException</a>,
+                                                       <a href="../../../system/MissingMemberException.html" title="class in system">MissingMemberException</a>,
+                                                       <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                                       <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                                       <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                                       <a href="../../../system/threading/tasks/TaskSchedulerException.html" title="class in system.threading.tasks">TaskSchedulerException</a>,
+                                                       <a href="../../../system/threading/ThreadStateException.html" title="class in system.threading">ThreadStateException</a>,
+                                                       <a href="../../../system/OperationCanceledException.html" title="class in system">OperationCanceledException</a>,
+                                                       <a href="../../../system/threading/tasks/TaskCanceledException.html" title="class in system.threading.tasks">TaskCanceledException</a>,
+                                                       <a href="../../../system/AggregateException.html" title="class in system">AggregateException</a>,
+                                                       <a href="../../../system/diagnostics/UnreachableException.html" title="class in system.diagnostics">UnreachableException</a></pre>
 <div class="block">Invokes the .NET member OpenOutboundStreamAsync.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>

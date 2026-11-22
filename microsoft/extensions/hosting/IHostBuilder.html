@@ -191,7 +191,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="../../../microsoft/extensions/hosting/IHostBuilder.html" title="interface in microsoft.extensions.hosting">IHostBuilder</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../microsoft/extensions/hosting/IHostBuilder.html#ConfigureAppConfiguration-system.Action_2-">ConfigureAppConfiguration</a></span>(<a href="../../../system/Action_2.html" title="class in system">Action_2</a>&nbsp;configureDelegate)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../microsoft/extensions/hosting/IHostBuilder.html#ConfigureAppConfiguration-system.Action_2-">ConfigureAppConfiguration</a></span>(<a href="../../../system/Action_2.html" title="class in system">Action_2</a>&lt;<a href="../../../microsoft/extensions/hosting/HostBuilderContext.html" title="class in microsoft.extensions.hosting">HostBuilderContext</a>,<a href="../../../microsoft/extensions/configuration/IConfigurationBuilder.html" title="interface in microsoft.extensions.configuration">IConfigurationBuilder</a>&gt;&nbsp;configureDelegate)</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>&lt;TContainerBuilder extends <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;<br><a href="../../../microsoft/extensions/hosting/IHostBuilder.html" title="interface in microsoft.extensions.hosting">IHostBuilder</a></code></td>
@@ -199,11 +199,11 @@ extends <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="../../../microsoft/extensions/hosting/IHostBuilder.html" title="interface in microsoft.extensions.hosting">IHostBuilder</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../microsoft/extensions/hosting/IHostBuilder.html#ConfigureHostConfiguration-system.Action_1-">ConfigureHostConfiguration</a></span>(<a href="../../../system/Action_1.html" title="class in system">Action_1</a>&nbsp;configureDelegate)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../microsoft/extensions/hosting/IHostBuilder.html#ConfigureHostConfiguration-system.Action_1-">ConfigureHostConfiguration</a></span>(<a href="../../../system/Action_1.html" title="class in system">Action_1</a>&lt;<a href="../../../microsoft/extensions/configuration/IConfigurationBuilder.html" title="interface in microsoft.extensions.configuration">IConfigurationBuilder</a>&gt;&nbsp;configureDelegate)</code>&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="../../../microsoft/extensions/hosting/IHostBuilder.html" title="interface in microsoft.extensions.hosting">IHostBuilder</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../microsoft/extensions/hosting/IHostBuilder.html#ConfigureServices-system.Action_2-">ConfigureServices</a></span>(<a href="../../../system/Action_2.html" title="class in system">Action_2</a>&nbsp;configureDelegate)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../microsoft/extensions/hosting/IHostBuilder.html#ConfigureServices-system.Action_2-">ConfigureServices</a></span>(<a href="../../../system/Action_2.html" title="class in system">Action_2</a>&lt;<a href="../../../microsoft/extensions/hosting/HostBuilderContext.html" title="class in microsoft.extensions.hosting">HostBuilderContext</a>,<a href="../../../microsoft/extensions/dependencyinjection/IServiceCollection.html" title="interface in microsoft.extensions.dependencyinjection">IServiceCollection</a>&gt;&nbsp;configureDelegate)</code>&nbsp;</td>
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
@@ -236,7 +236,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.
 </td>
 </tr>
 <tr id="i10" class="altColor">
-<td class="colFirst"><code><a href="../../../system/collections/generic/IDictionary_2.html" title="interface in system.collections.generic">IDictionary_2</a></code></td>
+<td class="colFirst"><code><a href="../../../system/collections/generic/IDictionary_2.html" title="interface in system.collections.generic">IDictionary_2</a>&lt;<a href="../../../system/Object.html" title="class in system">Object</a>,<a href="../../../system/Object.html" title="class in system">Object</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../microsoft/extensions/hosting/IHostBuilder.html#getProperties--">getProperties</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i11" class="rowColor">
@@ -338,7 +338,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.
 <ul class="blockList">
 <li class="blockList">
 <h4>ConfigureAppConfiguration</h4>
-<pre><a href="../../../microsoft/extensions/hosting/IHostBuilder.html" title="interface in microsoft.extensions.hosting">IHostBuilder</a>&nbsp;ConfigureAppConfiguration(<a href="../../../system/Action_2.html" title="class in system">Action_2</a>&nbsp;configureDelegate)
+<pre><a href="../../../microsoft/extensions/hosting/IHostBuilder.html" title="interface in microsoft.extensions.hosting">IHostBuilder</a>&nbsp;ConfigureAppConfiguration(<a href="../../../system/Action_2.html" title="class in system">Action_2</a>&lt;<a href="../../../microsoft/extensions/hosting/HostBuilderContext.html" title="class in microsoft.extensions.hosting">HostBuilderContext</a>,<a href="../../../microsoft/extensions/configuration/IConfigurationBuilder.html" title="interface in microsoft.extensions.configuration">IConfigurationBuilder</a>&gt;&nbsp;configureDelegate)
                                 throws java.lang.Throwable</pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -366,7 +366,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.
 <ul class="blockList">
 <li class="blockList">
 <h4>ConfigureHostConfiguration</h4>
-<pre><a href="../../../microsoft/extensions/hosting/IHostBuilder.html" title="interface in microsoft.extensions.hosting">IHostBuilder</a>&nbsp;ConfigureHostConfiguration(<a href="../../../system/Action_1.html" title="class in system">Action_1</a>&nbsp;configureDelegate)
+<pre><a href="../../../microsoft/extensions/hosting/IHostBuilder.html" title="interface in microsoft.extensions.hosting">IHostBuilder</a>&nbsp;ConfigureHostConfiguration(<a href="../../../system/Action_1.html" title="class in system">Action_1</a>&lt;<a href="../../../microsoft/extensions/configuration/IConfigurationBuilder.html" title="interface in microsoft.extensions.configuration">IConfigurationBuilder</a>&gt;&nbsp;configureDelegate)
                                  throws java.lang.Throwable</pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -380,7 +380,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.
 <ul class="blockList">
 <li class="blockList">
 <h4>ConfigureServices</h4>
-<pre><a href="../../../microsoft/extensions/hosting/IHostBuilder.html" title="interface in microsoft.extensions.hosting">IHostBuilder</a>&nbsp;ConfigureServices(<a href="../../../system/Action_2.html" title="class in system">Action_2</a>&nbsp;configureDelegate)
+<pre><a href="../../../microsoft/extensions/hosting/IHostBuilder.html" title="interface in microsoft.extensions.hosting">IHostBuilder</a>&nbsp;ConfigureServices(<a href="../../../system/Action_2.html" title="class in system">Action_2</a>&lt;<a href="../../../microsoft/extensions/hosting/HostBuilderContext.html" title="class in microsoft.extensions.hosting">HostBuilderContext</a>,<a href="../../../microsoft/extensions/dependencyinjection/IServiceCollection.html" title="interface in microsoft.extensions.dependencyinjection">IServiceCollection</a>&gt;&nbsp;configureDelegate)
                         throws java.lang.Throwable</pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -475,8 +475,8 @@ extends <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.
 <ul class="blockList">
 <li class="blockList">
 <h4>getProperties</h4>
-<pre><a href="../../../system/collections/generic/IDictionary_2.html" title="interface in system.collections.generic">IDictionary_2</a>&nbsp;getProperties()
-                     throws java.lang.Throwable</pre>
+<pre><a href="../../../system/collections/generic/IDictionary_2.html" title="interface in system.collections.generic">IDictionary_2</a>&lt;<a href="../../../system/Object.html" title="class in system">Object</a>,<a href="../../../system/Object.html" title="class in system">Object</a>&gt;&nbsp;getProperties()
+                                    throws java.lang.Throwable</pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>

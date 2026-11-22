@@ -214,7 +214,7 @@ extends <a href="../../../system/EventArgs.html" title="class in system">EventAr
 </td>
 </tr>
 <tr class="rowColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../system/windows/shell/JumpItemsRemovedEventArgs.html#JumpItemsRemovedEventArgs-system.collections.generic.IList_1-">JumpItemsRemovedEventArgs</a></span>(<a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&nbsp;removedItems)</code>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../system/windows/shell/JumpItemsRemovedEventArgs.html#JumpItemsRemovedEventArgs-system.collections.generic.IList_1-">JumpItemsRemovedEventArgs</a></span>(<a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&lt;<a href="../../../system/windows/shell/JumpItem.html" title="class in system.windows.shell">JumpItem</a>&gt;&nbsp;removedItems)</code>
 <div class="block">Initializes a new instance by invoking the .NET constructor.</div>
 </td>
 </tr>
@@ -275,7 +275,7 @@ extends <a href="../../../system/EventArgs.html" title="class in system">EventAr
 </td>
 </tr>
 <tr id="i6" class="altColor">
-<td class="colFirst"><code><a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a></code></td>
+<td class="colFirst"><code><a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&lt;<a href="../../../system/windows/shell/JumpItem.html" title="class in system.windows.shell">JumpItem</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/shell/JumpItemsRemovedEventArgs.html#getRemovedItems--">getRemovedItems</a></span>()</code>
 <div class="block">Gets the value of the .NET property RemovedItems.</div>
 </td>
@@ -288,7 +288,7 @@ extends <a href="../../../system/EventArgs.html" title="class in system">EventAr
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/shell/JumpItemsRemovedEventArgs.html#setRemovedItems-system.collections.generic.IList_1-">setRemovedItems</a></span>(<a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&nbsp;RemovedItems)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/shell/JumpItemsRemovedEventArgs.html#setRemovedItems-system.collections.generic.IList_1-">setRemovedItems</a></span>(<a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&lt;<a href="../../../system/windows/shell/JumpItem.html" title="class in system.windows.shell">JumpItem</a>&gt;&nbsp;RemovedItems)</code>
 <div class="block">Sets the value of the .NET property RemovedItems.</div>
 </td>
 </tr>
@@ -422,7 +422,7 @@ extends <a href="../../../system/EventArgs.html" title="class in system">EventAr
 <ul class="blockList">
 <li class="blockList">
 <h4>JumpItemsRemovedEventArgs</h4>
-<pre>public&nbsp;JumpItemsRemovedEventArgs(<a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&nbsp;removedItems)
+<pre>public&nbsp;JumpItemsRemovedEventArgs(<a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&lt;<a href="../../../system/windows/shell/JumpItem.html" title="class in system.windows.shell">JumpItem</a>&gt;&nbsp;removedItems)
                           throws java.lang.Throwable,
                                  <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
                                  <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
@@ -435,7 +435,7 @@ extends <a href="../../../system/EventArgs.html" title="class in system">EventAr
 <div class="block">Initializes a new instance by invoking the .NET constructor.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>removedItems</code> - the argument of type <code>IList_1</code></dd>
+<dd><code>removedItems</code> - the argument of type <code>IList_1&lt;JumpItem&gt;</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code> - if the .NET constructor fails</dd>
 <dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code> - if the .NET member raises it</dd>
@@ -596,8 +596,8 @@ extends <a href="../../../system/EventArgs.html" title="class in system">EventAr
 <ul class="blockList">
 <li class="blockList">
 <h4>getRemovedItems</h4>
-<pre>public&nbsp;<a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&nbsp;getRemovedItems()
-                        throws java.lang.Throwable</pre>
+<pre>public&nbsp;<a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&lt;<a href="../../../system/windows/shell/JumpItem.html" title="class in system.windows.shell">JumpItem</a>&gt;&nbsp;getRemovedItems()
+                                  throws java.lang.Throwable</pre>
 <div class="block">Gets the value of the .NET property RemovedItems.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -632,7 +632,7 @@ extends <a href="../../../system/EventArgs.html" title="class in system">EventAr
 <ul class="blockListLast">
 <li class="blockList">
 <h4>setRemovedItems</h4>
-<pre>public&nbsp;void&nbsp;setRemovedItems(<a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&nbsp;RemovedItems)
+<pre>public&nbsp;void&nbsp;setRemovedItems(<a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&lt;<a href="../../../system/windows/shell/JumpItem.html" title="class in system.windows.shell">JumpItem</a>&gt;&nbsp;RemovedItems)
                      throws java.lang.Throwable</pre>
 <div class="block">Sets the value of the .NET property RemovedItems.</div>
 <dl>

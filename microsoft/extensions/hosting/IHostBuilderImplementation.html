@@ -236,7 +236,7 @@ implements <a href="../../../microsoft/extensions/hosting/IHostBuilder.html" tit
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="../../../microsoft/extensions/hosting/IHostBuilder.html" title="interface in microsoft.extensions.hosting">IHostBuilder</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../microsoft/extensions/hosting/IHostBuilderImplementation.html#ConfigureAppConfiguration-system.Action_2-">ConfigureAppConfiguration</a></span>(<a href="../../../system/Action_2.html" title="class in system">Action_2</a>&nbsp;configureDelegate)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../microsoft/extensions/hosting/IHostBuilderImplementation.html#ConfigureAppConfiguration-system.Action_2-">ConfigureAppConfiguration</a></span>(<a href="../../../system/Action_2.html" title="class in system">Action_2</a>&lt;<a href="../../../microsoft/extensions/hosting/HostBuilderContext.html" title="class in microsoft.extensions.hosting">HostBuilderContext</a>,<a href="../../../microsoft/extensions/configuration/IConfigurationBuilder.html" title="interface in microsoft.extensions.configuration">IConfigurationBuilder</a>&gt;&nbsp;configureDelegate)</code>
 <div class="block">Invokes the .NET member ConfigureAppConfiguration.</div>
 </td>
 </tr>
@@ -248,13 +248,13 @@ implements <a href="../../../microsoft/extensions/hosting/IHostBuilder.html" tit
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="../../../microsoft/extensions/hosting/IHostBuilder.html" title="interface in microsoft.extensions.hosting">IHostBuilder</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../microsoft/extensions/hosting/IHostBuilderImplementation.html#ConfigureHostConfiguration-system.Action_1-">ConfigureHostConfiguration</a></span>(<a href="../../../system/Action_1.html" title="class in system">Action_1</a>&nbsp;configureDelegate)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../microsoft/extensions/hosting/IHostBuilderImplementation.html#ConfigureHostConfiguration-system.Action_1-">ConfigureHostConfiguration</a></span>(<a href="../../../system/Action_1.html" title="class in system">Action_1</a>&lt;<a href="../../../microsoft/extensions/configuration/IConfigurationBuilder.html" title="interface in microsoft.extensions.configuration">IConfigurationBuilder</a>&gt;&nbsp;configureDelegate)</code>
 <div class="block">Invokes the .NET member ConfigureHostConfiguration.</div>
 </td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="../../../microsoft/extensions/hosting/IHostBuilder.html" title="interface in microsoft.extensions.hosting">IHostBuilder</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../microsoft/extensions/hosting/IHostBuilderImplementation.html#ConfigureServices-system.Action_2-">ConfigureServices</a></span>(<a href="../../../system/Action_2.html" title="class in system">Action_2</a>&nbsp;configureDelegate)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../microsoft/extensions/hosting/IHostBuilderImplementation.html#ConfigureServices-system.Action_2-">ConfigureServices</a></span>(<a href="../../../system/Action_2.html" title="class in system">Action_2</a>&lt;<a href="../../../microsoft/extensions/hosting/HostBuilderContext.html" title="class in microsoft.extensions.hosting">HostBuilderContext</a>,<a href="../../../microsoft/extensions/dependencyinjection/IServiceCollection.html" title="interface in microsoft.extensions.dependencyinjection">IServiceCollection</a>&gt;&nbsp;configureDelegate)</code>
 <div class="block">Invokes the .NET member ConfigureServices.</div>
 </td>
 </tr>
@@ -289,7 +289,7 @@ implements <a href="../../../microsoft/extensions/hosting/IHostBuilder.html" tit
 </td>
 </tr>
 <tr id="i10" class="altColor">
-<td class="colFirst"><code><a href="../../../system/collections/generic/IDictionary_2.html" title="interface in system.collections.generic">IDictionary_2</a></code></td>
+<td class="colFirst"><code><a href="../../../system/collections/generic/IDictionary_2.html" title="interface in system.collections.generic">IDictionary_2</a>&lt;<a href="../../../system/Object.html" title="class in system">Object</a>,<a href="../../../system/Object.html" title="class in system">Object</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../microsoft/extensions/hosting/IHostBuilderImplementation.html#getProperties--">getProperties</a></span>()</code>
 <div class="block">Gets the value of the .NET property Properties.</div>
 </td>
@@ -453,14 +453,14 @@ implements <a href="../../../microsoft/extensions/hosting/IHostBuilder.html" tit
 <ul class="blockList">
 <li class="blockList">
 <h4>ConfigureAppConfiguration</h4>
-<pre>public&nbsp;<a href="../../../microsoft/extensions/hosting/IHostBuilder.html" title="interface in microsoft.extensions.hosting">IHostBuilder</a>&nbsp;ConfigureAppConfiguration(<a href="../../../system/Action_2.html" title="class in system">Action_2</a>&nbsp;configureDelegate)
+<pre>public&nbsp;<a href="../../../microsoft/extensions/hosting/IHostBuilder.html" title="interface in microsoft.extensions.hosting">IHostBuilder</a>&nbsp;ConfigureAppConfiguration(<a href="../../../system/Action_2.html" title="class in system">Action_2</a>&lt;<a href="../../../microsoft/extensions/hosting/HostBuilderContext.html" title="class in microsoft.extensions.hosting">HostBuilderContext</a>,<a href="../../../microsoft/extensions/configuration/IConfigurationBuilder.html" title="interface in microsoft.extensions.configuration">IConfigurationBuilder</a>&gt;&nbsp;configureDelegate)
                                        throws java.lang.Throwable</pre>
 <div class="block">Invokes the .NET member ConfigureAppConfiguration.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../microsoft/extensions/hosting/IHostBuilder.html#ConfigureAppConfiguration-system.Action_2-">ConfigureAppConfiguration</a></code>&nbsp;in interface&nbsp;<code><a href="../../../microsoft/extensions/hosting/IHostBuilder.html" title="interface in microsoft.extensions.hosting">IHostBuilder</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>configureDelegate</code> - the argument of type <code>Action_2</code></dd>
+<dd><code>configureDelegate</code> - the argument of type <code>Action_2&lt;HostBuilderContext, IConfigurationBuilder&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -501,14 +501,14 @@ implements <a href="../../../microsoft/extensions/hosting/IHostBuilder.html" tit
 <ul class="blockList">
 <li class="blockList">
 <h4>ConfigureHostConfiguration</h4>
-<pre>public&nbsp;<a href="../../../microsoft/extensions/hosting/IHostBuilder.html" title="interface in microsoft.extensions.hosting">IHostBuilder</a>&nbsp;ConfigureHostConfiguration(<a href="../../../system/Action_1.html" title="class in system">Action_1</a>&nbsp;configureDelegate)
+<pre>public&nbsp;<a href="../../../microsoft/extensions/hosting/IHostBuilder.html" title="interface in microsoft.extensions.hosting">IHostBuilder</a>&nbsp;ConfigureHostConfiguration(<a href="../../../system/Action_1.html" title="class in system">Action_1</a>&lt;<a href="../../../microsoft/extensions/configuration/IConfigurationBuilder.html" title="interface in microsoft.extensions.configuration">IConfigurationBuilder</a>&gt;&nbsp;configureDelegate)
                                         throws java.lang.Throwable</pre>
 <div class="block">Invokes the .NET member ConfigureHostConfiguration.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../microsoft/extensions/hosting/IHostBuilder.html#ConfigureHostConfiguration-system.Action_1-">ConfigureHostConfiguration</a></code>&nbsp;in interface&nbsp;<code><a href="../../../microsoft/extensions/hosting/IHostBuilder.html" title="interface in microsoft.extensions.hosting">IHostBuilder</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>configureDelegate</code> - the argument of type <code>Action_1</code></dd>
+<dd><code>configureDelegate</code> - the argument of type <code>Action_1&lt;IConfigurationBuilder&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -524,14 +524,14 @@ implements <a href="../../../microsoft/extensions/hosting/IHostBuilder.html" tit
 <ul class="blockList">
 <li class="blockList">
 <h4>ConfigureServices</h4>
-<pre>public&nbsp;<a href="../../../microsoft/extensions/hosting/IHostBuilder.html" title="interface in microsoft.extensions.hosting">IHostBuilder</a>&nbsp;ConfigureServices(<a href="../../../system/Action_2.html" title="class in system">Action_2</a>&nbsp;configureDelegate)
+<pre>public&nbsp;<a href="../../../microsoft/extensions/hosting/IHostBuilder.html" title="interface in microsoft.extensions.hosting">IHostBuilder</a>&nbsp;ConfigureServices(<a href="../../../system/Action_2.html" title="class in system">Action_2</a>&lt;<a href="../../../microsoft/extensions/hosting/HostBuilderContext.html" title="class in microsoft.extensions.hosting">HostBuilderContext</a>,<a href="../../../microsoft/extensions/dependencyinjection/IServiceCollection.html" title="interface in microsoft.extensions.dependencyinjection">IServiceCollection</a>&gt;&nbsp;configureDelegate)
                                throws java.lang.Throwable</pre>
 <div class="block">Invokes the .NET member ConfigureServices.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../microsoft/extensions/hosting/IHostBuilder.html#ConfigureServices-system.Action_2-">ConfigureServices</a></code>&nbsp;in interface&nbsp;<code><a href="../../../microsoft/extensions/hosting/IHostBuilder.html" title="interface in microsoft.extensions.hosting">IHostBuilder</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>configureDelegate</code> - the argument of type <code>Action_2</code></dd>
+<dd><code>configureDelegate</code> - the argument of type <code>Action_2&lt;HostBuilderContext, IServiceCollection&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -652,8 +652,8 @@ implements <a href="../../../microsoft/extensions/hosting/IHostBuilder.html" tit
 <ul class="blockList">
 <li class="blockList">
 <h4>getProperties</h4>
-<pre>public&nbsp;<a href="../../../system/collections/generic/IDictionary_2.html" title="interface in system.collections.generic">IDictionary_2</a>&nbsp;getProperties()
-                            throws java.lang.Throwable</pre>
+<pre>public&nbsp;<a href="../../../system/collections/generic/IDictionary_2.html" title="interface in system.collections.generic">IDictionary_2</a>&lt;<a href="../../../system/Object.html" title="class in system">Object</a>,<a href="../../../system/Object.html" title="class in system">Object</a>&gt;&nbsp;getProperties()
+                                           throws java.lang.Throwable</pre>
 <div class="block">Gets the value of the .NET property Properties.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>

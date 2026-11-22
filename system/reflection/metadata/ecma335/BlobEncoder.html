@@ -253,8 +253,8 @@ extends <a href="../../../../system/ValueType.html" title="class in system">Valu
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/reflection/metadata/ecma335/BlobEncoder.html#CustomAttributeSignature-system.Action_1-system.Action_1-">CustomAttributeSignature</a></span>(<a href="../../../../system/Action_1.html" title="class in system">Action_1</a>&nbsp;fixedArguments,
-                        <a href="../../../../system/Action_1.html" title="class in system">Action_1</a>&nbsp;namedArguments)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/reflection/metadata/ecma335/BlobEncoder.html#CustomAttributeSignature-system.Action_1-system.Action_1-">CustomAttributeSignature</a></span>(<a href="../../../../system/Action_1.html" title="class in system">Action_1</a>&lt;<a href="../../../../system/reflection/metadata/ecma335/FixedArgumentsEncoder.html" title="class in system.reflection.metadata.ecma335">FixedArgumentsEncoder</a>&gt;&nbsp;fixedArguments,
+                        <a href="../../../../system/Action_1.html" title="class in system">Action_1</a>&lt;<a href="../../../../system/reflection/metadata/ecma335/CustomAttributeNamedArgumentsEncoder.html" title="class in system.reflection.metadata.ecma335">CustomAttributeNamedArgumentsEncoder</a>&gt;&nbsp;namedArguments)</code>
 <div class="block">Invokes the .NET member CustomAttributeSignature.</div>
 </td>
 </tr>
@@ -553,8 +553,8 @@ extends <a href="../../../../system/ValueType.html" title="class in system">Valu
 <ul class="blockList">
 <li class="blockList">
 <h4>CustomAttributeSignature</h4>
-<pre>public&nbsp;void&nbsp;CustomAttributeSignature(<a href="../../../../system/Action_1.html" title="class in system">Action_1</a>&nbsp;fixedArguments,
-                                     <a href="../../../../system/Action_1.html" title="class in system">Action_1</a>&nbsp;namedArguments)
+<pre>public&nbsp;void&nbsp;CustomAttributeSignature(<a href="../../../../system/Action_1.html" title="class in system">Action_1</a>&lt;<a href="../../../../system/reflection/metadata/ecma335/FixedArgumentsEncoder.html" title="class in system.reflection.metadata.ecma335">FixedArgumentsEncoder</a>&gt;&nbsp;fixedArguments,
+                                     <a href="../../../../system/Action_1.html" title="class in system">Action_1</a>&lt;<a href="../../../../system/reflection/metadata/ecma335/CustomAttributeNamedArgumentsEncoder.html" title="class in system.reflection.metadata.ecma335">CustomAttributeNamedArgumentsEncoder</a>&gt;&nbsp;namedArguments)
                               throws java.lang.Throwable,
                                      <a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
                                      <a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
@@ -568,8 +568,8 @@ extends <a href="../../../../system/ValueType.html" title="class in system">Valu
 <div class="block">Invokes the .NET member CustomAttributeSignature.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>fixedArguments</code> - the argument of type <code>Action_1</code></dd>
-<dd><code>namedArguments</code> - the argument of type <code>Action_1</code></dd>
+<dd><code>fixedArguments</code> - the argument of type <code>Action_1&lt;FixedArgumentsEncoder&gt;</code></dd>
+<dd><code>namedArguments</code> - the argument of type <code>Action_1&lt;CustomAttributeNamedArgumentsEncoder&gt;</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
 <dd><code><a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code> - if the .NET member raises it</dd>

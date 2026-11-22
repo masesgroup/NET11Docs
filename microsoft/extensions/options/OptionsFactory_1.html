@@ -206,15 +206,15 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../microsoft/extensions/options/OptionsFactory_1.html#OptionsFactory_1--">OptionsFactory_1</a></span>()</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../microsoft/extensions/options/OptionsFactory_1.html#OptionsFactory_1-system.collections.generic.IEnumerable_1-system.collections.generic.IEnumerable_1-">OptionsFactory_1</a></span>(<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;setups,
-                <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;postConfigures)</code>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../microsoft/extensions/options/OptionsFactory_1.html#OptionsFactory_1-system.collections.generic.IEnumerable_1-system.collections.generic.IEnumerable_1-">OptionsFactory_1</a></span>(<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../microsoft/extensions/options/IConfigureOptions_1.html" title="interface in microsoft.extensions.options">IConfigureOptions_1</a>&lt;<a href="../../../microsoft/extensions/options/OptionsFactory_1.html" title="type parameter in OptionsFactory_1">TOptions</a>&gt;&gt;&nbsp;setups,
+                <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../microsoft/extensions/options/IPostConfigureOptions_1.html" title="interface in microsoft.extensions.options">IPostConfigureOptions_1</a>&lt;<a href="../../../microsoft/extensions/options/OptionsFactory_1.html" title="type parameter in OptionsFactory_1">TOptions</a>&gt;&gt;&nbsp;postConfigures)</code>
 <div class="block">Initializes a new instance by invoking the .NET constructor.</div>
 </td>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../microsoft/extensions/options/OptionsFactory_1.html#OptionsFactory_1-system.collections.generic.IEnumerable_1-system.collections.generic.IEnumerable_1-system.collections.generic.IEnumerable_1-">OptionsFactory_1</a></span>(<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;setups,
-                <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;postConfigures,
-                <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;validations)</code>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../microsoft/extensions/options/OptionsFactory_1.html#OptionsFactory_1-system.collections.generic.IEnumerable_1-system.collections.generic.IEnumerable_1-system.collections.generic.IEnumerable_1-">OptionsFactory_1</a></span>(<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../microsoft/extensions/options/IConfigureOptions_1.html" title="interface in microsoft.extensions.options">IConfigureOptions_1</a>&lt;<a href="../../../microsoft/extensions/options/OptionsFactory_1.html" title="type parameter in OptionsFactory_1">TOptions</a>&gt;&gt;&nbsp;setups,
+                <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../microsoft/extensions/options/IPostConfigureOptions_1.html" title="interface in microsoft.extensions.options">IPostConfigureOptions_1</a>&lt;<a href="../../../microsoft/extensions/options/OptionsFactory_1.html" title="type parameter in OptionsFactory_1">TOptions</a>&gt;&gt;&nbsp;postConfigures,
+                <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../microsoft/extensions/options/IValidateOptions_1.html" title="interface in microsoft.extensions.options">IValidateOptions_1</a>&lt;<a href="../../../microsoft/extensions/options/OptionsFactory_1.html" title="type parameter in OptionsFactory_1">TOptions</a>&gt;&gt;&nbsp;validations)</code>
 <div class="block">Initializes a new instance by invoking the .NET constructor.</div>
 </td>
 </tr>
@@ -395,8 +395,8 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <ul class="blockList">
 <li class="blockList">
 <h4>OptionsFactory_1</h4>
-<pre>public&nbsp;OptionsFactory_1(<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;setups,
-                        <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;postConfigures)
+<pre>public&nbsp;OptionsFactory_1(<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../microsoft/extensions/options/IConfigureOptions_1.html" title="interface in microsoft.extensions.options">IConfigureOptions_1</a>&lt;<a href="../../../microsoft/extensions/options/OptionsFactory_1.html" title="type parameter in OptionsFactory_1">TOptions</a>&gt;&gt;&nbsp;setups,
+                        <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../microsoft/extensions/options/IPostConfigureOptions_1.html" title="interface in microsoft.extensions.options">IPostConfigureOptions_1</a>&lt;<a href="../../../microsoft/extensions/options/OptionsFactory_1.html" title="type parameter in OptionsFactory_1">TOptions</a>&gt;&gt;&nbsp;postConfigures)
                  throws java.lang.Throwable,
                         <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
                         <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
@@ -410,8 +410,8 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <div class="block">Initializes a new instance by invoking the .NET constructor.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>setups</code> - the argument of type <code>IEnumerable_1</code></dd>
-<dd><code>postConfigures</code> - the argument of type <code>IEnumerable_1</code></dd>
+<dd><code>setups</code> - the argument of type <code>IEnumerable_1&lt;IConfigureOptions_1&lt;TOptions&gt;&gt;</code></dd>
+<dd><code>postConfigures</code> - the argument of type <code>IEnumerable_1&lt;IPostConfigureOptions_1&lt;TOptions&gt;&gt;</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code> - if the .NET constructor fails</dd>
 <dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code> - if the .NET member raises it</dd>
@@ -434,9 +434,9 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <ul class="blockList">
 <li class="blockList">
 <h4>OptionsFactory_1</h4>
-<pre>public&nbsp;OptionsFactory_1(<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;setups,
-                        <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;postConfigures,
-                        <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;validations)
+<pre>public&nbsp;OptionsFactory_1(<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../microsoft/extensions/options/IConfigureOptions_1.html" title="interface in microsoft.extensions.options">IConfigureOptions_1</a>&lt;<a href="../../../microsoft/extensions/options/OptionsFactory_1.html" title="type parameter in OptionsFactory_1">TOptions</a>&gt;&gt;&nbsp;setups,
+                        <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../microsoft/extensions/options/IPostConfigureOptions_1.html" title="interface in microsoft.extensions.options">IPostConfigureOptions_1</a>&lt;<a href="../../../microsoft/extensions/options/OptionsFactory_1.html" title="type parameter in OptionsFactory_1">TOptions</a>&gt;&gt;&nbsp;postConfigures,
+                        <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../microsoft/extensions/options/IValidateOptions_1.html" title="interface in microsoft.extensions.options">IValidateOptions_1</a>&lt;<a href="../../../microsoft/extensions/options/OptionsFactory_1.html" title="type parameter in OptionsFactory_1">TOptions</a>&gt;&gt;&nbsp;validations)
                  throws java.lang.Throwable,
                         <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
                         <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
@@ -449,9 +449,9 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <div class="block">Initializes a new instance by invoking the .NET constructor.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>setups</code> - the argument of type <code>IEnumerable_1</code></dd>
-<dd><code>postConfigures</code> - the argument of type <code>IEnumerable_1</code></dd>
-<dd><code>validations</code> - the argument of type <code>IEnumerable_1</code></dd>
+<dd><code>setups</code> - the argument of type <code>IEnumerable_1&lt;IConfigureOptions_1&lt;TOptions&gt;&gt;</code></dd>
+<dd><code>postConfigures</code> - the argument of type <code>IEnumerable_1&lt;IPostConfigureOptions_1&lt;TOptions&gt;&gt;</code></dd>
+<dd><code>validations</code> - the argument of type <code>IEnumerable_1&lt;IValidateOptions_1&lt;TOptions&gt;&gt;</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code> - if the .NET constructor fails</dd>
 <dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code> - if the .NET member raises it</dd>

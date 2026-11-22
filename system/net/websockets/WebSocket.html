@@ -327,7 +327,7 @@ implements java.lang.AutoCloseable</pre>
 </td>
 </tr>
 <tr id="i11" class="rowColor">
-<td class="colFirst"><code><a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a></code></td>
+<td class="colFirst"><code><a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&lt;<a href="../../../system/net/websockets/WebSocketCloseStatus.html" title="class in system.net.websockets">WebSocketCloseStatus</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/websockets/WebSocket.html#getCloseStatus--">getCloseStatus</a></span>()</code>
 <div class="block">Gets the value of the .NET property CloseStatus.</div>
 </td>
@@ -393,14 +393,14 @@ implements java.lang.AutoCloseable</pre>
 </td>
 </tr>
 <tr id="i22" class="altColor">
-<td class="colFirst"><code><a href="../../../system/threading/tasks/Task_1.html" title="class in system.threading.tasks">Task_1</a></code></td>
+<td class="colFirst"><code><a href="../../../system/threading/tasks/Task_1.html" title="class in system.threading.tasks">Task_1</a>&lt;<a href="../../../system/net/websockets/WebSocketReceiveResult.html" title="class in system.net.websockets">WebSocketReceiveResult</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/websockets/WebSocket.html#ReceiveAsync-system.ArraySegment_1-system.threading.CancellationToken-">ReceiveAsync</a></span>(<a href="../../../system/ArraySegment_1.html" title="class in system">ArraySegment_1</a>&nbsp;buffer,
             <a href="../../../system/threading/CancellationToken.html" title="class in system.threading">CancellationToken</a>&nbsp;cancellationToken)</code>
 <div class="block">Invokes the .NET member ReceiveAsync.</div>
 </td>
 </tr>
 <tr id="i23" class="rowColor">
-<td class="colFirst"><code><a href="../../../system/threading/tasks/ValueTask_1.html" title="class in system.threading.tasks">ValueTask_1</a></code></td>
+<td class="colFirst"><code><a href="../../../system/threading/tasks/ValueTask_1.html" title="class in system.threading.tasks">ValueTask_1</a>&lt;<a href="../../../system/net/websockets/ValueWebSocketReceiveResult.html" title="class in system.net.websockets">ValueWebSocketReceiveResult</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/websockets/WebSocket.html#ReceiveAsync-system.Memory_1-system.threading.CancellationToken-">ReceiveAsync</a></span>(<a href="../../../system/Memory_1.html" title="class in system">Memory_1</a>&nbsp;buffer,
             <a href="../../../system/threading/CancellationToken.html" title="class in system.threading">CancellationToken</a>&nbsp;cancellationToken)</code>
 <div class="block">Invokes the .NET member ReceiveAsync.</div>
@@ -941,8 +941,8 @@ implements java.lang.AutoCloseable</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>getCloseStatus</h4>
-<pre>public&nbsp;<a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;getCloseStatus()
-                          throws java.lang.Throwable</pre>
+<pre>public&nbsp;<a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&lt;<a href="../../../system/net/websockets/WebSocketCloseStatus.html" title="class in system.net.websockets">WebSocketCloseStatus</a>&gt;&nbsp;getCloseStatus()
+                                                throws java.lang.Throwable</pre>
 <div class="block">Gets the value of the .NET property CloseStatus.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -1150,9 +1150,9 @@ implements java.lang.AutoCloseable</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>ReceiveAsync</h4>
-<pre>public&nbsp;<a href="../../../system/threading/tasks/Task_1.html" title="class in system.threading.tasks">Task_1</a>&nbsp;ReceiveAsync(<a href="../../../system/ArraySegment_1.html" title="class in system">ArraySegment_1</a>&nbsp;buffer,
-                           <a href="../../../system/threading/CancellationToken.html" title="class in system.threading">CancellationToken</a>&nbsp;cancellationToken)
-                    throws java.lang.Throwable</pre>
+<pre>public&nbsp;<a href="../../../system/threading/tasks/Task_1.html" title="class in system.threading.tasks">Task_1</a>&lt;<a href="../../../system/net/websockets/WebSocketReceiveResult.html" title="class in system.net.websockets">WebSocketReceiveResult</a>&gt;&nbsp;ReceiveAsync(<a href="../../../system/ArraySegment_1.html" title="class in system">ArraySegment_1</a>&nbsp;buffer,
+                                                   <a href="../../../system/threading/CancellationToken.html" title="class in system.threading">CancellationToken</a>&nbsp;cancellationToken)
+                                            throws java.lang.Throwable</pre>
 <div class="block">Invokes the .NET member ReceiveAsync.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -1173,21 +1173,21 @@ implements java.lang.AutoCloseable</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>ReceiveAsync</h4>
-<pre>public&nbsp;<a href="../../../system/threading/tasks/ValueTask_1.html" title="class in system.threading.tasks">ValueTask_1</a>&nbsp;ReceiveAsync(<a href="../../../system/Memory_1.html" title="class in system">Memory_1</a>&nbsp;buffer,
-                                <a href="../../../system/threading/CancellationToken.html" title="class in system.threading">CancellationToken</a>&nbsp;cancellationToken)
-                         throws java.lang.Throwable,
-                                <a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
-                                <a href="../../../system/diagnostics/UnreachableException.html" title="class in system.diagnostics">UnreachableException</a>,
-                                <a href="../../../system/threading/tasks/TaskSchedulerException.html" title="class in system.threading.tasks">TaskSchedulerException</a>,
-                                <a href="../../../system/threading/tasks/TaskCanceledException.html" title="class in system.threading.tasks">TaskCanceledException</a>,
-                                <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                                <a href="../../../system/AggregateException.html" title="class in system">AggregateException</a>,
-                                <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
-                                <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
-                                <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                                <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
-                                <a href="../../../system/FormatException.html" title="class in system">FormatException</a>,
-                                <a href="../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></pre>
+<pre>public&nbsp;<a href="../../../system/threading/tasks/ValueTask_1.html" title="class in system.threading.tasks">ValueTask_1</a>&lt;<a href="../../../system/net/websockets/ValueWebSocketReceiveResult.html" title="class in system.net.websockets">ValueWebSocketReceiveResult</a>&gt;&nbsp;ReceiveAsync(<a href="../../../system/Memory_1.html" title="class in system">Memory_1</a>&nbsp;buffer,
+                                                             <a href="../../../system/threading/CancellationToken.html" title="class in system.threading">CancellationToken</a>&nbsp;cancellationToken)
+                                                      throws java.lang.Throwable,
+                                                             <a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                                             <a href="../../../system/diagnostics/UnreachableException.html" title="class in system.diagnostics">UnreachableException</a>,
+                                                             <a href="../../../system/threading/tasks/TaskSchedulerException.html" title="class in system.threading.tasks">TaskSchedulerException</a>,
+                                                             <a href="../../../system/threading/tasks/TaskCanceledException.html" title="class in system.threading.tasks">TaskCanceledException</a>,
+                                                             <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                                             <a href="../../../system/AggregateException.html" title="class in system">AggregateException</a>,
+                                                             <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                                             <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                                             <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                                             <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                                             <a href="../../../system/FormatException.html" title="class in system">FormatException</a>,
+                                                             <a href="../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></pre>
 <div class="block">Invokes the .NET member ReceiveAsync.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>

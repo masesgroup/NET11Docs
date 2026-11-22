@@ -208,13 +208,13 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <tr class="rowColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../../system/reflection/metadata/ecma335/MetadataAggregator.html#MetadataAggregator-system.collections.generic.IReadOnlyList_1-system.collections.generic.IReadOnlyList_1-system.collections.generic.IReadOnlyList_1-">MetadataAggregator</a></span>(<a href="../../../../system/collections/generic/IReadOnlyList_1.html" title="interface in system.collections.generic">IReadOnlyList_1</a>&nbsp;baseTableRowCounts,
                   <a href="../../../../system/collections/generic/IReadOnlyList_1.html" title="interface in system.collections.generic">IReadOnlyList_1</a>&nbsp;baseHeapSizes,
-                  <a href="../../../../system/collections/generic/IReadOnlyList_1.html" title="interface in system.collections.generic">IReadOnlyList_1</a>&nbsp;deltaReaders)</code>
+                  <a href="../../../../system/collections/generic/IReadOnlyList_1.html" title="interface in system.collections.generic">IReadOnlyList_1</a>&lt;<a href="../../../../system/reflection/metadata/MetadataReader.html" title="class in system.reflection.metadata">MetadataReader</a>&gt;&nbsp;deltaReaders)</code>
 <div class="block">Initializes a new instance by invoking the .NET constructor.</div>
 </td>
 </tr>
 <tr class="altColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../../system/reflection/metadata/ecma335/MetadataAggregator.html#MetadataAggregator-system.reflection.metadata.MetadataReader-system.collections.generic.IReadOnlyList_1-">MetadataAggregator</a></span>(<a href="../../../../system/reflection/metadata/MetadataReader.html" title="class in system.reflection.metadata">MetadataReader</a>&nbsp;baseReader,
-                  <a href="../../../../system/collections/generic/IReadOnlyList_1.html" title="interface in system.collections.generic">IReadOnlyList_1</a>&nbsp;deltaReaders)</code>
+                  <a href="../../../../system/collections/generic/IReadOnlyList_1.html" title="interface in system.collections.generic">IReadOnlyList_1</a>&lt;<a href="../../../../system/reflection/metadata/MetadataReader.html" title="class in system.reflection.metadata">MetadataReader</a>&gt;&nbsp;deltaReaders)</code>
 <div class="block">Initializes a new instance by invoking the .NET constructor.</div>
 </td>
 </tr>
@@ -398,7 +398,7 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <h4>MetadataAggregator</h4>
 <pre>public&nbsp;MetadataAggregator(<a href="../../../../system/collections/generic/IReadOnlyList_1.html" title="interface in system.collections.generic">IReadOnlyList_1</a>&nbsp;baseTableRowCounts,
                           <a href="../../../../system/collections/generic/IReadOnlyList_1.html" title="interface in system.collections.generic">IReadOnlyList_1</a>&nbsp;baseHeapSizes,
-                          <a href="../../../../system/collections/generic/IReadOnlyList_1.html" title="interface in system.collections.generic">IReadOnlyList_1</a>&nbsp;deltaReaders)
+                          <a href="../../../../system/collections/generic/IReadOnlyList_1.html" title="interface in system.collections.generic">IReadOnlyList_1</a>&lt;<a href="../../../../system/reflection/metadata/MetadataReader.html" title="class in system.reflection.metadata">MetadataReader</a>&gt;&nbsp;deltaReaders)
                    throws java.lang.Throwable,
                           <a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
                           <a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
@@ -413,7 +413,7 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>baseTableRowCounts</code> - the argument of type <code>IReadOnlyList_1</code></dd>
 <dd><code>baseHeapSizes</code> - the argument of type <code>IReadOnlyList_1</code></dd>
-<dd><code>deltaReaders</code> - the argument of type <code>IReadOnlyList_1</code></dd>
+<dd><code>deltaReaders</code> - the argument of type <code>IReadOnlyList_1&lt;MetadataReader&gt;</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code> - if the .NET constructor fails</dd>
 <dd><code><a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code> - if the .NET member raises it</dd>
@@ -436,7 +436,7 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <li class="blockList">
 <h4>MetadataAggregator</h4>
 <pre>public&nbsp;MetadataAggregator(<a href="../../../../system/reflection/metadata/MetadataReader.html" title="class in system.reflection.metadata">MetadataReader</a>&nbsp;baseReader,
-                          <a href="../../../../system/collections/generic/IReadOnlyList_1.html" title="interface in system.collections.generic">IReadOnlyList_1</a>&nbsp;deltaReaders)
+                          <a href="../../../../system/collections/generic/IReadOnlyList_1.html" title="interface in system.collections.generic">IReadOnlyList_1</a>&lt;<a href="../../../../system/reflection/metadata/MetadataReader.html" title="class in system.reflection.metadata">MetadataReader</a>&gt;&nbsp;deltaReaders)
                    throws java.lang.Throwable,
                           <a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
                           <a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
@@ -450,7 +450,7 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>baseReader</code> - the argument of type <code>MetadataReader</code></dd>
-<dd><code>deltaReaders</code> - the argument of type <code>IReadOnlyList_1</code></dd>
+<dd><code>deltaReaders</code> - the argument of type <code>IReadOnlyList_1&lt;MetadataReader&gt;</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code> - if the .NET constructor fails</dd>
 <dd><code><a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code> - if the .NET member raises it</dd>

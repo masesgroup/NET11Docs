@@ -240,7 +240,7 @@ extends <a href="../../../system/collections/objectmodel/Collection_1.html" titl
 </td>
 </tr>
 <tr class="rowColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../system/windows/ink/StrokeCollection.html#StrokeCollection-system.collections.generic.IEnumerable_1-">StrokeCollection</a></span>(<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;strokes)</code>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../system/windows/ink/StrokeCollection.html#StrokeCollection-system.collections.generic.IEnumerable_1-">StrokeCollection</a></span>(<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/windows/ink/Stroke.html" title="class in system.windows.ink">Stroke</a>&gt;&nbsp;strokes)</code>
 <div class="block">Initializes a new instance by invoking the .NET constructor.</div>
 </td>
 </tr>
@@ -302,7 +302,7 @@ extends <a href="../../../system/collections/objectmodel/Collection_1.html" titl
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/ink/StrokeCollection.html#Clip-system.collections.generic.IEnumerable_1-">Clip</a></span>(<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;lassoPoints)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/ink/StrokeCollection.html#Clip-system.collections.generic.IEnumerable_1-">Clip</a></span>(<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/windows/Point.html" title="class in system.windows">Point</a>&gt;&nbsp;lassoPoints)</code>
 <div class="block">Invokes the .NET member Clip.</div>
 </td>
 </tr>
@@ -332,13 +332,13 @@ extends <a href="../../../system/collections/objectmodel/Collection_1.html" titl
 </tr>
 <tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/ink/StrokeCollection.html#Erase-system.collections.generic.IEnumerable_1-">Erase</a></span>(<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;lassoPoints)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/ink/StrokeCollection.html#Erase-system.collections.generic.IEnumerable_1-">Erase</a></span>(<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/windows/Point.html" title="class in system.windows">Point</a>&gt;&nbsp;lassoPoints)</code>
 <div class="block">Invokes the .NET member Erase.</div>
 </td>
 </tr>
 <tr id="i11" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/ink/StrokeCollection.html#Erase-system.collections.generic.IEnumerable_1-system.windows.ink.StylusShape-">Erase</a></span>(<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;eraserPath,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/ink/StrokeCollection.html#Erase-system.collections.generic.IEnumerable_1-system.windows.ink.StylusShape-">Erase</a></span>(<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/windows/Point.html" title="class in system.windows">Point</a>&gt;&nbsp;eraserPath,
      <a href="../../../system/windows/ink/StylusShape.html" title="class in system.windows.ink">StylusShape</a>&nbsp;eraserShape)</code>
 <div class="block">Invokes the .NET member Erase.</div>
 </td>
@@ -411,14 +411,14 @@ extends <a href="../../../system/collections/objectmodel/Collection_1.html" titl
 </tr>
 <tr id="i23" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/windows/ink/StrokeCollection.html" title="class in system.windows.ink">StrokeCollection</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/ink/StrokeCollection.html#HitTest-system.collections.generic.IEnumerable_1-int-">HitTest</a></span>(<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;lassoPoints,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/ink/StrokeCollection.html#HitTest-system.collections.generic.IEnumerable_1-int-">HitTest</a></span>(<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/windows/Point.html" title="class in system.windows">Point</a>&gt;&nbsp;lassoPoints,
        int&nbsp;percentageWithinLasso)</code>
 <div class="block">Invokes the .NET member HitTest.</div>
 </td>
 </tr>
 <tr id="i24" class="altColor">
 <td class="colFirst"><code><a href="../../../system/windows/ink/StrokeCollection.html" title="class in system.windows.ink">StrokeCollection</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/ink/StrokeCollection.html#HitTest-system.collections.generic.IEnumerable_1-system.windows.ink.StylusShape-">HitTest</a></span>(<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;path,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/ink/StrokeCollection.html#HitTest-system.collections.generic.IEnumerable_1-system.windows.ink.StylusShape-">HitTest</a></span>(<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/windows/Point.html" title="class in system.windows">Point</a>&gt;&nbsp;path,
        <a href="../../../system/windows/ink/StylusShape.html" title="class in system.windows.ink">StylusShape</a>&nbsp;stylusShape)</code>
 <div class="block">Invokes the .NET member HitTest.</div>
 </td>
@@ -653,7 +653,7 @@ extends <a href="../../../system/collections/objectmodel/Collection_1.html" titl
 <ul class="blockList">
 <li class="blockList">
 <h4>StrokeCollection</h4>
-<pre>public&nbsp;StrokeCollection(<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;strokes)
+<pre>public&nbsp;StrokeCollection(<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/windows/ink/Stroke.html" title="class in system.windows.ink">Stroke</a>&gt;&nbsp;strokes)
                  throws java.lang.Throwable,
                         <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
                         <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
@@ -666,7 +666,7 @@ extends <a href="../../../system/collections/objectmodel/Collection_1.html" titl
 <div class="block">Initializes a new instance by invoking the .NET constructor.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>strokes</code> - the argument of type <code>IEnumerable_1</code></dd>
+<dd><code>strokes</code> - the argument of type <code>IEnumerable_1&lt;Stroke&gt;</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code> - if the .NET constructor fails</dd>
 <dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code> - if the .NET member raises it</dd>
@@ -909,7 +909,7 @@ extends <a href="../../../system/collections/objectmodel/Collection_1.html" titl
 <ul class="blockList">
 <li class="blockList">
 <h4>Clip</h4>
-<pre>public&nbsp;void&nbsp;Clip(<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;lassoPoints)
+<pre>public&nbsp;void&nbsp;Clip(<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/windows/Point.html" title="class in system.windows">Point</a>&gt;&nbsp;lassoPoints)
           throws java.lang.Throwable,
                  <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
                  <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
@@ -923,7 +923,7 @@ extends <a href="../../../system/collections/objectmodel/Collection_1.html" titl
 <div class="block">Invokes the .NET member Clip.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>lassoPoints</code> - the argument of type <code>IEnumerable_1</code></dd>
+<dd><code>lassoPoints</code> - the argument of type <code>IEnumerable_1&lt;Point&gt;</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
 <dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code> - if the .NET member raises it</dd>
@@ -1088,7 +1088,7 @@ extends <a href="../../../system/collections/objectmodel/Collection_1.html" titl
 <ul class="blockList">
 <li class="blockList">
 <h4>Erase</h4>
-<pre>public&nbsp;void&nbsp;Erase(<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;lassoPoints)
+<pre>public&nbsp;void&nbsp;Erase(<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/windows/Point.html" title="class in system.windows">Point</a>&gt;&nbsp;lassoPoints)
            throws java.lang.Throwable,
                   <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
                   <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
@@ -1101,7 +1101,7 @@ extends <a href="../../../system/collections/objectmodel/Collection_1.html" titl
 <div class="block">Invokes the .NET member Erase.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>lassoPoints</code> - the argument of type <code>IEnumerable_1</code></dd>
+<dd><code>lassoPoints</code> - the argument of type <code>IEnumerable_1&lt;Point&gt;</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
 <dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code> - if the .NET member raises it</dd>
@@ -1123,7 +1123,7 @@ extends <a href="../../../system/collections/objectmodel/Collection_1.html" titl
 <ul class="blockList">
 <li class="blockList">
 <h4>Erase</h4>
-<pre>public&nbsp;void&nbsp;Erase(<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;eraserPath,
+<pre>public&nbsp;void&nbsp;Erase(<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/windows/Point.html" title="class in system.windows">Point</a>&gt;&nbsp;eraserPath,
                   <a href="../../../system/windows/ink/StylusShape.html" title="class in system.windows.ink">StylusShape</a>&nbsp;eraserShape)
            throws java.lang.Throwable,
                   <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
@@ -1141,7 +1141,7 @@ extends <a href="../../../system/collections/objectmodel/Collection_1.html" titl
 <div class="block">Invokes the .NET member Erase.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>eraserPath</code> - the argument of type <code>IEnumerable_1</code></dd>
+<dd><code>eraserPath</code> - the argument of type <code>IEnumerable_1&lt;Point&gt;</code></dd>
 <dd><code>eraserShape</code> - the argument of type <code>StylusShape</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
@@ -1457,7 +1457,7 @@ extends <a href="../../../system/collections/objectmodel/Collection_1.html" titl
 <ul class="blockList">
 <li class="blockList">
 <h4>HitTest</h4>
-<pre>public&nbsp;<a href="../../../system/windows/ink/StrokeCollection.html" title="class in system.windows.ink">StrokeCollection</a>&nbsp;HitTest(<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;lassoPoints,
+<pre>public&nbsp;<a href="../../../system/windows/ink/StrokeCollection.html" title="class in system.windows.ink">StrokeCollection</a>&nbsp;HitTest(<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/windows/Point.html" title="class in system.windows">Point</a>&gt;&nbsp;lassoPoints,
                                 int&nbsp;percentageWithinLasso)
                          throws java.lang.Throwable,
                                 <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
@@ -1472,7 +1472,7 @@ extends <a href="../../../system/collections/objectmodel/Collection_1.html" titl
 <div class="block">Invokes the .NET member HitTest.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>lassoPoints</code> - the argument of type <code>IEnumerable_1</code></dd>
+<dd><code>lassoPoints</code> - the argument of type <code>IEnumerable_1&lt;Point&gt;</code></dd>
 <dd><code>percentageWithinLasso</code> - the argument of type <code>int</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value returned by the .NET member</dd>
@@ -1498,7 +1498,7 @@ extends <a href="../../../system/collections/objectmodel/Collection_1.html" titl
 <ul class="blockList">
 <li class="blockList">
 <h4>HitTest</h4>
-<pre>public&nbsp;<a href="../../../system/windows/ink/StrokeCollection.html" title="class in system.windows.ink">StrokeCollection</a>&nbsp;HitTest(<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;path,
+<pre>public&nbsp;<a href="../../../system/windows/ink/StrokeCollection.html" title="class in system.windows.ink">StrokeCollection</a>&nbsp;HitTest(<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/windows/Point.html" title="class in system.windows">Point</a>&gt;&nbsp;path,
                                 <a href="../../../system/windows/ink/StylusShape.html" title="class in system.windows.ink">StylusShape</a>&nbsp;stylusShape)
                          throws java.lang.Throwable,
                                 <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
@@ -1513,7 +1513,7 @@ extends <a href="../../../system/collections/objectmodel/Collection_1.html" titl
 <div class="block">Invokes the .NET member HitTest.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>path</code> - the argument of type <code>IEnumerable_1</code></dd>
+<dd><code>path</code> - the argument of type <code>IEnumerable_1&lt;Point&gt;</code></dd>
 <dd><code>stylusShape</code> - the argument of type <code>StylusShape</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value returned by the .NET member</dd>

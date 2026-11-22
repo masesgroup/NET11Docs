@@ -496,7 +496,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <tr id="i18" class="altColor">
 <td class="colFirst"><code>static <a href="../../../system/linq/expressions/IndexExpression.html" title="class in system.linq.expressions">IndexExpression</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/linq/expressions/Expression.html#ArrayAccess-system.linq.expressions.Expression-system.collections.generic.IEnumerable_1-">ArrayAccess</a></span>(<a href="../../../system/linq/expressions/Expression.html" title="class in system.linq.expressions">Expression</a>&nbsp;array,
-           <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;indexes)</code>
+           <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/linq/expressions/Expression.html" title="class in system.linq.expressions">Expression</a>&gt;&nbsp;indexes)</code>
 <div class="block">Invokes the .NET member ArrayAccess.</div>
 </td>
 </tr>
@@ -517,7 +517,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <tr id="i21" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../system/linq/expressions/MethodCallExpression.html" title="class in system.linq.expressions">MethodCallExpression</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/linq/expressions/Expression.html#ArrayIndex-system.linq.expressions.Expression-system.collections.generic.IEnumerable_1-">ArrayIndex</a></span>(<a href="../../../system/linq/expressions/Expression.html" title="class in system.linq.expressions">Expression</a>&nbsp;array,
-          <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;indexes)</code>
+          <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/linq/expressions/Expression.html" title="class in system.linq.expressions">Expression</a>&gt;&nbsp;indexes)</code>
 <div class="block">Invokes the .NET member ArrayIndex.</div>
 </td>
 </tr>
@@ -590,21 +590,21 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 </tr>
 <tr id="i31" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../system/linq/expressions/BlockExpression.html" title="class in system.linq.expressions">BlockExpression</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/linq/expressions/Expression.html#Block-system.collections.generic.IEnumerable_1-">Block</a></span>(<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;expressions)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/linq/expressions/Expression.html#Block-system.collections.generic.IEnumerable_1-">Block</a></span>(<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/linq/expressions/Expression.html" title="class in system.linq.expressions">Expression</a>&gt;&nbsp;expressions)</code>
 <div class="block">Invokes the .NET member Block.</div>
 </td>
 </tr>
 <tr id="i32" class="altColor">
 <td class="colFirst"><code>static <a href="../../../system/linq/expressions/BlockExpression.html" title="class in system.linq.expressions">BlockExpression</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/linq/expressions/Expression.html#Block-system.collections.generic.IEnumerable_1-system.linq.expressions.Expression...-">Block</a></span>(<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;variables,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/linq/expressions/Expression.html#Block-system.collections.generic.IEnumerable_1-system.linq.expressions.Expression...-">Block</a></span>(<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/linq/expressions/ParameterExpression.html" title="class in system.linq.expressions">ParameterExpression</a>&gt;&nbsp;variables,
      <a href="../../../system/linq/expressions/Expression.html" title="class in system.linq.expressions">Expression</a>...&nbsp;expressions)</code>
 <div class="block">Invokes the .NET member Block.</div>
 </td>
 </tr>
 <tr id="i33" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../system/linq/expressions/BlockExpression.html" title="class in system.linq.expressions">BlockExpression</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/linq/expressions/Expression.html#Block-system.collections.generic.IEnumerable_1-system.collections.generic.IEnumerable_1-">Block</a></span>(<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;variables,
-     <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;expressions)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/linq/expressions/Expression.html#Block-system.collections.generic.IEnumerable_1-system.collections.generic.IEnumerable_1-">Block</a></span>(<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/linq/expressions/ParameterExpression.html" title="class in system.linq.expressions">ParameterExpression</a>&gt;&nbsp;variables,
+     <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/linq/expressions/Expression.html" title="class in system.linq.expressions">Expression</a>&gt;&nbsp;expressions)</code>
 <div class="block">Invokes the .NET member Block.</div>
 </td>
 </tr>
@@ -618,14 +618,14 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <tr id="i35" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../system/linq/expressions/BlockExpression.html" title="class in system.linq.expressions">BlockExpression</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/linq/expressions/Expression.html#Block-org.mases.jcobridge.netreflection.NetType-system.collections.generic.IEnumerable_1-">Block</a></span>(<a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;type,
-     <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;expressions)</code>
+     <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/linq/expressions/Expression.html" title="class in system.linq.expressions">Expression</a>&gt;&nbsp;expressions)</code>
 <div class="block">Invokes the .NET member Block.</div>
 </td>
 </tr>
 <tr id="i36" class="altColor">
 <td class="colFirst"><code>static <a href="../../../system/linq/expressions/BlockExpression.html" title="class in system.linq.expressions">BlockExpression</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/linq/expressions/Expression.html#Block-org.mases.jcobridge.netreflection.NetType-system.collections.generic.IEnumerable_1-system.linq.expressions.Expression...-">Block</a></span>(<a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;type,
-     <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;variables,
+     <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/linq/expressions/ParameterExpression.html" title="class in system.linq.expressions">ParameterExpression</a>&gt;&nbsp;variables,
      <a href="../../../system/linq/expressions/Expression.html" title="class in system.linq.expressions">Expression</a>...&nbsp;expressions)</code>
 <div class="block">Invokes the .NET member Block.</div>
 </td>
@@ -633,8 +633,8 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <tr id="i37" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../system/linq/expressions/BlockExpression.html" title="class in system.linq.expressions">BlockExpression</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/linq/expressions/Expression.html#Block-org.mases.jcobridge.netreflection.NetType-system.collections.generic.IEnumerable_1-system.collections.generic.IEnumerable_1-">Block</a></span>(<a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;type,
-     <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;variables,
-     <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;expressions)</code>
+     <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/linq/expressions/ParameterExpression.html" title="class in system.linq.expressions">ParameterExpression</a>&gt;&nbsp;variables,
+     <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/linq/expressions/Expression.html" title="class in system.linq.expressions">Expression</a>&gt;&nbsp;expressions)</code>
 <div class="block">Invokes the .NET member Block.</div>
 </td>
 </tr>
@@ -704,7 +704,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <td class="colFirst"><code>static <a href="../../../system/linq/expressions/MethodCallExpression.html" title="class in system.linq.expressions">MethodCallExpression</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/linq/expressions/Expression.html#Call-system.linq.expressions.Expression-system.reflection.MethodInfo-system.collections.generic.IEnumerable_1-">Call</a></span>(<a href="../../../system/linq/expressions/Expression.html" title="class in system.linq.expressions">Expression</a>&nbsp;instance,
     <a href="../../../system/reflection/MethodInfo.html" title="class in system.reflection">MethodInfo</a>&nbsp;method,
-    <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;arguments)</code>
+    <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/linq/expressions/Expression.html" title="class in system.linq.expressions">Expression</a>&gt;&nbsp;arguments)</code>
 <div class="block">Invokes the .NET member Call.</div>
 </td>
 </tr>
@@ -772,7 +772,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <tr id="i54" class="altColor">
 <td class="colFirst"><code>static <a href="../../../system/linq/expressions/MethodCallExpression.html" title="class in system.linq.expressions">MethodCallExpression</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/linq/expressions/Expression.html#Call-system.reflection.MethodInfo-system.collections.generic.IEnumerable_1-">Call</a></span>(<a href="../../../system/reflection/MethodInfo.html" title="class in system.reflection">MethodInfo</a>&nbsp;method,
-    <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;arguments)</code>
+    <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/linq/expressions/Expression.html" title="class in system.linq.expressions">Expression</a>&gt;&nbsp;arguments)</code>
 <div class="block">Invokes the .NET member Call.</div>
 </td>
 </tr>
@@ -1033,7 +1033,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <td class="colFirst"><code>static <a href="../../../system/linq/expressions/DynamicExpression.html" title="class in system.linq.expressions">DynamicExpression</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/linq/expressions/Expression.html#Dynamic-system.runtime.compilerservices.CallSiteBinder-org.mases.jcobridge.netreflection.NetType-system.collections.generic.IEnumerable_1-">Dynamic</a></span>(<a href="../../../system/runtime/compilerservices/CallSiteBinder.html" title="class in system.runtime.compilerservices">CallSiteBinder</a>&nbsp;binder,
        <a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;returnType,
-       <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;arguments)</code>
+       <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/linq/expressions/Expression.html" title="class in system.linq.expressions">Expression</a>&gt;&nbsp;arguments)</code>
 <div class="block">Invokes the .NET member Dynamic.</div>
 </td>
 </tr>
@@ -1047,7 +1047,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <tr id="i90" class="altColor">
 <td class="colFirst"><code>static <a href="../../../system/linq/expressions/ElementInit.html" title="class in system.linq.expressions">ElementInit</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/linq/expressions/Expression.html#ElementInit-system.reflection.MethodInfo-system.collections.generic.IEnumerable_1-">ElementInit</a></span>(<a href="../../../system/reflection/MethodInfo.html" title="class in system.reflection">MethodInfo</a>&nbsp;addMethod,
-           <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;arguments)</code>
+           <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/linq/expressions/Expression.html" title="class in system.linq.expressions">Expression</a>&gt;&nbsp;arguments)</code>
 <div class="block">Invokes the .NET member ElementInit.</div>
 </td>
 </tr>
@@ -1298,7 +1298,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <tr id="i126" class="altColor">
 <td class="colFirst"><code>static <a href="../../../system/linq/expressions/InvocationExpression.html" title="class in system.linq.expressions">InvocationExpression</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/linq/expressions/Expression.html#Invoke-system.linq.expressions.Expression-system.collections.generic.IEnumerable_1-">Invoke</a></span>(<a href="../../../system/linq/expressions/Expression.html" title="class in system.linq.expressions">Expression</a>&nbsp;expression,
-      <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;arguments)</code>
+      <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/linq/expressions/Expression.html" title="class in system.linq.expressions">Expression</a>&gt;&nbsp;arguments)</code>
 <div class="block">Invokes the .NET member Invoke.</div>
 </td>
 </tr>
@@ -1370,7 +1370,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <td class="colFirst"><code>static &lt;TDelegate extends <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;<br><a href="../../../system/linq/expressions/Expression_1.html" title="class in system.linq.expressions">Expression_1</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/linq/expressions/Expression.html#Lambda-system.linq.expressions.Expression-boolean-system.collections.generic.IEnumerable_1-">Lambda</a></span>(<a href="../../../system/linq/expressions/Expression.html" title="class in system.linq.expressions">Expression</a>&nbsp;body,
       boolean&nbsp;tailCall,
-      <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;parameters)</code>
+      <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/linq/expressions/ParameterExpression.html" title="class in system.linq.expressions">ParameterExpression</a>&gt;&nbsp;parameters)</code>
 <div class="block">Invokes the .NET member Lambda.</div>
 </td>
 </tr>
@@ -1385,7 +1385,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <tr id="i139" class="rowColor">
 <td class="colFirst"><code>static &lt;TDelegate extends <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;<br><a href="../../../system/linq/expressions/Expression_1.html" title="class in system.linq.expressions">Expression_1</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/linq/expressions/Expression.html#Lambda-system.linq.expressions.Expression-system.collections.generic.IEnumerable_1-">Lambda</a></span>(<a href="../../../system/linq/expressions/Expression.html" title="class in system.linq.expressions">Expression</a>&nbsp;body,
-      <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;parameters)</code>
+      <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/linq/expressions/ParameterExpression.html" title="class in system.linq.expressions">ParameterExpression</a>&gt;&nbsp;parameters)</code>
 <div class="block">Invokes the .NET member Lambda.</div>
 </td>
 </tr>
@@ -1401,7 +1401,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/linq/expressions/Expression.html#Lambda-system.linq.expressions.Expression-java.lang.String-boolean-system.collections.generic.IEnumerable_1-">Lambda</a></span>(<a href="../../../system/linq/expressions/Expression.html" title="class in system.linq.expressions">Expression</a>&nbsp;body,
       java.lang.String&nbsp;name,
       boolean&nbsp;tailCall,
-      <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;parameters)</code>
+      <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/linq/expressions/ParameterExpression.html" title="class in system.linq.expressions">ParameterExpression</a>&gt;&nbsp;parameters)</code>
 <div class="block">Invokes the .NET member Lambda.</div>
 </td>
 </tr>
@@ -1409,7 +1409,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <td class="colFirst"><code>static &lt;TDelegate extends <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;<br><a href="../../../system/linq/expressions/Expression_1.html" title="class in system.linq.expressions">Expression_1</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/linq/expressions/Expression.html#Lambda-system.linq.expressions.Expression-java.lang.String-system.collections.generic.IEnumerable_1-">Lambda</a></span>(<a href="../../../system/linq/expressions/Expression.html" title="class in system.linq.expressions">Expression</a>&nbsp;body,
       java.lang.String&nbsp;name,
-      <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;parameters)</code>
+      <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/linq/expressions/ParameterExpression.html" title="class in system.linq.expressions">ParameterExpression</a>&gt;&nbsp;parameters)</code>
 <div class="block">Invokes the .NET member Lambda.</div>
 </td>
 </tr>
@@ -1418,7 +1418,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/linq/expressions/Expression.html#Lambda-org.mases.jcobridge.netreflection.NetType-system.linq.expressions.Expression-boolean-system.collections.generic.IEnumerable_1-">Lambda</a></span>(<a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;delegateType,
       <a href="../../../system/linq/expressions/Expression.html" title="class in system.linq.expressions">Expression</a>&nbsp;body,
       boolean&nbsp;tailCall,
-      <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;parameters)</code>
+      <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/linq/expressions/ParameterExpression.html" title="class in system.linq.expressions">ParameterExpression</a>&gt;&nbsp;parameters)</code>
 <div class="block">Invokes the .NET member Lambda.</div>
 </td>
 </tr>
@@ -1435,7 +1435,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <td class="colFirst"><code>static <a href="../../../system/linq/expressions/LambdaExpression.html" title="class in system.linq.expressions">LambdaExpression</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/linq/expressions/Expression.html#Lambda-org.mases.jcobridge.netreflection.NetType-system.linq.expressions.Expression-system.collections.generic.IEnumerable_1-">Lambda</a></span>(<a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;delegateType,
       <a href="../../../system/linq/expressions/Expression.html" title="class in system.linq.expressions">Expression</a>&nbsp;body,
-      <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;parameters)</code>
+      <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/linq/expressions/ParameterExpression.html" title="class in system.linq.expressions">ParameterExpression</a>&gt;&nbsp;parameters)</code>
 <div class="block">Invokes the .NET member Lambda.</div>
 </td>
 </tr>
@@ -1453,7 +1453,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
       <a href="../../../system/linq/expressions/Expression.html" title="class in system.linq.expressions">Expression</a>&nbsp;body,
       java.lang.String&nbsp;name,
       boolean&nbsp;tailCall,
-      <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;parameters)</code>
+      <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/linq/expressions/ParameterExpression.html" title="class in system.linq.expressions">ParameterExpression</a>&gt;&nbsp;parameters)</code>
 <div class="block">Invokes the .NET member Lambda.</div>
 </td>
 </tr>
@@ -1462,7 +1462,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/linq/expressions/Expression.html#Lambda-org.mases.jcobridge.netreflection.NetType-system.linq.expressions.Expression-java.lang.String-system.collections.generic.IEnumerable_1-">Lambda</a></span>(<a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;delegateType,
       <a href="../../../system/linq/expressions/Expression.html" title="class in system.linq.expressions">Expression</a>&nbsp;body,
       java.lang.String&nbsp;name,
-      <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;parameters)</code>
+      <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/linq/expressions/ParameterExpression.html" title="class in system.linq.expressions">ParameterExpression</a>&gt;&nbsp;parameters)</code>
 <div class="block">Invokes the .NET member Lambda.</div>
 </td>
 </tr>
@@ -1547,7 +1547,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <tr id="i159" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../system/linq/expressions/MemberListBinding.html" title="class in system.linq.expressions">MemberListBinding</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/linq/expressions/Expression.html#ListBind-system.reflection.MemberInfo-system.collections.generic.IEnumerable_1-">ListBind</a></span>(<a href="../../../system/reflection/MemberInfo.html" title="class in system.reflection">MemberInfo</a>&nbsp;member,
-        <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;initializers)</code>
+        <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/linq/expressions/ElementInit.html" title="class in system.linq.expressions">ElementInit</a>&gt;&nbsp;initializers)</code>
 <div class="block">Invokes the .NET member ListBind.</div>
 </td>
 </tr>
@@ -1561,7 +1561,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <tr id="i161" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../system/linq/expressions/MemberListBinding.html" title="class in system.linq.expressions">MemberListBinding</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/linq/expressions/Expression.html#ListBind-system.reflection.MethodInfo-system.collections.generic.IEnumerable_1-">ListBind</a></span>(<a href="../../../system/reflection/MethodInfo.html" title="class in system.reflection">MethodInfo</a>&nbsp;propertyAccessor,
-        <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;initializers)</code>
+        <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/linq/expressions/ElementInit.html" title="class in system.linq.expressions">ElementInit</a>&gt;&nbsp;initializers)</code>
 <div class="block">Invokes the .NET member ListBind.</div>
 </td>
 </tr>
@@ -1582,7 +1582,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <tr id="i164" class="altColor">
 <td class="colFirst"><code>static <a href="../../../system/linq/expressions/ListInitExpression.html" title="class in system.linq.expressions">ListInitExpression</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/linq/expressions/Expression.html#ListInit-system.linq.expressions.NewExpression-system.collections.generic.IEnumerable_1-">ListInit</a></span>(<a href="../../../system/linq/expressions/NewExpression.html" title="class in system.linq.expressions">NewExpression</a>&nbsp;newExpression,
-        <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;initializers)</code>
+        <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/linq/expressions/ElementInit.html" title="class in system.linq.expressions">ElementInit</a>&gt;&nbsp;initializers)</code>
 <div class="block">Invokes the .NET member ListInit.</div>
 </td>
 </tr>
@@ -1598,7 +1598,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <td class="colFirst"><code>static <a href="../../../system/linq/expressions/ListInitExpression.html" title="class in system.linq.expressions">ListInitExpression</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/linq/expressions/Expression.html#ListInit-system.linq.expressions.NewExpression-system.reflection.MethodInfo-system.collections.generic.IEnumerable_1-">ListInit</a></span>(<a href="../../../system/linq/expressions/NewExpression.html" title="class in system.linq.expressions">NewExpression</a>&nbsp;newExpression,
         <a href="../../../system/reflection/MethodInfo.html" title="class in system.reflection">MethodInfo</a>&nbsp;addMethod,
-        <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;initializers)</code>
+        <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/linq/expressions/Expression.html" title="class in system.linq.expressions">Expression</a>&gt;&nbsp;initializers)</code>
 <div class="block">Invokes the .NET member ListInit.</div>
 </td>
 </tr>
@@ -1711,7 +1711,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <td class="colFirst"><code>static <a href="../../../system/linq/expressions/DynamicExpression.html" title="class in system.linq.expressions">DynamicExpression</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/linq/expressions/Expression.html#MakeDynamic-org.mases.jcobridge.netreflection.NetType-system.runtime.compilerservices.CallSiteBinder-system.collections.generic.IEnumerable_1-">MakeDynamic</a></span>(<a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;delegateType,
            <a href="../../../system/runtime/compilerservices/CallSiteBinder.html" title="class in system.runtime.compilerservices">CallSiteBinder</a>&nbsp;binder,
-           <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;arguments)</code>
+           <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/linq/expressions/Expression.html" title="class in system.linq.expressions">Expression</a>&gt;&nbsp;arguments)</code>
 <div class="block">Invokes the .NET member MakeDynamic.</div>
 </td>
 </tr>
@@ -1728,7 +1728,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <td class="colFirst"><code>static <a href="../../../system/linq/expressions/IndexExpression.html" title="class in system.linq.expressions">IndexExpression</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/linq/expressions/Expression.html#MakeIndex-system.linq.expressions.Expression-system.reflection.PropertyInfo-system.collections.generic.IEnumerable_1-">MakeIndex</a></span>(<a href="../../../system/linq/expressions/Expression.html" title="class in system.linq.expressions">Expression</a>&nbsp;instance,
          <a href="../../../system/reflection/PropertyInfo.html" title="class in system.reflection">PropertyInfo</a>&nbsp;indexer,
-         <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;arguments)</code>
+         <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/linq/expressions/Expression.html" title="class in system.linq.expressions">Expression</a>&gt;&nbsp;arguments)</code>
 <div class="block">Invokes the .NET member MakeIndex.</div>
 </td>
 </tr>
@@ -1745,7 +1745,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
        <a href="../../../system/linq/expressions/Expression.html" title="class in system.linq.expressions">Expression</a>&nbsp;body,
        <a href="../../../system/linq/expressions/Expression.html" title="class in system.linq.expressions">Expression</a>&nbsp;_finally,
        <a href="../../../system/linq/expressions/Expression.html" title="class in system.linq.expressions">Expression</a>&nbsp;fault,
-       <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;handlers)</code>
+       <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/linq/expressions/CatchBlock.html" title="class in system.linq.expressions">CatchBlock</a>&gt;&nbsp;handlers)</code>
 <div class="block">Invokes the .NET member MakeTry.</div>
 </td>
 </tr>
@@ -1769,7 +1769,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <tr id="i186" class="altColor">
 <td class="colFirst"><code>static <a href="../../../system/linq/expressions/MemberMemberBinding.html" title="class in system.linq.expressions">MemberMemberBinding</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/linq/expressions/Expression.html#MemberBind-system.reflection.MemberInfo-system.collections.generic.IEnumerable_1-">MemberBind</a></span>(<a href="../../../system/reflection/MemberInfo.html" title="class in system.reflection">MemberInfo</a>&nbsp;member,
-          <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;bindings)</code>
+          <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/linq/expressions/MemberBinding.html" title="class in system.linq.expressions">MemberBinding</a>&gt;&nbsp;bindings)</code>
 <div class="block">Invokes the .NET member MemberBind.</div>
 </td>
 </tr>
@@ -1783,7 +1783,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <tr id="i188" class="altColor">
 <td class="colFirst"><code>static <a href="../../../system/linq/expressions/MemberMemberBinding.html" title="class in system.linq.expressions">MemberMemberBinding</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/linq/expressions/Expression.html#MemberBind-system.reflection.MethodInfo-system.collections.generic.IEnumerable_1-">MemberBind</a></span>(<a href="../../../system/reflection/MethodInfo.html" title="class in system.reflection">MethodInfo</a>&nbsp;propertyAccessor,
-          <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;bindings)</code>
+          <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/linq/expressions/MemberBinding.html" title="class in system.linq.expressions">MemberBinding</a>&gt;&nbsp;bindings)</code>
 <div class="block">Invokes the .NET member MemberBind.</div>
 </td>
 </tr>
@@ -1797,7 +1797,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <tr id="i190" class="altColor">
 <td class="colFirst"><code>static <a href="../../../system/linq/expressions/MemberInitExpression.html" title="class in system.linq.expressions">MemberInitExpression</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/linq/expressions/Expression.html#MemberInit-system.linq.expressions.NewExpression-system.collections.generic.IEnumerable_1-">MemberInit</a></span>(<a href="../../../system/linq/expressions/NewExpression.html" title="class in system.linq.expressions">NewExpression</a>&nbsp;newExpression,
-          <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;bindings)</code>
+          <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/linq/expressions/MemberBinding.html" title="class in system.linq.expressions">MemberBinding</a>&gt;&nbsp;bindings)</code>
 <div class="block">Invokes the .NET member MemberInit.</div>
 </td>
 </tr>
@@ -1967,22 +1967,22 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <tr id="i213" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../system/linq/expressions/NewExpression.html" title="class in system.linq.expressions">NewExpression</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/linq/expressions/Expression.html#New-system.reflection.ConstructorInfo-system.collections.generic.IEnumerable_1-">New</a></span>(<a href="../../../system/reflection/ConstructorInfo.html" title="class in system.reflection">ConstructorInfo</a>&nbsp;constructor,
-   <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;arguments)</code>
+   <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/linq/expressions/Expression.html" title="class in system.linq.expressions">Expression</a>&gt;&nbsp;arguments)</code>
 <div class="block">Invokes the .NET member New.</div>
 </td>
 </tr>
 <tr id="i214" class="altColor">
 <td class="colFirst"><code>static <a href="../../../system/linq/expressions/NewExpression.html" title="class in system.linq.expressions">NewExpression</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/linq/expressions/Expression.html#New-system.reflection.ConstructorInfo-system.collections.generic.IEnumerable_1-system.collections.generic.IEnumerable_1-">New</a></span>(<a href="../../../system/reflection/ConstructorInfo.html" title="class in system.reflection">ConstructorInfo</a>&nbsp;constructor,
-   <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;arguments,
-   <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;members)</code>
+   <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/linq/expressions/Expression.html" title="class in system.linq.expressions">Expression</a>&gt;&nbsp;arguments,
+   <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/reflection/MemberInfo.html" title="class in system.reflection">MemberInfo</a>&gt;&nbsp;members)</code>
 <div class="block">Invokes the .NET member New.</div>
 </td>
 </tr>
 <tr id="i215" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../system/linq/expressions/NewExpression.html" title="class in system.linq.expressions">NewExpression</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/linq/expressions/Expression.html#New-system.reflection.ConstructorInfo-system.collections.generic.IEnumerable_1-system.reflection.MemberInfo...-">New</a></span>(<a href="../../../system/reflection/ConstructorInfo.html" title="class in system.reflection">ConstructorInfo</a>&nbsp;constructor,
-   <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;arguments,
+   <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/linq/expressions/Expression.html" title="class in system.linq.expressions">Expression</a>&gt;&nbsp;arguments,
    <a href="../../../system/reflection/MemberInfo.html" title="class in system.reflection">MemberInfo</a>...&nbsp;members)</code>
 <div class="block">Invokes the .NET member New.</div>
 </td>
@@ -2003,7 +2003,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <tr id="i218" class="altColor">
 <td class="colFirst"><code>static <a href="../../../system/linq/expressions/NewArrayExpression.html" title="class in system.linq.expressions">NewArrayExpression</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/linq/expressions/Expression.html#NewArrayBounds-org.mases.jcobridge.netreflection.NetType-system.collections.generic.IEnumerable_1-">NewArrayBounds</a></span>(<a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;type,
-              <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;bounds)</code>
+              <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/linq/expressions/Expression.html" title="class in system.linq.expressions">Expression</a>&gt;&nbsp;bounds)</code>
 <div class="block">Invokes the .NET member NewArrayBounds.</div>
 </td>
 </tr>
@@ -2017,7 +2017,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <tr id="i220" class="altColor">
 <td class="colFirst"><code>static <a href="../../../system/linq/expressions/NewArrayExpression.html" title="class in system.linq.expressions">NewArrayExpression</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/linq/expressions/Expression.html#NewArrayInit-org.mases.jcobridge.netreflection.NetType-system.collections.generic.IEnumerable_1-">NewArrayInit</a></span>(<a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;type,
-            <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;initializers)</code>
+            <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/linq/expressions/Expression.html" title="class in system.linq.expressions">Expression</a>&gt;&nbsp;initializers)</code>
 <div class="block">Invokes the .NET member NewArrayInit.</div>
 </td>
 </tr>
@@ -2255,7 +2255,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <td class="colFirst"><code>static <a href="../../../system/linq/expressions/IndexExpression.html" title="class in system.linq.expressions">IndexExpression</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/linq/expressions/Expression.html#Property-system.linq.expressions.Expression-system.reflection.PropertyInfo-system.collections.generic.IEnumerable_1-">Property</a></span>(<a href="../../../system/linq/expressions/Expression.html" title="class in system.linq.expressions">Expression</a>&nbsp;instance,
         <a href="../../../system/reflection/PropertyInfo.html" title="class in system.reflection">PropertyInfo</a>&nbsp;indexer,
-        <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;arguments)</code>
+        <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/linq/expressions/Expression.html" title="class in system.linq.expressions">Expression</a>&gt;&nbsp;arguments)</code>
 <div class="block">Invokes the .NET member Property.</div>
 </td>
 </tr>
@@ -2400,7 +2400,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 </tr>
 <tr id="i274" class="altColor">
 <td class="colFirst"><code>static <a href="../../../system/linq/expressions/RuntimeVariablesExpression.html" title="class in system.linq.expressions">RuntimeVariablesExpression</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/linq/expressions/Expression.html#RuntimeVariables-system.collections.generic.IEnumerable_1-">RuntimeVariables</a></span>(<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;variables)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/linq/expressions/Expression.html#RuntimeVariables-system.collections.generic.IEnumerable_1-">RuntimeVariables</a></span>(<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/linq/expressions/ParameterExpression.html" title="class in system.linq.expressions">ParameterExpression</a>&gt;&nbsp;variables)</code>
 <div class="block">Invokes the .NET member RuntimeVariables.</div>
 </td>
 </tr>
@@ -2499,7 +2499,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/linq/expressions/Expression.html#Switch-system.linq.expressions.Expression-system.linq.expressions.Expression-system.reflection.MethodInfo-system.collections.generic.IEnumerable_1-">Switch</a></span>(<a href="../../../system/linq/expressions/Expression.html" title="class in system.linq.expressions">Expression</a>&nbsp;switchValue,
       <a href="../../../system/linq/expressions/Expression.html" title="class in system.linq.expressions">Expression</a>&nbsp;defaultBody,
       <a href="../../../system/reflection/MethodInfo.html" title="class in system.reflection">MethodInfo</a>&nbsp;comparison,
-      <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;cases)</code>
+      <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/linq/expressions/SwitchCase.html" title="class in system.linq.expressions">SwitchCase</a>&gt;&nbsp;cases)</code>
 <div class="block">Invokes the .NET member Switch.</div>
 </td>
 </tr>
@@ -2533,7 +2533,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
       <a href="../../../system/linq/expressions/Expression.html" title="class in system.linq.expressions">Expression</a>&nbsp;switchValue,
       <a href="../../../system/linq/expressions/Expression.html" title="class in system.linq.expressions">Expression</a>&nbsp;defaultBody,
       <a href="../../../system/reflection/MethodInfo.html" title="class in system.reflection">MethodInfo</a>&nbsp;comparison,
-      <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;cases)</code>
+      <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/linq/expressions/SwitchCase.html" title="class in system.linq.expressions">SwitchCase</a>&gt;&nbsp;cases)</code>
 <div class="block">Invokes the .NET member Switch.</div>
 </td>
 </tr>
@@ -2557,7 +2557,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <tr id="i294" class="altColor">
 <td class="colFirst"><code>static <a href="../../../system/linq/expressions/SwitchCase.html" title="class in system.linq.expressions">SwitchCase</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/linq/expressions/Expression.html#SwitchCase-system.linq.expressions.Expression-system.collections.generic.IEnumerable_1-">SwitchCase</a></span>(<a href="../../../system/linq/expressions/Expression.html" title="class in system.linq.expressions">Expression</a>&nbsp;body,
-          <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;testValues)</code>
+          <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/linq/expressions/Expression.html" title="class in system.linq.expressions">Expression</a>&gt;&nbsp;testValues)</code>
 <div class="block">Invokes the .NET member SwitchCase.</div>
 </td>
 </tr>
@@ -3584,7 +3584,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <li class="blockList">
 <h4>ArrayAccess</h4>
 <pre>public static&nbsp;<a href="../../../system/linq/expressions/IndexExpression.html" title="class in system.linq.expressions">IndexExpression</a>&nbsp;ArrayAccess(<a href="../../../system/linq/expressions/Expression.html" title="class in system.linq.expressions">Expression</a>&nbsp;array,
-                                          <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;indexes)
+                                          <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/linq/expressions/Expression.html" title="class in system.linq.expressions">Expression</a>&gt;&nbsp;indexes)
                                    throws java.lang.Throwable,
                                           <a href="../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
                                           <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
@@ -3602,7 +3602,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>array</code> - the argument of type <code>Expression</code></dd>
-<dd><code>indexes</code> - the argument of type <code>IEnumerable_1</code></dd>
+<dd><code>indexes</code> - the argument of type <code>IEnumerable_1&lt;Expression&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -3719,7 +3719,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <li class="blockList">
 <h4>ArrayIndex</h4>
 <pre>public static&nbsp;<a href="../../../system/linq/expressions/MethodCallExpression.html" title="class in system.linq.expressions">MethodCallExpression</a>&nbsp;ArrayIndex(<a href="../../../system/linq/expressions/Expression.html" title="class in system.linq.expressions">Expression</a>&nbsp;array,
-                                              <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;indexes)
+                                              <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/linq/expressions/Expression.html" title="class in system.linq.expressions">Expression</a>&gt;&nbsp;indexes)
                                        throws java.lang.Throwable,
                                               <a href="../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
                                               <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
@@ -3737,7 +3737,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>array</code> - the argument of type <code>Expression</code></dd>
-<dd><code>indexes</code> - the argument of type <code>IEnumerable_1</code></dd>
+<dd><code>indexes</code> - the argument of type <code>IEnumerable_1&lt;Expression&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -4140,7 +4140,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <ul class="blockList">
 <li class="blockList">
 <h4>Block</h4>
-<pre>public static&nbsp;<a href="../../../system/linq/expressions/BlockExpression.html" title="class in system.linq.expressions">BlockExpression</a>&nbsp;Block(<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;expressions)
+<pre>public static&nbsp;<a href="../../../system/linq/expressions/BlockExpression.html" title="class in system.linq.expressions">BlockExpression</a>&nbsp;Block(<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/linq/expressions/Expression.html" title="class in system.linq.expressions">Expression</a>&gt;&nbsp;expressions)
                              throws java.lang.Throwable,
                                     <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
                                     <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
@@ -4157,7 +4157,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <div class="block">Invokes the .NET member Block.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>expressions</code> - the argument of type <code>IEnumerable_1</code></dd>
+<dd><code>expressions</code> - the argument of type <code>IEnumerable_1&lt;Expression&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -4185,7 +4185,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <ul class="blockList">
 <li class="blockList">
 <h4>Block</h4>
-<pre>public static&nbsp;<a href="../../../system/linq/expressions/BlockExpression.html" title="class in system.linq.expressions">BlockExpression</a>&nbsp;Block(<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;variables,
+<pre>public static&nbsp;<a href="../../../system/linq/expressions/BlockExpression.html" title="class in system.linq.expressions">BlockExpression</a>&nbsp;Block(<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/linq/expressions/ParameterExpression.html" title="class in system.linq.expressions">ParameterExpression</a>&gt;&nbsp;variables,
                                     <a href="../../../system/linq/expressions/Expression.html" title="class in system.linq.expressions">Expression</a>...&nbsp;expressions)
                              throws java.lang.Throwable,
                                     <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
@@ -4203,7 +4203,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <div class="block">Invokes the .NET member Block.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>variables</code> - the argument of type <code>IEnumerable_1</code></dd>
+<dd><code>variables</code> - the argument of type <code>IEnumerable_1&lt;ParameterExpression&gt;</code></dd>
 <dd><code>expressions</code> - the argument of type <code>Expression...</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value returned by the .NET member</dd>
@@ -4232,8 +4232,8 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <ul class="blockList">
 <li class="blockList">
 <h4>Block</h4>
-<pre>public static&nbsp;<a href="../../../system/linq/expressions/BlockExpression.html" title="class in system.linq.expressions">BlockExpression</a>&nbsp;Block(<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;variables,
-                                    <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;expressions)
+<pre>public static&nbsp;<a href="../../../system/linq/expressions/BlockExpression.html" title="class in system.linq.expressions">BlockExpression</a>&nbsp;Block(<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/linq/expressions/ParameterExpression.html" title="class in system.linq.expressions">ParameterExpression</a>&gt;&nbsp;variables,
+                                    <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/linq/expressions/Expression.html" title="class in system.linq.expressions">Expression</a>&gt;&nbsp;expressions)
                              throws java.lang.Throwable,
                                     <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
                                     <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
@@ -4248,8 +4248,8 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <div class="block">Invokes the .NET member Block.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>variables</code> - the argument of type <code>IEnumerable_1</code></dd>
-<dd><code>expressions</code> - the argument of type <code>IEnumerable_1</code></dd>
+<dd><code>variables</code> - the argument of type <code>IEnumerable_1&lt;ParameterExpression&gt;</code></dd>
+<dd><code>expressions</code> - the argument of type <code>IEnumerable_1&lt;Expression&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -4319,7 +4319,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <li class="blockList">
 <h4>Block</h4>
 <pre>public static&nbsp;<a href="../../../system/linq/expressions/BlockExpression.html" title="class in system.linq.expressions">BlockExpression</a>&nbsp;Block(<a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;type,
-                                    <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;expressions)
+                                    <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/linq/expressions/Expression.html" title="class in system.linq.expressions">Expression</a>&gt;&nbsp;expressions)
                              throws java.lang.Throwable,
                                     <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
                                     <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
@@ -4337,7 +4337,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>type</code> - the argument of type <code>NetType</code></dd>
-<dd><code>expressions</code> - the argument of type <code>IEnumerable_1</code></dd>
+<dd><code>expressions</code> - the argument of type <code>IEnumerable_1&lt;Expression&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -4366,7 +4366,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <li class="blockList">
 <h4>Block</h4>
 <pre>public static&nbsp;<a href="../../../system/linq/expressions/BlockExpression.html" title="class in system.linq.expressions">BlockExpression</a>&nbsp;Block(<a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;type,
-                                    <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;variables,
+                                    <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/linq/expressions/ParameterExpression.html" title="class in system.linq.expressions">ParameterExpression</a>&gt;&nbsp;variables,
                                     <a href="../../../system/linq/expressions/Expression.html" title="class in system.linq.expressions">Expression</a>...&nbsp;expressions)
                              throws java.lang.Throwable,
                                     <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
@@ -4385,7 +4385,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>type</code> - the argument of type <code>NetType</code></dd>
-<dd><code>variables</code> - the argument of type <code>IEnumerable_1</code></dd>
+<dd><code>variables</code> - the argument of type <code>IEnumerable_1&lt;ParameterExpression&gt;</code></dd>
 <dd><code>expressions</code> - the argument of type <code>Expression...</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value returned by the .NET member</dd>
@@ -4415,8 +4415,8 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <li class="blockList">
 <h4>Block</h4>
 <pre>public static&nbsp;<a href="../../../system/linq/expressions/BlockExpression.html" title="class in system.linq.expressions">BlockExpression</a>&nbsp;Block(<a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;type,
-                                    <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;variables,
-                                    <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;expressions)
+                                    <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/linq/expressions/ParameterExpression.html" title="class in system.linq.expressions">ParameterExpression</a>&gt;&nbsp;variables,
+                                    <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/linq/expressions/Expression.html" title="class in system.linq.expressions">Expression</a>&gt;&nbsp;expressions)
                              throws java.lang.Throwable,
                                     <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
                                     <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
@@ -4432,8 +4432,8 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>type</code> - the argument of type <code>NetType</code></dd>
-<dd><code>variables</code> - the argument of type <code>IEnumerable_1</code></dd>
-<dd><code>expressions</code> - the argument of type <code>IEnumerable_1</code></dd>
+<dd><code>variables</code> - the argument of type <code>IEnumerable_1&lt;ParameterExpression&gt;</code></dd>
+<dd><code>expressions</code> - the argument of type <code>IEnumerable_1&lt;Expression&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -4767,7 +4767,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <h4>Call</h4>
 <pre>public static&nbsp;<a href="../../../system/linq/expressions/MethodCallExpression.html" title="class in system.linq.expressions">MethodCallExpression</a>&nbsp;Call(<a href="../../../system/linq/expressions/Expression.html" title="class in system.linq.expressions">Expression</a>&nbsp;instance,
                                         <a href="../../../system/reflection/MethodInfo.html" title="class in system.reflection">MethodInfo</a>&nbsp;method,
-                                        <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;arguments)
+                                        <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/linq/expressions/Expression.html" title="class in system.linq.expressions">Expression</a>&gt;&nbsp;arguments)
                                  throws java.lang.Throwable,
                                         <a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
                                         <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
@@ -4785,7 +4785,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>instance</code> - the argument of type <code>Expression</code></dd>
 <dd><code>method</code> - the argument of type <code>MethodInfo</code></dd>
-<dd><code>arguments</code> - the argument of type <code>IEnumerable_1</code></dd>
+<dd><code>arguments</code> - the argument of type <code>IEnumerable_1&lt;Expression&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -5126,7 +5126,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <li class="blockList">
 <h4>Call</h4>
 <pre>public static&nbsp;<a href="../../../system/linq/expressions/MethodCallExpression.html" title="class in system.linq.expressions">MethodCallExpression</a>&nbsp;Call(<a href="../../../system/reflection/MethodInfo.html" title="class in system.reflection">MethodInfo</a>&nbsp;method,
-                                        <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;arguments)
+                                        <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/linq/expressions/Expression.html" title="class in system.linq.expressions">Expression</a>&gt;&nbsp;arguments)
                                  throws java.lang.Throwable,
                                         <a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
                                         <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
@@ -5143,7 +5143,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>method</code> - the argument of type <code>MethodInfo</code></dd>
-<dd><code>arguments</code> - the argument of type <code>IEnumerable_1</code></dd>
+<dd><code>arguments</code> - the argument of type <code>IEnumerable_1&lt;Expression&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -6483,7 +6483,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <h4>Dynamic</h4>
 <pre>public static&nbsp;<a href="../../../system/linq/expressions/DynamicExpression.html" title="class in system.linq.expressions">DynamicExpression</a>&nbsp;Dynamic(<a href="../../../system/runtime/compilerservices/CallSiteBinder.html" title="class in system.runtime.compilerservices">CallSiteBinder</a>&nbsp;binder,
                                         <a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;returnType,
-                                        <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;arguments)
+                                        <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/linq/expressions/Expression.html" title="class in system.linq.expressions">Expression</a>&gt;&nbsp;arguments)
                                  throws java.lang.Throwable,
                                         <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
                                         <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
@@ -6501,7 +6501,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>binder</code> - the argument of type <code>CallSiteBinder</code></dd>
 <dd><code>returnType</code> - the argument of type <code>NetType</code></dd>
-<dd><code>arguments</code> - the argument of type <code>IEnumerable_1</code></dd>
+<dd><code>arguments</code> - the argument of type <code>IEnumerable_1&lt;Expression&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -6582,7 +6582,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <li class="blockList">
 <h4>ElementInit</h4>
 <pre>public static&nbsp;<a href="../../../system/linq/expressions/ElementInit.html" title="class in system.linq.expressions">ElementInit</a>&nbsp;ElementInit(<a href="../../../system/reflection/MethodInfo.html" title="class in system.reflection">MethodInfo</a>&nbsp;addMethod,
-                                      <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;arguments)
+                                      <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/linq/expressions/Expression.html" title="class in system.linq.expressions">Expression</a>&gt;&nbsp;arguments)
                                throws java.lang.Throwable,
                                       <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
                                       <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
@@ -6601,7 +6601,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>addMethod</code> - the argument of type <code>MethodInfo</code></dd>
-<dd><code>arguments</code> - the argument of type <code>IEnumerable_1</code></dd>
+<dd><code>arguments</code> - the argument of type <code>IEnumerable_1&lt;Expression&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -7872,7 +7872,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <li class="blockList">
 <h4>Invoke</h4>
 <pre>public static&nbsp;<a href="../../../system/linq/expressions/InvocationExpression.html" title="class in system.linq.expressions">InvocationExpression</a>&nbsp;Invoke(<a href="../../../system/linq/expressions/Expression.html" title="class in system.linq.expressions">Expression</a>&nbsp;expression,
-                                          <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;arguments)
+                                          <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/linq/expressions/Expression.html" title="class in system.linq.expressions">Expression</a>&gt;&nbsp;arguments)
                                    throws java.lang.Throwable,
                                           <a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
                                           <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
@@ -7890,7 +7890,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>expression</code> - the argument of type <code>Expression</code></dd>
-<dd><code>arguments</code> - the argument of type <code>IEnumerable_1</code></dd>
+<dd><code>arguments</code> - the argument of type <code>IEnumerable_1&lt;Expression&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -8280,7 +8280,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <h4>Lambda</h4>
 <pre>public static&nbsp;&lt;TDelegate extends <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;&nbsp;<a href="../../../system/linq/expressions/Expression_1.html" title="class in system.linq.expressions">Expression_1</a>&nbsp;Lambda(<a href="../../../system/linq/expressions/Expression.html" title="class in system.linq.expressions">Expression</a>&nbsp;body,
                                                                           boolean&nbsp;tailCall,
-                                                                          <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;parameters)
+                                                                          <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/linq/expressions/ParameterExpression.html" title="class in system.linq.expressions">ParameterExpression</a>&gt;&nbsp;parameters)
                                                                    throws java.lang.Throwable,
                                                                           <a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
                                                                           <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
@@ -8301,7 +8301,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>body</code> - the argument of type <code>Expression</code></dd>
 <dd><code>tailCall</code> - the argument of type <code>boolean</code></dd>
-<dd><code>parameters</code> - the argument of type <code>IEnumerable_1</code></dd>
+<dd><code>parameters</code> - the argument of type <code>IEnumerable_1&lt;ParameterExpression&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -8379,7 +8379,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <li class="blockList">
 <h4>Lambda</h4>
 <pre>public static&nbsp;&lt;TDelegate extends <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;&nbsp;<a href="../../../system/linq/expressions/Expression_1.html" title="class in system.linq.expressions">Expression_1</a>&nbsp;Lambda(<a href="../../../system/linq/expressions/Expression.html" title="class in system.linq.expressions">Expression</a>&nbsp;body,
-                                                                          <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;parameters)
+                                                                          <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/linq/expressions/ParameterExpression.html" title="class in system.linq.expressions">ParameterExpression</a>&gt;&nbsp;parameters)
                                                                    throws java.lang.Throwable,
                                                                           <a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
                                                                           <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
@@ -8399,7 +8399,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <dd><code>TDelegate</code> - the type of the generic argument TDelegate</dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>body</code> - the argument of type <code>Expression</code></dd>
-<dd><code>parameters</code> - the argument of type <code>IEnumerable_1</code></dd>
+<dd><code>parameters</code> - the argument of type <code>IEnumerable_1&lt;ParameterExpression&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -8477,7 +8477,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <pre>public static&nbsp;&lt;TDelegate extends <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;&nbsp;<a href="../../../system/linq/expressions/Expression_1.html" title="class in system.linq.expressions">Expression_1</a>&nbsp;Lambda(<a href="../../../system/linq/expressions/Expression.html" title="class in system.linq.expressions">Expression</a>&nbsp;body,
                                                                           java.lang.String&nbsp;name,
                                                                           boolean&nbsp;tailCall,
-                                                                          <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;parameters)
+                                                                          <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/linq/expressions/ParameterExpression.html" title="class in system.linq.expressions">ParameterExpression</a>&gt;&nbsp;parameters)
                                                                    throws java.lang.Throwable,
                                                                           <a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
                                                                           <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
@@ -8499,7 +8499,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <dd><code>body</code> - the argument of type <code>Expression</code></dd>
 <dd><code>name</code> - the argument of type <code>java.lang.String</code></dd>
 <dd><code>tailCall</code> - the argument of type <code>boolean</code></dd>
-<dd><code>parameters</code> - the argument of type <code>IEnumerable_1</code></dd>
+<dd><code>parameters</code> - the argument of type <code>IEnumerable_1&lt;ParameterExpression&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -8529,7 +8529,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <h4>Lambda</h4>
 <pre>public static&nbsp;&lt;TDelegate extends <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;&nbsp;<a href="../../../system/linq/expressions/Expression_1.html" title="class in system.linq.expressions">Expression_1</a>&nbsp;Lambda(<a href="../../../system/linq/expressions/Expression.html" title="class in system.linq.expressions">Expression</a>&nbsp;body,
                                                                           java.lang.String&nbsp;name,
-                                                                          <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;parameters)
+                                                                          <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/linq/expressions/ParameterExpression.html" title="class in system.linq.expressions">ParameterExpression</a>&gt;&nbsp;parameters)
                                                                    throws java.lang.Throwable,
                                                                           <a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
                                                                           <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
@@ -8550,7 +8550,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>body</code> - the argument of type <code>Expression</code></dd>
 <dd><code>name</code> - the argument of type <code>java.lang.String</code></dd>
-<dd><code>parameters</code> - the argument of type <code>IEnumerable_1</code></dd>
+<dd><code>parameters</code> - the argument of type <code>IEnumerable_1&lt;ParameterExpression&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -8581,7 +8581,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <pre>public static&nbsp;<a href="../../../system/linq/expressions/LambdaExpression.html" title="class in system.linq.expressions">LambdaExpression</a>&nbsp;Lambda(<a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;delegateType,
                                       <a href="../../../system/linq/expressions/Expression.html" title="class in system.linq.expressions">Expression</a>&nbsp;body,
                                       boolean&nbsp;tailCall,
-                                      <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;parameters)
+                                      <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/linq/expressions/ParameterExpression.html" title="class in system.linq.expressions">ParameterExpression</a>&gt;&nbsp;parameters)
                                throws java.lang.Throwable,
                                       <a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
                                       <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
@@ -8601,7 +8601,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <dd><code>delegateType</code> - the argument of type <code>NetType</code></dd>
 <dd><code>body</code> - the argument of type <code>Expression</code></dd>
 <dd><code>tailCall</code> - the argument of type <code>boolean</code></dd>
-<dd><code>parameters</code> - the argument of type <code>IEnumerable_1</code></dd>
+<dd><code>parameters</code> - the argument of type <code>IEnumerable_1&lt;ParameterExpression&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -8682,7 +8682,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <h4>Lambda</h4>
 <pre>public static&nbsp;<a href="../../../system/linq/expressions/LambdaExpression.html" title="class in system.linq.expressions">LambdaExpression</a>&nbsp;Lambda(<a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;delegateType,
                                       <a href="../../../system/linq/expressions/Expression.html" title="class in system.linq.expressions">Expression</a>&nbsp;body,
-                                      <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;parameters)
+                                      <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/linq/expressions/ParameterExpression.html" title="class in system.linq.expressions">ParameterExpression</a>&gt;&nbsp;parameters)
                                throws java.lang.Throwable,
                                       <a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
                                       <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
@@ -8701,7 +8701,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>delegateType</code> - the argument of type <code>NetType</code></dd>
 <dd><code>body</code> - the argument of type <code>Expression</code></dd>
-<dd><code>parameters</code> - the argument of type <code>IEnumerable_1</code></dd>
+<dd><code>parameters</code> - the argument of type <code>IEnumerable_1&lt;ParameterExpression&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -8782,7 +8782,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
                                       <a href="../../../system/linq/expressions/Expression.html" title="class in system.linq.expressions">Expression</a>&nbsp;body,
                                       java.lang.String&nbsp;name,
                                       boolean&nbsp;tailCall,
-                                      <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;parameters)
+                                      <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/linq/expressions/ParameterExpression.html" title="class in system.linq.expressions">ParameterExpression</a>&gt;&nbsp;parameters)
                                throws java.lang.Throwable,
                                       <a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
                                       <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
@@ -8803,7 +8803,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <dd><code>body</code> - the argument of type <code>Expression</code></dd>
 <dd><code>name</code> - the argument of type <code>java.lang.String</code></dd>
 <dd><code>tailCall</code> - the argument of type <code>boolean</code></dd>
-<dd><code>parameters</code> - the argument of type <code>IEnumerable_1</code></dd>
+<dd><code>parameters</code> - the argument of type <code>IEnumerable_1&lt;ParameterExpression&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -8834,7 +8834,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <pre>public static&nbsp;<a href="../../../system/linq/expressions/LambdaExpression.html" title="class in system.linq.expressions">LambdaExpression</a>&nbsp;Lambda(<a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;delegateType,
                                       <a href="../../../system/linq/expressions/Expression.html" title="class in system.linq.expressions">Expression</a>&nbsp;body,
                                       java.lang.String&nbsp;name,
-                                      <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;parameters)
+                                      <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/linq/expressions/ParameterExpression.html" title="class in system.linq.expressions">ParameterExpression</a>&gt;&nbsp;parameters)
                                throws java.lang.Throwable,
                                       <a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
                                       <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
@@ -8854,7 +8854,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <dd><code>delegateType</code> - the argument of type <code>NetType</code></dd>
 <dd><code>body</code> - the argument of type <code>Expression</code></dd>
 <dd><code>name</code> - the argument of type <code>java.lang.String</code></dd>
-<dd><code>parameters</code> - the argument of type <code>IEnumerable_1</code></dd>
+<dd><code>parameters</code> - the argument of type <code>IEnumerable_1&lt;ParameterExpression&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -9305,7 +9305,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <li class="blockList">
 <h4>ListBind</h4>
 <pre>public static&nbsp;<a href="../../../system/linq/expressions/MemberListBinding.html" title="class in system.linq.expressions">MemberListBinding</a>&nbsp;ListBind(<a href="../../../system/reflection/MemberInfo.html" title="class in system.reflection">MemberInfo</a>&nbsp;member,
-                                         <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;initializers)
+                                         <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/linq/expressions/ElementInit.html" title="class in system.linq.expressions">ElementInit</a>&gt;&nbsp;initializers)
                                   throws java.lang.Throwable,
                                          <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
                                          <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
@@ -9321,7 +9321,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>member</code> - the argument of type <code>MemberInfo</code></dd>
-<dd><code>initializers</code> - the argument of type <code>IEnumerable_1</code></dd>
+<dd><code>initializers</code> - the argument of type <code>IEnumerable_1&lt;ElementInit&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -9395,7 +9395,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <li class="blockList">
 <h4>ListBind</h4>
 <pre>public static&nbsp;<a href="../../../system/linq/expressions/MemberListBinding.html" title="class in system.linq.expressions">MemberListBinding</a>&nbsp;ListBind(<a href="../../../system/reflection/MethodInfo.html" title="class in system.reflection">MethodInfo</a>&nbsp;propertyAccessor,
-                                         <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;initializers)
+                                         <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/linq/expressions/ElementInit.html" title="class in system.linq.expressions">ElementInit</a>&gt;&nbsp;initializers)
                                   throws java.lang.Throwable,
                                          <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
                                          <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
@@ -9411,7 +9411,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>propertyAccessor</code> - the argument of type <code>MethodInfo</code></dd>
-<dd><code>initializers</code> - the argument of type <code>IEnumerable_1</code></dd>
+<dd><code>initializers</code> - the argument of type <code>IEnumerable_1&lt;ElementInit&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -9538,7 +9538,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <li class="blockList">
 <h4>ListInit</h4>
 <pre>public static&nbsp;<a href="../../../system/linq/expressions/ListInitExpression.html" title="class in system.linq.expressions">ListInitExpression</a>&nbsp;ListInit(<a href="../../../system/linq/expressions/NewExpression.html" title="class in system.linq.expressions">NewExpression</a>&nbsp;newExpression,
-                                          <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;initializers)
+                                          <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/linq/expressions/ElementInit.html" title="class in system.linq.expressions">ElementInit</a>&gt;&nbsp;initializers)
                                    throws java.lang.Throwable,
                                           <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
                                           <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
@@ -9554,7 +9554,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>newExpression</code> - the argument of type <code>NewExpression</code></dd>
-<dd><code>initializers</code> - the argument of type <code>IEnumerable_1</code></dd>
+<dd><code>initializers</code> - the argument of type <code>IEnumerable_1&lt;ElementInit&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -9635,7 +9635,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <h4>ListInit</h4>
 <pre>public static&nbsp;<a href="../../../system/linq/expressions/ListInitExpression.html" title="class in system.linq.expressions">ListInitExpression</a>&nbsp;ListInit(<a href="../../../system/linq/expressions/NewExpression.html" title="class in system.linq.expressions">NewExpression</a>&nbsp;newExpression,
                                           <a href="../../../system/reflection/MethodInfo.html" title="class in system.reflection">MethodInfo</a>&nbsp;addMethod,
-                                          <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;initializers)
+                                          <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/linq/expressions/Expression.html" title="class in system.linq.expressions">Expression</a>&gt;&nbsp;initializers)
                                    throws java.lang.Throwable,
                                           <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
                                           <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
@@ -9657,7 +9657,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>newExpression</code> - the argument of type <code>NewExpression</code></dd>
 <dd><code>addMethod</code> - the argument of type <code>MethodInfo</code></dd>
-<dd><code>initializers</code> - the argument of type <code>IEnumerable_1</code></dd>
+<dd><code>initializers</code> - the argument of type <code>IEnumerable_1&lt;Expression&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -10168,7 +10168,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <h4>MakeDynamic</h4>
 <pre>public static&nbsp;<a href="../../../system/linq/expressions/DynamicExpression.html" title="class in system.linq.expressions">DynamicExpression</a>&nbsp;MakeDynamic(<a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;delegateType,
                                             <a href="../../../system/runtime/compilerservices/CallSiteBinder.html" title="class in system.runtime.compilerservices">CallSiteBinder</a>&nbsp;binder,
-                                            <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;arguments)
+                                            <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/linq/expressions/Expression.html" title="class in system.linq.expressions">Expression</a>&gt;&nbsp;arguments)
                                      throws java.lang.Throwable,
                                             <a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
                                             <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
@@ -10186,7 +10186,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>delegateType</code> - the argument of type <code>NetType</code></dd>
 <dd><code>binder</code> - the argument of type <code>CallSiteBinder</code></dd>
-<dd><code>arguments</code> - the argument of type <code>IEnumerable_1</code></dd>
+<dd><code>arguments</code> - the argument of type <code>IEnumerable_1&lt;Expression&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -10256,7 +10256,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <h4>MakeIndex</h4>
 <pre>public static&nbsp;<a href="../../../system/linq/expressions/IndexExpression.html" title="class in system.linq.expressions">IndexExpression</a>&nbsp;MakeIndex(<a href="../../../system/linq/expressions/Expression.html" title="class in system.linq.expressions">Expression</a>&nbsp;instance,
                                         <a href="../../../system/reflection/PropertyInfo.html" title="class in system.reflection">PropertyInfo</a>&nbsp;indexer,
-                                        <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;arguments)
+                                        <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/linq/expressions/Expression.html" title="class in system.linq.expressions">Expression</a>&gt;&nbsp;arguments)
                                  throws java.lang.Throwable,
                                         <a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
                                         <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
@@ -10274,7 +10274,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>instance</code> - the argument of type <code>Expression</code></dd>
 <dd><code>indexer</code> - the argument of type <code>PropertyInfo</code></dd>
-<dd><code>arguments</code> - the argument of type <code>IEnumerable_1</code></dd>
+<dd><code>arguments</code> - the argument of type <code>IEnumerable_1&lt;Expression&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -10344,7 +10344,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
                                     <a href="../../../system/linq/expressions/Expression.html" title="class in system.linq.expressions">Expression</a>&nbsp;body,
                                     <a href="../../../system/linq/expressions/Expression.html" title="class in system.linq.expressions">Expression</a>&nbsp;_finally,
                                     <a href="../../../system/linq/expressions/Expression.html" title="class in system.linq.expressions">Expression</a>&nbsp;fault,
-                                    <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;handlers)
+                                    <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/linq/expressions/CatchBlock.html" title="class in system.linq.expressions">CatchBlock</a>&gt;&nbsp;handlers)
                              throws java.lang.Throwable,
                                     <a href="../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
                                     <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
@@ -10365,7 +10365,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <dd><code>body</code> - the argument of type <code>Expression</code></dd>
 <dd><code>_finally</code> - the argument of type <code>Expression</code></dd>
 <dd><code>fault</code> - the argument of type <code>Expression</code></dd>
-<dd><code>handlers</code> - the argument of type <code>IEnumerable_1</code></dd>
+<dd><code>handlers</code> - the argument of type <code>IEnumerable_1&lt;CatchBlock&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -10476,7 +10476,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <li class="blockList">
 <h4>MemberBind</h4>
 <pre>public static&nbsp;<a href="../../../system/linq/expressions/MemberMemberBinding.html" title="class in system.linq.expressions">MemberMemberBinding</a>&nbsp;MemberBind(<a href="../../../system/reflection/MemberInfo.html" title="class in system.reflection">MemberInfo</a>&nbsp;member,
-                                             <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;bindings)
+                                             <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/linq/expressions/MemberBinding.html" title="class in system.linq.expressions">MemberBinding</a>&gt;&nbsp;bindings)
                                       throws java.lang.Throwable,
                                              <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
                                              <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
@@ -10492,7 +10492,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>member</code> - the argument of type <code>MemberInfo</code></dd>
-<dd><code>bindings</code> - the argument of type <code>IEnumerable_1</code></dd>
+<dd><code>bindings</code> - the argument of type <code>IEnumerable_1&lt;MemberBinding&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -10566,7 +10566,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <li class="blockList">
 <h4>MemberBind</h4>
 <pre>public static&nbsp;<a href="../../../system/linq/expressions/MemberMemberBinding.html" title="class in system.linq.expressions">MemberMemberBinding</a>&nbsp;MemberBind(<a href="../../../system/reflection/MethodInfo.html" title="class in system.reflection">MethodInfo</a>&nbsp;propertyAccessor,
-                                             <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;bindings)
+                                             <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/linq/expressions/MemberBinding.html" title="class in system.linq.expressions">MemberBinding</a>&gt;&nbsp;bindings)
                                       throws java.lang.Throwable,
                                              <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
                                              <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
@@ -10582,7 +10582,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>propertyAccessor</code> - the argument of type <code>MethodInfo</code></dd>
-<dd><code>bindings</code> - the argument of type <code>IEnumerable_1</code></dd>
+<dd><code>bindings</code> - the argument of type <code>IEnumerable_1&lt;MemberBinding&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -10656,7 +10656,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <li class="blockList">
 <h4>MemberInit</h4>
 <pre>public static&nbsp;<a href="../../../system/linq/expressions/MemberInitExpression.html" title="class in system.linq.expressions">MemberInitExpression</a>&nbsp;MemberInit(<a href="../../../system/linq/expressions/NewExpression.html" title="class in system.linq.expressions">NewExpression</a>&nbsp;newExpression,
-                                              <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;bindings)
+                                              <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/linq/expressions/MemberBinding.html" title="class in system.linq.expressions">MemberBinding</a>&gt;&nbsp;bindings)
                                        throws java.lang.Throwable,
                                               <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
                                               <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
@@ -10672,7 +10672,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>newExpression</code> - the argument of type <code>NewExpression</code></dd>
-<dd><code>bindings</code> - the argument of type <code>IEnumerable_1</code></dd>
+<dd><code>bindings</code> - the argument of type <code>IEnumerable_1&lt;MemberBinding&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -11613,7 +11613,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <li class="blockList">
 <h4>New</h4>
 <pre>public static&nbsp;<a href="../../../system/linq/expressions/NewExpression.html" title="class in system.linq.expressions">NewExpression</a>&nbsp;New(<a href="../../../system/reflection/ConstructorInfo.html" title="class in system.reflection">ConstructorInfo</a>&nbsp;constructor,
-                                <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;arguments)
+                                <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/linq/expressions/Expression.html" title="class in system.linq.expressions">Expression</a>&gt;&nbsp;arguments)
                          throws java.lang.Throwable,
                                 <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
                                 <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
@@ -11629,7 +11629,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>constructor</code> - the argument of type <code>ConstructorInfo</code></dd>
-<dd><code>arguments</code> - the argument of type <code>IEnumerable_1</code></dd>
+<dd><code>arguments</code> - the argument of type <code>IEnumerable_1&lt;Expression&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -11656,8 +11656,8 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <li class="blockList">
 <h4>New</h4>
 <pre>public static&nbsp;<a href="../../../system/linq/expressions/NewExpression.html" title="class in system.linq.expressions">NewExpression</a>&nbsp;New(<a href="../../../system/reflection/ConstructorInfo.html" title="class in system.reflection">ConstructorInfo</a>&nbsp;constructor,
-                                <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;arguments,
-                                <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;members)
+                                <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/linq/expressions/Expression.html" title="class in system.linq.expressions">Expression</a>&gt;&nbsp;arguments,
+                                <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/reflection/MemberInfo.html" title="class in system.reflection">MemberInfo</a>&gt;&nbsp;members)
                          throws java.lang.Throwable,
                                 <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
                                 <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
@@ -11673,8 +11673,8 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>constructor</code> - the argument of type <code>ConstructorInfo</code></dd>
-<dd><code>arguments</code> - the argument of type <code>IEnumerable_1</code></dd>
-<dd><code>members</code> - the argument of type <code>IEnumerable_1</code></dd>
+<dd><code>arguments</code> - the argument of type <code>IEnumerable_1&lt;Expression&gt;</code></dd>
+<dd><code>members</code> - the argument of type <code>IEnumerable_1&lt;MemberInfo&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -11701,7 +11701,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <li class="blockList">
 <h4>New</h4>
 <pre>public static&nbsp;<a href="../../../system/linq/expressions/NewExpression.html" title="class in system.linq.expressions">NewExpression</a>&nbsp;New(<a href="../../../system/reflection/ConstructorInfo.html" title="class in system.reflection">ConstructorInfo</a>&nbsp;constructor,
-                                <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;arguments,
+                                <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/linq/expressions/Expression.html" title="class in system.linq.expressions">Expression</a>&gt;&nbsp;arguments,
                                 <a href="../../../system/reflection/MemberInfo.html" title="class in system.reflection">MemberInfo</a>...&nbsp;members)
                          throws java.lang.Throwable,
                                 <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
@@ -11720,7 +11720,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>constructor</code> - the argument of type <code>ConstructorInfo</code></dd>
-<dd><code>arguments</code> - the argument of type <code>IEnumerable_1</code></dd>
+<dd><code>arguments</code> - the argument of type <code>IEnumerable_1&lt;Expression&gt;</code></dd>
 <dd><code>members</code> - the argument of type <code>MemberInfo...</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value returned by the .NET member</dd>
@@ -11838,7 +11838,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <li class="blockList">
 <h4>NewArrayBounds</h4>
 <pre>public static&nbsp;<a href="../../../system/linq/expressions/NewArrayExpression.html" title="class in system.linq.expressions">NewArrayExpression</a>&nbsp;NewArrayBounds(<a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;type,
-                                                <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;bounds)
+                                                <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/linq/expressions/Expression.html" title="class in system.linq.expressions">Expression</a>&gt;&nbsp;bounds)
                                          throws java.lang.Throwable,
                                                 <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
                                                 <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
@@ -11854,7 +11854,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>type</code> - the argument of type <code>NetType</code></dd>
-<dd><code>bounds</code> - the argument of type <code>IEnumerable_1</code></dd>
+<dd><code>bounds</code> - the argument of type <code>IEnumerable_1&lt;Expression&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -11928,7 +11928,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <li class="blockList">
 <h4>NewArrayInit</h4>
 <pre>public static&nbsp;<a href="../../../system/linq/expressions/NewArrayExpression.html" title="class in system.linq.expressions">NewArrayExpression</a>&nbsp;NewArrayInit(<a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;type,
-                                              <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;initializers)
+                                              <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/linq/expressions/Expression.html" title="class in system.linq.expressions">Expression</a>&gt;&nbsp;initializers)
                                        throws java.lang.Throwable,
                                               <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
                                               <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
@@ -11944,7 +11944,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>type</code> - the argument of type <code>NetType</code></dd>
-<dd><code>initializers</code> - the argument of type <code>IEnumerable_1</code></dd>
+<dd><code>initializers</code> - the argument of type <code>IEnumerable_1&lt;Expression&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -13250,7 +13250,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <h4>Property</h4>
 <pre>public static&nbsp;<a href="../../../system/linq/expressions/IndexExpression.html" title="class in system.linq.expressions">IndexExpression</a>&nbsp;Property(<a href="../../../system/linq/expressions/Expression.html" title="class in system.linq.expressions">Expression</a>&nbsp;instance,
                                        <a href="../../../system/reflection/PropertyInfo.html" title="class in system.reflection">PropertyInfo</a>&nbsp;indexer,
-                                       <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;arguments)
+                                       <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/linq/expressions/Expression.html" title="class in system.linq.expressions">Expression</a>&gt;&nbsp;arguments)
                                 throws java.lang.Throwable,
                                        <a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
                                        <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
@@ -13268,7 +13268,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>instance</code> - the argument of type <code>Expression</code></dd>
 <dd><code>indexer</code> - the argument of type <code>PropertyInfo</code></dd>
-<dd><code>arguments</code> - the argument of type <code>IEnumerable_1</code></dd>
+<dd><code>arguments</code> - the argument of type <code>IEnumerable_1&lt;Expression&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -14045,7 +14045,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <ul class="blockList">
 <li class="blockList">
 <h4>RuntimeVariables</h4>
-<pre>public static&nbsp;<a href="../../../system/linq/expressions/RuntimeVariablesExpression.html" title="class in system.linq.expressions">RuntimeVariablesExpression</a>&nbsp;RuntimeVariables(<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;variables)
+<pre>public static&nbsp;<a href="../../../system/linq/expressions/RuntimeVariablesExpression.html" title="class in system.linq.expressions">RuntimeVariablesExpression</a>&nbsp;RuntimeVariables(<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/linq/expressions/ParameterExpression.html" title="class in system.linq.expressions">ParameterExpression</a>&gt;&nbsp;variables)
                                                    throws java.lang.Throwable,
                                                           <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
                                                           <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
@@ -14060,7 +14060,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <div class="block">Invokes the .NET member RuntimeVariables.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>variables</code> - the argument of type <code>IEnumerable_1</code></dd>
+<dd><code>variables</code> - the argument of type <code>IEnumerable_1&lt;ParameterExpression&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -14563,7 +14563,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <pre>public static&nbsp;<a href="../../../system/linq/expressions/SwitchExpression.html" title="class in system.linq.expressions">SwitchExpression</a>&nbsp;Switch(<a href="../../../system/linq/expressions/Expression.html" title="class in system.linq.expressions">Expression</a>&nbsp;switchValue,
                                       <a href="../../../system/linq/expressions/Expression.html" title="class in system.linq.expressions">Expression</a>&nbsp;defaultBody,
                                       <a href="../../../system/reflection/MethodInfo.html" title="class in system.reflection">MethodInfo</a>&nbsp;comparison,
-                                      <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;cases)
+                                      <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/linq/expressions/SwitchCase.html" title="class in system.linq.expressions">SwitchCase</a>&gt;&nbsp;cases)
                                throws java.lang.Throwable,
                                       <a href="../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
                                       <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
@@ -14583,7 +14583,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <dd><code>switchValue</code> - the argument of type <code>Expression</code></dd>
 <dd><code>defaultBody</code> - the argument of type <code>Expression</code></dd>
 <dd><code>comparison</code> - the argument of type <code>MethodInfo</code></dd>
-<dd><code>cases</code> - the argument of type <code>IEnumerable_1</code></dd>
+<dd><code>cases</code> - the argument of type <code>IEnumerable_1&lt;SwitchCase&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -14762,7 +14762,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
                                       <a href="../../../system/linq/expressions/Expression.html" title="class in system.linq.expressions">Expression</a>&nbsp;switchValue,
                                       <a href="../../../system/linq/expressions/Expression.html" title="class in system.linq.expressions">Expression</a>&nbsp;defaultBody,
                                       <a href="../../../system/reflection/MethodInfo.html" title="class in system.reflection">MethodInfo</a>&nbsp;comparison,
-                                      <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;cases)
+                                      <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/linq/expressions/SwitchCase.html" title="class in system.linq.expressions">SwitchCase</a>&gt;&nbsp;cases)
                                throws java.lang.Throwable,
                                       <a href="../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
                                       <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
@@ -14783,7 +14783,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <dd><code>switchValue</code> - the argument of type <code>Expression</code></dd>
 <dd><code>defaultBody</code> - the argument of type <code>Expression</code></dd>
 <dd><code>comparison</code> - the argument of type <code>MethodInfo</code></dd>
-<dd><code>cases</code> - the argument of type <code>IEnumerable_1</code></dd>
+<dd><code>cases</code> - the argument of type <code>IEnumerable_1&lt;SwitchCase&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -14910,7 +14910,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <li class="blockList">
 <h4>SwitchCase</h4>
 <pre>public static&nbsp;<a href="../../../system/linq/expressions/SwitchCase.html" title="class in system.linq.expressions">SwitchCase</a>&nbsp;SwitchCase(<a href="../../../system/linq/expressions/Expression.html" title="class in system.linq.expressions">Expression</a>&nbsp;body,
-                                    <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;testValues)
+                                    <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/linq/expressions/Expression.html" title="class in system.linq.expressions">Expression</a>&gt;&nbsp;testValues)
                              throws java.lang.Throwable,
                                     <a href="../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
                                     <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
@@ -14928,7 +14928,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>body</code> - the argument of type <code>Expression</code></dd>
-<dd><code>testValues</code> - the argument of type <code>IEnumerable_1</code></dd>
+<dd><code>testValues</code> - the argument of type <code>IEnumerable_1&lt;Expression&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>

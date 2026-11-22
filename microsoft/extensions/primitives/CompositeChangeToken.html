@@ -209,7 +209,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../microsoft/extensions/primitives/CompositeChangeToken.html#CompositeChangeToken--">CompositeChangeToken</a></span>()</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../microsoft/extensions/primitives/CompositeChangeToken.html#CompositeChangeToken-system.collections.generic.IReadOnlyList_1-">CompositeChangeToken</a></span>(<a href="../../../system/collections/generic/IReadOnlyList_1.html" title="interface in system.collections.generic">IReadOnlyList_1</a>&nbsp;changeTokens)</code>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../microsoft/extensions/primitives/CompositeChangeToken.html#CompositeChangeToken-system.collections.generic.IReadOnlyList_1-">CompositeChangeToken</a></span>(<a href="../../../system/collections/generic/IReadOnlyList_1.html" title="interface in system.collections.generic">IReadOnlyList_1</a>&lt;<a href="../../../microsoft/extensions/primitives/IChangeToken.html" title="interface in microsoft.extensions.primitives">IChangeToken</a>&gt;&nbsp;changeTokens)</code>
 <div class="block">Initializes a new instance by invoking the .NET constructor.</div>
 </td>
 </tr>
@@ -246,7 +246,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 </td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code><a href="../../../system/collections/generic/IReadOnlyList_1.html" title="interface in system.collections.generic">IReadOnlyList_1</a></code></td>
+<td class="colFirst"><code><a href="../../../system/collections/generic/IReadOnlyList_1.html" title="interface in system.collections.generic">IReadOnlyList_1</a>&lt;<a href="../../../microsoft/extensions/primitives/IChangeToken.html" title="interface in microsoft.extensions.primitives">IChangeToken</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../microsoft/extensions/primitives/CompositeChangeToken.html#getChangeTokens--">getChangeTokens</a></span>()</code>
 <div class="block">Gets the value of the .NET property ChangeTokens.</div>
 </td>
@@ -289,7 +289,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/IDisposable.html" title="interface in system">IDisposable</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../microsoft/extensions/primitives/CompositeChangeToken.html#RegisterChangeCallback-system.Action_1-org.mases.jcobridge.netreflection.NetObject-">RegisterChangeCallback</a></span>(<a href="../../../system/Action_1.html" title="class in system">Action_1</a>&nbsp;callback,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../microsoft/extensions/primitives/CompositeChangeToken.html#RegisterChangeCallback-system.Action_1-org.mases.jcobridge.netreflection.NetObject-">RegisterChangeCallback</a></span>(<a href="../../../system/Action_1.html" title="class in system">Action_1</a>&lt;<a href="../../../system/Object.html" title="class in system">Object</a>&gt;&nbsp;callback,
                       <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;state)</code>
 <div class="block">Invokes the .NET member RegisterChangeCallback.</div>
 </td>
@@ -409,7 +409,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <ul class="blockList">
 <li class="blockList">
 <h4>CompositeChangeToken</h4>
-<pre>public&nbsp;CompositeChangeToken(<a href="../../../system/collections/generic/IReadOnlyList_1.html" title="interface in system.collections.generic">IReadOnlyList_1</a>&nbsp;changeTokens)
+<pre>public&nbsp;CompositeChangeToken(<a href="../../../system/collections/generic/IReadOnlyList_1.html" title="interface in system.collections.generic">IReadOnlyList_1</a>&lt;<a href="../../../microsoft/extensions/primitives/IChangeToken.html" title="interface in microsoft.extensions.primitives">IChangeToken</a>&gt;&nbsp;changeTokens)
                      throws java.lang.Throwable,
                             <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
                             <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
@@ -421,7 +421,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <div class="block">Initializes a new instance by invoking the .NET constructor.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>changeTokens</code> - the argument of type <code>IReadOnlyList_1</code></dd>
+<dd><code>changeTokens</code> - the argument of type <code>IReadOnlyList_1&lt;IChangeToken&gt;</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code> - if the .NET constructor fails</dd>
 <dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code> - if the .NET member raises it</dd>
@@ -505,8 +505,8 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <ul class="blockList">
 <li class="blockList">
 <h4>getChangeTokens</h4>
-<pre>public&nbsp;<a href="../../../system/collections/generic/IReadOnlyList_1.html" title="interface in system.collections.generic">IReadOnlyList_1</a>&nbsp;getChangeTokens()
-                                throws java.lang.Throwable</pre>
+<pre>public&nbsp;<a href="../../../system/collections/generic/IReadOnlyList_1.html" title="interface in system.collections.generic">IReadOnlyList_1</a>&lt;<a href="../../../microsoft/extensions/primitives/IChangeToken.html" title="interface in microsoft.extensions.primitives">IChangeToken</a>&gt;&nbsp;getChangeTokens()
+                                              throws java.lang.Throwable</pre>
 <div class="block">Gets the value of the .NET property ChangeTokens.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -656,7 +656,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <ul class="blockList">
 <li class="blockList">
 <h4>RegisterChangeCallback</h4>
-<pre>public&nbsp;<a href="../../../system/IDisposable.html" title="interface in system">IDisposable</a>&nbsp;RegisterChangeCallback(<a href="../../../system/Action_1.html" title="class in system">Action_1</a>&nbsp;callback,
+<pre>public&nbsp;<a href="../../../system/IDisposable.html" title="interface in system">IDisposable</a>&nbsp;RegisterChangeCallback(<a href="../../../system/Action_1.html" title="class in system">Action_1</a>&lt;<a href="../../../system/Object.html" title="class in system">Object</a>&gt;&nbsp;callback,
                                           <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;state)
                                    throws java.lang.Throwable,
                                           <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
@@ -672,7 +672,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <div class="block">Invokes the .NET member RegisterChangeCallback.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>callback</code> - the argument of type <code>Action_1</code></dd>
+<dd><code>callback</code> - the argument of type <code>Action_1&lt;Object&gt;</code></dd>
 <dd><code>state</code> - the argument of type <code>NetObject</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value returned by the .NET member</dd>

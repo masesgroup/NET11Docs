@@ -288,7 +288,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 </td>
 </tr>
 <tr id="i6" class="altColor">
-<td class="colFirst"><code><a href="../../../system/threading/tasks/Task_1.html" title="class in system.threading.tasks">Task_1</a></code></td>
+<td class="colFirst"><code><a href="../../../system/threading/tasks/Task_1.html" title="class in system.threading.tasks">Task_1</a>&lt;<a href="../../../system/threading/tasks/TaskCompletionSource_1.html" title="type parameter in TaskCompletionSource_1">TResult</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/threading/tasks/TaskCompletionSource_1.html#getTask--">getTask</a></span>()</code>
 <div class="block">Gets the value of the .NET property Task.</div>
 </td>
@@ -319,7 +319,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 </tr>
 <tr id="i11" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/threading/tasks/TaskCompletionSource_1.html#SetFromTask-system.threading.tasks.Task_1-">SetFromTask</a></span>(<a href="../../../system/threading/tasks/Task_1.html" title="class in system.threading.tasks">Task_1</a>&nbsp;completedTask)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/threading/tasks/TaskCompletionSource_1.html#SetFromTask-system.threading.tasks.Task_1-">SetFromTask</a></span>(<a href="../../../system/threading/tasks/Task_1.html" title="class in system.threading.tasks">Task_1</a>&lt;<a href="../../../system/threading/tasks/TaskCompletionSource_1.html" title="type parameter in TaskCompletionSource_1">TResult</a>&gt;&nbsp;completedTask)</code>
 <div class="block">Invokes the .NET member SetFromTask.</div>
 </td>
 </tr>
@@ -361,7 +361,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 </tr>
 <tr id="i18" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/threading/tasks/TaskCompletionSource_1.html#TrySetFromTask-system.threading.tasks.Task_1-">TrySetFromTask</a></span>(<a href="../../../system/threading/tasks/Task_1.html" title="class in system.threading.tasks">Task_1</a>&nbsp;completedTask)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/threading/tasks/TaskCompletionSource_1.html#TrySetFromTask-system.threading.tasks.Task_1-">TrySetFromTask</a></span>(<a href="../../../system/threading/tasks/Task_1.html" title="class in system.threading.tasks">Task_1</a>&lt;<a href="../../../system/threading/tasks/TaskCompletionSource_1.html" title="type parameter in TaskCompletionSource_1">TResult</a>&gt;&nbsp;completedTask)</code>
 <div class="block">Invokes the .NET member TrySetFromTask.</div>
 </td>
 </tr>
@@ -711,8 +711,8 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <ul class="blockList">
 <li class="blockList">
 <h4>getTask</h4>
-<pre>public&nbsp;<a href="../../../system/threading/tasks/Task_1.html" title="class in system.threading.tasks">Task_1</a>&nbsp;getTask()
-               throws java.lang.Throwable</pre>
+<pre>public&nbsp;<a href="../../../system/threading/tasks/Task_1.html" title="class in system.threading.tasks">Task_1</a>&lt;<a href="../../../system/threading/tasks/TaskCompletionSource_1.html" title="type parameter in TaskCompletionSource_1">TResult</a>&gt;&nbsp;getTask()
+                        throws java.lang.Throwable</pre>
 <div class="block">Gets the value of the .NET property Task.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -866,7 +866,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <ul class="blockList">
 <li class="blockList">
 <h4>SetFromTask</h4>
-<pre>public&nbsp;void&nbsp;SetFromTask(<a href="../../../system/threading/tasks/Task_1.html" title="class in system.threading.tasks">Task_1</a>&nbsp;completedTask)
+<pre>public&nbsp;void&nbsp;SetFromTask(<a href="../../../system/threading/tasks/Task_1.html" title="class in system.threading.tasks">Task_1</a>&lt;<a href="../../../system/threading/tasks/TaskCompletionSource_1.html" title="type parameter in TaskCompletionSource_1">TResult</a>&gt;&nbsp;completedTask)
                  throws java.lang.Throwable,
                         <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
                         <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
@@ -884,7 +884,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <div class="block">Invokes the .NET member SetFromTask.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>completedTask</code> - the argument of type <code>Task_1</code></dd>
+<dd><code>completedTask</code> - the argument of type <code>Task_1&lt;TResult&gt;</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
 <dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code> - if the .NET member raises it</dd>
@@ -1129,7 +1129,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <ul class="blockList">
 <li class="blockList">
 <h4>TrySetFromTask</h4>
-<pre>public&nbsp;boolean&nbsp;TrySetFromTask(<a href="../../../system/threading/tasks/Task_1.html" title="class in system.threading.tasks">Task_1</a>&nbsp;completedTask)
+<pre>public&nbsp;boolean&nbsp;TrySetFromTask(<a href="../../../system/threading/tasks/Task_1.html" title="class in system.threading.tasks">Task_1</a>&lt;<a href="../../../system/threading/tasks/TaskCompletionSource_1.html" title="type parameter in TaskCompletionSource_1">TResult</a>&gt;&nbsp;completedTask)
                        throws java.lang.Throwable,
                               <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
                               <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
@@ -1149,7 +1149,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <div class="block">Invokes the .NET member TrySetFromTask.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>completedTask</code> - the argument of type <code>Task_1</code></dd>
+<dd><code>completedTask</code> - the argument of type <code>Task_1&lt;TResult&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>

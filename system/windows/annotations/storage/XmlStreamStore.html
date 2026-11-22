@@ -229,7 +229,7 @@ extends <a href="../../../../system/windows/annotations/storage/AnnotationStore.
 </tr>
 <tr class="rowColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../../system/windows/annotations/storage/XmlStreamStore.html#XmlStreamStore-system.io.Stream-system.collections.generic.IDictionary_2-">XmlStreamStore</a></span>(<a href="../../../../system/io/Stream.html" title="class in system.io">Stream</a>&nbsp;stream,
-              <a href="../../../../system/collections/generic/IDictionary_2.html" title="interface in system.collections.generic">IDictionary_2</a>&nbsp;knownNamespaces)</code>
+              <a href="../../../../system/collections/generic/IDictionary_2.html" title="interface in system.collections.generic">IDictionary_2</a>&lt;<a href="../../../../system/Uri.html" title="class in system">Uri</a>,<a href="../../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&lt;<a href="../../../../system/Uri.html" title="class in system">Uri</a>&gt;&gt;&nbsp;knownNamespaces)</code>
 <div class="block">Initializes a new instance by invoking the .NET constructor.</div>
 </td>
 </tr>
@@ -279,19 +279,19 @@ extends <a href="../../../../system/windows/annotations/storage/AnnotationStore.
 </td>
 </tr>
 <tr id="i5" class="rowColor">
-<td class="colFirst"><code><a href="../../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a></code></td>
+<td class="colFirst"><code><a href="../../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&lt;<a href="../../../../system/windows/annotations/Annotation.html" title="class in system.windows.annotations">Annotation</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/annotations/storage/XmlStreamStore.html#GetAnnotations--">GetAnnotations</a></span>()</code>
 <div class="block">Invokes the .NET member GetAnnotations.</div>
 </td>
 </tr>
 <tr id="i6" class="altColor">
-<td class="colFirst"><code><a href="../../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a></code></td>
+<td class="colFirst"><code><a href="../../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&lt;<a href="../../../../system/windows/annotations/Annotation.html" title="class in system.windows.annotations">Annotation</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/annotations/storage/XmlStreamStore.html#GetAnnotations-system.windows.annotations.ContentLocator-">GetAnnotations</a></span>(<a href="../../../../system/windows/annotations/ContentLocator.html" title="class in system.windows.annotations">ContentLocator</a>&nbsp;anchorLocator)</code>
 <div class="block">Invokes the .NET member GetAnnotations.</div>
 </td>
 </tr>
 <tr id="i7" class="rowColor">
-<td class="colFirst"><code><a href="../../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a></code></td>
+<td class="colFirst"><code><a href="../../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&lt;<a href="../../../../system/Uri.html" title="class in system">Uri</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/annotations/storage/XmlStreamStore.html#getIgnoredNamespaces--">getIgnoredNamespaces</a></span>()</code>
 <div class="block">Gets the value of the .NET property IgnoredNamespaces.</div>
 </td>
@@ -327,13 +327,13 @@ extends <a href="../../../../system/windows/annotations/storage/AnnotationStore.
 </td>
 </tr>
 <tr id="i13" class="rowColor">
-<td class="colFirst"><code>static <a href="../../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a></code></td>
+<td class="colFirst"><code>static <a href="../../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&lt;<a href="../../../../system/Uri.html" title="class in system">Uri</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/annotations/storage/XmlStreamStore.html#GetWellKnownCompatibleNamespaces-system.Uri-">GetWellKnownCompatibleNamespaces</a></span>(<a href="../../../../system/Uri.html" title="class in system">Uri</a>&nbsp;name)</code>
 <div class="block">Invokes the .NET member GetWellKnownCompatibleNamespaces.</div>
 </td>
 </tr>
 <tr id="i14" class="altColor">
-<td class="colFirst"><code>static <a href="../../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a></code></td>
+<td class="colFirst"><code>static <a href="../../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&lt;<a href="../../../../system/Uri.html" title="class in system">Uri</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/annotations/storage/XmlStreamStore.html#getWellKnownNamespaces--">getWellKnownNamespaces</a></span>()</code>
 <div class="block">Gets the value of the .NET property WellKnownNamespaces.</div>
 </td>
@@ -529,7 +529,7 @@ extends <a href="../../../../system/windows/annotations/storage/AnnotationStore.
 <li class="blockList">
 <h4>XmlStreamStore</h4>
 <pre>public&nbsp;XmlStreamStore(<a href="../../../../system/io/Stream.html" title="class in system.io">Stream</a>&nbsp;stream,
-                      <a href="../../../../system/collections/generic/IDictionary_2.html" title="interface in system.collections.generic">IDictionary_2</a>&nbsp;knownNamespaces)
+                      <a href="../../../../system/collections/generic/IDictionary_2.html" title="interface in system.collections.generic">IDictionary_2</a>&lt;<a href="../../../../system/Uri.html" title="class in system">Uri</a>,<a href="../../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&lt;<a href="../../../../system/Uri.html" title="class in system">Uri</a>&gt;&gt;&nbsp;knownNamespaces)
                throws java.lang.Throwable,
                       <a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
                       <a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
@@ -551,7 +551,7 @@ extends <a href="../../../../system/windows/annotations/storage/AnnotationStore.
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>stream</code> - the argument of type <code>Stream</code></dd>
-<dd><code>knownNamespaces</code> - the argument of type <code>IDictionary_2</code></dd>
+<dd><code>knownNamespaces</code> - the argument of type <code>IDictionary_2&lt;Uri, IList_1&lt;Uri&gt;&gt;</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code> - if the .NET constructor fails</dd>
 <dd><code><a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code> - if the .NET member raises it</dd>
@@ -842,30 +842,30 @@ extends <a href="../../../../system/windows/annotations/storage/AnnotationStore.
 <ul class="blockList">
 <li class="blockList">
 <h4>GetAnnotations</h4>
-<pre>public&nbsp;<a href="../../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&nbsp;GetAnnotations()
-                       throws java.lang.Throwable,
-                              <a href="../../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
-                              <a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                              <a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
-                              <a href="../../../../system/InvalidCastException.html" title="class in system">InvalidCastException</a>,
-                              <a href="../../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
-                              <a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                              <a href="../../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a>,
-                              <a href="../../../../system/security/SecurityException.html" title="class in system.security">SecurityException</a>,
-                              <a href="../../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
-                              <a href="../../../../system/io/IOException.html" title="class in system.io">IOException</a>,
-                              <a href="../../../../system/UnauthorizedAccessException.html" title="class in system">UnauthorizedAccessException</a>,
-                              <a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
-                              <a href="../../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                              <a href="../../../../system/threading/LockRecursionException.html" title="class in system.threading">LockRecursionException</a>,
-                              <a href="../../../../system/threading/AbandonedMutexException.html" title="class in system.threading">AbandonedMutexException</a>,
-                              <a href="../../../../system/threading/SynchronizationLockException.html" title="class in system.threading">SynchronizationLockException</a>,
-                              <a href="../../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
-                              <a href="../../../../system/xml/xpath/XPathException.html" title="class in system.xml.xpath">XPathException</a>,
-                              <a href="../../../../system/FormatException.html" title="class in system">FormatException</a>,
-                              <a href="../../../../system/xml/XmlException.html" title="class in system.xml">XmlException</a>,
-                              <a href="../../../../system/OverflowException.html" title="class in system">OverflowException</a>,
-                              <a href="../../../../system/diagnostics/UnreachableException.html" title="class in system.diagnostics">UnreachableException</a></pre>
+<pre>public&nbsp;<a href="../../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&lt;<a href="../../../../system/windows/annotations/Annotation.html" title="class in system.windows.annotations">Annotation</a>&gt;&nbsp;GetAnnotations()
+                                   throws java.lang.Throwable,
+                                          <a href="../../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                          <a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                          <a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                          <a href="../../../../system/InvalidCastException.html" title="class in system">InvalidCastException</a>,
+                                          <a href="../../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                          <a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                          <a href="../../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a>,
+                                          <a href="../../../../system/security/SecurityException.html" title="class in system.security">SecurityException</a>,
+                                          <a href="../../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                                          <a href="../../../../system/io/IOException.html" title="class in system.io">IOException</a>,
+                                          <a href="../../../../system/UnauthorizedAccessException.html" title="class in system">UnauthorizedAccessException</a>,
+                                          <a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                          <a href="../../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                          <a href="../../../../system/threading/LockRecursionException.html" title="class in system.threading">LockRecursionException</a>,
+                                          <a href="../../../../system/threading/AbandonedMutexException.html" title="class in system.threading">AbandonedMutexException</a>,
+                                          <a href="../../../../system/threading/SynchronizationLockException.html" title="class in system.threading">SynchronizationLockException</a>,
+                                          <a href="../../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                          <a href="../../../../system/xml/xpath/XPathException.html" title="class in system.xml.xpath">XPathException</a>,
+                                          <a href="../../../../system/FormatException.html" title="class in system">FormatException</a>,
+                                          <a href="../../../../system/xml/XmlException.html" title="class in system.xml">XmlException</a>,
+                                          <a href="../../../../system/OverflowException.html" title="class in system">OverflowException</a>,
+                                          <a href="../../../../system/diagnostics/UnreachableException.html" title="class in system.diagnostics">UnreachableException</a></pre>
 <div class="block">Invokes the .NET member GetAnnotations.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
@@ -907,27 +907,27 @@ extends <a href="../../../../system/windows/annotations/storage/AnnotationStore.
 <ul class="blockList">
 <li class="blockList">
 <h4>GetAnnotations</h4>
-<pre>public&nbsp;<a href="../../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&nbsp;GetAnnotations(<a href="../../../../system/windows/annotations/ContentLocator.html" title="class in system.windows.annotations">ContentLocator</a>&nbsp;anchorLocator)
-                       throws java.lang.Throwable,
-                              <a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
-                              <a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                              <a href="../../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
-                              <a href="../../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                              <a href="../../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
-                              <a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
-                              <a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                              <a href="../../../../system/InvalidCastException.html" title="class in system">InvalidCastException</a>,
-                              <a href="../../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a>,
-                              <a href="../../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
-                              <a href="../../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
-                              <a href="../../../../system/FormatException.html" title="class in system">FormatException</a>,
-                              <a href="../../../../system/OverflowException.html" title="class in system">OverflowException</a>,
-                              <a href="../../../../system/security/SecurityException.html" title="class in system.security">SecurityException</a>,
-                              <a href="../../../../system/io/IOException.html" title="class in system.io">IOException</a>,
-                              <a href="../../../../system/UnauthorizedAccessException.html" title="class in system">UnauthorizedAccessException</a>,
-                              <a href="../../../../system/xml/xpath/XPathException.html" title="class in system.xml.xpath">XPathException</a>,
-                              <a href="../../../../system/xml/XmlException.html" title="class in system.xml">XmlException</a>,
-                              <a href="../../../../system/diagnostics/UnreachableException.html" title="class in system.diagnostics">UnreachableException</a></pre>
+<pre>public&nbsp;<a href="../../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&lt;<a href="../../../../system/windows/annotations/Annotation.html" title="class in system.windows.annotations">Annotation</a>&gt;&nbsp;GetAnnotations(<a href="../../../../system/windows/annotations/ContentLocator.html" title="class in system.windows.annotations">ContentLocator</a>&nbsp;anchorLocator)
+                                   throws java.lang.Throwable,
+                                          <a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                          <a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                          <a href="../../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                          <a href="../../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                          <a href="../../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                          <a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                          <a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                          <a href="../../../../system/InvalidCastException.html" title="class in system">InvalidCastException</a>,
+                                          <a href="../../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a>,
+                                          <a href="../../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+                                          <a href="../../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                          <a href="../../../../system/FormatException.html" title="class in system">FormatException</a>,
+                                          <a href="../../../../system/OverflowException.html" title="class in system">OverflowException</a>,
+                                          <a href="../../../../system/security/SecurityException.html" title="class in system.security">SecurityException</a>,
+                                          <a href="../../../../system/io/IOException.html" title="class in system.io">IOException</a>,
+                                          <a href="../../../../system/UnauthorizedAccessException.html" title="class in system">UnauthorizedAccessException</a>,
+                                          <a href="../../../../system/xml/xpath/XPathException.html" title="class in system.xml.xpath">XPathException</a>,
+                                          <a href="../../../../system/xml/XmlException.html" title="class in system.xml">XmlException</a>,
+                                          <a href="../../../../system/diagnostics/UnreachableException.html" title="class in system.diagnostics">UnreachableException</a></pre>
 <div class="block">Invokes the .NET member GetAnnotations.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
@@ -968,8 +968,8 @@ extends <a href="../../../../system/windows/annotations/storage/AnnotationStore.
 <ul class="blockList">
 <li class="blockList">
 <h4>getIgnoredNamespaces</h4>
-<pre>public&nbsp;<a href="../../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&nbsp;getIgnoredNamespaces()
-                             throws java.lang.Throwable</pre>
+<pre>public&nbsp;<a href="../../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&lt;<a href="../../../../system/Uri.html" title="class in system">Uri</a>&gt;&nbsp;getIgnoredNamespaces()
+                                  throws java.lang.Throwable</pre>
 <div class="block">Gets the value of the .NET property IgnoredNamespaces.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -1082,16 +1082,16 @@ extends <a href="../../../../system/windows/annotations/storage/AnnotationStore.
 <ul class="blockList">
 <li class="blockList">
 <h4>GetWellKnownCompatibleNamespaces</h4>
-<pre>public static&nbsp;<a href="../../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&nbsp;GetWellKnownCompatibleNamespaces(<a href="../../../../system/Uri.html" title="class in system">Uri</a>&nbsp;name)
-                                                throws java.lang.Throwable,
-                                                       <a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
-                                                       <a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                                                       <a href="../../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
-                                                       <a href="../../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                                                       <a href="../../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
-                                                       <a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
-                                                       <a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                                                       <a href="../../../../system/collections/generic/KeyNotFoundException.html" title="class in system.collections.generic">KeyNotFoundException</a></pre>
+<pre>public static&nbsp;<a href="../../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&lt;<a href="../../../../system/Uri.html" title="class in system">Uri</a>&gt;&nbsp;GetWellKnownCompatibleNamespaces(<a href="../../../../system/Uri.html" title="class in system">Uri</a>&nbsp;name)
+                                                     throws java.lang.Throwable,
+                                                            <a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                                            <a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                                            <a href="../../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                                            <a href="../../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                                            <a href="../../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                                            <a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                                            <a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                                            <a href="../../../../system/collections/generic/KeyNotFoundException.html" title="class in system.collections.generic">KeyNotFoundException</a></pre>
 <div class="block">Invokes the .NET member GetWellKnownCompatibleNamespaces.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -1119,13 +1119,13 @@ extends <a href="../../../../system/windows/annotations/storage/AnnotationStore.
 <ul class="blockList">
 <li class="blockList">
 <h4>getWellKnownNamespaces</h4>
-<pre>public static&nbsp;<a href="../../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&nbsp;getWellKnownNamespaces()
-                                      throws java.lang.Throwable,
-                                             <a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
-                                             <a href="../../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                                             <a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
-                                             <a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                                             <a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></pre>
+<pre>public static&nbsp;<a href="../../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&lt;<a href="../../../../system/Uri.html" title="class in system">Uri</a>&gt;&nbsp;getWellKnownNamespaces()
+                                           throws java.lang.Throwable,
+                                                  <a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                                  <a href="../../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                                  <a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                                  <a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                                  <a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></pre>
 <div class="block">Gets the value of the .NET property WellKnownNamespaces.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>

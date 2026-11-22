@@ -210,7 +210,7 @@ extends <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="
 <tr class="rowColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../system/diagnostics/ProcessExitStatus.html#ProcessExitStatus-int-boolean-system.Nullable_1-">ProcessExitStatus</a></span>(int&nbsp;exitCode,
                  boolean&nbsp;canceled,
-                 <a href="../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;signal)</code>
+                 <a href="../../system/Nullable_1.html" title="class in system">Nullable_1</a>&lt;<a href="../../system/runtime/interopservices/PosixSignal.html" title="class in system.runtime.interopservices">PosixSignal</a>&gt;&nbsp;signal)</code>
 <div class="block">Initializes a new instance by invoking the .NET constructor.</div>
 </td>
 </tr>
@@ -283,7 +283,7 @@ extends <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="
 </td>
 </tr>
 <tr id="i8" class="altColor">
-<td class="colFirst"><code><a href="../../system/Nullable_1.html" title="class in system">Nullable_1</a></code></td>
+<td class="colFirst"><code><a href="../../system/Nullable_1.html" title="class in system">Nullable_1</a>&lt;<a href="../../system/runtime/interopservices/PosixSignal.html" title="class in system.runtime.interopservices">PosixSignal</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/diagnostics/ProcessExitStatus.html#getSignal--">getSignal</a></span>()</code>
 <div class="block">Gets the value of the .NET property Signal.</div>
 </td>
@@ -405,14 +405,14 @@ extends <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="
 <h4>ProcessExitStatus</h4>
 <pre>public&nbsp;ProcessExitStatus(int&nbsp;exitCode,
                          boolean&nbsp;canceled,
-                         <a href="../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;signal)
+                         <a href="../../system/Nullable_1.html" title="class in system">Nullable_1</a>&lt;<a href="../../system/runtime/interopservices/PosixSignal.html" title="class in system.runtime.interopservices">PosixSignal</a>&gt;&nbsp;signal)
                   throws java.lang.Throwable</pre>
 <div class="block">Initializes a new instance by invoking the .NET constructor.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>exitCode</code> - the argument of type <code>int</code></dd>
 <dd><code>canceled</code> - the argument of type <code>boolean</code></dd>
-<dd><code>signal</code> - the argument of type <code>Nullable_1</code></dd>
+<dd><code>signal</code> - the argument of type <code>Nullable_1&lt;PosixSignal&gt;</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code> - if the .NET constructor fails</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
@@ -603,8 +603,8 @@ extends <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="
 <ul class="blockList">
 <li class="blockList">
 <h4>getSignal</h4>
-<pre>public&nbsp;<a href="../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;getSignal()
-                     throws java.lang.Throwable</pre>
+<pre>public&nbsp;<a href="../../system/Nullable_1.html" title="class in system">Nullable_1</a>&lt;<a href="../../system/runtime/interopservices/PosixSignal.html" title="class in system.runtime.interopservices">PosixSignal</a>&gt;&nbsp;getSignal()
+                                  throws java.lang.Throwable</pre>
 <div class="block">Gets the value of the .NET property Signal.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>

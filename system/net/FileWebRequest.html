@@ -318,7 +318,7 @@ extends <a href="../../system/net/WebRequest.html" title="class in system.net">W
 </td>
 </tr>
 <tr id="i12" class="altColor">
-<td class="colFirst"><code><a href="../../system/threading/tasks/Task_1.html" title="class in system.threading.tasks">Task_1</a></code></td>
+<td class="colFirst"><code><a href="../../system/threading/tasks/Task_1.html" title="class in system.threading.tasks">Task_1</a>&lt;<a href="../../system/io/Stream.html" title="class in system.io">Stream</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/net/FileWebRequest.html#GetRequestStreamAsync--">GetRequestStreamAsync</a></span>()</code>
 <div class="block">Invokes the .NET member GetRequestStreamAsync.</div>
 </td>
@@ -330,7 +330,7 @@ extends <a href="../../system/net/WebRequest.html" title="class in system.net">W
 </td>
 </tr>
 <tr id="i14" class="altColor">
-<td class="colFirst"><code><a href="../../system/threading/tasks/Task_1.html" title="class in system.threading.tasks">Task_1</a></code></td>
+<td class="colFirst"><code><a href="../../system/threading/tasks/Task_1.html" title="class in system.threading.tasks">Task_1</a>&lt;<a href="../../system/net/WebResponse.html" title="class in system.net">WebResponse</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/net/FileWebRequest.html#GetResponseAsync--">GetResponseAsync</a></span>()</code>
 <div class="block">Invokes the .NET member GetResponseAsync.</div>
 </td>
@@ -879,24 +879,24 @@ extends <a href="../../system/net/WebRequest.html" title="class in system.net">W
 <ul class="blockList">
 <li class="blockList">
 <h4>GetRequestStreamAsync</h4>
-<pre>public&nbsp;<a href="../../system/threading/tasks/Task_1.html" title="class in system.threading.tasks">Task_1</a>&nbsp;GetRequestStreamAsync()
-                             throws java.lang.Throwable,
-                                    <a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                                    <a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
-                                    <a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
-                                    <a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                                    <a href="../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
-                                    <a href="../../system/net/WebException.html" title="class in system.net">WebException</a>,
-                                    <a href="../../system/NullReferenceException.html" title="class in system">NullReferenceException</a>,
-                                    <a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                                    <a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
-                                    <a href="../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a>,
-                                    <a href="../../system/runtime/interopservices/ExternalException.html" title="class in system.runtime.interopservices">ExternalException</a>,
-                                    <a href="../../system/net/ProtocolViolationException.html" title="class in system.net">ProtocolViolationException</a>,
-                                    <a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
-                                    <a href="../../system/diagnostics/UnreachableException.html" title="class in system.diagnostics">UnreachableException</a>,
-                                    <a href="../../system/UriFormatException.html" title="class in system">UriFormatException</a>,
-                                    <a href="../../system/diagnostics/tracing/EventSourceException.html" title="class in system.diagnostics.tracing">EventSourceException</a></pre>
+<pre>public&nbsp;<a href="../../system/threading/tasks/Task_1.html" title="class in system.threading.tasks">Task_1</a>&lt;<a href="../../system/io/Stream.html" title="class in system.io">Stream</a>&gt;&nbsp;GetRequestStreamAsync()
+                                     throws java.lang.Throwable,
+                                            <a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                            <a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                            <a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                            <a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                            <a href="../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+                                            <a href="../../system/net/WebException.html" title="class in system.net">WebException</a>,
+                                            <a href="../../system/NullReferenceException.html" title="class in system">NullReferenceException</a>,
+                                            <a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                            <a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                            <a href="../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a>,
+                                            <a href="../../system/runtime/interopservices/ExternalException.html" title="class in system.runtime.interopservices">ExternalException</a>,
+                                            <a href="../../system/net/ProtocolViolationException.html" title="class in system.net">ProtocolViolationException</a>,
+                                            <a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                            <a href="../../system/diagnostics/UnreachableException.html" title="class in system.diagnostics">UnreachableException</a>,
+                                            <a href="../../system/UriFormatException.html" title="class in system">UriFormatException</a>,
+                                            <a href="../../system/diagnostics/tracing/EventSourceException.html" title="class in system.diagnostics.tracing">EventSourceException</a></pre>
 <div class="block">Invokes the .NET member GetRequestStreamAsync.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
@@ -983,27 +983,27 @@ extends <a href="../../system/net/WebRequest.html" title="class in system.net">W
 <ul class="blockList">
 <li class="blockList">
 <h4>GetResponseAsync</h4>
-<pre>public&nbsp;<a href="../../system/threading/tasks/Task_1.html" title="class in system.threading.tasks">Task_1</a>&nbsp;GetResponseAsync()
-                        throws java.lang.Throwable,
-                               <a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                               <a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
-                               <a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
-                               <a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                               <a href="../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
-                               <a href="../../system/net/WebException.html" title="class in system.net">WebException</a>,
-                               <a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
-                               <a href="../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
-                               <a href="../../system/OperationCanceledException.html" title="class in system">OperationCanceledException</a>,
-                               <a href="../../system/NullReferenceException.html" title="class in system">NullReferenceException</a>,
-                               <a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                               <a href="../../system/threading/LockRecursionException.html" title="class in system.threading">LockRecursionException</a>,
-                               <a href="../../system/threading/AbandonedMutexException.html" title="class in system.threading">AbandonedMutexException</a>,
-                               <a href="../../system/threading/SynchronizationLockException.html" title="class in system.threading">SynchronizationLockException</a>,
-                               <a href="../../system/UriFormatException.html" title="class in system">UriFormatException</a>,
-                               <a href="../../system/FormatException.html" title="class in system">FormatException</a>,
-                               <a href="../../system/diagnostics/UnreachableException.html" title="class in system.diagnostics">UnreachableException</a>,
-                               <a href="../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a>,
-                               <a href="../../system/diagnostics/tracing/EventSourceException.html" title="class in system.diagnostics.tracing">EventSourceException</a></pre>
+<pre>public&nbsp;<a href="../../system/threading/tasks/Task_1.html" title="class in system.threading.tasks">Task_1</a>&lt;<a href="../../system/net/WebResponse.html" title="class in system.net">WebResponse</a>&gt;&nbsp;GetResponseAsync()
+                                     throws java.lang.Throwable,
+                                            <a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                            <a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                            <a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                            <a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                            <a href="../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+                                            <a href="../../system/net/WebException.html" title="class in system.net">WebException</a>,
+                                            <a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                            <a href="../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                            <a href="../../system/OperationCanceledException.html" title="class in system">OperationCanceledException</a>,
+                                            <a href="../../system/NullReferenceException.html" title="class in system">NullReferenceException</a>,
+                                            <a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                            <a href="../../system/threading/LockRecursionException.html" title="class in system.threading">LockRecursionException</a>,
+                                            <a href="../../system/threading/AbandonedMutexException.html" title="class in system.threading">AbandonedMutexException</a>,
+                                            <a href="../../system/threading/SynchronizationLockException.html" title="class in system.threading">SynchronizationLockException</a>,
+                                            <a href="../../system/UriFormatException.html" title="class in system">UriFormatException</a>,
+                                            <a href="../../system/FormatException.html" title="class in system">FormatException</a>,
+                                            <a href="../../system/diagnostics/UnreachableException.html" title="class in system.diagnostics">UnreachableException</a>,
+                                            <a href="../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a>,
+                                            <a href="../../system/diagnostics/tracing/EventSourceException.html" title="class in system.diagnostics.tracing">EventSourceException</a></pre>
 <div class="block">Invokes the .NET member GetResponseAsync.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>

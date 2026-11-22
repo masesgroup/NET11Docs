@@ -324,19 +324,19 @@ implements <a href="../../system/componentmodel/ICollectionView.html" title="int
 </td>
 </tr>
 <tr id="i11" class="rowColor">
-<td class="colFirst"><code><a href="../../system/Predicate_1.html" title="class in system">Predicate_1</a></code></td>
+<td class="colFirst"><code><a href="../../system/Predicate_1.html" title="class in system">Predicate_1</a>&lt;<a href="../../system/Object.html" title="class in system">Object</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/componentmodel/ICollectionViewImplementation.html#getFilter--">getFilter</a></span>()</code>
 <div class="block">Gets the value of the .NET property Filter.</div>
 </td>
 </tr>
 <tr id="i12" class="altColor">
-<td class="colFirst"><code><a href="../../system/collections/objectmodel/ObservableCollection_1.html" title="class in system.collections.objectmodel">ObservableCollection_1</a></code></td>
+<td class="colFirst"><code><a href="../../system/collections/objectmodel/ObservableCollection_1.html" title="class in system.collections.objectmodel">ObservableCollection_1</a>&lt;<a href="../../system/componentmodel/GroupDescription.html" title="class in system.componentmodel">GroupDescription</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/componentmodel/ICollectionViewImplementation.html#getGroupDescriptions--">getGroupDescriptions</a></span>()</code>
 <div class="block">Gets the value of the .NET property GroupDescriptions.</div>
 </td>
 </tr>
 <tr id="i13" class="rowColor">
-<td class="colFirst"><code><a href="../../system/collections/objectmodel/ReadOnlyObservableCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyObservableCollection_1</a></code></td>
+<td class="colFirst"><code><a href="../../system/collections/objectmodel/ReadOnlyObservableCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyObservableCollection_1</a>&lt;<a href="../../system/Object.html" title="class in system">Object</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/componentmodel/ICollectionViewImplementation.html#getGroups--">getGroups</a></span>()</code>
 <div class="block">Gets the value of the .NET property Groups.</div>
 </td>
@@ -469,7 +469,7 @@ implements <a href="../../system/componentmodel/ICollectionView.html" title="int
 </tr>
 <tr id="i35" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../system/componentmodel/ICollectionViewImplementation.html#setFilter-system.Predicate_1-">setFilter</a></span>(<a href="../../system/Predicate_1.html" title="class in system">Predicate_1</a>&nbsp;Filter)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/componentmodel/ICollectionViewImplementation.html#setFilter-system.Predicate_1-">setFilter</a></span>(<a href="../../system/Predicate_1.html" title="class in system">Predicate_1</a>&lt;<a href="../../system/Object.html" title="class in system">Object</a>&gt;&nbsp;Filter)</code>
 <div class="block">Sets the value of the .NET property Filter.</div>
 </td>
 </tr>
@@ -860,8 +860,8 @@ implements <a href="../../system/componentmodel/ICollectionView.html" title="int
 <ul class="blockList">
 <li class="blockList">
 <h4>getFilter</h4>
-<pre>public&nbsp;<a href="../../system/Predicate_1.html" title="class in system">Predicate_1</a>&nbsp;getFilter()
-                      throws java.lang.Throwable</pre>
+<pre>public&nbsp;<a href="../../system/Predicate_1.html" title="class in system">Predicate_1</a>&lt;<a href="../../system/Object.html" title="class in system">Object</a>&gt;&nbsp;getFilter()
+                              throws java.lang.Throwable</pre>
 <div class="block">Gets the value of the .NET property Filter.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
@@ -881,8 +881,8 @@ implements <a href="../../system/componentmodel/ICollectionView.html" title="int
 <ul class="blockList">
 <li class="blockList">
 <h4>getGroupDescriptions</h4>
-<pre>public&nbsp;<a href="../../system/collections/objectmodel/ObservableCollection_1.html" title="class in system.collections.objectmodel">ObservableCollection_1</a>&nbsp;getGroupDescriptions()
-                                            throws java.lang.Throwable</pre>
+<pre>public&nbsp;<a href="../../system/collections/objectmodel/ObservableCollection_1.html" title="class in system.collections.objectmodel">ObservableCollection_1</a>&lt;<a href="../../system/componentmodel/GroupDescription.html" title="class in system.componentmodel">GroupDescription</a>&gt;&nbsp;getGroupDescriptions()
+                                                              throws java.lang.Throwable</pre>
 <div class="block">Gets the value of the .NET property GroupDescriptions.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
@@ -902,8 +902,8 @@ implements <a href="../../system/componentmodel/ICollectionView.html" title="int
 <ul class="blockList">
 <li class="blockList">
 <h4>getGroups</h4>
-<pre>public&nbsp;<a href="../../system/collections/objectmodel/ReadOnlyObservableCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyObservableCollection_1</a>&nbsp;getGroups()
-                                         throws java.lang.Throwable</pre>
+<pre>public&nbsp;<a href="../../system/collections/objectmodel/ReadOnlyObservableCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyObservableCollection_1</a>&lt;<a href="../../system/Object.html" title="class in system">Object</a>&gt;&nbsp;getGroups()
+                                                 throws java.lang.Throwable</pre>
 <div class="block">Gets the value of the .NET property Groups.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
@@ -1376,7 +1376,7 @@ implements <a href="../../system/componentmodel/ICollectionView.html" title="int
 <ul class="blockList">
 <li class="blockList">
 <h4>setFilter</h4>
-<pre>public&nbsp;void&nbsp;setFilter(<a href="../../system/Predicate_1.html" title="class in system">Predicate_1</a>&nbsp;Filter)
+<pre>public&nbsp;void&nbsp;setFilter(<a href="../../system/Predicate_1.html" title="class in system">Predicate_1</a>&lt;<a href="../../system/Object.html" title="class in system">Object</a>&gt;&nbsp;Filter)
                throws java.lang.Throwable</pre>
 <div class="block">Sets the value of the .NET property Filter.</div>
 <dl>

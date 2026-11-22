@@ -327,7 +327,7 @@ implements java.lang.AutoCloseable</pre>
 </tr>
 <tr id="i12" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/media/StreamGeometryContext.html#PolyBezierTo-system.collections.generic.IList_1-boolean-boolean-">PolyBezierTo</a></span>(<a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&nbsp;points,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/media/StreamGeometryContext.html#PolyBezierTo-system.collections.generic.IList_1-boolean-boolean-">PolyBezierTo</a></span>(<a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&lt;<a href="../../../system/windows/Point.html" title="class in system.windows">Point</a>&gt;&nbsp;points,
             boolean&nbsp;isStroked,
             boolean&nbsp;isSmoothJoin)</code>
 <div class="block">Invokes the .NET member PolyBezierTo.</div>
@@ -335,7 +335,7 @@ implements java.lang.AutoCloseable</pre>
 </tr>
 <tr id="i13" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/media/StreamGeometryContext.html#PolyLineTo-system.collections.generic.IList_1-boolean-boolean-">PolyLineTo</a></span>(<a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&nbsp;points,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/media/StreamGeometryContext.html#PolyLineTo-system.collections.generic.IList_1-boolean-boolean-">PolyLineTo</a></span>(<a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&lt;<a href="../../../system/windows/Point.html" title="class in system.windows">Point</a>&gt;&nbsp;points,
           boolean&nbsp;isStroked,
           boolean&nbsp;isSmoothJoin)</code>
 <div class="block">Invokes the .NET member PolyLineTo.</div>
@@ -343,7 +343,7 @@ implements java.lang.AutoCloseable</pre>
 </tr>
 <tr id="i14" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/media/StreamGeometryContext.html#PolyQuadraticBezierTo-system.collections.generic.IList_1-boolean-boolean-">PolyQuadraticBezierTo</a></span>(<a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&nbsp;points,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/media/StreamGeometryContext.html#PolyQuadraticBezierTo-system.collections.generic.IList_1-boolean-boolean-">PolyQuadraticBezierTo</a></span>(<a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&lt;<a href="../../../system/windows/Point.html" title="class in system.windows">Point</a>&gt;&nbsp;points,
                      boolean&nbsp;isStroked,
                      boolean&nbsp;isSmoothJoin)</code>
 <div class="block">Invokes the .NET member PolyQuadraticBezierTo.</div>
@@ -756,14 +756,14 @@ implements java.lang.AutoCloseable</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>PolyBezierTo</h4>
-<pre>public&nbsp;void&nbsp;PolyBezierTo(<a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&nbsp;points,
+<pre>public&nbsp;void&nbsp;PolyBezierTo(<a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&lt;<a href="../../../system/windows/Point.html" title="class in system.windows">Point</a>&gt;&nbsp;points,
                          boolean&nbsp;isStroked,
                          boolean&nbsp;isSmoothJoin)
                   throws java.lang.Throwable</pre>
 <div class="block">Invokes the .NET member PolyBezierTo.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>points</code> - the argument of type <code>IList_1</code></dd>
+<dd><code>points</code> - the argument of type <code>IList_1&lt;Point&gt;</code></dd>
 <dd><code>isStroked</code> - the argument of type <code>boolean</code></dd>
 <dd><code>isSmoothJoin</code> - the argument of type <code>boolean</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -779,14 +779,14 @@ implements java.lang.AutoCloseable</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>PolyLineTo</h4>
-<pre>public&nbsp;void&nbsp;PolyLineTo(<a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&nbsp;points,
+<pre>public&nbsp;void&nbsp;PolyLineTo(<a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&lt;<a href="../../../system/windows/Point.html" title="class in system.windows">Point</a>&gt;&nbsp;points,
                        boolean&nbsp;isStroked,
                        boolean&nbsp;isSmoothJoin)
                 throws java.lang.Throwable</pre>
 <div class="block">Invokes the .NET member PolyLineTo.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>points</code> - the argument of type <code>IList_1</code></dd>
+<dd><code>points</code> - the argument of type <code>IList_1&lt;Point&gt;</code></dd>
 <dd><code>isStroked</code> - the argument of type <code>boolean</code></dd>
 <dd><code>isSmoothJoin</code> - the argument of type <code>boolean</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -802,14 +802,14 @@ implements java.lang.AutoCloseable</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>PolyQuadraticBezierTo</h4>
-<pre>public&nbsp;void&nbsp;PolyQuadraticBezierTo(<a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&nbsp;points,
+<pre>public&nbsp;void&nbsp;PolyQuadraticBezierTo(<a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&lt;<a href="../../../system/windows/Point.html" title="class in system.windows">Point</a>&gt;&nbsp;points,
                                   boolean&nbsp;isStroked,
                                   boolean&nbsp;isSmoothJoin)
                            throws java.lang.Throwable</pre>
 <div class="block">Invokes the .NET member PolyQuadraticBezierTo.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>points</code> - the argument of type <code>IList_1</code></dd>
+<dd><code>points</code> - the argument of type <code>IList_1&lt;Point&gt;</code></dd>
 <dd><code>isStroked</code> - the argument of type <code>boolean</code></dd>
 <dd><code>isSmoothJoin</code> - the argument of type <code>boolean</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>

@@ -212,7 +212,7 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../../system/reflection/metadata/ecma335/PortablePdbBuilder.html#PortablePdbBuilder-system.reflection.metadata.ecma335.MetadataBuilder-system.collections.immutable.ImmutableArray_1-system.reflection.metadata.MethodDefinitionHandle-system.Func_2-">PortablePdbBuilder</a></span>(<a href="../../../../system/reflection/metadata/ecma335/MetadataBuilder.html" title="class in system.reflection.metadata.ecma335">MetadataBuilder</a>&nbsp;tablesAndHeaps,
                   <a href="../../../../system/collections/immutable/ImmutableArray_1.html" title="class in system.collections.immutable">ImmutableArray_1</a>&nbsp;typeSystemRowCounts,
                   <a href="../../../../system/reflection/metadata/MethodDefinitionHandle.html" title="class in system.reflection.metadata">MethodDefinitionHandle</a>&nbsp;entryPoint,
-                  <a href="../../../../system/Func_2.html" title="class in system">Func_2</a>&nbsp;idProvider)</code>
+                  <a href="../../../../system/Func_2.html" title="class in system">Func_2</a>&lt;<a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../../system/reflection/metadata/Blob.html" title="class in system.reflection.metadata">Blob</a>&gt;,<a href="../../../../system/reflection/metadata/BlobContentId.html" title="class in system.reflection.metadata">BlobContentId</a>&gt;&nbsp;idProvider)</code>
 <div class="block">Initializes a new instance by invoking the .NET constructor.</div>
 </td>
 </tr>
@@ -249,7 +249,7 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 </td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code><a href="../../../../system/Func_2.html" title="class in system">Func_2</a></code></td>
+<td class="colFirst"><code><a href="../../../../system/Func_2.html" title="class in system">Func_2</a>&lt;<a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../../system/reflection/metadata/Blob.html" title="class in system.reflection.metadata">Blob</a>&gt;,<a href="../../../../system/reflection/metadata/BlobContentId.html" title="class in system.reflection.metadata">BlobContentId</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/reflection/metadata/ecma335/PortablePdbBuilder.html#getIdProvider--">getIdProvider</a></span>()</code>
 <div class="block">Gets the value of the .NET property IdProvider.</div>
 </td>
@@ -414,7 +414,7 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <pre>public&nbsp;PortablePdbBuilder(<a href="../../../../system/reflection/metadata/ecma335/MetadataBuilder.html" title="class in system.reflection.metadata.ecma335">MetadataBuilder</a>&nbsp;tablesAndHeaps,
                           <a href="../../../../system/collections/immutable/ImmutableArray_1.html" title="class in system.collections.immutable">ImmutableArray_1</a>&nbsp;typeSystemRowCounts,
                           <a href="../../../../system/reflection/metadata/MethodDefinitionHandle.html" title="class in system.reflection.metadata">MethodDefinitionHandle</a>&nbsp;entryPoint,
-                          <a href="../../../../system/Func_2.html" title="class in system">Func_2</a>&nbsp;idProvider)
+                          <a href="../../../../system/Func_2.html" title="class in system">Func_2</a>&lt;<a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../../system/reflection/metadata/Blob.html" title="class in system.reflection.metadata">Blob</a>&gt;,<a href="../../../../system/reflection/metadata/BlobContentId.html" title="class in system.reflection.metadata">BlobContentId</a>&gt;&nbsp;idProvider)
                    throws java.lang.Throwable,
                           <a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
                           <a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
@@ -436,7 +436,7 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <dd><code>tablesAndHeaps</code> - the argument of type <code>MetadataBuilder</code></dd>
 <dd><code>typeSystemRowCounts</code> - the argument of type <code>ImmutableArray_1</code></dd>
 <dd><code>entryPoint</code> - the argument of type <code>MethodDefinitionHandle</code></dd>
-<dd><code>idProvider</code> - the argument of type <code>Func_2</code></dd>
+<dd><code>idProvider</code> - the argument of type <code>Func_2&lt;IEnumerable_1&lt;Blob&gt;, BlobContentId&gt;</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code> - if the .NET constructor fails</dd>
 <dd><code><a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code> - if the .NET member raises it</dd>
@@ -527,8 +527,8 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <ul class="blockList">
 <li class="blockList">
 <h4>getIdProvider</h4>
-<pre>public&nbsp;<a href="../../../../system/Func_2.html" title="class in system">Func_2</a>&nbsp;getIdProvider()
-                     throws java.lang.Throwable</pre>
+<pre>public&nbsp;<a href="../../../../system/Func_2.html" title="class in system">Func_2</a>&lt;<a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../../system/reflection/metadata/Blob.html" title="class in system.reflection.metadata">Blob</a>&gt;,<a href="../../../../system/reflection/metadata/BlobContentId.html" title="class in system.reflection.metadata">BlobContentId</a>&gt;&nbsp;getIdProvider()
+                                                        throws java.lang.Throwable</pre>
 <div class="block">Gets the value of the .NET property IdProvider.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>

@@ -239,7 +239,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>static void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/controls/Validation.html#AddErrorHandler-system.windows.DependencyObject-system.EventHandler_1-">AddErrorHandler</a></span>(<a href="../../../system/windows/DependencyObject.html" title="class in system.windows">DependencyObject</a>&nbsp;element,
-               <a href="../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&nbsp;handler)</code>
+               <a href="../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../system/windows/controls/ValidationErrorEventArgs.html" title="class in system.windows.controls">ValidationErrorEventArgs</a>&gt;&nbsp;handler)</code>
 <div class="block">Invokes the .NET member AddErrorHandler.</div>
 </td>
 </tr>
@@ -256,7 +256,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 </td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code>static <a href="../../../system/collections/objectmodel/ReadOnlyObservableCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyObservableCollection_1</a></code></td>
+<td class="colFirst"><code>static <a href="../../../system/collections/objectmodel/ReadOnlyObservableCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyObservableCollection_1</a>&lt;<a href="../../../system/windows/controls/ValidationError.html" title="class in system.windows.controls">ValidationError</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/controls/Validation.html#GetErrors-system.windows.DependencyObject-">GetErrors</a></span>(<a href="../../../system/windows/DependencyObject.html" title="class in system.windows">DependencyObject</a>&nbsp;element)</code>
 <div class="block">Invokes the .NET member GetErrors.</div>
 </td>
@@ -325,7 +325,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <tr id="i14" class="altColor">
 <td class="colFirst"><code>static void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/controls/Validation.html#RemoveErrorHandler-system.windows.DependencyObject-system.EventHandler_1-">RemoveErrorHandler</a></span>(<a href="../../../system/windows/DependencyObject.html" title="class in system.windows">DependencyObject</a>&nbsp;element,
-                  <a href="../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&nbsp;handler)</code>
+                  <a href="../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../system/windows/controls/ValidationErrorEventArgs.html" title="class in system.windows.controls">ValidationErrorEventArgs</a>&gt;&nbsp;handler)</code>
 <div class="block">Invokes the .NET member RemoveErrorHandler.</div>
 </td>
 </tr>
@@ -491,7 +491,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <li class="blockList">
 <h4>AddErrorHandler</h4>
 <pre>public static&nbsp;void&nbsp;AddErrorHandler(<a href="../../../system/windows/DependencyObject.html" title="class in system.windows">DependencyObject</a>&nbsp;element,
-                                   <a href="../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&nbsp;handler)
+                                   <a href="../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../system/windows/controls/ValidationErrorEventArgs.html" title="class in system.windows.controls">ValidationErrorEventArgs</a>&gt;&nbsp;handler)
                             throws java.lang.Throwable,
                                    <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
                                    <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
@@ -504,7 +504,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>element</code> - the argument of type <code>DependencyObject</code></dd>
-<dd><code>handler</code> - the argument of type <code>EventHandler_1</code></dd>
+<dd><code>handler</code> - the argument of type <code>EventHandler_1&lt;ValidationErrorEventArgs&gt;</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
 <dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code> - if the .NET member raises it</dd>
@@ -581,17 +581,17 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <ul class="blockList">
 <li class="blockList">
 <h4>GetErrors</h4>
-<pre>public static&nbsp;<a href="../../../system/collections/objectmodel/ReadOnlyObservableCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyObservableCollection_1</a>&nbsp;GetErrors(<a href="../../../system/windows/DependencyObject.html" title="class in system.windows">DependencyObject</a>&nbsp;element)
-                                                throws java.lang.Throwable,
-                                                       <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
-                                                       <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                                                       <a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
-                                                       <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                                                       <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
-                                                       <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
-                                                       <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                                                       <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
-                                                       <a href="../../../system/FormatException.html" title="class in system">FormatException</a></pre>
+<pre>public static&nbsp;<a href="../../../system/collections/objectmodel/ReadOnlyObservableCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyObservableCollection_1</a>&lt;<a href="../../../system/windows/controls/ValidationError.html" title="class in system.windows.controls">ValidationError</a>&gt;&nbsp;GetErrors(<a href="../../../system/windows/DependencyObject.html" title="class in system.windows">DependencyObject</a>&nbsp;element)
+                                                                 throws java.lang.Throwable,
+                                                                        <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                                                        <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                                                        <a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                                                        <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                                                        <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                                                        <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                                                        <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                                                        <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                                                        <a href="../../../system/FormatException.html" title="class in system">FormatException</a></pre>
 <div class="block">Invokes the .NET member GetErrors.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -911,7 +911,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <li class="blockList">
 <h4>RemoveErrorHandler</h4>
 <pre>public static&nbsp;void&nbsp;RemoveErrorHandler(<a href="../../../system/windows/DependencyObject.html" title="class in system.windows">DependencyObject</a>&nbsp;element,
-                                      <a href="../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&nbsp;handler)
+                                      <a href="../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../system/windows/controls/ValidationErrorEventArgs.html" title="class in system.windows.controls">ValidationErrorEventArgs</a>&gt;&nbsp;handler)
                                throws java.lang.Throwable,
                                       <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
                                       <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
@@ -926,7 +926,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>element</code> - the argument of type <code>DependencyObject</code></dd>
-<dd><code>handler</code> - the argument of type <code>EventHandler_1</code></dd>
+<dd><code>handler</code> - the argument of type <code>EventHandler_1&lt;ValidationErrorEventArgs&gt;</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
 <dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code> - if the .NET member raises it</dd>

@@ -220,7 +220,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../system/net/websockets/WebSocketReceiveResult.html#WebSocketReceiveResult-int-system.net.websockets.WebSocketMessageType-boolean-system.Nullable_1-java.lang.String-">WebSocketReceiveResult</a></span>(int&nbsp;count,
                       <a href="../../../system/net/websockets/WebSocketMessageType.html" title="class in system.net.websockets">WebSocketMessageType</a>&nbsp;messageType,
                       boolean&nbsp;endOfMessage,
-                      <a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;closeStatus,
+                      <a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&lt;<a href="../../../system/net/websockets/WebSocketCloseStatus.html" title="class in system.net.websockets">WebSocketCloseStatus</a>&gt;&nbsp;closeStatus,
                       java.lang.String&nbsp;closeStatusDescription)</code>
 <div class="block">Initializes a new instance by invoking the .NET constructor.</div>
 </td>
@@ -252,7 +252,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 </td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code><a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a></code></td>
+<td class="colFirst"><code><a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&lt;<a href="../../../system/net/websockets/WebSocketCloseStatus.html" title="class in system.net.websockets">WebSocketCloseStatus</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/websockets/WebSocketReceiveResult.html#getCloseStatus--">getCloseStatus</a></span>()</code>
 <div class="block">Gets the value of the .NET property CloseStatus.</div>
 </td>
@@ -468,7 +468,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <pre>public&nbsp;WebSocketReceiveResult(int&nbsp;count,
                               <a href="../../../system/net/websockets/WebSocketMessageType.html" title="class in system.net.websockets">WebSocketMessageType</a>&nbsp;messageType,
                               boolean&nbsp;endOfMessage,
-                              <a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;closeStatus,
+                              <a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&lt;<a href="../../../system/net/websockets/WebSocketCloseStatus.html" title="class in system.net.websockets">WebSocketCloseStatus</a>&gt;&nbsp;closeStatus,
                               java.lang.String&nbsp;closeStatusDescription)
                        throws java.lang.Throwable,
                               <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
@@ -486,7 +486,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <dd><code>count</code> - the argument of type <code>int</code></dd>
 <dd><code>messageType</code> - the argument of type <code>WebSocketMessageType</code></dd>
 <dd><code>endOfMessage</code> - the argument of type <code>boolean</code></dd>
-<dd><code>closeStatus</code> - the argument of type <code>Nullable_1</code></dd>
+<dd><code>closeStatus</code> - the argument of type <code>Nullable_1&lt;WebSocketCloseStatus&gt;</code></dd>
 <dd><code>closeStatusDescription</code> - the argument of type <code>java.lang.String</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code> - if the .NET constructor fails</dd>
@@ -554,8 +554,8 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <ul class="blockList">
 <li class="blockList">
 <h4>getCloseStatus</h4>
-<pre>public&nbsp;<a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;getCloseStatus()
-                          throws java.lang.Throwable</pre>
+<pre>public&nbsp;<a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&lt;<a href="../../../system/net/websockets/WebSocketCloseStatus.html" title="class in system.net.websockets">WebSocketCloseStatus</a>&gt;&nbsp;getCloseStatus()
+                                                throws java.lang.Throwable</pre>
 <div class="block">Gets the value of the .NET property CloseStatus.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>

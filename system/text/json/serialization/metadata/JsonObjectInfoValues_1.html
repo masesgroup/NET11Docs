@@ -251,7 +251,7 @@ extends <a href="../../../../../org/mases/jcobridge/netreflection/NetObject.html
 </td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code><a href="../../../../../system/Func_1.html" title="class in system">Func_1</a></code></td>
+<td class="colFirst"><code><a href="../../../../../system/Func_1.html" title="class in system">Func_1</a>&lt;<a href="../../../../../system/reflection/ICustomAttributeProvider.html" title="interface in system.reflection">ICustomAttributeProvider</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../system/text/json/serialization/metadata/JsonObjectInfoValues_1.html#getConstructorAttributeProviderFactory--">getConstructorAttributeProviderFactory</a></span>()</code>
 <div class="block">Gets the value of the .NET property ConstructorAttributeProviderFactory.</div>
 </td>
@@ -299,7 +299,7 @@ extends <a href="../../../../../org/mases/jcobridge/netreflection/NetObject.html
 </td>
 </tr>
 <tr id="i9" class="rowColor">
-<td class="colFirst"><code><a href="../../../../../system/Func_1.html" title="class in system">Func_1</a></code></td>
+<td class="colFirst"><code><a href="../../../../../system/Func_1.html" title="class in system">Func_1</a>&lt;<a href="../../../../../system/text/json/serialization/metadata/JsonObjectInfoValues_1.html" title="type parameter in JsonObjectInfoValues_1">T</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../system/text/json/serialization/metadata/JsonObjectInfoValues_1.html#getObjectCreator--">getObjectCreator</a></span>()</code>
 <div class="block">Gets the value of the .NET property ObjectCreator.</div>
 </td>
@@ -323,7 +323,7 @@ extends <a href="../../../../../org/mases/jcobridge/netreflection/NetObject.html
 </td>
 </tr>
 <tr id="i13" class="rowColor">
-<td class="colFirst"><code><a href="../../../../../system/Action_2.html" title="class in system">Action_2</a></code></td>
+<td class="colFirst"><code><a href="../../../../../system/Action_2.html" title="class in system">Action_2</a>&lt;<a href="../../../../../system/text/json/Utf8JsonWriter.html" title="class in system.text.json">Utf8JsonWriter</a>,<a href="../../../../../system/text/json/serialization/metadata/JsonObjectInfoValues_1.html" title="type parameter in JsonObjectInfoValues_1">T</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../system/text/json/serialization/metadata/JsonObjectInfoValues_1.html#getSerializeHandler--">getSerializeHandler</a></span>()</code>
 <div class="block">Gets the value of the .NET property SerializeHandler.</div>
 </td>
@@ -336,7 +336,7 @@ extends <a href="../../../../../org/mases/jcobridge/netreflection/NetObject.html
 </tr>
 <tr id="i15" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../system/text/json/serialization/metadata/JsonObjectInfoValues_1.html#setConstructorAttributeProviderFactory-system.Func_1-">setConstructorAttributeProviderFactory</a></span>(<a href="../../../../../system/Func_1.html" title="class in system">Func_1</a>&nbsp;ConstructorAttributeProviderFactory)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../system/text/json/serialization/metadata/JsonObjectInfoValues_1.html#setConstructorAttributeProviderFactory-system.Func_1-">setConstructorAttributeProviderFactory</a></span>(<a href="../../../../../system/Func_1.html" title="class in system">Func_1</a>&lt;<a href="../../../../../system/reflection/ICustomAttributeProvider.html" title="interface in system.reflection">ICustomAttributeProvider</a>&gt;&nbsp;ConstructorAttributeProviderFactory)</code>
 <div class="block">Sets the value of the .NET property ConstructorAttributeProviderFactory.</div>
 </td>
 </tr>
@@ -360,7 +360,7 @@ extends <a href="../../../../../org/mases/jcobridge/netreflection/NetObject.html
 </tr>
 <tr id="i19" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../system/text/json/serialization/metadata/JsonObjectInfoValues_1.html#setObjectCreator-system.Func_1-">setObjectCreator</a></span>(<a href="../../../../../system/Func_1.html" title="class in system">Func_1</a>&nbsp;ObjectCreator)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../system/text/json/serialization/metadata/JsonObjectInfoValues_1.html#setObjectCreator-system.Func_1-">setObjectCreator</a></span>(<a href="../../../../../system/Func_1.html" title="class in system">Func_1</a>&lt;<a href="../../../../../system/text/json/serialization/metadata/JsonObjectInfoValues_1.html" title="type parameter in JsonObjectInfoValues_1">T</a>&gt;&nbsp;ObjectCreator)</code>
 <div class="block">Sets the value of the .NET property ObjectCreator.</div>
 </td>
 </tr>
@@ -384,7 +384,7 @@ extends <a href="../../../../../org/mases/jcobridge/netreflection/NetObject.html
 </tr>
 <tr id="i23" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../system/text/json/serialization/metadata/JsonObjectInfoValues_1.html#setSerializeHandler-system.Action_2-">setSerializeHandler</a></span>(<a href="../../../../../system/Action_2.html" title="class in system">Action_2</a>&nbsp;SerializeHandler)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../system/text/json/serialization/metadata/JsonObjectInfoValues_1.html#setSerializeHandler-system.Action_2-">setSerializeHandler</a></span>(<a href="../../../../../system/Action_2.html" title="class in system">Action_2</a>&lt;<a href="../../../../../system/text/json/Utf8JsonWriter.html" title="class in system.text.json">Utf8JsonWriter</a>,<a href="../../../../../system/text/json/serialization/metadata/JsonObjectInfoValues_1.html" title="type parameter in JsonObjectInfoValues_1">T</a>&gt;&nbsp;SerializeHandler)</code>
 <div class="block">Sets the value of the .NET property SerializeHandler.</div>
 </td>
 </tr>
@@ -550,8 +550,8 @@ extends <a href="../../../../../org/mases/jcobridge/netreflection/NetObject.html
 <ul class="blockList">
 <li class="blockList">
 <h4>getConstructorAttributeProviderFactory</h4>
-<pre>public&nbsp;<a href="../../../../../system/Func_1.html" title="class in system">Func_1</a>&nbsp;getConstructorAttributeProviderFactory()
-                                              throws java.lang.Throwable</pre>
+<pre>public&nbsp;<a href="../../../../../system/Func_1.html" title="class in system">Func_1</a>&lt;<a href="../../../../../system/reflection/ICustomAttributeProvider.html" title="interface in system.reflection">ICustomAttributeProvider</a>&gt;&nbsp;getConstructorAttributeProviderFactory()
+                                                                        throws java.lang.Throwable</pre>
 <div class="block">Gets the value of the .NET property ConstructorAttributeProviderFactory.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -702,8 +702,8 @@ extends <a href="../../../../../org/mases/jcobridge/netreflection/NetObject.html
 <ul class="blockList">
 <li class="blockList">
 <h4>getObjectCreator</h4>
-<pre>public&nbsp;<a href="../../../../../system/Func_1.html" title="class in system">Func_1</a>&nbsp;getObjectCreator()
-                        throws java.lang.Throwable</pre>
+<pre>public&nbsp;<a href="../../../../../system/Func_1.html" title="class in system">Func_1</a>&lt;<a href="../../../../../system/text/json/serialization/metadata/JsonObjectInfoValues_1.html" title="type parameter in JsonObjectInfoValues_1">T</a>&gt;&nbsp;getObjectCreator()
+                           throws java.lang.Throwable</pre>
 <div class="block">Gets the value of the .NET property ObjectCreator.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -778,8 +778,8 @@ extends <a href="../../../../../org/mases/jcobridge/netreflection/NetObject.html
 <ul class="blockList">
 <li class="blockList">
 <h4>getSerializeHandler</h4>
-<pre>public&nbsp;<a href="../../../../../system/Action_2.html" title="class in system">Action_2</a>&nbsp;getSerializeHandler()
-                             throws java.lang.Throwable</pre>
+<pre>public&nbsp;<a href="../../../../../system/Action_2.html" title="class in system">Action_2</a>&lt;<a href="../../../../../system/text/json/Utf8JsonWriter.html" title="class in system.text.json">Utf8JsonWriter</a>,<a href="../../../../../system/text/json/serialization/metadata/JsonObjectInfoValues_1.html" title="type parameter in JsonObjectInfoValues_1">T</a>&gt;&nbsp;getSerializeHandler()
+                                               throws java.lang.Throwable</pre>
 <div class="block">Gets the value of the .NET property SerializeHandler.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -816,7 +816,7 @@ extends <a href="../../../../../org/mases/jcobridge/netreflection/NetObject.html
 <ul class="blockList">
 <li class="blockList">
 <h4>setConstructorAttributeProviderFactory</h4>
-<pre>public&nbsp;void&nbsp;setConstructorAttributeProviderFactory(<a href="../../../../../system/Func_1.html" title="class in system">Func_1</a>&nbsp;ConstructorAttributeProviderFactory)
+<pre>public&nbsp;void&nbsp;setConstructorAttributeProviderFactory(<a href="../../../../../system/Func_1.html" title="class in system">Func_1</a>&lt;<a href="../../../../../system/reflection/ICustomAttributeProvider.html" title="interface in system.reflection">ICustomAttributeProvider</a>&gt;&nbsp;ConstructorAttributeProviderFactory)
                                             throws java.lang.Throwable</pre>
 <div class="block">Sets the value of the .NET property ConstructorAttributeProviderFactory.</div>
 <dl>
@@ -890,7 +890,7 @@ extends <a href="../../../../../org/mases/jcobridge/netreflection/NetObject.html
 <ul class="blockList">
 <li class="blockList">
 <h4>setObjectCreator</h4>
-<pre>public&nbsp;void&nbsp;setObjectCreator(<a href="../../../../../system/Func_1.html" title="class in system">Func_1</a>&nbsp;ObjectCreator)
+<pre>public&nbsp;void&nbsp;setObjectCreator(<a href="../../../../../system/Func_1.html" title="class in system">Func_1</a>&lt;<a href="../../../../../system/text/json/serialization/metadata/JsonObjectInfoValues_1.html" title="type parameter in JsonObjectInfoValues_1">T</a>&gt;&nbsp;ObjectCreator)
                       throws java.lang.Throwable</pre>
 <div class="block">Sets the value of the .NET property ObjectCreator.</div>
 <dl>
@@ -966,7 +966,7 @@ extends <a href="../../../../../org/mases/jcobridge/netreflection/NetObject.html
 <ul class="blockList">
 <li class="blockList">
 <h4>setSerializeHandler</h4>
-<pre>public&nbsp;void&nbsp;setSerializeHandler(<a href="../../../../../system/Action_2.html" title="class in system">Action_2</a>&nbsp;SerializeHandler)
+<pre>public&nbsp;void&nbsp;setSerializeHandler(<a href="../../../../../system/Action_2.html" title="class in system">Action_2</a>&lt;<a href="../../../../../system/text/json/Utf8JsonWriter.html" title="class in system.text.json">Utf8JsonWriter</a>,<a href="../../../../../system/text/json/serialization/metadata/JsonObjectInfoValues_1.html" title="type parameter in JsonObjectInfoValues_1">T</a>&gt;&nbsp;SerializeHandler)
                          throws java.lang.Throwable</pre>
 <div class="block">Sets the value of the .NET property SerializeHandler.</div>
 <dl>

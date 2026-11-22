@@ -217,7 +217,7 @@ extends <a href="../../../../system/windows/threading/DispatcherObject.html" tit
 </td>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../system/windows/media/imaging/BitmapPalette.html#BitmapPalette-system.collections.generic.IList_1-">BitmapPalette</a></span>(<a href="../../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&nbsp;colors)</code>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../system/windows/media/imaging/BitmapPalette.html#BitmapPalette-system.collections.generic.IList_1-">BitmapPalette</a></span>(<a href="../../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&lt;<a href="../../../../system/windows/media/Color.html" title="class in system.windows.media">Color</a>&gt;&nbsp;colors)</code>
 <div class="block">Initializes a new instance by invoking the .NET constructor.</div>
 </td>
 </tr>
@@ -248,7 +248,7 @@ extends <a href="../../../../system/windows/threading/DispatcherObject.html" tit
 </td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code><a href="../../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a></code></td>
+<td class="colFirst"><code><a href="../../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&lt;<a href="../../../../system/windows/media/Color.html" title="class in system.windows.media">Color</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/media/imaging/BitmapPalette.html#getColors--">getColors</a></span>()</code>
 <div class="block">Gets the value of the .NET property Colors.</div>
 </td>
@@ -462,7 +462,7 @@ extends <a href="../../../../system/windows/threading/DispatcherObject.html" tit
 <ul class="blockList">
 <li class="blockList">
 <h4>BitmapPalette</h4>
-<pre>public&nbsp;BitmapPalette(<a href="../../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&nbsp;colors)
+<pre>public&nbsp;BitmapPalette(<a href="../../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&lt;<a href="../../../../system/windows/media/Color.html" title="class in system.windows.media">Color</a>&gt;&nbsp;colors)
               throws java.lang.Throwable,
                      <a href="../../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
                      <a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
@@ -484,7 +484,7 @@ extends <a href="../../../../system/windows/threading/DispatcherObject.html" tit
 <div class="block">Initializes a new instance by invoking the .NET constructor.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>colors</code> - the argument of type <code>IList_1</code></dd>
+<dd><code>colors</code> - the argument of type <code>IList_1&lt;Color&gt;</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code> - if the .NET constructor fails</dd>
 <dd><code><a href="../../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code> - if the .NET member raises it</dd>
@@ -559,8 +559,8 @@ extends <a href="../../../../system/windows/threading/DispatcherObject.html" tit
 <ul class="blockList">
 <li class="blockList">
 <h4>getColors</h4>
-<pre>public&nbsp;<a href="../../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&nbsp;getColors()
-                  throws java.lang.Throwable</pre>
+<pre>public&nbsp;<a href="../../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&lt;<a href="../../../../system/windows/media/Color.html" title="class in system.windows.media">Color</a>&gt;&nbsp;getColors()
+                         throws java.lang.Throwable</pre>
 <div class="block">Gets the value of the .NET property Colors.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>

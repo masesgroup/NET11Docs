@@ -1747,7 +1747,7 @@ extends <a href="../../../system/componentmodel/Component.html" title="class in 
 </tr>
 <tr id="i188" class="altColor">
 <td class="colFirst"><code><a href="../../../system/threading/tasks/Task.html" title="class in system.threading.tasks">Task</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/Control.html#InvokeAsync-system.Func_2-system.threading.CancellationToken-">InvokeAsync</a></span>(<a href="../../../system/Func_2.html" title="class in system">Func_2</a>&nbsp;callback,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/Control.html#InvokeAsync-system.Func_2-system.threading.CancellationToken-">InvokeAsync</a></span>(<a href="../../../system/Func_2.html" title="class in system">Func_2</a>&lt;<a href="../../../system/threading/CancellationToken.html" title="class in system.threading">CancellationToken</a>,<a href="../../../system/threading/tasks/ValueTask.html" title="class in system.threading.tasks">ValueTask</a>&gt;&nbsp;callback,
            <a href="../../../system/threading/CancellationToken.html" title="class in system.threading">CancellationToken</a>&nbsp;cancellationToken)</code>
 <div class="block">Invokes the .NET member InvokeAsync.</div>
 </td>
@@ -8009,7 +8009,7 @@ extends <a href="../../../system/componentmodel/Component.html" title="class in 
 <ul class="blockList">
 <li class="blockList">
 <h4>InvokeAsync</h4>
-<pre>public&nbsp;<a href="../../../system/threading/tasks/Task.html" title="class in system.threading.tasks">Task</a>&nbsp;InvokeAsync(<a href="../../../system/Func_2.html" title="class in system">Func_2</a>&nbsp;callback,
+<pre>public&nbsp;<a href="../../../system/threading/tasks/Task.html" title="class in system.threading.tasks">Task</a>&nbsp;InvokeAsync(<a href="../../../system/Func_2.html" title="class in system">Func_2</a>&lt;<a href="../../../system/threading/CancellationToken.html" title="class in system.threading">CancellationToken</a>,<a href="../../../system/threading/tasks/ValueTask.html" title="class in system.threading.tasks">ValueTask</a>&gt;&nbsp;callback,
                         <a href="../../../system/threading/CancellationToken.html" title="class in system.threading">CancellationToken</a>&nbsp;cancellationToken)
                  throws java.lang.Throwable,
                         <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
@@ -8021,7 +8021,7 @@ extends <a href="../../../system/componentmodel/Component.html" title="class in 
 <div class="block">Invokes the .NET member InvokeAsync.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>callback</code> - the argument of type <code>Func_2</code></dd>
+<dd><code>callback</code> - the argument of type <code>Func_2&lt;CancellationToken, ValueTask&gt;</code></dd>
 <dd><code>cancellationToken</code> - the argument of type <code>CancellationToken</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value returned by the .NET member</dd>

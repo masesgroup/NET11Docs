@@ -241,7 +241,7 @@ extends <a href="../../../system/linq/expressions/Expression.html" title="class 
 </td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code><a href="../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a></code></td>
+<td class="colFirst"><code><a href="../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&lt;<a href="../../../system/linq/expressions/SwitchCase.html" title="class in system.linq.expressions">SwitchCase</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/linq/expressions/SwitchExpression.html#getCases--">getCases</a></span>()</code>
 <div class="block">Gets the value of the .NET property Cases.</div>
 </td>
@@ -303,7 +303,7 @@ extends <a href="../../../system/linq/expressions/Expression.html" title="class 
 <tr id="i11" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/linq/expressions/SwitchExpression.html" title="class in system.linq.expressions">SwitchExpression</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/linq/expressions/SwitchExpression.html#Update-system.linq.expressions.Expression-system.collections.generic.IEnumerable_1-system.linq.expressions.Expression-">Update</a></span>(<a href="../../../system/linq/expressions/Expression.html" title="class in system.linq.expressions">Expression</a>&nbsp;switchValue,
-      <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;cases,
+      <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/linq/expressions/SwitchCase.html" title="class in system.linq.expressions">SwitchCase</a>&gt;&nbsp;cases,
       <a href="../../../system/linq/expressions/Expression.html" title="class in system.linq.expressions">Expression</a>&nbsp;defaultBody)</code>
 <div class="block">Invokes the .NET member Update.</div>
 </td>
@@ -468,8 +468,8 @@ extends <a href="../../../system/linq/expressions/Expression.html" title="class 
 <ul class="blockList">
 <li class="blockList">
 <h4>getCases</h4>
-<pre>public&nbsp;<a href="../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&nbsp;getCases()
-                              throws java.lang.Throwable</pre>
+<pre>public&nbsp;<a href="../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&lt;<a href="../../../system/linq/expressions/SwitchCase.html" title="class in system.linq.expressions">SwitchCase</a>&gt;&nbsp;getCases()
+                                          throws java.lang.Throwable</pre>
 <div class="block">Gets the value of the .NET property Cases.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -657,7 +657,7 @@ extends <a href="../../../system/linq/expressions/Expression.html" title="class 
 <li class="blockList">
 <h4>Update</h4>
 <pre>public&nbsp;<a href="../../../system/linq/expressions/SwitchExpression.html" title="class in system.linq.expressions">SwitchExpression</a>&nbsp;Update(<a href="../../../system/linq/expressions/Expression.html" title="class in system.linq.expressions">Expression</a>&nbsp;switchValue,
-                               <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;cases,
+                               <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/linq/expressions/SwitchCase.html" title="class in system.linq.expressions">SwitchCase</a>&gt;&nbsp;cases,
                                <a href="../../../system/linq/expressions/Expression.html" title="class in system.linq.expressions">Expression</a>&nbsp;defaultBody)
                         throws java.lang.Throwable,
                                <a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
@@ -677,7 +677,7 @@ extends <a href="../../../system/linq/expressions/Expression.html" title="class 
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>switchValue</code> - the argument of type <code>Expression</code></dd>
-<dd><code>cases</code> - the argument of type <code>IEnumerable_1</code></dd>
+<dd><code>cases</code> - the argument of type <code>IEnumerable_1&lt;SwitchCase&gt;</code></dd>
 <dd><code>defaultBody</code> - the argument of type <code>Expression</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value returned by the .NET member</dd>

@@ -232,7 +232,7 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <td class="colFirst"><code>static <a href="../../../../microsoft/extensions/diagnostics/tracing/ITracingBuilder.html" title="interface in microsoft.extensions.diagnostics.tracing">ITracingBuilder</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../microsoft/extensions/diagnostics/tracing/TracingBuilderExtensions.html#AddListener-microsoft.extensions.diagnostics.tracing.ITracingBuilder-java.lang.String-system.Action_1-">AddListener</a></span>(<a href="../../../../microsoft/extensions/diagnostics/tracing/ITracingBuilder.html" title="interface in microsoft.extensions.diagnostics.tracing">ITracingBuilder</a>&nbsp;builder,
            java.lang.String&nbsp;name,
-           <a href="../../../../system/Action_1.html" title="class in system">Action_1</a>&nbsp;configure)</code>
+           <a href="../../../../system/Action_1.html" title="class in system">Action_1</a>&lt;<a href="../../../../microsoft/extensions/diagnostics/tracing/ActivityListenerBuilder.html" title="class in microsoft.extensions.diagnostics.tracing">ActivityListenerBuilder</a>&gt;&nbsp;configure)</code>
 <div class="block">Invokes the .NET member AddListener.</div>
 </td>
 </tr>
@@ -240,7 +240,7 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <td class="colFirst"><code>static <a href="../../../../microsoft/extensions/diagnostics/tracing/ITracingBuilder.html" title="interface in microsoft.extensions.diagnostics.tracing">ITracingBuilder</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../microsoft/extensions/diagnostics/tracing/TracingBuilderExtensions.html#AddListener-microsoft.extensions.diagnostics.tracing.ITracingBuilder-java.lang.String-system.Action_2-">AddListener</a></span>(<a href="../../../../microsoft/extensions/diagnostics/tracing/ITracingBuilder.html" title="interface in microsoft.extensions.diagnostics.tracing">ITracingBuilder</a>&nbsp;builder,
            java.lang.String&nbsp;name,
-           <a href="../../../../system/Action_2.html" title="class in system">Action_2</a>&nbsp;configure)</code>
+           <a href="../../../../system/Action_2.html" title="class in system">Action_2</a>&lt;<a href="../../../../system/IServiceProvider.html" title="interface in system">IServiceProvider</a>,<a href="../../../../microsoft/extensions/diagnostics/tracing/ActivityListenerBuilder.html" title="class in microsoft.extensions.diagnostics.tracing">ActivityListenerBuilder</a>&gt;&nbsp;configure)</code>
 <div class="block">Invokes the .NET member AddListener.</div>
 </td>
 </tr>
@@ -468,7 +468,7 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <h4>AddListener</h4>
 <pre>public static&nbsp;<a href="../../../../microsoft/extensions/diagnostics/tracing/ITracingBuilder.html" title="interface in microsoft.extensions.diagnostics.tracing">ITracingBuilder</a>&nbsp;AddListener(<a href="../../../../microsoft/extensions/diagnostics/tracing/ITracingBuilder.html" title="interface in microsoft.extensions.diagnostics.tracing">ITracingBuilder</a>&nbsp;builder,
                                           java.lang.String&nbsp;name,
-                                          <a href="../../../../system/Action_1.html" title="class in system">Action_1</a>&nbsp;configure)
+                                          <a href="../../../../system/Action_1.html" title="class in system">Action_1</a>&lt;<a href="../../../../microsoft/extensions/diagnostics/tracing/ActivityListenerBuilder.html" title="class in microsoft.extensions.diagnostics.tracing">ActivityListenerBuilder</a>&gt;&nbsp;configure)
                                    throws java.lang.Throwable,
                                           <a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
                                           <a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
@@ -482,7 +482,7 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>builder</code> - the argument of type <code>ITracingBuilder</code></dd>
 <dd><code>name</code> - the argument of type <code>java.lang.String</code></dd>
-<dd><code>configure</code> - the argument of type <code>Action_1</code></dd>
+<dd><code>configure</code> - the argument of type <code>Action_1&lt;ActivityListenerBuilder&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -507,7 +507,7 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <h4>AddListener</h4>
 <pre>public static&nbsp;<a href="../../../../microsoft/extensions/diagnostics/tracing/ITracingBuilder.html" title="interface in microsoft.extensions.diagnostics.tracing">ITracingBuilder</a>&nbsp;AddListener(<a href="../../../../microsoft/extensions/diagnostics/tracing/ITracingBuilder.html" title="interface in microsoft.extensions.diagnostics.tracing">ITracingBuilder</a>&nbsp;builder,
                                           java.lang.String&nbsp;name,
-                                          <a href="../../../../system/Action_2.html" title="class in system">Action_2</a>&nbsp;configure)
+                                          <a href="../../../../system/Action_2.html" title="class in system">Action_2</a>&lt;<a href="../../../../system/IServiceProvider.html" title="interface in system">IServiceProvider</a>,<a href="../../../../microsoft/extensions/diagnostics/tracing/ActivityListenerBuilder.html" title="class in microsoft.extensions.diagnostics.tracing">ActivityListenerBuilder</a>&gt;&nbsp;configure)
                                    throws java.lang.Throwable,
                                           <a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
                                           <a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
@@ -521,7 +521,7 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>builder</code> - the argument of type <code>ITracingBuilder</code></dd>
 <dd><code>name</code> - the argument of type <code>java.lang.String</code></dd>
-<dd><code>configure</code> - the argument of type <code>Action_2</code></dd>
+<dd><code>configure</code> - the argument of type <code>Action_2&lt;IServiceProvider, ActivityListenerBuilder&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>

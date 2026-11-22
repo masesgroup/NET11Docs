@@ -245,7 +245,7 @@ implements <a href="../../../../system/threading/tasks/dataflow/IReceivableSourc
 <tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="../../../../system/threading/tasks/dataflow/IReceivableSourceBlock_1Implementation.html" title="type parameter in IReceivableSourceBlock_1Implementation">TOutput</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/threading/tasks/dataflow/IReceivableSourceBlock_1Implementation.html#ConsumeMessage-system.threading.tasks.dataflow.DataflowMessageHeader-system.threading.tasks.dataflow.ITargetBlock_1-org.mases.jcobridge.netreflection.JCORefOut-">ConsumeMessage</a></span>(<a href="../../../../system/threading/tasks/dataflow/DataflowMessageHeader.html" title="class in system.threading.tasks.dataflow">DataflowMessageHeader</a>&nbsp;messageHeader,
-              <a href="../../../../system/threading/tasks/dataflow/ITargetBlock_1.html" title="interface in system.threading.tasks.dataflow">ITargetBlock_1</a>&nbsp;target,
+              <a href="../../../../system/threading/tasks/dataflow/ITargetBlock_1.html" title="interface in system.threading.tasks.dataflow">ITargetBlock_1</a>&lt;<a href="../../../../system/threading/tasks/dataflow/IReceivableSourceBlock_1Implementation.html" title="type parameter in IReceivableSourceBlock_1Implementation">TOutput</a>&gt;&nbsp;target,
               <a href="../../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;java.util.concurrent.atomic.AtomicBoolean&gt;&nbsp;messageConsumed)</code>
 <div class="block">Invokes the .NET member ConsumeMessage.</div>
 </td>
@@ -294,7 +294,7 @@ implements <a href="../../../../system/threading/tasks/dataflow/IReceivableSourc
 </tr>
 <tr id="i10" class="altColor">
 <td class="colFirst"><code><a href="../../../../system/IDisposable.html" title="interface in system">IDisposable</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/threading/tasks/dataflow/IReceivableSourceBlock_1Implementation.html#LinkTo-system.threading.tasks.dataflow.ITargetBlock_1-system.threading.tasks.dataflow.DataflowLinkOptions-">LinkTo</a></span>(<a href="../../../../system/threading/tasks/dataflow/ITargetBlock_1.html" title="interface in system.threading.tasks.dataflow">ITargetBlock_1</a>&nbsp;target,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/threading/tasks/dataflow/IReceivableSourceBlock_1Implementation.html#LinkTo-system.threading.tasks.dataflow.ITargetBlock_1-system.threading.tasks.dataflow.DataflowLinkOptions-">LinkTo</a></span>(<a href="../../../../system/threading/tasks/dataflow/ITargetBlock_1.html" title="interface in system.threading.tasks.dataflow">ITargetBlock_1</a>&lt;<a href="../../../../system/threading/tasks/dataflow/IReceivableSourceBlock_1Implementation.html" title="type parameter in IReceivableSourceBlock_1Implementation">TOutput</a>&gt;&nbsp;target,
       <a href="../../../../system/threading/tasks/dataflow/DataflowLinkOptions.html" title="class in system.threading.tasks.dataflow">DataflowLinkOptions</a>&nbsp;linkOptions)</code>
 <div class="block">Invokes the .NET member LinkTo.</div>
 </td>
@@ -302,20 +302,20 @@ implements <a href="../../../../system/threading/tasks/dataflow/IReceivableSourc
 <tr id="i11" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/threading/tasks/dataflow/IReceivableSourceBlock_1Implementation.html#ReleaseReservation-system.threading.tasks.dataflow.DataflowMessageHeader-system.threading.tasks.dataflow.ITargetBlock_1-">ReleaseReservation</a></span>(<a href="../../../../system/threading/tasks/dataflow/DataflowMessageHeader.html" title="class in system.threading.tasks.dataflow">DataflowMessageHeader</a>&nbsp;messageHeader,
-                  <a href="../../../../system/threading/tasks/dataflow/ITargetBlock_1.html" title="interface in system.threading.tasks.dataflow">ITargetBlock_1</a>&nbsp;target)</code>
+                  <a href="../../../../system/threading/tasks/dataflow/ITargetBlock_1.html" title="interface in system.threading.tasks.dataflow">ITargetBlock_1</a>&lt;<a href="../../../../system/threading/tasks/dataflow/IReceivableSourceBlock_1Implementation.html" title="type parameter in IReceivableSourceBlock_1Implementation">TOutput</a>&gt;&nbsp;target)</code>
 <div class="block">Invokes the .NET member ReleaseReservation.</div>
 </td>
 </tr>
 <tr id="i12" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/threading/tasks/dataflow/IReceivableSourceBlock_1Implementation.html#ReserveMessage-system.threading.tasks.dataflow.DataflowMessageHeader-system.threading.tasks.dataflow.ITargetBlock_1-">ReserveMessage</a></span>(<a href="../../../../system/threading/tasks/dataflow/DataflowMessageHeader.html" title="class in system.threading.tasks.dataflow">DataflowMessageHeader</a>&nbsp;messageHeader,
-              <a href="../../../../system/threading/tasks/dataflow/ITargetBlock_1.html" title="interface in system.threading.tasks.dataflow">ITargetBlock_1</a>&nbsp;target)</code>
+              <a href="../../../../system/threading/tasks/dataflow/ITargetBlock_1.html" title="interface in system.threading.tasks.dataflow">ITargetBlock_1</a>&lt;<a href="../../../../system/threading/tasks/dataflow/IReceivableSourceBlock_1Implementation.html" title="type parameter in IReceivableSourceBlock_1Implementation">TOutput</a>&gt;&nbsp;target)</code>
 <div class="block">Invokes the .NET member ReserveMessage.</div>
 </td>
 </tr>
 <tr id="i13" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/threading/tasks/dataflow/IReceivableSourceBlock_1Implementation.html#TryReceive-system.Predicate_1-org.mases.jcobridge.netreflection.JCORefOut-">TryReceive</a></span>(<a href="../../../../system/Predicate_1.html" title="class in system">Predicate_1</a>&nbsp;filter,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/threading/tasks/dataflow/IReceivableSourceBlock_1Implementation.html#TryReceive-system.Predicate_1-org.mases.jcobridge.netreflection.JCORefOut-">TryReceive</a></span>(<a href="../../../../system/Predicate_1.html" title="class in system">Predicate_1</a>&lt;<a href="../../../../system/threading/tasks/dataflow/IReceivableSourceBlock_1Implementation.html" title="type parameter in IReceivableSourceBlock_1Implementation">TOutput</a>&gt;&nbsp;filter,
           <a href="../../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="../../../../system/threading/tasks/dataflow/IReceivableSourceBlock_1Implementation.html" title="type parameter in IReceivableSourceBlock_1Implementation">TOutput</a>&gt;&nbsp;item)</code>
 <div class="block">Invokes the .NET member TryReceive.</div>
 </td>
@@ -506,7 +506,7 @@ implements <a href="../../../../system/threading/tasks/dataflow/IReceivableSourc
 <li class="blockList">
 <h4>ConsumeMessage</h4>
 <pre>public&nbsp;<a href="../../../../system/threading/tasks/dataflow/IReceivableSourceBlock_1Implementation.html" title="type parameter in IReceivableSourceBlock_1Implementation">TOutput</a>&nbsp;ConsumeMessage(<a href="../../../../system/threading/tasks/dataflow/DataflowMessageHeader.html" title="class in system.threading.tasks.dataflow">DataflowMessageHeader</a>&nbsp;messageHeader,
-                              <a href="../../../../system/threading/tasks/dataflow/ITargetBlock_1.html" title="interface in system.threading.tasks.dataflow">ITargetBlock_1</a>&nbsp;target,
+                              <a href="../../../../system/threading/tasks/dataflow/ITargetBlock_1.html" title="interface in system.threading.tasks.dataflow">ITargetBlock_1</a>&lt;<a href="../../../../system/threading/tasks/dataflow/IReceivableSourceBlock_1Implementation.html" title="type parameter in IReceivableSourceBlock_1Implementation">TOutput</a>&gt;&nbsp;target,
                               <a href="../../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;java.util.concurrent.atomic.AtomicBoolean&gt;&nbsp;messageConsumed)
                        throws java.lang.Throwable</pre>
 <div class="block">Invokes the .NET member ConsumeMessage.</div>
@@ -515,7 +515,7 @@ implements <a href="../../../../system/threading/tasks/dataflow/IReceivableSourc
 <dd><code><a href="../../../../system/threading/tasks/dataflow/ISourceBlock_1.html#ConsumeMessage-system.threading.tasks.dataflow.DataflowMessageHeader-system.threading.tasks.dataflow.ITargetBlock_1-org.mases.jcobridge.netreflection.JCORefOut-">ConsumeMessage</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../system/threading/tasks/dataflow/ISourceBlock_1.html" title="interface in system.threading.tasks.dataflow">ISourceBlock_1</a>&lt;<a href="../../../../system/threading/tasks/dataflow/IReceivableSourceBlock_1Implementation.html" title="type parameter in IReceivableSourceBlock_1Implementation">TOutput</a> extends <a href="../../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;</code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>messageHeader</code> - the argument of type <code>DataflowMessageHeader</code></dd>
-<dd><code>target</code> - the argument of type <code>ITargetBlock_1</code></dd>
+<dd><code>target</code> - the argument of type <code>ITargetBlock_1&lt;TOutput&gt;</code></dd>
 <dd><code>messageConsumed</code> - the argument of type <code>JCORefOut&lt;java.util.concurrent.atomic.AtomicBoolean&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value returned by the .NET member</dd>
@@ -699,7 +699,7 @@ implements <a href="../../../../system/threading/tasks/dataflow/IReceivableSourc
 <ul class="blockList">
 <li class="blockList">
 <h4>LinkTo</h4>
-<pre>public&nbsp;<a href="../../../../system/IDisposable.html" title="interface in system">IDisposable</a>&nbsp;LinkTo(<a href="../../../../system/threading/tasks/dataflow/ITargetBlock_1.html" title="interface in system.threading.tasks.dataflow">ITargetBlock_1</a>&nbsp;target,
+<pre>public&nbsp;<a href="../../../../system/IDisposable.html" title="interface in system">IDisposable</a>&nbsp;LinkTo(<a href="../../../../system/threading/tasks/dataflow/ITargetBlock_1.html" title="interface in system.threading.tasks.dataflow">ITargetBlock_1</a>&lt;<a href="../../../../system/threading/tasks/dataflow/IReceivableSourceBlock_1Implementation.html" title="type parameter in IReceivableSourceBlock_1Implementation">TOutput</a>&gt;&nbsp;target,
                           <a href="../../../../system/threading/tasks/dataflow/DataflowLinkOptions.html" title="class in system.threading.tasks.dataflow">DataflowLinkOptions</a>&nbsp;linkOptions)
                    throws java.lang.Throwable</pre>
 <div class="block">Invokes the .NET member LinkTo.</div>
@@ -707,7 +707,7 @@ implements <a href="../../../../system/threading/tasks/dataflow/IReceivableSourc
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../system/threading/tasks/dataflow/ISourceBlock_1.html#LinkTo-system.threading.tasks.dataflow.ITargetBlock_1-system.threading.tasks.dataflow.DataflowLinkOptions-">LinkTo</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../system/threading/tasks/dataflow/ISourceBlock_1.html" title="interface in system.threading.tasks.dataflow">ISourceBlock_1</a>&lt;<a href="../../../../system/threading/tasks/dataflow/IReceivableSourceBlock_1Implementation.html" title="type parameter in IReceivableSourceBlock_1Implementation">TOutput</a> extends <a href="../../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;</code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>target</code> - the argument of type <code>ITargetBlock_1</code></dd>
+<dd><code>target</code> - the argument of type <code>ITargetBlock_1&lt;TOutput&gt;</code></dd>
 <dd><code>linkOptions</code> - the argument of type <code>DataflowLinkOptions</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value returned by the .NET member</dd>
@@ -725,7 +725,7 @@ implements <a href="../../../../system/threading/tasks/dataflow/IReceivableSourc
 <li class="blockList">
 <h4>ReleaseReservation</h4>
 <pre>public&nbsp;void&nbsp;ReleaseReservation(<a href="../../../../system/threading/tasks/dataflow/DataflowMessageHeader.html" title="class in system.threading.tasks.dataflow">DataflowMessageHeader</a>&nbsp;messageHeader,
-                               <a href="../../../../system/threading/tasks/dataflow/ITargetBlock_1.html" title="interface in system.threading.tasks.dataflow">ITargetBlock_1</a>&nbsp;target)
+                               <a href="../../../../system/threading/tasks/dataflow/ITargetBlock_1.html" title="interface in system.threading.tasks.dataflow">ITargetBlock_1</a>&lt;<a href="../../../../system/threading/tasks/dataflow/IReceivableSourceBlock_1Implementation.html" title="type parameter in IReceivableSourceBlock_1Implementation">TOutput</a>&gt;&nbsp;target)
                         throws java.lang.Throwable</pre>
 <div class="block">Invokes the .NET member ReleaseReservation.</div>
 <dl>
@@ -733,7 +733,7 @@ implements <a href="../../../../system/threading/tasks/dataflow/IReceivableSourc
 <dd><code><a href="../../../../system/threading/tasks/dataflow/ISourceBlock_1.html#ReleaseReservation-system.threading.tasks.dataflow.DataflowMessageHeader-system.threading.tasks.dataflow.ITargetBlock_1-">ReleaseReservation</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../system/threading/tasks/dataflow/ISourceBlock_1.html" title="interface in system.threading.tasks.dataflow">ISourceBlock_1</a>&lt;<a href="../../../../system/threading/tasks/dataflow/IReceivableSourceBlock_1Implementation.html" title="type parameter in IReceivableSourceBlock_1Implementation">TOutput</a> extends <a href="../../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;</code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>messageHeader</code> - the argument of type <code>DataflowMessageHeader</code></dd>
-<dd><code>target</code> - the argument of type <code>ITargetBlock_1</code></dd>
+<dd><code>target</code> - the argument of type <code>ITargetBlock_1&lt;TOutput&gt;</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
@@ -748,7 +748,7 @@ implements <a href="../../../../system/threading/tasks/dataflow/IReceivableSourc
 <li class="blockList">
 <h4>ReserveMessage</h4>
 <pre>public&nbsp;boolean&nbsp;ReserveMessage(<a href="../../../../system/threading/tasks/dataflow/DataflowMessageHeader.html" title="class in system.threading.tasks.dataflow">DataflowMessageHeader</a>&nbsp;messageHeader,
-                              <a href="../../../../system/threading/tasks/dataflow/ITargetBlock_1.html" title="interface in system.threading.tasks.dataflow">ITargetBlock_1</a>&nbsp;target)
+                              <a href="../../../../system/threading/tasks/dataflow/ITargetBlock_1.html" title="interface in system.threading.tasks.dataflow">ITargetBlock_1</a>&lt;<a href="../../../../system/threading/tasks/dataflow/IReceivableSourceBlock_1Implementation.html" title="type parameter in IReceivableSourceBlock_1Implementation">TOutput</a>&gt;&nbsp;target)
                        throws java.lang.Throwable</pre>
 <div class="block">Invokes the .NET member ReserveMessage.</div>
 <dl>
@@ -756,7 +756,7 @@ implements <a href="../../../../system/threading/tasks/dataflow/IReceivableSourc
 <dd><code><a href="../../../../system/threading/tasks/dataflow/ISourceBlock_1.html#ReserveMessage-system.threading.tasks.dataflow.DataflowMessageHeader-system.threading.tasks.dataflow.ITargetBlock_1-">ReserveMessage</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../system/threading/tasks/dataflow/ISourceBlock_1.html" title="interface in system.threading.tasks.dataflow">ISourceBlock_1</a>&lt;<a href="../../../../system/threading/tasks/dataflow/IReceivableSourceBlock_1Implementation.html" title="type parameter in IReceivableSourceBlock_1Implementation">TOutput</a> extends <a href="../../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;</code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>messageHeader</code> - the argument of type <code>DataflowMessageHeader</code></dd>
-<dd><code>target</code> - the argument of type <code>ITargetBlock_1</code></dd>
+<dd><code>target</code> - the argument of type <code>ITargetBlock_1&lt;TOutput&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -772,7 +772,7 @@ implements <a href="../../../../system/threading/tasks/dataflow/IReceivableSourc
 <ul class="blockList">
 <li class="blockList">
 <h4>TryReceive</h4>
-<pre>public&nbsp;boolean&nbsp;TryReceive(<a href="../../../../system/Predicate_1.html" title="class in system">Predicate_1</a>&nbsp;filter,
+<pre>public&nbsp;boolean&nbsp;TryReceive(<a href="../../../../system/Predicate_1.html" title="class in system">Predicate_1</a>&lt;<a href="../../../../system/threading/tasks/dataflow/IReceivableSourceBlock_1Implementation.html" title="type parameter in IReceivableSourceBlock_1Implementation">TOutput</a>&gt;&nbsp;filter,
                           <a href="../../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="../../../../system/threading/tasks/dataflow/IReceivableSourceBlock_1Implementation.html" title="type parameter in IReceivableSourceBlock_1Implementation">TOutput</a>&gt;&nbsp;item)
                    throws java.lang.Throwable</pre>
 <div class="block">Invokes the .NET member TryReceive.</div>
@@ -780,7 +780,7 @@ implements <a href="../../../../system/threading/tasks/dataflow/IReceivableSourc
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../system/threading/tasks/dataflow/IReceivableSourceBlock_1.html#TryReceive-system.Predicate_1-org.mases.jcobridge.netreflection.JCORefOut-">TryReceive</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../system/threading/tasks/dataflow/IReceivableSourceBlock_1.html" title="interface in system.threading.tasks.dataflow">IReceivableSourceBlock_1</a>&lt;<a href="../../../../system/threading/tasks/dataflow/IReceivableSourceBlock_1Implementation.html" title="type parameter in IReceivableSourceBlock_1Implementation">TOutput</a> extends <a href="../../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;</code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>filter</code> - the argument of type <code>Predicate_1</code></dd>
+<dd><code>filter</code> - the argument of type <code>Predicate_1&lt;TOutput&gt;</code></dd>
 <dd><code>item</code> - the argument of type <code>JCORefOut&lt;TOutput&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value returned by the .NET member</dd>

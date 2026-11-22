@@ -220,7 +220,7 @@ extends <a href="../../../system/ValueType.html" title="class in system">ValueTy
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../system/threading/tasks/ValueTask_1.html#ValueTask_1--">ValueTask_1</a></span>()</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../system/threading/tasks/ValueTask_1.html#ValueTask_1-system.threading.tasks.sources.IValueTaskSource_1-short-">ValueTask_1</a></span>(<a href="../../../system/threading/tasks/sources/IValueTaskSource_1.html" title="interface in system.threading.tasks.sources">IValueTaskSource_1</a>&nbsp;source,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../system/threading/tasks/ValueTask_1.html#ValueTask_1-system.threading.tasks.sources.IValueTaskSource_1-short-">ValueTask_1</a></span>(<a href="../../../system/threading/tasks/sources/IValueTaskSource_1.html" title="interface in system.threading.tasks.sources">IValueTaskSource_1</a>&lt;<a href="../../../system/threading/tasks/ValueTask_1.html" title="type parameter in ValueTask_1">TResult</a>&gt;&nbsp;source,
            short&nbsp;token)</code>
 <div class="block">Initializes a new instance by invoking the .NET constructor.</div>
 </td>
@@ -231,7 +231,7 @@ extends <a href="../../../system/ValueType.html" title="class in system">ValueTy
 </td>
 </tr>
 <tr class="rowColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../system/threading/tasks/ValueTask_1.html#ValueTask_1-system.threading.tasks.Task_1-">ValueTask_1</a></span>(<a href="../../../system/threading/tasks/Task_1.html" title="class in system.threading.tasks">Task_1</a>&nbsp;task)</code>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../system/threading/tasks/ValueTask_1.html#ValueTask_1-system.threading.tasks.Task_1-">ValueTask_1</a></span>(<a href="../../../system/threading/tasks/Task_1.html" title="class in system.threading.tasks">Task_1</a>&lt;<a href="../../../system/threading/tasks/ValueTask_1.html" title="type parameter in ValueTask_1">TResult</a>&gt;&nbsp;task)</code>
 <div class="block">Initializes a new instance by invoking the .NET constructor.</div>
 </td>
 </tr>
@@ -256,7 +256,7 @@ extends <a href="../../../system/ValueType.html" title="class in system">ValueTy
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code><a href="../../../system/threading/tasks/Task_1.html" title="class in system.threading.tasks">Task_1</a></code></td>
+<td class="colFirst"><code><a href="../../../system/threading/tasks/Task_1.html" title="class in system.threading.tasks">Task_1</a>&lt;<a href="../../../system/threading/tasks/ValueTask_1.html" title="type parameter in ValueTask_1">TResult</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/threading/tasks/ValueTask_1.html#AsTask--">AsTask</a></span>()</code>
 <div class="block">Invokes the .NET member AsTask.</div>
 </td>
@@ -268,7 +268,7 @@ extends <a href="../../../system/ValueType.html" title="class in system">ValueTy
 </td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code><a href="../../../system/runtime/compilerservices/ConfiguredValueTaskAwaitable_1.html" title="class in system.runtime.compilerservices">ConfiguredValueTaskAwaitable_1</a></code></td>
+<td class="colFirst"><code><a href="../../../system/runtime/compilerservices/ConfiguredValueTaskAwaitable_1.html" title="class in system.runtime.compilerservices">ConfiguredValueTaskAwaitable_1</a>&lt;<a href="../../../system/threading/tasks/ValueTask_1.html" title="type parameter in ValueTask_1">TResult</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/threading/tasks/ValueTask_1.html#ConfigureAwait-boolean-">ConfigureAwait</a></span>(boolean&nbsp;continueOnCapturedContext)</code>
 <div class="block">Invokes the .NET member ConfigureAwait.</div>
 </td>
@@ -280,7 +280,7 @@ extends <a href="../../../system/ValueType.html" title="class in system">ValueTy
 </td>
 </tr>
 <tr id="i4" class="altColor">
-<td class="colFirst"><code><a href="../../../system/runtime/compilerservices/ValueTaskAwaiter_1.html" title="class in system.runtime.compilerservices">ValueTaskAwaiter_1</a></code></td>
+<td class="colFirst"><code><a href="../../../system/runtime/compilerservices/ValueTaskAwaiter_1.html" title="class in system.runtime.compilerservices">ValueTaskAwaiter_1</a>&lt;<a href="../../../system/threading/tasks/ValueTask_1.html" title="type parameter in ValueTask_1">TResult</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/threading/tasks/ValueTask_1.html#GetAwaiter--">GetAwaiter</a></span>()</code>
 <div class="block">Invokes the .NET member GetAwaiter.</div>
 </td>
@@ -346,7 +346,7 @@ extends <a href="../../../system/ValueType.html" title="class in system">ValueTy
 </td>
 </tr>
 <tr id="i15" class="rowColor">
-<td class="colFirst"><code><a href="../../../system/threading/tasks/ValueTask_1.html" title="class in system.threading.tasks">ValueTask_1</a></code></td>
+<td class="colFirst"><code><a href="../../../system/threading/tasks/ValueTask_1.html" title="class in system.threading.tasks">ValueTask_1</a>&lt;<a href="../../../system/threading/tasks/ValueTask_1.html" title="type parameter in ValueTask_1">TResult</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/threading/tasks/ValueTask_1.html#Preserve--">Preserve</a></span>()</code>
 <div class="block">Invokes the .NET member Preserve.</div>
 </td>
@@ -466,7 +466,7 @@ extends <a href="../../../system/ValueType.html" title="class in system">ValueTy
 <ul class="blockList">
 <li class="blockList">
 <h4>ValueTask_1</h4>
-<pre>public&nbsp;ValueTask_1(<a href="../../../system/threading/tasks/sources/IValueTaskSource_1.html" title="interface in system.threading.tasks.sources">IValueTaskSource_1</a>&nbsp;source,
+<pre>public&nbsp;ValueTask_1(<a href="../../../system/threading/tasks/sources/IValueTaskSource_1.html" title="interface in system.threading.tasks.sources">IValueTaskSource_1</a>&lt;<a href="../../../system/threading/tasks/ValueTask_1.html" title="type parameter in ValueTask_1">TResult</a>&gt;&nbsp;source,
                    short&nbsp;token)
             throws java.lang.Throwable,
                    <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
@@ -481,7 +481,7 @@ extends <a href="../../../system/ValueType.html" title="class in system">ValueTy
 <div class="block">Initializes a new instance by invoking the .NET constructor.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>source</code> - the argument of type <code>IValueTaskSource_1</code></dd>
+<dd><code>source</code> - the argument of type <code>IValueTaskSource_1&lt;TResult&gt;</code></dd>
 <dd><code>token</code> - the argument of type <code>short</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code> - if the .NET constructor fails</dd>
@@ -522,7 +522,7 @@ extends <a href="../../../system/ValueType.html" title="class in system">ValueTy
 <ul class="blockList">
 <li class="blockList">
 <h4>ValueTask_1</h4>
-<pre>public&nbsp;ValueTask_1(<a href="../../../system/threading/tasks/Task_1.html" title="class in system.threading.tasks">Task_1</a>&nbsp;task)
+<pre>public&nbsp;ValueTask_1(<a href="../../../system/threading/tasks/Task_1.html" title="class in system.threading.tasks">Task_1</a>&lt;<a href="../../../system/threading/tasks/ValueTask_1.html" title="type parameter in ValueTask_1">TResult</a>&gt;&nbsp;task)
             throws java.lang.Throwable,
                    <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
                    <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
@@ -536,7 +536,7 @@ extends <a href="../../../system/ValueType.html" title="class in system">ValueTy
 <div class="block">Initializes a new instance by invoking the .NET constructor.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>task</code> - the argument of type <code>Task_1</code></dd>
+<dd><code>task</code> - the argument of type <code>Task_1&lt;TResult&gt;</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code> - if the .NET constructor fails</dd>
 <dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code> - if the .NET member raises it</dd>
@@ -588,20 +588,20 @@ extends <a href="../../../system/ValueType.html" title="class in system">ValueTy
 <ul class="blockList">
 <li class="blockList">
 <h4>AsTask</h4>
-<pre>public&nbsp;<a href="../../../system/threading/tasks/Task_1.html" title="class in system.threading.tasks">Task_1</a>&nbsp;AsTask()
-              throws java.lang.Throwable,
-                     <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
-                     <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                     <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                     <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
-                     <a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
-                     <a href="../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
-                     <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                     <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
-                     <a href="../../../system/RankException.html" title="class in system">RankException</a>,
-                     <a href="../../../system/NullReferenceException.html" title="class in system">NullReferenceException</a>,
-                     <a href="../../../system/threading/SynchronizationLockException.html" title="class in system.threading">SynchronizationLockException</a>,
-                     <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></pre>
+<pre>public&nbsp;<a href="../../../system/threading/tasks/Task_1.html" title="class in system.threading.tasks">Task_1</a>&lt;<a href="../../../system/threading/tasks/ValueTask_1.html" title="type parameter in ValueTask_1">TResult</a>&gt;&nbsp;AsTask()
+                       throws java.lang.Throwable,
+                              <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                              <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                              <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                              <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                              <a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                              <a href="../../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+                              <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                              <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                              <a href="../../../system/RankException.html" title="class in system">RankException</a>,
+                              <a href="../../../system/NullReferenceException.html" title="class in system">NullReferenceException</a>,
+                              <a href="../../../system/threading/SynchronizationLockException.html" title="class in system.threading">SynchronizationLockException</a>,
+                              <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></pre>
 <div class="block">Invokes the .NET member AsTask.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -650,8 +650,8 @@ extends <a href="../../../system/ValueType.html" title="class in system">ValueTy
 <ul class="blockList">
 <li class="blockList">
 <h4>ConfigureAwait</h4>
-<pre>public&nbsp;<a href="../../../system/runtime/compilerservices/ConfiguredValueTaskAwaitable_1.html" title="class in system.runtime.compilerservices">ConfiguredValueTaskAwaitable_1</a>&nbsp;ConfigureAwait(boolean&nbsp;continueOnCapturedContext)
-                                              throws java.lang.Throwable</pre>
+<pre>public&nbsp;<a href="../../../system/runtime/compilerservices/ConfiguredValueTaskAwaitable_1.html" title="class in system.runtime.compilerservices">ConfiguredValueTaskAwaitable_1</a>&lt;<a href="../../../system/threading/tasks/ValueTask_1.html" title="type parameter in ValueTask_1">TResult</a>&gt;&nbsp;ConfigureAwait(boolean&nbsp;continueOnCapturedContext)
+                                                       throws java.lang.Throwable</pre>
 <div class="block">Invokes the .NET member ConfigureAwait.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -692,8 +692,8 @@ extends <a href="../../../system/ValueType.html" title="class in system">ValueTy
 <ul class="blockList">
 <li class="blockList">
 <h4>GetAwaiter</h4>
-<pre>public&nbsp;<a href="../../../system/runtime/compilerservices/ValueTaskAwaiter_1.html" title="class in system.runtime.compilerservices">ValueTaskAwaiter_1</a>&nbsp;GetAwaiter()
-                              throws java.lang.Throwable</pre>
+<pre>public&nbsp;<a href="../../../system/runtime/compilerservices/ValueTaskAwaiter_1.html" title="class in system.runtime.compilerservices">ValueTaskAwaiter_1</a>&lt;<a href="../../../system/threading/tasks/ValueTask_1.html" title="type parameter in ValueTask_1">TResult</a>&gt;&nbsp;GetAwaiter()
+                                       throws java.lang.Throwable</pre>
 <div class="block">Invokes the .NET member GetAwaiter.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -1003,15 +1003,15 @@ extends <a href="../../../system/ValueType.html" title="class in system">ValueTy
 <ul class="blockList">
 <li class="blockList">
 <h4>Preserve</h4>
-<pre>public&nbsp;<a href="../../../system/threading/tasks/ValueTask_1.html" title="class in system.threading.tasks">ValueTask_1</a>&nbsp;Preserve()
-                     throws java.lang.Throwable,
-                            <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
-                            <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                            <a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
-                            <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                            <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
-                            <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
-                            <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></pre>
+<pre>public&nbsp;<a href="../../../system/threading/tasks/ValueTask_1.html" title="class in system.threading.tasks">ValueTask_1</a>&lt;<a href="../../../system/threading/tasks/ValueTask_1.html" title="type parameter in ValueTask_1">TResult</a>&gt;&nbsp;Preserve()
+                              throws java.lang.Throwable,
+                                     <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                     <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                     <a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                     <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                     <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                     <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                     <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></pre>
 <div class="block">Invokes the .NET member Preserve.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>

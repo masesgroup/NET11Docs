@@ -263,7 +263,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code>static &lt;TState extends <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;<br><a href="../../../system/IDisposable.html" title="interface in system">IDisposable</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../microsoft/extensions/primitives/ChangeToken.html#OnChange-system.Func_1-system.Action_1-TState-">OnChange</a></span>(<a href="../../../system/Func_1.html" title="class in system">Func_1</a>&nbsp;changeTokenProducer,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../microsoft/extensions/primitives/ChangeToken.html#OnChange-system.Func_1-system.Action_1-TState-">OnChange</a></span>(<a href="../../../system/Func_1.html" title="class in system">Func_1</a>&lt;<a href="../../../microsoft/extensions/primitives/IChangeToken.html" title="interface in microsoft.extensions.primitives">IChangeToken</a>&gt;&nbsp;changeTokenProducer,
         <a href="../../../system/Action_1.html" title="class in system">Action_1</a>&nbsp;changeTokenConsumer,
         TState&nbsp;state)</code>
 <div class="block">Invokes the .NET member OnChange.</div>
@@ -271,21 +271,21 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../system/IDisposable.html" title="interface in system">IDisposable</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../microsoft/extensions/primitives/ChangeToken.html#OnChange-system.Func_1-system.Action-">OnChange</a></span>(<a href="../../../system/Func_1.html" title="class in system">Func_1</a>&nbsp;changeTokenProducer,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../microsoft/extensions/primitives/ChangeToken.html#OnChange-system.Func_1-system.Action-">OnChange</a></span>(<a href="../../../system/Func_1.html" title="class in system">Func_1</a>&lt;<a href="../../../microsoft/extensions/primitives/IChangeToken.html" title="interface in microsoft.extensions.primitives">IChangeToken</a>&gt;&nbsp;changeTokenProducer,
         <a href="../../../system/Action.html" title="class in system">Action</a>&nbsp;changeTokenConsumer)</code>
 <div class="block">Invokes the .NET member OnChange.</div>
 </td>
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>static <a href="../../../system/IDisposable.html" title="interface in system">IDisposable</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../microsoft/extensions/primitives/ChangeToken.html#OnChange-system.Func_1-system.Func_1-">OnChange</a></span>(<a href="../../../system/Func_1.html" title="class in system">Func_1</a>&nbsp;changeTokenProducer,
-        <a href="../../../system/Func_1.html" title="class in system">Func_1</a>&nbsp;changeTokenConsumer)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../microsoft/extensions/primitives/ChangeToken.html#OnChange-system.Func_1-system.Func_1-">OnChange</a></span>(<a href="../../../system/Func_1.html" title="class in system">Func_1</a>&lt;<a href="../../../microsoft/extensions/primitives/IChangeToken.html" title="interface in microsoft.extensions.primitives">IChangeToken</a>&gt;&nbsp;changeTokenProducer,
+        <a href="../../../system/Func_1.html" title="class in system">Func_1</a>&lt;<a href="../../../system/threading/tasks/Task.html" title="class in system.threading.tasks">Task</a>&gt;&nbsp;changeTokenConsumer)</code>
 <div class="block">Invokes the .NET member OnChange.</div>
 </td>
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code>static &lt;TState extends <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;<br><a href="../../../system/IDisposable.html" title="interface in system">IDisposable</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../microsoft/extensions/primitives/ChangeToken.html#OnChange-system.Func_1-system.Func_2-TState-">OnChange</a></span>(<a href="../../../system/Func_1.html" title="class in system">Func_1</a>&nbsp;changeTokenProducer,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../microsoft/extensions/primitives/ChangeToken.html#OnChange-system.Func_1-system.Func_2-TState-">OnChange</a></span>(<a href="../../../system/Func_1.html" title="class in system">Func_1</a>&lt;<a href="../../../microsoft/extensions/primitives/IChangeToken.html" title="interface in microsoft.extensions.primitives">IChangeToken</a>&gt;&nbsp;changeTokenProducer,
         <a href="../../../system/Func_2.html" title="class in system">Func_2</a>&nbsp;changeTokenConsumer,
         TState&nbsp;state)</code>
 <div class="block">Invokes the .NET member OnChange.</div>
@@ -547,7 +547,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <ul class="blockList">
 <li class="blockList">
 <h4>OnChange</h4>
-<pre>public static&nbsp;&lt;TState extends <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;&nbsp;<a href="../../../system/IDisposable.html" title="interface in system">IDisposable</a>&nbsp;OnChange(<a href="../../../system/Func_1.html" title="class in system">Func_1</a>&nbsp;changeTokenProducer,
+<pre>public static&nbsp;&lt;TState extends <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;&nbsp;<a href="../../../system/IDisposable.html" title="interface in system">IDisposable</a>&nbsp;OnChange(<a href="../../../system/Func_1.html" title="class in system">Func_1</a>&lt;<a href="../../../microsoft/extensions/primitives/IChangeToken.html" title="interface in microsoft.extensions.primitives">IChangeToken</a>&gt;&nbsp;changeTokenProducer,
                                                                         <a href="../../../system/Action_1.html" title="class in system">Action_1</a>&nbsp;changeTokenConsumer,
                                                                         TState&nbsp;state)
                                                                  throws java.lang.Throwable,
@@ -564,7 +564,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <dt><span class="paramLabel">Type Parameters:</span></dt>
 <dd><code>TState</code> - the type of the generic argument TState</dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>changeTokenProducer</code> - the argument of type <code>Func_1</code></dd>
+<dd><code>changeTokenProducer</code> - the argument of type <code>Func_1&lt;IChangeToken&gt;</code></dd>
 <dd><code>changeTokenConsumer</code> - the argument of type <code>Action_1</code></dd>
 <dd><code>state</code> - the argument of type <code>TState</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -590,7 +590,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <ul class="blockList">
 <li class="blockList">
 <h4>OnChange</h4>
-<pre>public static&nbsp;<a href="../../../system/IDisposable.html" title="interface in system">IDisposable</a>&nbsp;OnChange(<a href="../../../system/Func_1.html" title="class in system">Func_1</a>&nbsp;changeTokenProducer,
+<pre>public static&nbsp;<a href="../../../system/IDisposable.html" title="interface in system">IDisposable</a>&nbsp;OnChange(<a href="../../../system/Func_1.html" title="class in system">Func_1</a>&lt;<a href="../../../microsoft/extensions/primitives/IChangeToken.html" title="interface in microsoft.extensions.primitives">IChangeToken</a>&gt;&nbsp;changeTokenProducer,
                                    <a href="../../../system/Action.html" title="class in system">Action</a>&nbsp;changeTokenConsumer)
                             throws java.lang.Throwable,
                                    <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
@@ -604,7 +604,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <div class="block">Invokes the .NET member OnChange.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>changeTokenProducer</code> - the argument of type <code>Func_1</code></dd>
+<dd><code>changeTokenProducer</code> - the argument of type <code>Func_1&lt;IChangeToken&gt;</code></dd>
 <dd><code>changeTokenConsumer</code> - the argument of type <code>Action</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value returned by the .NET member</dd>
@@ -629,8 +629,8 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <ul class="blockList">
 <li class="blockList">
 <h4>OnChange</h4>
-<pre>public static&nbsp;<a href="../../../system/IDisposable.html" title="interface in system">IDisposable</a>&nbsp;OnChange(<a href="../../../system/Func_1.html" title="class in system">Func_1</a>&nbsp;changeTokenProducer,
-                                   <a href="../../../system/Func_1.html" title="class in system">Func_1</a>&nbsp;changeTokenConsumer)
+<pre>public static&nbsp;<a href="../../../system/IDisposable.html" title="interface in system">IDisposable</a>&nbsp;OnChange(<a href="../../../system/Func_1.html" title="class in system">Func_1</a>&lt;<a href="../../../microsoft/extensions/primitives/IChangeToken.html" title="interface in microsoft.extensions.primitives">IChangeToken</a>&gt;&nbsp;changeTokenProducer,
+                                   <a href="../../../system/Func_1.html" title="class in system">Func_1</a>&lt;<a href="../../../system/threading/tasks/Task.html" title="class in system.threading.tasks">Task</a>&gt;&nbsp;changeTokenConsumer)
                             throws java.lang.Throwable,
                                    <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
                                    <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
@@ -643,8 +643,8 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <div class="block">Invokes the .NET member OnChange.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>changeTokenProducer</code> - the argument of type <code>Func_1</code></dd>
-<dd><code>changeTokenConsumer</code> - the argument of type <code>Func_1</code></dd>
+<dd><code>changeTokenProducer</code> - the argument of type <code>Func_1&lt;IChangeToken&gt;</code></dd>
+<dd><code>changeTokenConsumer</code> - the argument of type <code>Func_1&lt;Task&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -670,7 +670,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <ul class="blockList">
 <li class="blockList">
 <h4>OnChange</h4>
-<pre>public static&nbsp;&lt;TState extends <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;&nbsp;<a href="../../../system/IDisposable.html" title="interface in system">IDisposable</a>&nbsp;OnChange(<a href="../../../system/Func_1.html" title="class in system">Func_1</a>&nbsp;changeTokenProducer,
+<pre>public static&nbsp;&lt;TState extends <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;&nbsp;<a href="../../../system/IDisposable.html" title="interface in system">IDisposable</a>&nbsp;OnChange(<a href="../../../system/Func_1.html" title="class in system">Func_1</a>&lt;<a href="../../../microsoft/extensions/primitives/IChangeToken.html" title="interface in microsoft.extensions.primitives">IChangeToken</a>&gt;&nbsp;changeTokenProducer,
                                                                         <a href="../../../system/Func_2.html" title="class in system">Func_2</a>&nbsp;changeTokenConsumer,
                                                                         TState&nbsp;state)
                                                                  throws java.lang.Throwable,
@@ -687,7 +687,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <dt><span class="paramLabel">Type Parameters:</span></dt>
 <dd><code>TState</code> - the type of the generic argument TState</dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>changeTokenProducer</code> - the argument of type <code>Func_1</code></dd>
+<dd><code>changeTokenProducer</code> - the argument of type <code>Func_1&lt;IChangeToken&gt;</code></dd>
 <dd><code>changeTokenConsumer</code> - the argument of type <code>Func_2</code></dd>
 <dd><code>state</code> - the argument of type <code>TState</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>

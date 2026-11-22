@@ -64,6 +64,26 @@
 <meta name="keywords" content="getInputBindings()">
 <meta name="keywords" content="getVisibility()">
 <meta name="keywords" content="setVisibility()">
+<meta name="keywords" content="addGotTouchCapture()">
+<meta name="keywords" content="removeGotTouchCapture()">
+<meta name="keywords" content="addLostTouchCapture()">
+<meta name="keywords" content="removeLostTouchCapture()">
+<meta name="keywords" content="addPreviewTouchDown()">
+<meta name="keywords" content="removePreviewTouchDown()">
+<meta name="keywords" content="addPreviewTouchMove()">
+<meta name="keywords" content="removePreviewTouchMove()">
+<meta name="keywords" content="addPreviewTouchUp()">
+<meta name="keywords" content="removePreviewTouchUp()">
+<meta name="keywords" content="addTouchDown()">
+<meta name="keywords" content="removeTouchDown()">
+<meta name="keywords" content="addTouchEnter()">
+<meta name="keywords" content="removeTouchEnter()">
+<meta name="keywords" content="addTouchLeave()">
+<meta name="keywords" content="removeTouchLeave()">
+<meta name="keywords" content="addTouchMove()">
+<meta name="keywords" content="removeTouchMove()">
+<meta name="keywords" content="addTouchUp()">
+<meta name="keywords" content="removeTouchUp()">
 <meta name="keywords" content="addFocusableChanged()">
 <meta name="keywords" content="removeFocusableChanged()">
 <meta name="keywords" content="addIsEnabledChanged()">
@@ -235,7 +255,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10,"i29":10,"i30":10,"i31":10,"i32":10,"i33":10,"i34":10,"i35":10,"i36":10,"i37":10,"i38":10,"i39":10,"i40":10,"i41":10,"i42":10,"i43":10,"i44":10,"i45":10,"i46":10,"i47":10,"i48":10,"i49":10,"i50":10,"i51":10,"i52":10,"i53":10,"i54":10,"i55":10,"i56":10,"i57":10,"i58":10,"i59":10,"i60":10,"i61":10,"i62":10,"i63":10,"i64":10,"i65":10,"i66":10,"i67":10,"i68":10,"i69":10,"i70":10,"i71":10,"i72":10,"i73":10,"i74":10,"i75":10,"i76":10,"i77":10,"i78":10,"i79":10,"i80":10,"i81":10,"i82":10,"i83":9,"i84":10,"i85":10,"i86":10,"i87":10,"i88":10,"i89":10,"i90":10,"i91":10,"i92":10,"i93":10,"i94":10,"i95":10,"i96":10,"i97":10,"i98":10,"i99":10,"i100":10,"i101":10,"i102":10,"i103":10,"i104":10,"i105":10,"i106":10,"i107":10,"i108":10,"i109":10,"i110":10,"i111":10,"i112":10,"i113":10,"i114":10,"i115":10,"i116":10,"i117":10,"i118":10,"i119":10,"i120":10,"i121":10,"i122":10,"i123":10,"i124":10,"i125":10,"i126":10,"i127":10,"i128":10,"i129":10,"i130":10,"i131":10,"i132":10,"i133":10,"i134":10,"i135":10,"i136":10,"i137":10,"i138":10,"i139":10,"i140":10,"i141":10,"i142":10,"i143":10,"i144":10,"i145":10,"i146":10,"i147":10,"i148":10,"i149":10,"i150":10,"i151":10,"i152":10,"i153":10,"i154":10,"i155":10,"i156":10,"i157":10,"i158":10,"i159":10,"i160":10,"i161":10,"i162":10,"i163":10,"i164":10,"i165":10,"i166":10,"i167":10,"i168":10,"i169":10,"i170":10,"i171":10,"i172":10,"i173":10,"i174":10,"i175":10,"i176":10,"i177":10,"i178":10,"i179":10,"i180":10,"i181":10,"i182":10,"i183":10,"i184":10,"i185":10,"i186":10,"i187":10,"i188":10,"i189":10,"i190":10,"i191":10,"i192":10,"i193":10,"i194":10,"i195":10,"i196":10,"i197":10,"i198":10,"i199":10,"i200":10,"i201":10,"i202":10,"i203":10,"i204":10,"i205":10,"i206":10,"i207":10,"i208":10,"i209":10,"i210":10,"i211":10,"i212":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10,"i29":10,"i30":10,"i31":10,"i32":10,"i33":10,"i34":10,"i35":10,"i36":10,"i37":10,"i38":10,"i39":10,"i40":10,"i41":10,"i42":10,"i43":10,"i44":10,"i45":10,"i46":10,"i47":10,"i48":10,"i49":10,"i50":10,"i51":10,"i52":10,"i53":10,"i54":10,"i55":10,"i56":10,"i57":10,"i58":10,"i59":10,"i60":10,"i61":10,"i62":10,"i63":10,"i64":10,"i65":10,"i66":10,"i67":10,"i68":10,"i69":10,"i70":10,"i71":10,"i72":10,"i73":10,"i74":10,"i75":10,"i76":10,"i77":10,"i78":10,"i79":10,"i80":10,"i81":10,"i82":10,"i83":10,"i84":10,"i85":10,"i86":10,"i87":10,"i88":10,"i89":10,"i90":10,"i91":10,"i92":10,"i93":9,"i94":10,"i95":10,"i96":10,"i97":10,"i98":10,"i99":10,"i100":10,"i101":10,"i102":10,"i103":10,"i104":10,"i105":10,"i106":10,"i107":10,"i108":10,"i109":10,"i110":10,"i111":10,"i112":10,"i113":10,"i114":10,"i115":10,"i116":10,"i117":10,"i118":10,"i119":10,"i120":10,"i121":10,"i122":10,"i123":10,"i124":10,"i125":10,"i126":10,"i127":10,"i128":10,"i129":10,"i130":10,"i131":10,"i132":10,"i133":10,"i134":10,"i135":10,"i136":10,"i137":10,"i138":10,"i139":10,"i140":10,"i141":10,"i142":10,"i143":10,"i144":10,"i145":10,"i146":10,"i147":10,"i148":10,"i149":10,"i150":10,"i151":10,"i152":10,"i153":10,"i154":10,"i155":10,"i156":10,"i157":10,"i158":10,"i159":10,"i160":10,"i161":10,"i162":10,"i163":10,"i164":10,"i165":10,"i166":10,"i167":10,"i168":10,"i169":10,"i170":10,"i171":10,"i172":10,"i173":10,"i174":10,"i175":10,"i176":10,"i177":10,"i178":10,"i179":10,"i180":10,"i181":10,"i182":10,"i183":10,"i184":10,"i185":10,"i186":10,"i187":10,"i188":10,"i189":10,"i190":10,"i191":10,"i192":10,"i193":10,"i194":10,"i195":10,"i196":10,"i197":10,"i198":10,"i199":10,"i200":10,"i201":10,"i202":10,"i203":10,"i204":10,"i205":10,"i206":10,"i207":10,"i208":10,"i209":10,"i210":10,"i211":10,"i212":10,"i213":10,"i214":10,"i215":10,"i216":10,"i217":10,"i218":10,"i219":10,"i220":10,"i221":10,"i222":10,"i223":10,"i224":10,"i225":10,"i226":10,"i227":10,"i228":10,"i229":10,"i230":10,"i231":10,"i232":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -511,1218 +531,1338 @@ extends <a href="../../system/windows/media/media3d/Visual3D.html" title="class 
 </tr>
 <tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#addGotTouchCapture-system.EventHandler_1-">addGotTouchCapture</a></span>(<a href="../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../system/windows/input/TouchEventArgs.html" title="class in system.windows.input">TouchEventArgs</a>&gt;&nbsp;handler)</code>
+<div class="block">Invokes the .NET member addGotTouchCapture.</div>
+</td>
+</tr>
+<tr id="i11" class="rowColor">
+<td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#addIsEnabledChanged-system.windows.DependencyPropertyChangedEventHandler-">addIsEnabledChanged</a></span>(<a href="../../system/windows/DependencyPropertyChangedEventHandler.html" title="class in system.windows">DependencyPropertyChangedEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member addIsEnabledChanged.</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#addIsHitTestVisibleChanged-system.windows.DependencyPropertyChangedEventHandler-">addIsHitTestVisibleChanged</a></span>(<a href="../../system/windows/DependencyPropertyChangedEventHandler.html" title="class in system.windows">DependencyPropertyChangedEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member addIsHitTestVisibleChanged.</div>
 </td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#addIsKeyboardFocusedChanged-system.windows.DependencyPropertyChangedEventHandler-">addIsKeyboardFocusedChanged</a></span>(<a href="../../system/windows/DependencyPropertyChangedEventHandler.html" title="class in system.windows">DependencyPropertyChangedEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member addIsKeyboardFocusedChanged.</div>
 </td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#addIsKeyboardFocusWithinChanged-system.windows.DependencyPropertyChangedEventHandler-">addIsKeyboardFocusWithinChanged</a></span>(<a href="../../system/windows/DependencyPropertyChangedEventHandler.html" title="class in system.windows">DependencyPropertyChangedEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member addIsKeyboardFocusWithinChanged.</div>
 </td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#addIsMouseCapturedChanged-system.windows.DependencyPropertyChangedEventHandler-">addIsMouseCapturedChanged</a></span>(<a href="../../system/windows/DependencyPropertyChangedEventHandler.html" title="class in system.windows">DependencyPropertyChangedEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member addIsMouseCapturedChanged.</div>
 </td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#addIsMouseCaptureWithinChanged-system.windows.DependencyPropertyChangedEventHandler-">addIsMouseCaptureWithinChanged</a></span>(<a href="../../system/windows/DependencyPropertyChangedEventHandler.html" title="class in system.windows">DependencyPropertyChangedEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member addIsMouseCaptureWithinChanged.</div>
 </td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#addIsMouseDirectlyOverChanged-system.windows.DependencyPropertyChangedEventHandler-">addIsMouseDirectlyOverChanged</a></span>(<a href="../../system/windows/DependencyPropertyChangedEventHandler.html" title="class in system.windows">DependencyPropertyChangedEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member addIsMouseDirectlyOverChanged.</div>
 </td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i18" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#addIsStylusCapturedChanged-system.windows.DependencyPropertyChangedEventHandler-">addIsStylusCapturedChanged</a></span>(<a href="../../system/windows/DependencyPropertyChangedEventHandler.html" title="class in system.windows">DependencyPropertyChangedEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member addIsStylusCapturedChanged.</div>
 </td>
 </tr>
-<tr id="i18" class="altColor">
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#addIsStylusCaptureWithinChanged-system.windows.DependencyPropertyChangedEventHandler-">addIsStylusCaptureWithinChanged</a></span>(<a href="../../system/windows/DependencyPropertyChangedEventHandler.html" title="class in system.windows">DependencyPropertyChangedEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member addIsStylusCaptureWithinChanged.</div>
 </td>
 </tr>
-<tr id="i19" class="rowColor">
+<tr id="i20" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#addIsStylusDirectlyOverChanged-system.windows.DependencyPropertyChangedEventHandler-">addIsStylusDirectlyOverChanged</a></span>(<a href="../../system/windows/DependencyPropertyChangedEventHandler.html" title="class in system.windows">DependencyPropertyChangedEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member addIsStylusDirectlyOverChanged.</div>
 </td>
 </tr>
-<tr id="i20" class="altColor">
+<tr id="i21" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#addIsVisibleChanged-system.windows.DependencyPropertyChangedEventHandler-">addIsVisibleChanged</a></span>(<a href="../../system/windows/DependencyPropertyChangedEventHandler.html" title="class in system.windows">DependencyPropertyChangedEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member addIsVisibleChanged.</div>
 </td>
 </tr>
-<tr id="i21" class="rowColor">
+<tr id="i22" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#addKeyDown-system.windows.input.KeyEventHandler-">addKeyDown</a></span>(<a href="../../system/windows/input/KeyEventHandler.html" title="class in system.windows.input">KeyEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member addKeyDown.</div>
 </td>
 </tr>
-<tr id="i22" class="altColor">
+<tr id="i23" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#addKeyUp-system.windows.input.KeyEventHandler-">addKeyUp</a></span>(<a href="../../system/windows/input/KeyEventHandler.html" title="class in system.windows.input">KeyEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member addKeyUp.</div>
 </td>
 </tr>
-<tr id="i23" class="rowColor">
+<tr id="i24" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#addLostFocus-system.windows.RoutedEventHandler-">addLostFocus</a></span>(<a href="../../system/windows/RoutedEventHandler.html" title="class in system.windows">RoutedEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member addLostFocus.</div>
 </td>
 </tr>
-<tr id="i24" class="altColor">
+<tr id="i25" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#addLostKeyboardFocus-system.windows.input.KeyboardFocusChangedEventHandler-">addLostKeyboardFocus</a></span>(<a href="../../system/windows/input/KeyboardFocusChangedEventHandler.html" title="class in system.windows.input">KeyboardFocusChangedEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member addLostKeyboardFocus.</div>
 </td>
 </tr>
-<tr id="i25" class="rowColor">
+<tr id="i26" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#addLostMouseCapture-system.windows.input.MouseEventHandler-">addLostMouseCapture</a></span>(<a href="../../system/windows/input/MouseEventHandler.html" title="class in system.windows.input">MouseEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member addLostMouseCapture.</div>
 </td>
 </tr>
-<tr id="i26" class="altColor">
+<tr id="i27" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#addLostStylusCapture-system.windows.input.StylusEventHandler-">addLostStylusCapture</a></span>(<a href="../../system/windows/input/StylusEventHandler.html" title="class in system.windows.input">StylusEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member addLostStylusCapture.</div>
 </td>
 </tr>
-<tr id="i27" class="rowColor">
+<tr id="i28" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#addLostTouchCapture-system.EventHandler_1-">addLostTouchCapture</a></span>(<a href="../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../system/windows/input/TouchEventArgs.html" title="class in system.windows.input">TouchEventArgs</a>&gt;&nbsp;handler)</code>
+<div class="block">Invokes the .NET member addLostTouchCapture.</div>
+</td>
+</tr>
+<tr id="i29" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#addMouseDown-system.windows.input.MouseButtonEventHandler-">addMouseDown</a></span>(<a href="../../system/windows/input/MouseButtonEventHandler.html" title="class in system.windows.input">MouseButtonEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member addMouseDown.</div>
 </td>
 </tr>
-<tr id="i28" class="altColor">
+<tr id="i30" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#addMouseEnter-system.windows.input.MouseEventHandler-">addMouseEnter</a></span>(<a href="../../system/windows/input/MouseEventHandler.html" title="class in system.windows.input">MouseEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member addMouseEnter.</div>
 </td>
 </tr>
-<tr id="i29" class="rowColor">
+<tr id="i31" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#addMouseLeave-system.windows.input.MouseEventHandler-">addMouseLeave</a></span>(<a href="../../system/windows/input/MouseEventHandler.html" title="class in system.windows.input">MouseEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member addMouseLeave.</div>
 </td>
 </tr>
-<tr id="i30" class="altColor">
+<tr id="i32" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#addMouseLeftButtonDown-system.windows.input.MouseButtonEventHandler-">addMouseLeftButtonDown</a></span>(<a href="../../system/windows/input/MouseButtonEventHandler.html" title="class in system.windows.input">MouseButtonEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member addMouseLeftButtonDown.</div>
 </td>
 </tr>
-<tr id="i31" class="rowColor">
+<tr id="i33" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#addMouseLeftButtonUp-system.windows.input.MouseButtonEventHandler-">addMouseLeftButtonUp</a></span>(<a href="../../system/windows/input/MouseButtonEventHandler.html" title="class in system.windows.input">MouseButtonEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member addMouseLeftButtonUp.</div>
 </td>
 </tr>
-<tr id="i32" class="altColor">
+<tr id="i34" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#addMouseMove-system.windows.input.MouseEventHandler-">addMouseMove</a></span>(<a href="../../system/windows/input/MouseEventHandler.html" title="class in system.windows.input">MouseEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member addMouseMove.</div>
 </td>
 </tr>
-<tr id="i33" class="rowColor">
+<tr id="i35" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#addMouseRightButtonDown-system.windows.input.MouseButtonEventHandler-">addMouseRightButtonDown</a></span>(<a href="../../system/windows/input/MouseButtonEventHandler.html" title="class in system.windows.input">MouseButtonEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member addMouseRightButtonDown.</div>
 </td>
 </tr>
-<tr id="i34" class="altColor">
+<tr id="i36" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#addMouseRightButtonUp-system.windows.input.MouseButtonEventHandler-">addMouseRightButtonUp</a></span>(<a href="../../system/windows/input/MouseButtonEventHandler.html" title="class in system.windows.input">MouseButtonEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member addMouseRightButtonUp.</div>
 </td>
 </tr>
-<tr id="i35" class="rowColor">
+<tr id="i37" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#addMouseUp-system.windows.input.MouseButtonEventHandler-">addMouseUp</a></span>(<a href="../../system/windows/input/MouseButtonEventHandler.html" title="class in system.windows.input">MouseButtonEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member addMouseUp.</div>
 </td>
 </tr>
-<tr id="i36" class="altColor">
+<tr id="i38" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#addMouseWheel-system.windows.input.MouseWheelEventHandler-">addMouseWheel</a></span>(<a href="../../system/windows/input/MouseWheelEventHandler.html" title="class in system.windows.input">MouseWheelEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member addMouseWheel.</div>
 </td>
 </tr>
-<tr id="i37" class="rowColor">
+<tr id="i39" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#addPreviewDragEnter-system.windows.DragEventHandler-">addPreviewDragEnter</a></span>(<a href="../../system/windows/DragEventHandler.html" title="class in system.windows">DragEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member addPreviewDragEnter.</div>
 </td>
 </tr>
-<tr id="i38" class="altColor">
+<tr id="i40" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#addPreviewDragLeave-system.windows.DragEventHandler-">addPreviewDragLeave</a></span>(<a href="../../system/windows/DragEventHandler.html" title="class in system.windows">DragEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member addPreviewDragLeave.</div>
 </td>
 </tr>
-<tr id="i39" class="rowColor">
+<tr id="i41" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#addPreviewDragOver-system.windows.DragEventHandler-">addPreviewDragOver</a></span>(<a href="../../system/windows/DragEventHandler.html" title="class in system.windows">DragEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member addPreviewDragOver.</div>
 </td>
 </tr>
-<tr id="i40" class="altColor">
+<tr id="i42" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#addPreviewDrop-system.windows.DragEventHandler-">addPreviewDrop</a></span>(<a href="../../system/windows/DragEventHandler.html" title="class in system.windows">DragEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member addPreviewDrop.</div>
 </td>
 </tr>
-<tr id="i41" class="rowColor">
+<tr id="i43" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#addPreviewGiveFeedback-system.windows.GiveFeedbackEventHandler-">addPreviewGiveFeedback</a></span>(<a href="../../system/windows/GiveFeedbackEventHandler.html" title="class in system.windows">GiveFeedbackEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member addPreviewGiveFeedback.</div>
 </td>
 </tr>
-<tr id="i42" class="altColor">
+<tr id="i44" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#addPreviewGotKeyboardFocus-system.windows.input.KeyboardFocusChangedEventHandler-">addPreviewGotKeyboardFocus</a></span>(<a href="../../system/windows/input/KeyboardFocusChangedEventHandler.html" title="class in system.windows.input">KeyboardFocusChangedEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member addPreviewGotKeyboardFocus.</div>
 </td>
 </tr>
-<tr id="i43" class="rowColor">
+<tr id="i45" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#addPreviewKeyDown-system.windows.input.KeyEventHandler-">addPreviewKeyDown</a></span>(<a href="../../system/windows/input/KeyEventHandler.html" title="class in system.windows.input">KeyEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member addPreviewKeyDown.</div>
 </td>
 </tr>
-<tr id="i44" class="altColor">
+<tr id="i46" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#addPreviewKeyUp-system.windows.input.KeyEventHandler-">addPreviewKeyUp</a></span>(<a href="../../system/windows/input/KeyEventHandler.html" title="class in system.windows.input">KeyEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member addPreviewKeyUp.</div>
 </td>
 </tr>
-<tr id="i45" class="rowColor">
+<tr id="i47" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#addPreviewLostKeyboardFocus-system.windows.input.KeyboardFocusChangedEventHandler-">addPreviewLostKeyboardFocus</a></span>(<a href="../../system/windows/input/KeyboardFocusChangedEventHandler.html" title="class in system.windows.input">KeyboardFocusChangedEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member addPreviewLostKeyboardFocus.</div>
 </td>
 </tr>
-<tr id="i46" class="altColor">
+<tr id="i48" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#addPreviewMouseDown-system.windows.input.MouseButtonEventHandler-">addPreviewMouseDown</a></span>(<a href="../../system/windows/input/MouseButtonEventHandler.html" title="class in system.windows.input">MouseButtonEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member addPreviewMouseDown.</div>
 </td>
 </tr>
-<tr id="i47" class="rowColor">
+<tr id="i49" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#addPreviewMouseLeftButtonDown-system.windows.input.MouseButtonEventHandler-">addPreviewMouseLeftButtonDown</a></span>(<a href="../../system/windows/input/MouseButtonEventHandler.html" title="class in system.windows.input">MouseButtonEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member addPreviewMouseLeftButtonDown.</div>
 </td>
 </tr>
-<tr id="i48" class="altColor">
+<tr id="i50" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#addPreviewMouseLeftButtonUp-system.windows.input.MouseButtonEventHandler-">addPreviewMouseLeftButtonUp</a></span>(<a href="../../system/windows/input/MouseButtonEventHandler.html" title="class in system.windows.input">MouseButtonEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member addPreviewMouseLeftButtonUp.</div>
 </td>
 </tr>
-<tr id="i49" class="rowColor">
+<tr id="i51" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#addPreviewMouseMove-system.windows.input.MouseEventHandler-">addPreviewMouseMove</a></span>(<a href="../../system/windows/input/MouseEventHandler.html" title="class in system.windows.input">MouseEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member addPreviewMouseMove.</div>
 </td>
 </tr>
-<tr id="i50" class="altColor">
+<tr id="i52" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#addPreviewMouseRightButtonDown-system.windows.input.MouseButtonEventHandler-">addPreviewMouseRightButtonDown</a></span>(<a href="../../system/windows/input/MouseButtonEventHandler.html" title="class in system.windows.input">MouseButtonEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member addPreviewMouseRightButtonDown.</div>
 </td>
 </tr>
-<tr id="i51" class="rowColor">
+<tr id="i53" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#addPreviewMouseRightButtonUp-system.windows.input.MouseButtonEventHandler-">addPreviewMouseRightButtonUp</a></span>(<a href="../../system/windows/input/MouseButtonEventHandler.html" title="class in system.windows.input">MouseButtonEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member addPreviewMouseRightButtonUp.</div>
 </td>
 </tr>
-<tr id="i52" class="altColor">
+<tr id="i54" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#addPreviewMouseUp-system.windows.input.MouseButtonEventHandler-">addPreviewMouseUp</a></span>(<a href="../../system/windows/input/MouseButtonEventHandler.html" title="class in system.windows.input">MouseButtonEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member addPreviewMouseUp.</div>
 </td>
 </tr>
-<tr id="i53" class="rowColor">
+<tr id="i55" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#addPreviewMouseWheel-system.windows.input.MouseWheelEventHandler-">addPreviewMouseWheel</a></span>(<a href="../../system/windows/input/MouseWheelEventHandler.html" title="class in system.windows.input">MouseWheelEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member addPreviewMouseWheel.</div>
 </td>
 </tr>
-<tr id="i54" class="altColor">
+<tr id="i56" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#addPreviewQueryContinueDrag-system.windows.QueryContinueDragEventHandler-">addPreviewQueryContinueDrag</a></span>(<a href="../../system/windows/QueryContinueDragEventHandler.html" title="class in system.windows">QueryContinueDragEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member addPreviewQueryContinueDrag.</div>
 </td>
 </tr>
-<tr id="i55" class="rowColor">
+<tr id="i57" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#addPreviewStylusButtonDown-system.windows.input.StylusButtonEventHandler-">addPreviewStylusButtonDown</a></span>(<a href="../../system/windows/input/StylusButtonEventHandler.html" title="class in system.windows.input">StylusButtonEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member addPreviewStylusButtonDown.</div>
 </td>
 </tr>
-<tr id="i56" class="altColor">
+<tr id="i58" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#addPreviewStylusButtonUp-system.windows.input.StylusButtonEventHandler-">addPreviewStylusButtonUp</a></span>(<a href="../../system/windows/input/StylusButtonEventHandler.html" title="class in system.windows.input">StylusButtonEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member addPreviewStylusButtonUp.</div>
 </td>
 </tr>
-<tr id="i57" class="rowColor">
+<tr id="i59" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#addPreviewStylusDown-system.windows.input.StylusDownEventHandler-">addPreviewStylusDown</a></span>(<a href="../../system/windows/input/StylusDownEventHandler.html" title="class in system.windows.input">StylusDownEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member addPreviewStylusDown.</div>
 </td>
 </tr>
-<tr id="i58" class="altColor">
+<tr id="i60" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#addPreviewStylusInAirMove-system.windows.input.StylusEventHandler-">addPreviewStylusInAirMove</a></span>(<a href="../../system/windows/input/StylusEventHandler.html" title="class in system.windows.input">StylusEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member addPreviewStylusInAirMove.</div>
 </td>
 </tr>
-<tr id="i59" class="rowColor">
+<tr id="i61" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#addPreviewStylusInRange-system.windows.input.StylusEventHandler-">addPreviewStylusInRange</a></span>(<a href="../../system/windows/input/StylusEventHandler.html" title="class in system.windows.input">StylusEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member addPreviewStylusInRange.</div>
 </td>
 </tr>
-<tr id="i60" class="altColor">
+<tr id="i62" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#addPreviewStylusMove-system.windows.input.StylusEventHandler-">addPreviewStylusMove</a></span>(<a href="../../system/windows/input/StylusEventHandler.html" title="class in system.windows.input">StylusEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member addPreviewStylusMove.</div>
 </td>
 </tr>
-<tr id="i61" class="rowColor">
+<tr id="i63" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#addPreviewStylusOutOfRange-system.windows.input.StylusEventHandler-">addPreviewStylusOutOfRange</a></span>(<a href="../../system/windows/input/StylusEventHandler.html" title="class in system.windows.input">StylusEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member addPreviewStylusOutOfRange.</div>
 </td>
 </tr>
-<tr id="i62" class="altColor">
+<tr id="i64" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#addPreviewStylusSystemGesture-system.windows.input.StylusSystemGestureEventHandler-">addPreviewStylusSystemGesture</a></span>(<a href="../../system/windows/input/StylusSystemGestureEventHandler.html" title="class in system.windows.input">StylusSystemGestureEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member addPreviewStylusSystemGesture.</div>
 </td>
 </tr>
-<tr id="i63" class="rowColor">
+<tr id="i65" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#addPreviewStylusUp-system.windows.input.StylusEventHandler-">addPreviewStylusUp</a></span>(<a href="../../system/windows/input/StylusEventHandler.html" title="class in system.windows.input">StylusEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member addPreviewStylusUp.</div>
 </td>
 </tr>
-<tr id="i64" class="altColor">
+<tr id="i66" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#addPreviewTextInput-system.windows.input.TextCompositionEventHandler-">addPreviewTextInput</a></span>(<a href="../../system/windows/input/TextCompositionEventHandler.html" title="class in system.windows.input">TextCompositionEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member addPreviewTextInput.</div>
 </td>
 </tr>
-<tr id="i65" class="rowColor">
+<tr id="i67" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#addPreviewTouchDown-system.EventHandler_1-">addPreviewTouchDown</a></span>(<a href="../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../system/windows/input/TouchEventArgs.html" title="class in system.windows.input">TouchEventArgs</a>&gt;&nbsp;handler)</code>
+<div class="block">Invokes the .NET member addPreviewTouchDown.</div>
+</td>
+</tr>
+<tr id="i68" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#addPreviewTouchMove-system.EventHandler_1-">addPreviewTouchMove</a></span>(<a href="../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../system/windows/input/TouchEventArgs.html" title="class in system.windows.input">TouchEventArgs</a>&gt;&nbsp;handler)</code>
+<div class="block">Invokes the .NET member addPreviewTouchMove.</div>
+</td>
+</tr>
+<tr id="i69" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#addPreviewTouchUp-system.EventHandler_1-">addPreviewTouchUp</a></span>(<a href="../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../system/windows/input/TouchEventArgs.html" title="class in system.windows.input">TouchEventArgs</a>&gt;&nbsp;handler)</code>
+<div class="block">Invokes the .NET member addPreviewTouchUp.</div>
+</td>
+</tr>
+<tr id="i70" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#addQueryContinueDrag-system.windows.QueryContinueDragEventHandler-">addQueryContinueDrag</a></span>(<a href="../../system/windows/QueryContinueDragEventHandler.html" title="class in system.windows">QueryContinueDragEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member addQueryContinueDrag.</div>
 </td>
 </tr>
-<tr id="i66" class="altColor">
+<tr id="i71" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#addQueryCursor-system.windows.input.QueryCursorEventHandler-">addQueryCursor</a></span>(<a href="../../system/windows/input/QueryCursorEventHandler.html" title="class in system.windows.input">QueryCursorEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member addQueryCursor.</div>
 </td>
 </tr>
-<tr id="i67" class="rowColor">
+<tr id="i72" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#addStylusButtonDown-system.windows.input.StylusButtonEventHandler-">addStylusButtonDown</a></span>(<a href="../../system/windows/input/StylusButtonEventHandler.html" title="class in system.windows.input">StylusButtonEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member addStylusButtonDown.</div>
 </td>
 </tr>
-<tr id="i68" class="altColor">
+<tr id="i73" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#addStylusButtonUp-system.windows.input.StylusButtonEventHandler-">addStylusButtonUp</a></span>(<a href="../../system/windows/input/StylusButtonEventHandler.html" title="class in system.windows.input">StylusButtonEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member addStylusButtonUp.</div>
 </td>
 </tr>
-<tr id="i69" class="rowColor">
+<tr id="i74" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#addStylusDown-system.windows.input.StylusDownEventHandler-">addStylusDown</a></span>(<a href="../../system/windows/input/StylusDownEventHandler.html" title="class in system.windows.input">StylusDownEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member addStylusDown.</div>
 </td>
 </tr>
-<tr id="i70" class="altColor">
+<tr id="i75" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#addStylusEnter-system.windows.input.StylusEventHandler-">addStylusEnter</a></span>(<a href="../../system/windows/input/StylusEventHandler.html" title="class in system.windows.input">StylusEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member addStylusEnter.</div>
 </td>
 </tr>
-<tr id="i71" class="rowColor">
+<tr id="i76" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#addStylusInAirMove-system.windows.input.StylusEventHandler-">addStylusInAirMove</a></span>(<a href="../../system/windows/input/StylusEventHandler.html" title="class in system.windows.input">StylusEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member addStylusInAirMove.</div>
 </td>
 </tr>
-<tr id="i72" class="altColor">
+<tr id="i77" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#addStylusInRange-system.windows.input.StylusEventHandler-">addStylusInRange</a></span>(<a href="../../system/windows/input/StylusEventHandler.html" title="class in system.windows.input">StylusEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member addStylusInRange.</div>
 </td>
 </tr>
-<tr id="i73" class="rowColor">
+<tr id="i78" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#addStylusLeave-system.windows.input.StylusEventHandler-">addStylusLeave</a></span>(<a href="../../system/windows/input/StylusEventHandler.html" title="class in system.windows.input">StylusEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member addStylusLeave.</div>
 </td>
 </tr>
-<tr id="i74" class="altColor">
+<tr id="i79" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#addStylusMove-system.windows.input.StylusEventHandler-">addStylusMove</a></span>(<a href="../../system/windows/input/StylusEventHandler.html" title="class in system.windows.input">StylusEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member addStylusMove.</div>
 </td>
 </tr>
-<tr id="i75" class="rowColor">
+<tr id="i80" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#addStylusOutOfRange-system.windows.input.StylusEventHandler-">addStylusOutOfRange</a></span>(<a href="../../system/windows/input/StylusEventHandler.html" title="class in system.windows.input">StylusEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member addStylusOutOfRange.</div>
 </td>
 </tr>
-<tr id="i76" class="altColor">
+<tr id="i81" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#addStylusSystemGesture-system.windows.input.StylusSystemGestureEventHandler-">addStylusSystemGesture</a></span>(<a href="../../system/windows/input/StylusSystemGestureEventHandler.html" title="class in system.windows.input">StylusSystemGestureEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member addStylusSystemGesture.</div>
 </td>
 </tr>
-<tr id="i77" class="rowColor">
+<tr id="i82" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#addStylusUp-system.windows.input.StylusEventHandler-">addStylusUp</a></span>(<a href="../../system/windows/input/StylusEventHandler.html" title="class in system.windows.input">StylusEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member addStylusUp.</div>
 </td>
 </tr>
-<tr id="i78" class="altColor">
+<tr id="i83" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#addTextInput-system.windows.input.TextCompositionEventHandler-">addTextInput</a></span>(<a href="../../system/windows/input/TextCompositionEventHandler.html" title="class in system.windows.input">TextCompositionEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member addTextInput.</div>
 </td>
 </tr>
-<tr id="i79" class="rowColor">
+<tr id="i84" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#AddToEventRoute-system.windows.EventRoute-system.windows.RoutedEventArgs-">AddToEventRoute</a></span>(<a href="../../system/windows/EventRoute.html" title="class in system.windows">EventRoute</a>&nbsp;route,
                <a href="../../system/windows/RoutedEventArgs.html" title="class in system.windows">RoutedEventArgs</a>&nbsp;e)</code>
 <div class="block">Invokes the .NET member AddToEventRoute.</div>
 </td>
 </tr>
-<tr id="i80" class="altColor">
+<tr id="i85" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#addTouchDown-system.EventHandler_1-">addTouchDown</a></span>(<a href="../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../system/windows/input/TouchEventArgs.html" title="class in system.windows.input">TouchEventArgs</a>&gt;&nbsp;handler)</code>
+<div class="block">Invokes the .NET member addTouchDown.</div>
+</td>
+</tr>
+<tr id="i86" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#addTouchEnter-system.EventHandler_1-">addTouchEnter</a></span>(<a href="../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../system/windows/input/TouchEventArgs.html" title="class in system.windows.input">TouchEventArgs</a>&gt;&nbsp;handler)</code>
+<div class="block">Invokes the .NET member addTouchEnter.</div>
+</td>
+</tr>
+<tr id="i87" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#addTouchLeave-system.EventHandler_1-">addTouchLeave</a></span>(<a href="../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../system/windows/input/TouchEventArgs.html" title="class in system.windows.input">TouchEventArgs</a>&gt;&nbsp;handler)</code>
+<div class="block">Invokes the .NET member addTouchLeave.</div>
+</td>
+</tr>
+<tr id="i88" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#addTouchMove-system.EventHandler_1-">addTouchMove</a></span>(<a href="../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../system/windows/input/TouchEventArgs.html" title="class in system.windows.input">TouchEventArgs</a>&gt;&nbsp;handler)</code>
+<div class="block">Invokes the .NET member addTouchMove.</div>
+</td>
+</tr>
+<tr id="i89" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#addTouchUp-system.EventHandler_1-">addTouchUp</a></span>(<a href="../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../system/windows/input/TouchEventArgs.html" title="class in system.windows.input">TouchEventArgs</a>&gt;&nbsp;handler)</code>
+<div class="block">Invokes the .NET member addTouchUp.</div>
+</td>
+</tr>
+<tr id="i90" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#CaptureMouse--">CaptureMouse</a></span>()</code>
 <div class="block">Invokes the .NET member CaptureMouse.</div>
 </td>
 </tr>
-<tr id="i81" class="rowColor">
+<tr id="i91" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#CaptureStylus--">CaptureStylus</a></span>()</code>
 <div class="block">Invokes the .NET member CaptureStylus.</div>
 </td>
 </tr>
-<tr id="i82" class="altColor">
+<tr id="i92" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#CaptureTouch-system.windows.input.TouchDevice-">CaptureTouch</a></span>(<a href="../../system/windows/input/TouchDevice.html" title="class in system.windows.input">TouchDevice</a>&nbsp;touchDevice)</code>
 <div class="block">Invokes the .NET member CaptureTouch.</div>
 </td>
 </tr>
-<tr id="i83" class="rowColor">
+<tr id="i93" class="rowColor">
 <td class="colFirst"><code>static <a href="../../system/windows/UIElement3D.html" title="class in system.windows">UIElement3D</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#cast-org.mases.jcobridge.netreflection.IJCOBridgeReflected-">cast</a></span>(<a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&nbsp;from)</code>
 <div class="block">Try to cast the <a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection"><code>IJCOBridgeReflected</code></a> instance into <a href="../../system/windows/UIElement3D.html" title="class in system.windows"><code>UIElement3D</code></a>, a cast assert is made to check if types are compatible.</div>
 </td>
 </tr>
-<tr id="i84" class="altColor">
+<tr id="i94" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#Focus--">Focus</a></span>()</code>
 <div class="block">Invokes the .NET member Focus.</div>
 </td>
 </tr>
-<tr id="i85" class="rowColor">
+<tr id="i95" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#getAllowDrop--">getAllowDrop</a></span>()</code>
 <div class="block">Gets the value of the .NET property AllowDrop.</div>
 </td>
 </tr>
-<tr id="i86" class="altColor">
+<tr id="i96" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#getAreAnyTouchesCaptured--">getAreAnyTouchesCaptured</a></span>()</code>
 <div class="block">Gets the value of the .NET property AreAnyTouchesCaptured.</div>
 </td>
 </tr>
-<tr id="i87" class="rowColor">
+<tr id="i97" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#getAreAnyTouchesCapturedWithin--">getAreAnyTouchesCapturedWithin</a></span>()</code>
 <div class="block">Gets the value of the .NET property AreAnyTouchesCapturedWithin.</div>
 </td>
 </tr>
-<tr id="i88" class="altColor">
+<tr id="i98" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#getAreAnyTouchesDirectlyOver--">getAreAnyTouchesDirectlyOver</a></span>()</code>
 <div class="block">Gets the value of the .NET property AreAnyTouchesDirectlyOver.</div>
 </td>
 </tr>
-<tr id="i89" class="rowColor">
+<tr id="i99" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#getAreAnyTouchesOver--">getAreAnyTouchesOver</a></span>()</code>
 <div class="block">Gets the value of the .NET property AreAnyTouchesOver.</div>
 </td>
 </tr>
-<tr id="i90" class="altColor">
+<tr id="i100" class="altColor">
 <td class="colFirst"><code><a href="../../system/windows/input/CommandBindingCollection.html" title="class in system.windows.input">CommandBindingCollection</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#getCommandBindings--">getCommandBindings</a></span>()</code>
 <div class="block">Gets the value of the .NET property CommandBindings.</div>
 </td>
 </tr>
-<tr id="i91" class="rowColor">
+<tr id="i101" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#getFocusable--">getFocusable</a></span>()</code>
 <div class="block">Gets the value of the .NET property Focusable.</div>
 </td>
 </tr>
-<tr id="i92" class="altColor">
+<tr id="i102" class="altColor">
 <td class="colFirst"><code><a href="../../system/windows/input/InputBindingCollection.html" title="class in system.windows.input">InputBindingCollection</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#getInputBindings--">getInputBindings</a></span>()</code>
 <div class="block">Gets the value of the .NET property InputBindings.</div>
 </td>
 </tr>
-<tr id="i93" class="rowColor">
+<tr id="i103" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#getIsEnabled--">getIsEnabled</a></span>()</code>
 <div class="block">Gets the value of the .NET property IsEnabled.</div>
 </td>
 </tr>
-<tr id="i94" class="altColor">
+<tr id="i104" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#getIsFocused--">getIsFocused</a></span>()</code>
 <div class="block">Gets the value of the .NET property IsFocused.</div>
 </td>
 </tr>
-<tr id="i95" class="rowColor">
+<tr id="i105" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#getIsHitTestVisible--">getIsHitTestVisible</a></span>()</code>
 <div class="block">Gets the value of the .NET property IsHitTestVisible.</div>
 </td>
 </tr>
-<tr id="i96" class="altColor">
+<tr id="i106" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#getIsInputMethodEnabled--">getIsInputMethodEnabled</a></span>()</code>
 <div class="block">Gets the value of the .NET property IsInputMethodEnabled.</div>
 </td>
 </tr>
-<tr id="i97" class="rowColor">
+<tr id="i107" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#getIsKeyboardFocused--">getIsKeyboardFocused</a></span>()</code>
 <div class="block">Gets the value of the .NET property IsKeyboardFocused.</div>
 </td>
 </tr>
-<tr id="i98" class="altColor">
+<tr id="i108" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#getIsKeyboardFocusWithin--">getIsKeyboardFocusWithin</a></span>()</code>
 <div class="block">Gets the value of the .NET property IsKeyboardFocusWithin.</div>
 </td>
 </tr>
-<tr id="i99" class="rowColor">
+<tr id="i109" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#getIsMouseCaptured--">getIsMouseCaptured</a></span>()</code>
 <div class="block">Gets the value of the .NET property IsMouseCaptured.</div>
 </td>
 </tr>
-<tr id="i100" class="altColor">
+<tr id="i110" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#getIsMouseCaptureWithin--">getIsMouseCaptureWithin</a></span>()</code>
 <div class="block">Gets the value of the .NET property IsMouseCaptureWithin.</div>
 </td>
 </tr>
-<tr id="i101" class="rowColor">
+<tr id="i111" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#getIsMouseDirectlyOver--">getIsMouseDirectlyOver</a></span>()</code>
 <div class="block">Gets the value of the .NET property IsMouseDirectlyOver.</div>
 </td>
 </tr>
-<tr id="i102" class="altColor">
+<tr id="i112" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#getIsMouseOver--">getIsMouseOver</a></span>()</code>
 <div class="block">Gets the value of the .NET property IsMouseOver.</div>
 </td>
 </tr>
-<tr id="i103" class="rowColor">
+<tr id="i113" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#getIsStylusCaptured--">getIsStylusCaptured</a></span>()</code>
 <div class="block">Gets the value of the .NET property IsStylusCaptured.</div>
 </td>
 </tr>
-<tr id="i104" class="altColor">
+<tr id="i114" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#getIsStylusCaptureWithin--">getIsStylusCaptureWithin</a></span>()</code>
 <div class="block">Gets the value of the .NET property IsStylusCaptureWithin.</div>
 </td>
 </tr>
-<tr id="i105" class="rowColor">
+<tr id="i115" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#getIsStylusDirectlyOver--">getIsStylusDirectlyOver</a></span>()</code>
 <div class="block">Gets the value of the .NET property IsStylusDirectlyOver.</div>
 </td>
 </tr>
-<tr id="i106" class="altColor">
+<tr id="i116" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#getIsStylusOver--">getIsStylusOver</a></span>()</code>
 <div class="block">Gets the value of the .NET property IsStylusOver.</div>
 </td>
 </tr>
-<tr id="i107" class="rowColor">
+<tr id="i117" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#getIsVisible--">getIsVisible</a></span>()</code>
 <div class="block">Gets the value of the .NET property IsVisible.</div>
 </td>
 </tr>
-<tr id="i108" class="altColor">
+<tr id="i118" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#getJCOAssemblyName--">getJCOAssemblyName</a></span>()</code>
 <div class="block">Returns the full name of the assembly of the .NET type.</div>
 </td>
 </tr>
-<tr id="i109" class="rowColor">
+<tr id="i119" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#getJCOClassName--">getJCOClassName</a></span>()</code>
 <div class="block">Returns the full name of the .NET type.</div>
 </td>
 </tr>
-<tr id="i110" class="altColor">
+<tr id="i120" class="altColor">
 <td class="colFirst"><code>java.lang.Object</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#getJCOInstance--">getJCOInstance</a></span>()</code>
 <div class="block">Returns the underlying object managed by the bridge.</div>
 </td>
 </tr>
-<tr id="i111" class="rowColor">
+<tr id="i121" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#getJCOObjectName--">getJCOObjectName</a></span>()</code>
 <div class="block">Returns the name of the .NET type qualified with its assembly.</div>
 </td>
 </tr>
-<tr id="i112" class="altColor">
+<tr id="i122" class="altColor">
 <td class="colFirst"><code><a href="https://www.jcobridge.com/api-java_2.6.10/org/mases/jcobridge/JCType.html?is-external=true" title="class or interface in org.mases.jcobridge">JCType</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#getJCOType--">getJCOType</a></span>()</code>
 <div class="block">Returns the <a href="https://www.jcobridge.com/api-java_2.6.10/org/mases/jcobridge/JCType.html?is-external=true" title="class or interface in org.mases.jcobridge"><code>JCType</code></a> of the .NET type.</div>
 </td>
 </tr>
-<tr id="i113" class="rowColor">
-<td class="colFirst"><code><a href="../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a></code></td>
+<tr id="i123" class="rowColor">
+<td class="colFirst"><code><a href="../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../system/windows/input/TouchDevice.html" title="class in system.windows.input">TouchDevice</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#getTouchesCaptured--">getTouchesCaptured</a></span>()</code>
 <div class="block">Gets the value of the .NET property TouchesCaptured.</div>
 </td>
 </tr>
-<tr id="i114" class="altColor">
-<td class="colFirst"><code><a href="../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a></code></td>
+<tr id="i124" class="altColor">
+<td class="colFirst"><code><a href="../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../system/windows/input/TouchDevice.html" title="class in system.windows.input">TouchDevice</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#getTouchesCapturedWithin--">getTouchesCapturedWithin</a></span>()</code>
 <div class="block">Gets the value of the .NET property TouchesCapturedWithin.</div>
 </td>
 </tr>
-<tr id="i115" class="rowColor">
-<td class="colFirst"><code><a href="../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a></code></td>
+<tr id="i125" class="rowColor">
+<td class="colFirst"><code><a href="../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../system/windows/input/TouchDevice.html" title="class in system.windows.input">TouchDevice</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#getTouchesDirectlyOver--">getTouchesDirectlyOver</a></span>()</code>
 <div class="block">Gets the value of the .NET property TouchesDirectlyOver.</div>
 </td>
 </tr>
-<tr id="i116" class="altColor">
-<td class="colFirst"><code><a href="../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a></code></td>
+<tr id="i126" class="altColor">
+<td class="colFirst"><code><a href="../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../system/windows/input/TouchDevice.html" title="class in system.windows.input">TouchDevice</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#getTouchesOver--">getTouchesOver</a></span>()</code>
 <div class="block">Gets the value of the .NET property TouchesOver.</div>
 </td>
 </tr>
-<tr id="i117" class="rowColor">
+<tr id="i127" class="rowColor">
 <td class="colFirst"><code><a href="../../system/windows/Visibility.html" title="class in system.windows">Visibility</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#getVisibility--">getVisibility</a></span>()</code>
 <div class="block">Gets the value of the .NET property Visibility.</div>
 </td>
 </tr>
-<tr id="i118" class="altColor">
+<tr id="i128" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#InvalidateModel--">InvalidateModel</a></span>()</code>
 <div class="block">Invokes the .NET member InvalidateModel.</div>
 </td>
 </tr>
-<tr id="i119" class="rowColor">
+<tr id="i129" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#MoveFocus-system.windows.input.TraversalRequest-">MoveFocus</a></span>(<a href="../../system/windows/input/TraversalRequest.html" title="class in system.windows.input">TraversalRequest</a>&nbsp;request)</code>
 <div class="block">Invokes the .NET member MoveFocus.</div>
 </td>
 </tr>
-<tr id="i120" class="altColor">
+<tr id="i130" class="altColor">
 <td class="colFirst"><code><a href="../../system/windows/DependencyObject.html" title="class in system.windows">DependencyObject</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#PredictFocus-system.windows.input.FocusNavigationDirection-">PredictFocus</a></span>(<a href="../../system/windows/input/FocusNavigationDirection.html" title="class in system.windows.input">FocusNavigationDirection</a>&nbsp;direction)</code>
 <div class="block">Invokes the .NET member PredictFocus.</div>
 </td>
 </tr>
-<tr id="i121" class="rowColor">
+<tr id="i131" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#RaiseEvent-system.windows.RoutedEventArgs-">RaiseEvent</a></span>(<a href="../../system/windows/RoutedEventArgs.html" title="class in system.windows">RoutedEventArgs</a>&nbsp;e)</code>
 <div class="block">Invokes the .NET member RaiseEvent.</div>
 </td>
 </tr>
-<tr id="i122" class="altColor">
+<tr id="i132" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#ReleaseAllTouchCaptures--">ReleaseAllTouchCaptures</a></span>()</code>
 <div class="block">Invokes the .NET member ReleaseAllTouchCaptures.</div>
 </td>
 </tr>
-<tr id="i123" class="rowColor">
+<tr id="i133" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#ReleaseMouseCapture--">ReleaseMouseCapture</a></span>()</code>
 <div class="block">Invokes the .NET member ReleaseMouseCapture.</div>
 </td>
 </tr>
-<tr id="i124" class="altColor">
+<tr id="i134" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#ReleaseStylusCapture--">ReleaseStylusCapture</a></span>()</code>
 <div class="block">Invokes the .NET member ReleaseStylusCapture.</div>
 </td>
 </tr>
-<tr id="i125" class="rowColor">
+<tr id="i135" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#ReleaseTouchCapture-system.windows.input.TouchDevice-">ReleaseTouchCapture</a></span>(<a href="../../system/windows/input/TouchDevice.html" title="class in system.windows.input">TouchDevice</a>&nbsp;touchDevice)</code>
 <div class="block">Invokes the .NET member ReleaseTouchCapture.</div>
 </td>
 </tr>
-<tr id="i126" class="altColor">
+<tr id="i136" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#removeDragEnter-system.windows.DragEventHandler-">removeDragEnter</a></span>(<a href="../../system/windows/DragEventHandler.html" title="class in system.windows">DragEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removeDragEnter.</div>
 </td>
 </tr>
-<tr id="i127" class="rowColor">
+<tr id="i137" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#removeDragLeave-system.windows.DragEventHandler-">removeDragLeave</a></span>(<a href="../../system/windows/DragEventHandler.html" title="class in system.windows">DragEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removeDragLeave.</div>
 </td>
 </tr>
-<tr id="i128" class="altColor">
+<tr id="i138" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#removeDragOver-system.windows.DragEventHandler-">removeDragOver</a></span>(<a href="../../system/windows/DragEventHandler.html" title="class in system.windows">DragEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removeDragOver.</div>
 </td>
 </tr>
-<tr id="i129" class="rowColor">
+<tr id="i139" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#removeDrop-system.windows.DragEventHandler-">removeDrop</a></span>(<a href="../../system/windows/DragEventHandler.html" title="class in system.windows">DragEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removeDrop.</div>
 </td>
 </tr>
-<tr id="i130" class="altColor">
+<tr id="i140" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#removeFocusableChanged-system.windows.DependencyPropertyChangedEventHandler-">removeFocusableChanged</a></span>(<a href="../../system/windows/DependencyPropertyChangedEventHandler.html" title="class in system.windows">DependencyPropertyChangedEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removeFocusableChanged.</div>
 </td>
 </tr>
-<tr id="i131" class="rowColor">
+<tr id="i141" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#removeGiveFeedback-system.windows.GiveFeedbackEventHandler-">removeGiveFeedback</a></span>(<a href="../../system/windows/GiveFeedbackEventHandler.html" title="class in system.windows">GiveFeedbackEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removeGiveFeedback.</div>
 </td>
 </tr>
-<tr id="i132" class="altColor">
+<tr id="i142" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#removeGotFocus-system.windows.RoutedEventHandler-">removeGotFocus</a></span>(<a href="../../system/windows/RoutedEventHandler.html" title="class in system.windows">RoutedEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removeGotFocus.</div>
 </td>
 </tr>
-<tr id="i133" class="rowColor">
+<tr id="i143" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#removeGotKeyboardFocus-system.windows.input.KeyboardFocusChangedEventHandler-">removeGotKeyboardFocus</a></span>(<a href="../../system/windows/input/KeyboardFocusChangedEventHandler.html" title="class in system.windows.input">KeyboardFocusChangedEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removeGotKeyboardFocus.</div>
 </td>
 </tr>
-<tr id="i134" class="altColor">
+<tr id="i144" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#removeGotMouseCapture-system.windows.input.MouseEventHandler-">removeGotMouseCapture</a></span>(<a href="../../system/windows/input/MouseEventHandler.html" title="class in system.windows.input">MouseEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removeGotMouseCapture.</div>
 </td>
 </tr>
-<tr id="i135" class="rowColor">
+<tr id="i145" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#removeGotStylusCapture-system.windows.input.StylusEventHandler-">removeGotStylusCapture</a></span>(<a href="../../system/windows/input/StylusEventHandler.html" title="class in system.windows.input">StylusEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removeGotStylusCapture.</div>
 </td>
 </tr>
-<tr id="i136" class="altColor">
+<tr id="i146" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#removeGotTouchCapture-system.EventHandler_1-">removeGotTouchCapture</a></span>(<a href="../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../system/windows/input/TouchEventArgs.html" title="class in system.windows.input">TouchEventArgs</a>&gt;&nbsp;handler)</code>
+<div class="block">Invokes the .NET member removeGotTouchCapture.</div>
+</td>
+</tr>
+<tr id="i147" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#removeIsEnabledChanged-system.windows.DependencyPropertyChangedEventHandler-">removeIsEnabledChanged</a></span>(<a href="../../system/windows/DependencyPropertyChangedEventHandler.html" title="class in system.windows">DependencyPropertyChangedEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removeIsEnabledChanged.</div>
 </td>
 </tr>
-<tr id="i137" class="rowColor">
+<tr id="i148" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#removeIsHitTestVisibleChanged-system.windows.DependencyPropertyChangedEventHandler-">removeIsHitTestVisibleChanged</a></span>(<a href="../../system/windows/DependencyPropertyChangedEventHandler.html" title="class in system.windows">DependencyPropertyChangedEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removeIsHitTestVisibleChanged.</div>
 </td>
 </tr>
-<tr id="i138" class="altColor">
+<tr id="i149" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#removeIsKeyboardFocusedChanged-system.windows.DependencyPropertyChangedEventHandler-">removeIsKeyboardFocusedChanged</a></span>(<a href="../../system/windows/DependencyPropertyChangedEventHandler.html" title="class in system.windows">DependencyPropertyChangedEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removeIsKeyboardFocusedChanged.</div>
 </td>
 </tr>
-<tr id="i139" class="rowColor">
+<tr id="i150" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#removeIsKeyboardFocusWithinChanged-system.windows.DependencyPropertyChangedEventHandler-">removeIsKeyboardFocusWithinChanged</a></span>(<a href="../../system/windows/DependencyPropertyChangedEventHandler.html" title="class in system.windows">DependencyPropertyChangedEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removeIsKeyboardFocusWithinChanged.</div>
 </td>
 </tr>
-<tr id="i140" class="altColor">
+<tr id="i151" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#removeIsMouseCapturedChanged-system.windows.DependencyPropertyChangedEventHandler-">removeIsMouseCapturedChanged</a></span>(<a href="../../system/windows/DependencyPropertyChangedEventHandler.html" title="class in system.windows">DependencyPropertyChangedEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removeIsMouseCapturedChanged.</div>
 </td>
 </tr>
-<tr id="i141" class="rowColor">
+<tr id="i152" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#removeIsMouseCaptureWithinChanged-system.windows.DependencyPropertyChangedEventHandler-">removeIsMouseCaptureWithinChanged</a></span>(<a href="../../system/windows/DependencyPropertyChangedEventHandler.html" title="class in system.windows">DependencyPropertyChangedEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removeIsMouseCaptureWithinChanged.</div>
 </td>
 </tr>
-<tr id="i142" class="altColor">
+<tr id="i153" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#removeIsMouseDirectlyOverChanged-system.windows.DependencyPropertyChangedEventHandler-">removeIsMouseDirectlyOverChanged</a></span>(<a href="../../system/windows/DependencyPropertyChangedEventHandler.html" title="class in system.windows">DependencyPropertyChangedEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removeIsMouseDirectlyOverChanged.</div>
 </td>
 </tr>
-<tr id="i143" class="rowColor">
+<tr id="i154" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#removeIsStylusCapturedChanged-system.windows.DependencyPropertyChangedEventHandler-">removeIsStylusCapturedChanged</a></span>(<a href="../../system/windows/DependencyPropertyChangedEventHandler.html" title="class in system.windows">DependencyPropertyChangedEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removeIsStylusCapturedChanged.</div>
 </td>
 </tr>
-<tr id="i144" class="altColor">
+<tr id="i155" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#removeIsStylusCaptureWithinChanged-system.windows.DependencyPropertyChangedEventHandler-">removeIsStylusCaptureWithinChanged</a></span>(<a href="../../system/windows/DependencyPropertyChangedEventHandler.html" title="class in system.windows">DependencyPropertyChangedEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removeIsStylusCaptureWithinChanged.</div>
 </td>
 </tr>
-<tr id="i145" class="rowColor">
+<tr id="i156" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#removeIsStylusDirectlyOverChanged-system.windows.DependencyPropertyChangedEventHandler-">removeIsStylusDirectlyOverChanged</a></span>(<a href="../../system/windows/DependencyPropertyChangedEventHandler.html" title="class in system.windows">DependencyPropertyChangedEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removeIsStylusDirectlyOverChanged.</div>
 </td>
 </tr>
-<tr id="i146" class="altColor">
+<tr id="i157" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#removeIsVisibleChanged-system.windows.DependencyPropertyChangedEventHandler-">removeIsVisibleChanged</a></span>(<a href="../../system/windows/DependencyPropertyChangedEventHandler.html" title="class in system.windows">DependencyPropertyChangedEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removeIsVisibleChanged.</div>
 </td>
 </tr>
-<tr id="i147" class="rowColor">
+<tr id="i158" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#removeKeyDown-system.windows.input.KeyEventHandler-">removeKeyDown</a></span>(<a href="../../system/windows/input/KeyEventHandler.html" title="class in system.windows.input">KeyEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removeKeyDown.</div>
 </td>
 </tr>
-<tr id="i148" class="altColor">
+<tr id="i159" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#removeKeyUp-system.windows.input.KeyEventHandler-">removeKeyUp</a></span>(<a href="../../system/windows/input/KeyEventHandler.html" title="class in system.windows.input">KeyEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removeKeyUp.</div>
 </td>
 </tr>
-<tr id="i149" class="rowColor">
+<tr id="i160" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#removeLostFocus-system.windows.RoutedEventHandler-">removeLostFocus</a></span>(<a href="../../system/windows/RoutedEventHandler.html" title="class in system.windows">RoutedEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removeLostFocus.</div>
 </td>
 </tr>
-<tr id="i150" class="altColor">
+<tr id="i161" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#removeLostKeyboardFocus-system.windows.input.KeyboardFocusChangedEventHandler-">removeLostKeyboardFocus</a></span>(<a href="../../system/windows/input/KeyboardFocusChangedEventHandler.html" title="class in system.windows.input">KeyboardFocusChangedEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removeLostKeyboardFocus.</div>
 </td>
 </tr>
-<tr id="i151" class="rowColor">
+<tr id="i162" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#removeLostMouseCapture-system.windows.input.MouseEventHandler-">removeLostMouseCapture</a></span>(<a href="../../system/windows/input/MouseEventHandler.html" title="class in system.windows.input">MouseEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removeLostMouseCapture.</div>
 </td>
 </tr>
-<tr id="i152" class="altColor">
+<tr id="i163" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#removeLostStylusCapture-system.windows.input.StylusEventHandler-">removeLostStylusCapture</a></span>(<a href="../../system/windows/input/StylusEventHandler.html" title="class in system.windows.input">StylusEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removeLostStylusCapture.</div>
 </td>
 </tr>
-<tr id="i153" class="rowColor">
+<tr id="i164" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#removeLostTouchCapture-system.EventHandler_1-">removeLostTouchCapture</a></span>(<a href="../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../system/windows/input/TouchEventArgs.html" title="class in system.windows.input">TouchEventArgs</a>&gt;&nbsp;handler)</code>
+<div class="block">Invokes the .NET member removeLostTouchCapture.</div>
+</td>
+</tr>
+<tr id="i165" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#removeMouseDown-system.windows.input.MouseButtonEventHandler-">removeMouseDown</a></span>(<a href="../../system/windows/input/MouseButtonEventHandler.html" title="class in system.windows.input">MouseButtonEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removeMouseDown.</div>
 </td>
 </tr>
-<tr id="i154" class="altColor">
+<tr id="i166" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#removeMouseEnter-system.windows.input.MouseEventHandler-">removeMouseEnter</a></span>(<a href="../../system/windows/input/MouseEventHandler.html" title="class in system.windows.input">MouseEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removeMouseEnter.</div>
 </td>
 </tr>
-<tr id="i155" class="rowColor">
+<tr id="i167" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#removeMouseLeave-system.windows.input.MouseEventHandler-">removeMouseLeave</a></span>(<a href="../../system/windows/input/MouseEventHandler.html" title="class in system.windows.input">MouseEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removeMouseLeave.</div>
 </td>
 </tr>
-<tr id="i156" class="altColor">
+<tr id="i168" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#removeMouseLeftButtonDown-system.windows.input.MouseButtonEventHandler-">removeMouseLeftButtonDown</a></span>(<a href="../../system/windows/input/MouseButtonEventHandler.html" title="class in system.windows.input">MouseButtonEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removeMouseLeftButtonDown.</div>
 </td>
 </tr>
-<tr id="i157" class="rowColor">
+<tr id="i169" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#removeMouseLeftButtonUp-system.windows.input.MouseButtonEventHandler-">removeMouseLeftButtonUp</a></span>(<a href="../../system/windows/input/MouseButtonEventHandler.html" title="class in system.windows.input">MouseButtonEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removeMouseLeftButtonUp.</div>
 </td>
 </tr>
-<tr id="i158" class="altColor">
+<tr id="i170" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#removeMouseMove-system.windows.input.MouseEventHandler-">removeMouseMove</a></span>(<a href="../../system/windows/input/MouseEventHandler.html" title="class in system.windows.input">MouseEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removeMouseMove.</div>
 </td>
 </tr>
-<tr id="i159" class="rowColor">
+<tr id="i171" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#removeMouseRightButtonDown-system.windows.input.MouseButtonEventHandler-">removeMouseRightButtonDown</a></span>(<a href="../../system/windows/input/MouseButtonEventHandler.html" title="class in system.windows.input">MouseButtonEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removeMouseRightButtonDown.</div>
 </td>
 </tr>
-<tr id="i160" class="altColor">
+<tr id="i172" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#removeMouseRightButtonUp-system.windows.input.MouseButtonEventHandler-">removeMouseRightButtonUp</a></span>(<a href="../../system/windows/input/MouseButtonEventHandler.html" title="class in system.windows.input">MouseButtonEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removeMouseRightButtonUp.</div>
 </td>
 </tr>
-<tr id="i161" class="rowColor">
+<tr id="i173" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#removeMouseUp-system.windows.input.MouseButtonEventHandler-">removeMouseUp</a></span>(<a href="../../system/windows/input/MouseButtonEventHandler.html" title="class in system.windows.input">MouseButtonEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removeMouseUp.</div>
 </td>
 </tr>
-<tr id="i162" class="altColor">
+<tr id="i174" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#removeMouseWheel-system.windows.input.MouseWheelEventHandler-">removeMouseWheel</a></span>(<a href="../../system/windows/input/MouseWheelEventHandler.html" title="class in system.windows.input">MouseWheelEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removeMouseWheel.</div>
 </td>
 </tr>
-<tr id="i163" class="rowColor">
+<tr id="i175" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#removePreviewDragEnter-system.windows.DragEventHandler-">removePreviewDragEnter</a></span>(<a href="../../system/windows/DragEventHandler.html" title="class in system.windows">DragEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removePreviewDragEnter.</div>
 </td>
 </tr>
-<tr id="i164" class="altColor">
+<tr id="i176" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#removePreviewDragLeave-system.windows.DragEventHandler-">removePreviewDragLeave</a></span>(<a href="../../system/windows/DragEventHandler.html" title="class in system.windows">DragEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removePreviewDragLeave.</div>
 </td>
 </tr>
-<tr id="i165" class="rowColor">
+<tr id="i177" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#removePreviewDragOver-system.windows.DragEventHandler-">removePreviewDragOver</a></span>(<a href="../../system/windows/DragEventHandler.html" title="class in system.windows">DragEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removePreviewDragOver.</div>
 </td>
 </tr>
-<tr id="i166" class="altColor">
+<tr id="i178" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#removePreviewDrop-system.windows.DragEventHandler-">removePreviewDrop</a></span>(<a href="../../system/windows/DragEventHandler.html" title="class in system.windows">DragEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removePreviewDrop.</div>
 </td>
 </tr>
-<tr id="i167" class="rowColor">
+<tr id="i179" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#removePreviewGiveFeedback-system.windows.GiveFeedbackEventHandler-">removePreviewGiveFeedback</a></span>(<a href="../../system/windows/GiveFeedbackEventHandler.html" title="class in system.windows">GiveFeedbackEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removePreviewGiveFeedback.</div>
 </td>
 </tr>
-<tr id="i168" class="altColor">
+<tr id="i180" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#removePreviewGotKeyboardFocus-system.windows.input.KeyboardFocusChangedEventHandler-">removePreviewGotKeyboardFocus</a></span>(<a href="../../system/windows/input/KeyboardFocusChangedEventHandler.html" title="class in system.windows.input">KeyboardFocusChangedEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removePreviewGotKeyboardFocus.</div>
 </td>
 </tr>
-<tr id="i169" class="rowColor">
+<tr id="i181" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#removePreviewKeyDown-system.windows.input.KeyEventHandler-">removePreviewKeyDown</a></span>(<a href="../../system/windows/input/KeyEventHandler.html" title="class in system.windows.input">KeyEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removePreviewKeyDown.</div>
 </td>
 </tr>
-<tr id="i170" class="altColor">
+<tr id="i182" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#removePreviewKeyUp-system.windows.input.KeyEventHandler-">removePreviewKeyUp</a></span>(<a href="../../system/windows/input/KeyEventHandler.html" title="class in system.windows.input">KeyEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removePreviewKeyUp.</div>
 </td>
 </tr>
-<tr id="i171" class="rowColor">
+<tr id="i183" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#removePreviewLostKeyboardFocus-system.windows.input.KeyboardFocusChangedEventHandler-">removePreviewLostKeyboardFocus</a></span>(<a href="../../system/windows/input/KeyboardFocusChangedEventHandler.html" title="class in system.windows.input">KeyboardFocusChangedEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removePreviewLostKeyboardFocus.</div>
 </td>
 </tr>
-<tr id="i172" class="altColor">
+<tr id="i184" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#removePreviewMouseDown-system.windows.input.MouseButtonEventHandler-">removePreviewMouseDown</a></span>(<a href="../../system/windows/input/MouseButtonEventHandler.html" title="class in system.windows.input">MouseButtonEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removePreviewMouseDown.</div>
 </td>
 </tr>
-<tr id="i173" class="rowColor">
+<tr id="i185" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#removePreviewMouseLeftButtonDown-system.windows.input.MouseButtonEventHandler-">removePreviewMouseLeftButtonDown</a></span>(<a href="../../system/windows/input/MouseButtonEventHandler.html" title="class in system.windows.input">MouseButtonEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removePreviewMouseLeftButtonDown.</div>
 </td>
 </tr>
-<tr id="i174" class="altColor">
+<tr id="i186" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#removePreviewMouseLeftButtonUp-system.windows.input.MouseButtonEventHandler-">removePreviewMouseLeftButtonUp</a></span>(<a href="../../system/windows/input/MouseButtonEventHandler.html" title="class in system.windows.input">MouseButtonEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removePreviewMouseLeftButtonUp.</div>
 </td>
 </tr>
-<tr id="i175" class="rowColor">
+<tr id="i187" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#removePreviewMouseMove-system.windows.input.MouseEventHandler-">removePreviewMouseMove</a></span>(<a href="../../system/windows/input/MouseEventHandler.html" title="class in system.windows.input">MouseEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removePreviewMouseMove.</div>
 </td>
 </tr>
-<tr id="i176" class="altColor">
+<tr id="i188" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#removePreviewMouseRightButtonDown-system.windows.input.MouseButtonEventHandler-">removePreviewMouseRightButtonDown</a></span>(<a href="../../system/windows/input/MouseButtonEventHandler.html" title="class in system.windows.input">MouseButtonEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removePreviewMouseRightButtonDown.</div>
 </td>
 </tr>
-<tr id="i177" class="rowColor">
+<tr id="i189" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#removePreviewMouseRightButtonUp-system.windows.input.MouseButtonEventHandler-">removePreviewMouseRightButtonUp</a></span>(<a href="../../system/windows/input/MouseButtonEventHandler.html" title="class in system.windows.input">MouseButtonEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removePreviewMouseRightButtonUp.</div>
 </td>
 </tr>
-<tr id="i178" class="altColor">
+<tr id="i190" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#removePreviewMouseUp-system.windows.input.MouseButtonEventHandler-">removePreviewMouseUp</a></span>(<a href="../../system/windows/input/MouseButtonEventHandler.html" title="class in system.windows.input">MouseButtonEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removePreviewMouseUp.</div>
 </td>
 </tr>
-<tr id="i179" class="rowColor">
+<tr id="i191" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#removePreviewMouseWheel-system.windows.input.MouseWheelEventHandler-">removePreviewMouseWheel</a></span>(<a href="../../system/windows/input/MouseWheelEventHandler.html" title="class in system.windows.input">MouseWheelEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removePreviewMouseWheel.</div>
 </td>
 </tr>
-<tr id="i180" class="altColor">
+<tr id="i192" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#removePreviewQueryContinueDrag-system.windows.QueryContinueDragEventHandler-">removePreviewQueryContinueDrag</a></span>(<a href="../../system/windows/QueryContinueDragEventHandler.html" title="class in system.windows">QueryContinueDragEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removePreviewQueryContinueDrag.</div>
 </td>
 </tr>
-<tr id="i181" class="rowColor">
+<tr id="i193" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#removePreviewStylusButtonDown-system.windows.input.StylusButtonEventHandler-">removePreviewStylusButtonDown</a></span>(<a href="../../system/windows/input/StylusButtonEventHandler.html" title="class in system.windows.input">StylusButtonEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removePreviewStylusButtonDown.</div>
 </td>
 </tr>
-<tr id="i182" class="altColor">
+<tr id="i194" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#removePreviewStylusButtonUp-system.windows.input.StylusButtonEventHandler-">removePreviewStylusButtonUp</a></span>(<a href="../../system/windows/input/StylusButtonEventHandler.html" title="class in system.windows.input">StylusButtonEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removePreviewStylusButtonUp.</div>
 </td>
 </tr>
-<tr id="i183" class="rowColor">
+<tr id="i195" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#removePreviewStylusDown-system.windows.input.StylusDownEventHandler-">removePreviewStylusDown</a></span>(<a href="../../system/windows/input/StylusDownEventHandler.html" title="class in system.windows.input">StylusDownEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removePreviewStylusDown.</div>
 </td>
 </tr>
-<tr id="i184" class="altColor">
+<tr id="i196" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#removePreviewStylusInAirMove-system.windows.input.StylusEventHandler-">removePreviewStylusInAirMove</a></span>(<a href="../../system/windows/input/StylusEventHandler.html" title="class in system.windows.input">StylusEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removePreviewStylusInAirMove.</div>
 </td>
 </tr>
-<tr id="i185" class="rowColor">
+<tr id="i197" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#removePreviewStylusInRange-system.windows.input.StylusEventHandler-">removePreviewStylusInRange</a></span>(<a href="../../system/windows/input/StylusEventHandler.html" title="class in system.windows.input">StylusEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removePreviewStylusInRange.</div>
 </td>
 </tr>
-<tr id="i186" class="altColor">
+<tr id="i198" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#removePreviewStylusMove-system.windows.input.StylusEventHandler-">removePreviewStylusMove</a></span>(<a href="../../system/windows/input/StylusEventHandler.html" title="class in system.windows.input">StylusEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removePreviewStylusMove.</div>
 </td>
 </tr>
-<tr id="i187" class="rowColor">
+<tr id="i199" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#removePreviewStylusOutOfRange-system.windows.input.StylusEventHandler-">removePreviewStylusOutOfRange</a></span>(<a href="../../system/windows/input/StylusEventHandler.html" title="class in system.windows.input">StylusEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removePreviewStylusOutOfRange.</div>
 </td>
 </tr>
-<tr id="i188" class="altColor">
+<tr id="i200" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#removePreviewStylusSystemGesture-system.windows.input.StylusSystemGestureEventHandler-">removePreviewStylusSystemGesture</a></span>(<a href="../../system/windows/input/StylusSystemGestureEventHandler.html" title="class in system.windows.input">StylusSystemGestureEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removePreviewStylusSystemGesture.</div>
 </td>
 </tr>
-<tr id="i189" class="rowColor">
+<tr id="i201" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#removePreviewStylusUp-system.windows.input.StylusEventHandler-">removePreviewStylusUp</a></span>(<a href="../../system/windows/input/StylusEventHandler.html" title="class in system.windows.input">StylusEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removePreviewStylusUp.</div>
 </td>
 </tr>
-<tr id="i190" class="altColor">
+<tr id="i202" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#removePreviewTextInput-system.windows.input.TextCompositionEventHandler-">removePreviewTextInput</a></span>(<a href="../../system/windows/input/TextCompositionEventHandler.html" title="class in system.windows.input">TextCompositionEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removePreviewTextInput.</div>
 </td>
 </tr>
-<tr id="i191" class="rowColor">
+<tr id="i203" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#removePreviewTouchDown-system.EventHandler_1-">removePreviewTouchDown</a></span>(<a href="../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../system/windows/input/TouchEventArgs.html" title="class in system.windows.input">TouchEventArgs</a>&gt;&nbsp;handler)</code>
+<div class="block">Invokes the .NET member removePreviewTouchDown.</div>
+</td>
+</tr>
+<tr id="i204" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#removePreviewTouchMove-system.EventHandler_1-">removePreviewTouchMove</a></span>(<a href="../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../system/windows/input/TouchEventArgs.html" title="class in system.windows.input">TouchEventArgs</a>&gt;&nbsp;handler)</code>
+<div class="block">Invokes the .NET member removePreviewTouchMove.</div>
+</td>
+</tr>
+<tr id="i205" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#removePreviewTouchUp-system.EventHandler_1-">removePreviewTouchUp</a></span>(<a href="../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../system/windows/input/TouchEventArgs.html" title="class in system.windows.input">TouchEventArgs</a>&gt;&nbsp;handler)</code>
+<div class="block">Invokes the .NET member removePreviewTouchUp.</div>
+</td>
+</tr>
+<tr id="i206" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#removeQueryContinueDrag-system.windows.QueryContinueDragEventHandler-">removeQueryContinueDrag</a></span>(<a href="../../system/windows/QueryContinueDragEventHandler.html" title="class in system.windows">QueryContinueDragEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removeQueryContinueDrag.</div>
 </td>
 </tr>
-<tr id="i192" class="altColor">
+<tr id="i207" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#removeQueryCursor-system.windows.input.QueryCursorEventHandler-">removeQueryCursor</a></span>(<a href="../../system/windows/input/QueryCursorEventHandler.html" title="class in system.windows.input">QueryCursorEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removeQueryCursor.</div>
 </td>
 </tr>
-<tr id="i193" class="rowColor">
+<tr id="i208" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#removeStylusButtonDown-system.windows.input.StylusButtonEventHandler-">removeStylusButtonDown</a></span>(<a href="../../system/windows/input/StylusButtonEventHandler.html" title="class in system.windows.input">StylusButtonEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removeStylusButtonDown.</div>
 </td>
 </tr>
-<tr id="i194" class="altColor">
+<tr id="i209" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#removeStylusButtonUp-system.windows.input.StylusButtonEventHandler-">removeStylusButtonUp</a></span>(<a href="../../system/windows/input/StylusButtonEventHandler.html" title="class in system.windows.input">StylusButtonEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removeStylusButtonUp.</div>
 </td>
 </tr>
-<tr id="i195" class="rowColor">
+<tr id="i210" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#removeStylusDown-system.windows.input.StylusDownEventHandler-">removeStylusDown</a></span>(<a href="../../system/windows/input/StylusDownEventHandler.html" title="class in system.windows.input">StylusDownEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removeStylusDown.</div>
 </td>
 </tr>
-<tr id="i196" class="altColor">
+<tr id="i211" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#removeStylusEnter-system.windows.input.StylusEventHandler-">removeStylusEnter</a></span>(<a href="../../system/windows/input/StylusEventHandler.html" title="class in system.windows.input">StylusEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removeStylusEnter.</div>
 </td>
 </tr>
-<tr id="i197" class="rowColor">
+<tr id="i212" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#removeStylusInAirMove-system.windows.input.StylusEventHandler-">removeStylusInAirMove</a></span>(<a href="../../system/windows/input/StylusEventHandler.html" title="class in system.windows.input">StylusEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removeStylusInAirMove.</div>
 </td>
 </tr>
-<tr id="i198" class="altColor">
+<tr id="i213" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#removeStylusInRange-system.windows.input.StylusEventHandler-">removeStylusInRange</a></span>(<a href="../../system/windows/input/StylusEventHandler.html" title="class in system.windows.input">StylusEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removeStylusInRange.</div>
 </td>
 </tr>
-<tr id="i199" class="rowColor">
+<tr id="i214" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#removeStylusLeave-system.windows.input.StylusEventHandler-">removeStylusLeave</a></span>(<a href="../../system/windows/input/StylusEventHandler.html" title="class in system.windows.input">StylusEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removeStylusLeave.</div>
 </td>
 </tr>
-<tr id="i200" class="altColor">
+<tr id="i215" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#removeStylusMove-system.windows.input.StylusEventHandler-">removeStylusMove</a></span>(<a href="../../system/windows/input/StylusEventHandler.html" title="class in system.windows.input">StylusEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removeStylusMove.</div>
 </td>
 </tr>
-<tr id="i201" class="rowColor">
+<tr id="i216" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#removeStylusOutOfRange-system.windows.input.StylusEventHandler-">removeStylusOutOfRange</a></span>(<a href="../../system/windows/input/StylusEventHandler.html" title="class in system.windows.input">StylusEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removeStylusOutOfRange.</div>
 </td>
 </tr>
-<tr id="i202" class="altColor">
+<tr id="i217" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#removeStylusSystemGesture-system.windows.input.StylusSystemGestureEventHandler-">removeStylusSystemGesture</a></span>(<a href="../../system/windows/input/StylusSystemGestureEventHandler.html" title="class in system.windows.input">StylusSystemGestureEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removeStylusSystemGesture.</div>
 </td>
 </tr>
-<tr id="i203" class="rowColor">
+<tr id="i218" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#removeStylusUp-system.windows.input.StylusEventHandler-">removeStylusUp</a></span>(<a href="../../system/windows/input/StylusEventHandler.html" title="class in system.windows.input">StylusEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removeStylusUp.</div>
 </td>
 </tr>
-<tr id="i204" class="altColor">
+<tr id="i219" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#removeTextInput-system.windows.input.TextCompositionEventHandler-">removeTextInput</a></span>(<a href="../../system/windows/input/TextCompositionEventHandler.html" title="class in system.windows.input">TextCompositionEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removeTextInput.</div>
 </td>
 </tr>
-<tr id="i205" class="rowColor">
+<tr id="i220" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#removeTouchDown-system.EventHandler_1-">removeTouchDown</a></span>(<a href="../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../system/windows/input/TouchEventArgs.html" title="class in system.windows.input">TouchEventArgs</a>&gt;&nbsp;handler)</code>
+<div class="block">Invokes the .NET member removeTouchDown.</div>
+</td>
+</tr>
+<tr id="i221" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#removeTouchEnter-system.EventHandler_1-">removeTouchEnter</a></span>(<a href="../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../system/windows/input/TouchEventArgs.html" title="class in system.windows.input">TouchEventArgs</a>&gt;&nbsp;handler)</code>
+<div class="block">Invokes the .NET member removeTouchEnter.</div>
+</td>
+</tr>
+<tr id="i222" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#removeTouchLeave-system.EventHandler_1-">removeTouchLeave</a></span>(<a href="../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../system/windows/input/TouchEventArgs.html" title="class in system.windows.input">TouchEventArgs</a>&gt;&nbsp;handler)</code>
+<div class="block">Invokes the .NET member removeTouchLeave.</div>
+</td>
+</tr>
+<tr id="i223" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#removeTouchMove-system.EventHandler_1-">removeTouchMove</a></span>(<a href="../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../system/windows/input/TouchEventArgs.html" title="class in system.windows.input">TouchEventArgs</a>&gt;&nbsp;handler)</code>
+<div class="block">Invokes the .NET member removeTouchMove.</div>
+</td>
+</tr>
+<tr id="i224" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#removeTouchUp-system.EventHandler_1-">removeTouchUp</a></span>(<a href="../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../system/windows/input/TouchEventArgs.html" title="class in system.windows.input">TouchEventArgs</a>&gt;&nbsp;handler)</code>
+<div class="block">Invokes the .NET member removeTouchUp.</div>
+</td>
+</tr>
+<tr id="i225" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#setAllowDrop-boolean-">setAllowDrop</a></span>(boolean&nbsp;AllowDrop)</code>
 <div class="block">Sets the value of the .NET property AllowDrop.</div>
 </td>
 </tr>
-<tr id="i206" class="altColor">
+<tr id="i226" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#setFocusable-boolean-">setFocusable</a></span>(boolean&nbsp;Focusable)</code>
 <div class="block">Sets the value of the .NET property Focusable.</div>
 </td>
 </tr>
-<tr id="i207" class="rowColor">
+<tr id="i227" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#setIsEnabled-boolean-">setIsEnabled</a></span>(boolean&nbsp;IsEnabled)</code>
 <div class="block">Sets the value of the .NET property IsEnabled.</div>
 </td>
 </tr>
-<tr id="i208" class="altColor">
+<tr id="i228" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#setIsHitTestVisible-boolean-">setIsHitTestVisible</a></span>(boolean&nbsp;IsHitTestVisible)</code>
 <div class="block">Sets the value of the .NET property IsHitTestVisible.</div>
 </td>
 </tr>
-<tr id="i209" class="rowColor">
+<tr id="i229" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(<a href="https://www.jcobridge.com/api-java_2.6.10/org/mases/jcobridge/JCObject.html?is-external=true" title="class or interface in org.mases.jcobridge">JCObject</a>&nbsp;instance)</code>
 <div class="block">Sets the underlying object managed by the bridge.</div>
 </td>
 </tr>
-<tr id="i210" class="altColor">
+<tr id="i230" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#setVisibility-system.windows.Visibility-">setVisibility</a></span>(<a href="../../system/windows/Visibility.html" title="class in system.windows">Visibility</a>&nbsp;Visibility)</code>
 <div class="block">Sets the value of the .NET property Visibility.</div>
 </td>
 </tr>
-<tr id="i211" class="rowColor">
+<tr id="i231" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#ShouldSerializeCommandBindings--">ShouldSerializeCommandBindings</a></span>()</code>
 <div class="block">Invokes the .NET member ShouldSerializeCommandBindings.</div>
 </td>
 </tr>
-<tr id="i212" class="altColor">
+<tr id="i232" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/windows/UIElement3D.html#ShouldSerializeInputBindings--">ShouldSerializeInputBindings</a></span>()</code>
 <div class="block">Invokes the .NET member ShouldSerializeInputBindings.</div>
@@ -2067,6 +2207,25 @@ extends <a href="../../system/windows/media/media3d/Visual3D.html" title="class 
 </dl>
 </li>
 </ul>
+<a name="addGotTouchCapture-system.EventHandler_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addGotTouchCapture</h4>
+<pre>public&nbsp;void&nbsp;addGotTouchCapture(<a href="../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../system/windows/input/TouchEventArgs.html" title="class in system.windows.input">TouchEventArgs</a>&gt;&nbsp;handler)
+                        throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member addGotTouchCapture.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>handler</code> - the argument of type <code>EventHandler_1&lt;TouchEventArgs&gt;</code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/DOCUMENTATION_MEMBER_NAME" target="_top">.NET documentation</a></dd>
+</dl>
+</li>
+</ul>
 <a name="addIsEnabledChanged-system.windows.DependencyPropertyChangedEventHandler-">
 <!--   -->
 </a>
@@ -2383,6 +2542,25 @@ extends <a href="../../system/windows/media/media3d/Visual3D.html" title="class 
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>handler</code> - the argument of type <code>StylusEventHandler</code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/DOCUMENTATION_MEMBER_NAME" target="_top">.NET documentation</a></dd>
+</dl>
+</li>
+</ul>
+<a name="addLostTouchCapture-system.EventHandler_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addLostTouchCapture</h4>
+<pre>public&nbsp;void&nbsp;addLostTouchCapture(<a href="../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../system/windows/input/TouchEventArgs.html" title="class in system.windows.input">TouchEventArgs</a>&gt;&nbsp;handler)
+                         throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member addLostTouchCapture.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>handler</code> - the argument of type <code>EventHandler_1&lt;TouchEventArgs&gt;</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
@@ -3112,6 +3290,63 @@ extends <a href="../../system/windows/media/media3d/Visual3D.html" title="class 
 </dl>
 </li>
 </ul>
+<a name="addPreviewTouchDown-system.EventHandler_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addPreviewTouchDown</h4>
+<pre>public&nbsp;void&nbsp;addPreviewTouchDown(<a href="../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../system/windows/input/TouchEventArgs.html" title="class in system.windows.input">TouchEventArgs</a>&gt;&nbsp;handler)
+                         throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member addPreviewTouchDown.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>handler</code> - the argument of type <code>EventHandler_1&lt;TouchEventArgs&gt;</code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/DOCUMENTATION_MEMBER_NAME" target="_top">.NET documentation</a></dd>
+</dl>
+</li>
+</ul>
+<a name="addPreviewTouchMove-system.EventHandler_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addPreviewTouchMove</h4>
+<pre>public&nbsp;void&nbsp;addPreviewTouchMove(<a href="../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../system/windows/input/TouchEventArgs.html" title="class in system.windows.input">TouchEventArgs</a>&gt;&nbsp;handler)
+                         throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member addPreviewTouchMove.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>handler</code> - the argument of type <code>EventHandler_1&lt;TouchEventArgs&gt;</code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/DOCUMENTATION_MEMBER_NAME" target="_top">.NET documentation</a></dd>
+</dl>
+</li>
+</ul>
+<a name="addPreviewTouchUp-system.EventHandler_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addPreviewTouchUp</h4>
+<pre>public&nbsp;void&nbsp;addPreviewTouchUp(<a href="../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../system/windows/input/TouchEventArgs.html" title="class in system.windows.input">TouchEventArgs</a>&gt;&nbsp;handler)
+                       throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member addPreviewTouchUp.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>handler</code> - the argument of type <code>EventHandler_1&lt;TouchEventArgs&gt;</code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/DOCUMENTATION_MEMBER_NAME" target="_top">.NET documentation</a></dd>
+</dl>
+</li>
+</ul>
 <a name="addQueryContinueDrag-system.windows.QueryContinueDragEventHandler-">
 <!--   -->
 </a>
@@ -3424,6 +3659,101 @@ extends <a href="../../system/windows/media/media3d/Visual3D.html" title="class 
 <dd><code><a href="../../system/threading/SynchronizationLockException.html" title="class in system.threading">SynchronizationLockException</a></code> - if the .NET member raises it</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="https://learn.microsoft.com/dotnet/api/System.Windows.UIElement3D.AddToEventRoute" target="_top">.NET documentation</a></dd>
+</dl>
+</li>
+</ul>
+<a name="addTouchDown-system.EventHandler_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addTouchDown</h4>
+<pre>public&nbsp;void&nbsp;addTouchDown(<a href="../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../system/windows/input/TouchEventArgs.html" title="class in system.windows.input">TouchEventArgs</a>&gt;&nbsp;handler)
+                  throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member addTouchDown.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>handler</code> - the argument of type <code>EventHandler_1&lt;TouchEventArgs&gt;</code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/DOCUMENTATION_MEMBER_NAME" target="_top">.NET documentation</a></dd>
+</dl>
+</li>
+</ul>
+<a name="addTouchEnter-system.EventHandler_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addTouchEnter</h4>
+<pre>public&nbsp;void&nbsp;addTouchEnter(<a href="../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../system/windows/input/TouchEventArgs.html" title="class in system.windows.input">TouchEventArgs</a>&gt;&nbsp;handler)
+                   throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member addTouchEnter.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>handler</code> - the argument of type <code>EventHandler_1&lt;TouchEventArgs&gt;</code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/DOCUMENTATION_MEMBER_NAME" target="_top">.NET documentation</a></dd>
+</dl>
+</li>
+</ul>
+<a name="addTouchLeave-system.EventHandler_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addTouchLeave</h4>
+<pre>public&nbsp;void&nbsp;addTouchLeave(<a href="../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../system/windows/input/TouchEventArgs.html" title="class in system.windows.input">TouchEventArgs</a>&gt;&nbsp;handler)
+                   throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member addTouchLeave.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>handler</code> - the argument of type <code>EventHandler_1&lt;TouchEventArgs&gt;</code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/DOCUMENTATION_MEMBER_NAME" target="_top">.NET documentation</a></dd>
+</dl>
+</li>
+</ul>
+<a name="addTouchMove-system.EventHandler_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addTouchMove</h4>
+<pre>public&nbsp;void&nbsp;addTouchMove(<a href="../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../system/windows/input/TouchEventArgs.html" title="class in system.windows.input">TouchEventArgs</a>&gt;&nbsp;handler)
+                  throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member addTouchMove.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>handler</code> - the argument of type <code>EventHandler_1&lt;TouchEventArgs&gt;</code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/DOCUMENTATION_MEMBER_NAME" target="_top">.NET documentation</a></dd>
+</dl>
+</li>
+</ul>
+<a name="addTouchUp-system.EventHandler_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addTouchUp</h4>
+<pre>public&nbsp;void&nbsp;addTouchUp(<a href="../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../system/windows/input/TouchEventArgs.html" title="class in system.windows.input">TouchEventArgs</a>&gt;&nbsp;handler)
+                throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member addTouchUp.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>handler</code> - the argument of type <code>EventHandler_1&lt;TouchEventArgs&gt;</code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/DOCUMENTATION_MEMBER_NAME" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -4370,16 +4700,16 @@ extends <a href="../../system/windows/media/media3d/Visual3D.html" title="class 
 <ul class="blockList">
 <li class="blockList">
 <h4>getTouchesCaptured</h4>
-<pre>public&nbsp;<a href="../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;getTouchesCaptured()
-                                 throws java.lang.Throwable,
-                                        <a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                                        <a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                                        <a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
-                                        <a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
-                                        <a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
-                                        <a href="../../system/RankException.html" title="class in system">RankException</a>,
-                                        <a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
-                                        <a href="../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></pre>
+<pre>public&nbsp;<a href="../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../system/windows/input/TouchDevice.html" title="class in system.windows.input">TouchDevice</a>&gt;&nbsp;getTouchesCaptured()
+                                              throws java.lang.Throwable,
+                                                     <a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                                     <a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                                     <a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                                     <a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                                     <a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                                     <a href="../../system/RankException.html" title="class in system">RankException</a>,
+                                                     <a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                                     <a href="../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></pre>
 <div class="block">Gets the value of the .NET property TouchesCaptured.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -4405,16 +4735,16 @@ extends <a href="../../system/windows/media/media3d/Visual3D.html" title="class 
 <ul class="blockList">
 <li class="blockList">
 <h4>getTouchesCapturedWithin</h4>
-<pre>public&nbsp;<a href="../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;getTouchesCapturedWithin()
-                                       throws java.lang.Throwable,
-                                              <a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                                              <a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                                              <a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
-                                              <a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
-                                              <a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
-                                              <a href="../../system/RankException.html" title="class in system">RankException</a>,
-                                              <a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
-                                              <a href="../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></pre>
+<pre>public&nbsp;<a href="../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../system/windows/input/TouchDevice.html" title="class in system.windows.input">TouchDevice</a>&gt;&nbsp;getTouchesCapturedWithin()
+                                                    throws java.lang.Throwable,
+                                                           <a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                                           <a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                                           <a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                                           <a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                                           <a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                                           <a href="../../system/RankException.html" title="class in system">RankException</a>,
+                                                           <a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                                           <a href="../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></pre>
 <div class="block">Gets the value of the .NET property TouchesCapturedWithin.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -4440,16 +4770,16 @@ extends <a href="../../system/windows/media/media3d/Visual3D.html" title="class 
 <ul class="blockList">
 <li class="blockList">
 <h4>getTouchesDirectlyOver</h4>
-<pre>public&nbsp;<a href="../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;getTouchesDirectlyOver()
-                                     throws java.lang.Throwable,
-                                            <a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                                            <a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                                            <a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
-                                            <a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
-                                            <a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
-                                            <a href="../../system/RankException.html" title="class in system">RankException</a>,
-                                            <a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
-                                            <a href="../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></pre>
+<pre>public&nbsp;<a href="../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../system/windows/input/TouchDevice.html" title="class in system.windows.input">TouchDevice</a>&gt;&nbsp;getTouchesDirectlyOver()
+                                                  throws java.lang.Throwable,
+                                                         <a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                                         <a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                                         <a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                                         <a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                                         <a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                                         <a href="../../system/RankException.html" title="class in system">RankException</a>,
+                                                         <a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                                         <a href="../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></pre>
 <div class="block">Gets the value of the .NET property TouchesDirectlyOver.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -4475,16 +4805,16 @@ extends <a href="../../system/windows/media/media3d/Visual3D.html" title="class 
 <ul class="blockList">
 <li class="blockList">
 <h4>getTouchesOver</h4>
-<pre>public&nbsp;<a href="../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;getTouchesOver()
-                             throws java.lang.Throwable,
-                                    <a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                                    <a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                                    <a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
-                                    <a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
-                                    <a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
-                                    <a href="../../system/RankException.html" title="class in system">RankException</a>,
-                                    <a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
-                                    <a href="../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></pre>
+<pre>public&nbsp;<a href="../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../system/windows/input/TouchDevice.html" title="class in system.windows.input">TouchDevice</a>&gt;&nbsp;getTouchesOver()
+                                          throws java.lang.Throwable,
+                                                 <a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                                 <a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                                 <a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                                 <a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                                 <a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                                 <a href="../../system/RankException.html" title="class in system">RankException</a>,
+                                                 <a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                                 <a href="../../system/ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></pre>
 <div class="block">Gets the value of the .NET property TouchesOver.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -4979,6 +5309,25 @@ extends <a href="../../system/windows/media/media3d/Visual3D.html" title="class 
 </dl>
 </li>
 </ul>
+<a name="removeGotTouchCapture-system.EventHandler_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>removeGotTouchCapture</h4>
+<pre>public&nbsp;void&nbsp;removeGotTouchCapture(<a href="../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../system/windows/input/TouchEventArgs.html" title="class in system.windows.input">TouchEventArgs</a>&gt;&nbsp;handler)
+                           throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member removeGotTouchCapture.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>handler</code> - the argument of type <code>EventHandler_1&lt;TouchEventArgs&gt;</code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/DOCUMENTATION_MEMBER_NAME" target="_top">.NET documentation</a></dd>
+</dl>
+</li>
+</ul>
 <a name="removeIsEnabledChanged-system.windows.DependencyPropertyChangedEventHandler-">
 <!--   -->
 </a>
@@ -5295,6 +5644,25 @@ extends <a href="../../system/windows/media/media3d/Visual3D.html" title="class 
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>handler</code> - the argument of type <code>StylusEventHandler</code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/DOCUMENTATION_MEMBER_NAME" target="_top">.NET documentation</a></dd>
+</dl>
+</li>
+</ul>
+<a name="removeLostTouchCapture-system.EventHandler_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>removeLostTouchCapture</h4>
+<pre>public&nbsp;void&nbsp;removeLostTouchCapture(<a href="../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../system/windows/input/TouchEventArgs.html" title="class in system.windows.input">TouchEventArgs</a>&gt;&nbsp;handler)
+                            throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member removeLostTouchCapture.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>handler</code> - the argument of type <code>EventHandler_1&lt;TouchEventArgs&gt;</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
@@ -6024,6 +6392,63 @@ extends <a href="../../system/windows/media/media3d/Visual3D.html" title="class 
 </dl>
 </li>
 </ul>
+<a name="removePreviewTouchDown-system.EventHandler_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>removePreviewTouchDown</h4>
+<pre>public&nbsp;void&nbsp;removePreviewTouchDown(<a href="../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../system/windows/input/TouchEventArgs.html" title="class in system.windows.input">TouchEventArgs</a>&gt;&nbsp;handler)
+                            throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member removePreviewTouchDown.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>handler</code> - the argument of type <code>EventHandler_1&lt;TouchEventArgs&gt;</code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/DOCUMENTATION_MEMBER_NAME" target="_top">.NET documentation</a></dd>
+</dl>
+</li>
+</ul>
+<a name="removePreviewTouchMove-system.EventHandler_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>removePreviewTouchMove</h4>
+<pre>public&nbsp;void&nbsp;removePreviewTouchMove(<a href="../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../system/windows/input/TouchEventArgs.html" title="class in system.windows.input">TouchEventArgs</a>&gt;&nbsp;handler)
+                            throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member removePreviewTouchMove.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>handler</code> - the argument of type <code>EventHandler_1&lt;TouchEventArgs&gt;</code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/DOCUMENTATION_MEMBER_NAME" target="_top">.NET documentation</a></dd>
+</dl>
+</li>
+</ul>
+<a name="removePreviewTouchUp-system.EventHandler_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>removePreviewTouchUp</h4>
+<pre>public&nbsp;void&nbsp;removePreviewTouchUp(<a href="../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../system/windows/input/TouchEventArgs.html" title="class in system.windows.input">TouchEventArgs</a>&gt;&nbsp;handler)
+                          throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member removePreviewTouchUp.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>handler</code> - the argument of type <code>EventHandler_1&lt;TouchEventArgs&gt;</code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/DOCUMENTATION_MEMBER_NAME" target="_top">.NET documentation</a></dd>
+</dl>
+</li>
+</ul>
 <a name="removeQueryContinueDrag-system.windows.QueryContinueDragEventHandler-">
 <!--   -->
 </a>
@@ -6283,6 +6708,101 @@ extends <a href="../../system/windows/media/media3d/Visual3D.html" title="class 
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>handler</code> - the argument of type <code>TextCompositionEventHandler</code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/DOCUMENTATION_MEMBER_NAME" target="_top">.NET documentation</a></dd>
+</dl>
+</li>
+</ul>
+<a name="removeTouchDown-system.EventHandler_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>removeTouchDown</h4>
+<pre>public&nbsp;void&nbsp;removeTouchDown(<a href="../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../system/windows/input/TouchEventArgs.html" title="class in system.windows.input">TouchEventArgs</a>&gt;&nbsp;handler)
+                     throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member removeTouchDown.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>handler</code> - the argument of type <code>EventHandler_1&lt;TouchEventArgs&gt;</code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/DOCUMENTATION_MEMBER_NAME" target="_top">.NET documentation</a></dd>
+</dl>
+</li>
+</ul>
+<a name="removeTouchEnter-system.EventHandler_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>removeTouchEnter</h4>
+<pre>public&nbsp;void&nbsp;removeTouchEnter(<a href="../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../system/windows/input/TouchEventArgs.html" title="class in system.windows.input">TouchEventArgs</a>&gt;&nbsp;handler)
+                      throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member removeTouchEnter.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>handler</code> - the argument of type <code>EventHandler_1&lt;TouchEventArgs&gt;</code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/DOCUMENTATION_MEMBER_NAME" target="_top">.NET documentation</a></dd>
+</dl>
+</li>
+</ul>
+<a name="removeTouchLeave-system.EventHandler_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>removeTouchLeave</h4>
+<pre>public&nbsp;void&nbsp;removeTouchLeave(<a href="../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../system/windows/input/TouchEventArgs.html" title="class in system.windows.input">TouchEventArgs</a>&gt;&nbsp;handler)
+                      throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member removeTouchLeave.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>handler</code> - the argument of type <code>EventHandler_1&lt;TouchEventArgs&gt;</code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/DOCUMENTATION_MEMBER_NAME" target="_top">.NET documentation</a></dd>
+</dl>
+</li>
+</ul>
+<a name="removeTouchMove-system.EventHandler_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>removeTouchMove</h4>
+<pre>public&nbsp;void&nbsp;removeTouchMove(<a href="../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../system/windows/input/TouchEventArgs.html" title="class in system.windows.input">TouchEventArgs</a>&gt;&nbsp;handler)
+                     throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member removeTouchMove.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>handler</code> - the argument of type <code>EventHandler_1&lt;TouchEventArgs&gt;</code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/DOCUMENTATION_MEMBER_NAME" target="_top">.NET documentation</a></dd>
+</dl>
+</li>
+</ul>
+<a name="removeTouchUp-system.EventHandler_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>removeTouchUp</h4>
+<pre>public&nbsp;void&nbsp;removeTouchUp(<a href="../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../system/windows/input/TouchEventArgs.html" title="class in system.windows.input">TouchEventArgs</a>&gt;&nbsp;handler)
+                   throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member removeTouchUp.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>handler</code> - the argument of type <code>EventHandler_1&lt;TouchEventArgs&gt;</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
 <dt><span class="seeLabel">See Also:</span></dt>

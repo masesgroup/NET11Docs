@@ -515,7 +515,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <tr id="i40" class="altColor">
 <td class="colFirst"><code>&lt;T extends <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;<br>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/forms/DataObject.html#TryGetData-java.lang.String-system.Func_2-boolean-org.mases.jcobridge.netreflection.JCORefOut-">TryGetData</a></span>(java.lang.String&nbsp;format,
-          <a href="../../../system/Func_2.html" title="class in system">Func_2</a>&nbsp;resolver,
+          <a href="../../../system/Func_2.html" title="class in system">Func_2</a>&lt;<a href="../../../system/reflection/metadata/TypeName.html" title="class in system.reflection.metadata">TypeName</a>,<a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&gt;&nbsp;resolver,
           boolean&nbsp;autoConvert,
           <a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;T&gt;&nbsp;data)</code>
 <div class="block">Invokes the .NET member TryGetData.</div>
@@ -1796,7 +1796,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <li class="blockList">
 <h4>TryGetData</h4>
 <pre>public&nbsp;&lt;T extends <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;&nbsp;boolean&nbsp;TryGetData(java.lang.String&nbsp;format,
-                                                          <a href="../../../system/Func_2.html" title="class in system">Func_2</a>&nbsp;resolver,
+                                                          <a href="../../../system/Func_2.html" title="class in system">Func_2</a>&lt;<a href="../../../system/reflection/metadata/TypeName.html" title="class in system.reflection.metadata">TypeName</a>,<a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&gt;&nbsp;resolver,
                                                           boolean&nbsp;autoConvert,
                                                           <a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;T&gt;&nbsp;data)
                                                    throws java.lang.Throwable,
@@ -1814,7 +1814,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <dd><code>T</code> - the type of the generic argument T</dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>format</code> - the argument of type <code>java.lang.String</code></dd>
-<dd><code>resolver</code> - the argument of type <code>Func_2</code></dd>
+<dd><code>resolver</code> - the argument of type <code>Func_2&lt;TypeName, NetType&gt;</code></dd>
 <dd><code>autoConvert</code> - the argument of type <code>boolean</code></dd>
 <dd><code>data</code> - the argument of type <code>JCORefOut&lt;T&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>

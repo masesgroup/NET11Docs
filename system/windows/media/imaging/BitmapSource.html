@@ -29,6 +29,12 @@
 <meta name="keywords" content="getFormat()">
 <meta name="keywords" content="addDownloadCompleted()">
 <meta name="keywords" content="removeDownloadCompleted()">
+<meta name="keywords" content="addDecodeFailed()">
+<meta name="keywords" content="removeDecodeFailed()">
+<meta name="keywords" content="addDownloadFailed()">
+<meta name="keywords" content="removeDownloadFailed()">
+<meta name="keywords" content="addDownloadProgress()">
+<meta name="keywords" content="removeDownloadProgress()">
 <link rel="stylesheet" type="text/css" href="../../../../stylesheet.css" title="Style">
 <script type="text/javascript" src="../../../../script.js"></script>
 </head>
@@ -42,7 +48,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":9,"i2":10,"i3":10,"i4":10,"i5":10,"i6":9,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":9,"i5":10,"i6":10,"i7":10,"i8":10,"i9":9,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -268,29 +274,47 @@ extends <a href="../../../../system/windows/media/ImageSource.html" title="class
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/media/imaging/BitmapSource.html#addDecodeFailed-system.EventHandler_1-">addDecodeFailed</a></span>(<a href="../../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../../system/windows/media/ExceptionEventArgs.html" title="class in system.windows.media">ExceptionEventArgs</a>&gt;&nbsp;handler)</code>
+<div class="block">Invokes the .NET member addDecodeFailed.</div>
+</td>
+</tr>
+<tr id="i1" class="rowColor">
+<td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/media/imaging/BitmapSource.html#addDownloadCompleted-system.EventHandler-">addDownloadCompleted</a></span>(<a href="../../../../system/EventHandler.html" title="class in system">EventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member addDownloadCompleted.</div>
 </td>
 </tr>
-<tr id="i1" class="rowColor">
+<tr id="i2" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/media/imaging/BitmapSource.html#addDownloadFailed-system.EventHandler_1-">addDownloadFailed</a></span>(<a href="../../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../../system/windows/media/ExceptionEventArgs.html" title="class in system.windows.media">ExceptionEventArgs</a>&gt;&nbsp;handler)</code>
+<div class="block">Invokes the .NET member addDownloadFailed.</div>
+</td>
+</tr>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/media/imaging/BitmapSource.html#addDownloadProgress-system.EventHandler_1-">addDownloadProgress</a></span>(<a href="../../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../../system/windows/media/imaging/DownloadProgressEventArgs.html" title="class in system.windows.media.imaging">DownloadProgressEventArgs</a>&gt;&nbsp;handler)</code>
+<div class="block">Invokes the .NET member addDownloadProgress.</div>
+</td>
+</tr>
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>static <a href="../../../../system/windows/media/imaging/BitmapSource.html" title="class in system.windows.media.imaging">BitmapSource</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/media/imaging/BitmapSource.html#cast-org.mases.jcobridge.netreflection.IJCOBridgeReflected-">cast</a></span>(<a href="../../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&nbsp;from)</code>
 <div class="block">Try to cast the <a href="../../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection"><code>IJCOBridgeReflected</code></a> instance into <a href="../../../../system/windows/media/imaging/BitmapSource.html" title="class in system.windows.media.imaging"><code>BitmapSource</code></a>, a cast assert is made to check if types are compatible.</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="../../../../system/windows/media/imaging/BitmapSource.html" title="class in system.windows.media.imaging">BitmapSource</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/media/imaging/BitmapSource.html#CloneCurrentValueNewBitmapSource--">CloneCurrentValueNewBitmapSource</a></span>()</code>
 <div class="block">Invokes the .NET member CloneCurrentValueNewBitmapSource.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="../../../../system/windows/media/imaging/BitmapSource.html" title="class in system.windows.media.imaging">BitmapSource</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/media/imaging/BitmapSource.html#CloneNewBitmapSource--">CloneNewBitmapSource</a></span>()</code>
 <div class="block">Invokes the .NET member CloneNewBitmapSource.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/media/imaging/BitmapSource.html#CopyPixels-system.Array-int-int-">CopyPixels</a></span>(<a href="../../../../system/Array.html" title="class in system">Array</a>&nbsp;pixels,
           int&nbsp;stride,
@@ -298,7 +322,7 @@ extends <a href="../../../../system/windows/media/ImageSource.html" title="class
 <div class="block">Invokes the .NET member CopyPixels.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/media/imaging/BitmapSource.html#CopyPixels-system.windows.Int32Rect-system.Array-int-int-">CopyPixels</a></span>(<a href="../../../../system/windows/Int32Rect.html" title="class in system.windows">Int32Rect</a>&nbsp;sourceRect,
           <a href="../../../../system/Array.html" title="class in system">Array</a>&nbsp;pixels,
@@ -307,7 +331,7 @@ extends <a href="../../../../system/windows/media/ImageSource.html" title="class
 <div class="block">Invokes the .NET member CopyPixels.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../../system/windows/media/imaging/BitmapSource.html" title="class in system.windows.media.imaging">BitmapSource</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/media/imaging/BitmapSource.html#Create-int-int-double-double-system.windows.media.PixelFormat-system.windows.media.imaging.BitmapPalette-system.Array-int-">Create</a></span>(int&nbsp;pixelWidth,
       int&nbsp;pixelHeight,
@@ -320,85 +344,103 @@ extends <a href="../../../../system/windows/media/ImageSource.html" title="class
 <div class="block">Invokes the .NET member Create.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>double</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/media/imaging/BitmapSource.html#getDpiX--">getDpiX</a></span>()</code>
 <div class="block">Gets the value of the .NET property DpiX.</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>double</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/media/imaging/BitmapSource.html#getDpiY--">getDpiY</a></span>()</code>
 <div class="block">Gets the value of the .NET property DpiY.</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code><a href="../../../../system/windows/media/PixelFormat.html" title="class in system.windows.media">PixelFormat</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/media/imaging/BitmapSource.html#getFormat--">getFormat</a></span>()</code>
 <div class="block">Gets the value of the .NET property Format.</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/media/imaging/BitmapSource.html#getIsDownloading--">getIsDownloading</a></span>()</code>
 <div class="block">Gets the value of the .NET property IsDownloading.</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/media/imaging/BitmapSource.html#getJCOAssemblyName--">getJCOAssemblyName</a></span>()</code>
 <div class="block">Returns the full name of the assembly of the .NET type.</div>
 </td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/media/imaging/BitmapSource.html#getJCOClassName--">getJCOClassName</a></span>()</code>
 <div class="block">Returns the full name of the .NET type.</div>
 </td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code>java.lang.Object</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/media/imaging/BitmapSource.html#getJCOInstance--">getJCOInstance</a></span>()</code>
 <div class="block">Returns the underlying object managed by the bridge.</div>
 </td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/media/imaging/BitmapSource.html#getJCOObjectName--">getJCOObjectName</a></span>()</code>
 <div class="block">Returns the name of the .NET type qualified with its assembly.</div>
 </td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i18" class="altColor">
 <td class="colFirst"><code><a href="https://www.jcobridge.com/api-java_2.6.10/org/mases/jcobridge/JCType.html?is-external=true" title="class or interface in org.mases.jcobridge">JCType</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/media/imaging/BitmapSource.html#getJCOType--">getJCOType</a></span>()</code>
 <div class="block">Returns the <a href="https://www.jcobridge.com/api-java_2.6.10/org/mases/jcobridge/JCType.html?is-external=true" title="class or interface in org.mases.jcobridge"><code>JCType</code></a> of the .NET type.</div>
 </td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code><a href="../../../../system/windows/media/imaging/BitmapPalette.html" title="class in system.windows.media.imaging">BitmapPalette</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/media/imaging/BitmapSource.html#getPalette--">getPalette</a></span>()</code>
 <div class="block">Gets the value of the .NET property Palette.</div>
 </td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i20" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/media/imaging/BitmapSource.html#getPixelHeight--">getPixelHeight</a></span>()</code>
 <div class="block">Gets the value of the .NET property PixelHeight.</div>
 </td>
 </tr>
-<tr id="i18" class="altColor">
+<tr id="i21" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/media/imaging/BitmapSource.html#getPixelWidth--">getPixelWidth</a></span>()</code>
 <div class="block">Gets the value of the .NET property PixelWidth.</div>
 </td>
 </tr>
-<tr id="i19" class="rowColor">
+<tr id="i22" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/media/imaging/BitmapSource.html#removeDecodeFailed-system.EventHandler_1-">removeDecodeFailed</a></span>(<a href="../../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../../system/windows/media/ExceptionEventArgs.html" title="class in system.windows.media">ExceptionEventArgs</a>&gt;&nbsp;handler)</code>
+<div class="block">Invokes the .NET member removeDecodeFailed.</div>
+</td>
+</tr>
+<tr id="i23" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/media/imaging/BitmapSource.html#removeDownloadCompleted-system.EventHandler-">removeDownloadCompleted</a></span>(<a href="../../../../system/EventHandler.html" title="class in system">EventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removeDownloadCompleted.</div>
 </td>
 </tr>
-<tr id="i20" class="altColor">
+<tr id="i24" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/media/imaging/BitmapSource.html#removeDownloadFailed-system.EventHandler_1-">removeDownloadFailed</a></span>(<a href="../../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../../system/windows/media/ExceptionEventArgs.html" title="class in system.windows.media">ExceptionEventArgs</a>&gt;&nbsp;handler)</code>
+<div class="block">Invokes the .NET member removeDownloadFailed.</div>
+</td>
+</tr>
+<tr id="i25" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/media/imaging/BitmapSource.html#removeDownloadProgress-system.EventHandler_1-">removeDownloadProgress</a></span>(<a href="../../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../../system/windows/media/imaging/DownloadProgressEventArgs.html" title="class in system.windows.media.imaging">DownloadProgressEventArgs</a>&gt;&nbsp;handler)</code>
+<div class="block">Invokes the .NET member removeDownloadProgress.</div>
+</td>
+</tr>
+<tr id="i26" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/media/imaging/BitmapSource.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(<a href="https://www.jcobridge.com/api-java_2.6.10/org/mases/jcobridge/JCObject.html?is-external=true" title="class or interface in org.mases.jcobridge">JCObject</a>&nbsp;instance)</code>
 <div class="block">Sets the underlying object managed by the bridge.</div>
@@ -567,6 +609,25 @@ extends <a href="../../../../system/windows/media/ImageSource.html" title="class
 <!--   -->
 </a>
 <h3>Method Detail</h3>
+<a name="addDecodeFailed-system.EventHandler_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addDecodeFailed</h4>
+<pre>public&nbsp;void&nbsp;addDecodeFailed(<a href="../../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../../system/windows/media/ExceptionEventArgs.html" title="class in system.windows.media">ExceptionEventArgs</a>&gt;&nbsp;handler)
+                     throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member addDecodeFailed.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>handler</code> - the argument of type <code>EventHandler_1&lt;ExceptionEventArgs&gt;</code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/DOCUMENTATION_MEMBER_NAME" target="_top">.NET documentation</a></dd>
+</dl>
+</li>
+</ul>
 <a name="addDownloadCompleted-system.EventHandler-">
 <!--   -->
 </a>
@@ -579,6 +640,44 @@ extends <a href="../../../../system/windows/media/ImageSource.html" title="class
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>handler</code> - the argument of type <code>EventHandler</code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/DOCUMENTATION_MEMBER_NAME" target="_top">.NET documentation</a></dd>
+</dl>
+</li>
+</ul>
+<a name="addDownloadFailed-system.EventHandler_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addDownloadFailed</h4>
+<pre>public&nbsp;void&nbsp;addDownloadFailed(<a href="../../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../../system/windows/media/ExceptionEventArgs.html" title="class in system.windows.media">ExceptionEventArgs</a>&gt;&nbsp;handler)
+                       throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member addDownloadFailed.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>handler</code> - the argument of type <code>EventHandler_1&lt;ExceptionEventArgs&gt;</code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/DOCUMENTATION_MEMBER_NAME" target="_top">.NET documentation</a></dd>
+</dl>
+</li>
+</ul>
+<a name="addDownloadProgress-system.EventHandler_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addDownloadProgress</h4>
+<pre>public&nbsp;void&nbsp;addDownloadProgress(<a href="../../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../../system/windows/media/imaging/DownloadProgressEventArgs.html" title="class in system.windows.media.imaging">DownloadProgressEventArgs</a>&gt;&nbsp;handler)
+                         throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member addDownloadProgress.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>handler</code> - the argument of type <code>EventHandler_1&lt;DownloadProgressEventArgs&gt;</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
@@ -1188,6 +1287,25 @@ extends <a href="../../../../system/windows/media/ImageSource.html" title="class
 </dl>
 </li>
 </ul>
+<a name="removeDecodeFailed-system.EventHandler_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>removeDecodeFailed</h4>
+<pre>public&nbsp;void&nbsp;removeDecodeFailed(<a href="../../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../../system/windows/media/ExceptionEventArgs.html" title="class in system.windows.media">ExceptionEventArgs</a>&gt;&nbsp;handler)
+                        throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member removeDecodeFailed.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>handler</code> - the argument of type <code>EventHandler_1&lt;ExceptionEventArgs&gt;</code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/DOCUMENTATION_MEMBER_NAME" target="_top">.NET documentation</a></dd>
+</dl>
+</li>
+</ul>
 <a name="removeDownloadCompleted-system.EventHandler-">
 <!--   -->
 </a>
@@ -1200,6 +1318,44 @@ extends <a href="../../../../system/windows/media/ImageSource.html" title="class
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>handler</code> - the argument of type <code>EventHandler</code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/DOCUMENTATION_MEMBER_NAME" target="_top">.NET documentation</a></dd>
+</dl>
+</li>
+</ul>
+<a name="removeDownloadFailed-system.EventHandler_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>removeDownloadFailed</h4>
+<pre>public&nbsp;void&nbsp;removeDownloadFailed(<a href="../../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../../system/windows/media/ExceptionEventArgs.html" title="class in system.windows.media">ExceptionEventArgs</a>&gt;&nbsp;handler)
+                          throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member removeDownloadFailed.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>handler</code> - the argument of type <code>EventHandler_1&lt;ExceptionEventArgs&gt;</code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/DOCUMENTATION_MEMBER_NAME" target="_top">.NET documentation</a></dd>
+</dl>
+</li>
+</ul>
+<a name="removeDownloadProgress-system.EventHandler_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>removeDownloadProgress</h4>
+<pre>public&nbsp;void&nbsp;removeDownloadProgress(<a href="../../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../../system/windows/media/imaging/DownloadProgressEventArgs.html" title="class in system.windows.media.imaging">DownloadProgressEventArgs</a>&gt;&nbsp;handler)
+                            throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member removeDownloadProgress.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>handler</code> - the argument of type <code>EventHandler_1&lt;DownloadProgressEventArgs&gt;</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
 <dt><span class="seeLabel">See Also:</span></dt>

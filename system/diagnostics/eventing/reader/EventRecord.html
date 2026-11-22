@@ -281,12 +281,12 @@ implements java.lang.AutoCloseable</pre>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/diagnostics/eventing/reader/EventRecord.html#FormatDescription-system.collections.generic.IEnumerable_1-">FormatDescription</a></span>(<a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;values)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/diagnostics/eventing/reader/EventRecord.html#FormatDescription-system.collections.generic.IEnumerable_1-">FormatDescription</a></span>(<a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../../system/Object.html" title="class in system">Object</a>&gt;&nbsp;values)</code>
 <div class="block">Invokes the .NET member FormatDescription.</div>
 </td>
 </tr>
 <tr id="i5" class="rowColor">
-<td class="colFirst"><code><a href="../../../../system/Nullable_1.html" title="class in system">Nullable_1</a></code></td>
+<td class="colFirst"><code><a href="../../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&lt;<a href="../../../../system/Guid.html" title="class in system">Guid</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/diagnostics/eventing/reader/EventRecord.html#getActivityId--">getActivityId</a></span>()</code>
 <div class="block">Gets the value of the .NET property ActivityId.</div>
 </td>
@@ -388,13 +388,13 @@ implements java.lang.AutoCloseable</pre>
 </td>
 </tr>
 <tr id="i22" class="altColor">
-<td class="colFirst"><code><a href="../../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a></code></td>
+<td class="colFirst"><code><a href="../../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&lt;<a href="../../../../system/diagnostics/eventing/reader/EventProperty.html" title="class in system.diagnostics.eventing.reader">EventProperty</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/diagnostics/eventing/reader/EventRecord.html#getProperties--">getProperties</a></span>()</code>
 <div class="block">Gets the value of the .NET property Properties.</div>
 </td>
 </tr>
 <tr id="i23" class="rowColor">
-<td class="colFirst"><code><a href="../../../../system/Nullable_1.html" title="class in system">Nullable_1</a></code></td>
+<td class="colFirst"><code><a href="../../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&lt;<a href="../../../../system/Guid.html" title="class in system">Guid</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/diagnostics/eventing/reader/EventRecord.html#getProviderId--">getProviderId</a></span>()</code>
 <div class="block">Gets the value of the .NET property ProviderId.</div>
 </td>
@@ -418,7 +418,7 @@ implements java.lang.AutoCloseable</pre>
 </td>
 </tr>
 <tr id="i27" class="rowColor">
-<td class="colFirst"><code><a href="../../../../system/Nullable_1.html" title="class in system">Nullable_1</a></code></td>
+<td class="colFirst"><code><a href="../../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&lt;<a href="../../../../system/Guid.html" title="class in system">Guid</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/diagnostics/eventing/reader/EventRecord.html#getRelatedActivityId--">getRelatedActivityId</a></span>()</code>
 <div class="block">Gets the value of the .NET property RelatedActivityId.</div>
 </td>
@@ -442,7 +442,7 @@ implements java.lang.AutoCloseable</pre>
 </td>
 </tr>
 <tr id="i31" class="rowColor">
-<td class="colFirst"><code><a href="../../../../system/Nullable_1.html" title="class in system">Nullable_1</a></code></td>
+<td class="colFirst"><code><a href="../../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&lt;<a href="../../../../system/DateTime.html" title="class in system">DateTime</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/diagnostics/eventing/reader/EventRecord.html#getTimeCreated--">getTimeCreated</a></span>()</code>
 <div class="block">Gets the value of the .NET property TimeCreated.</div>
 </td>
@@ -686,12 +686,12 @@ implements java.lang.AutoCloseable</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>FormatDescription</h4>
-<pre>public&nbsp;java.lang.String&nbsp;FormatDescription(<a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;values)
+<pre>public&nbsp;java.lang.String&nbsp;FormatDescription(<a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../../system/Object.html" title="class in system">Object</a>&gt;&nbsp;values)
                                    throws java.lang.Throwable</pre>
 <div class="block">Invokes the .NET member FormatDescription.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>values</code> - the argument of type <code>IEnumerable_1</code></dd>
+<dd><code>values</code> - the argument of type <code>IEnumerable_1&lt;Object&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -707,8 +707,8 @@ implements java.lang.AutoCloseable</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>getActivityId</h4>
-<pre>public&nbsp;<a href="../../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;getActivityId()
-                         throws java.lang.Throwable</pre>
+<pre>public&nbsp;<a href="../../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&lt;<a href="../../../../system/Guid.html" title="class in system">Guid</a>&gt;&nbsp;getActivityId()
+                               throws java.lang.Throwable</pre>
 <div class="block">Gets the value of the .NET property ActivityId.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -1030,8 +1030,8 @@ implements java.lang.AutoCloseable</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>getProperties</h4>
-<pre>public&nbsp;<a href="../../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&nbsp;getProperties()
-                      throws java.lang.Throwable</pre>
+<pre>public&nbsp;<a href="../../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&lt;<a href="../../../../system/diagnostics/eventing/reader/EventProperty.html" title="class in system.diagnostics.eventing.reader">EventProperty</a>&gt;&nbsp;getProperties()
+                                     throws java.lang.Throwable</pre>
 <div class="block">Gets the value of the .NET property Properties.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -1049,8 +1049,8 @@ implements java.lang.AutoCloseable</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>getProviderId</h4>
-<pre>public&nbsp;<a href="../../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;getProviderId()
-                         throws java.lang.Throwable</pre>
+<pre>public&nbsp;<a href="../../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&lt;<a href="../../../../system/Guid.html" title="class in system">Guid</a>&gt;&nbsp;getProviderId()
+                               throws java.lang.Throwable</pre>
 <div class="block">Gets the value of the .NET property ProviderId.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -1125,8 +1125,8 @@ implements java.lang.AutoCloseable</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>getRelatedActivityId</h4>
-<pre>public&nbsp;<a href="../../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;getRelatedActivityId()
-                                throws java.lang.Throwable</pre>
+<pre>public&nbsp;<a href="../../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&lt;<a href="../../../../system/Guid.html" title="class in system">Guid</a>&gt;&nbsp;getRelatedActivityId()
+                                      throws java.lang.Throwable</pre>
 <div class="block">Gets the value of the .NET property RelatedActivityId.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -1201,8 +1201,8 @@ implements java.lang.AutoCloseable</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>getTimeCreated</h4>
-<pre>public&nbsp;<a href="../../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;getTimeCreated()
-                          throws java.lang.Throwable</pre>
+<pre>public&nbsp;<a href="../../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&lt;<a href="../../../../system/DateTime.html" title="class in system">DateTime</a>&gt;&nbsp;getTimeCreated()
+                                    throws java.lang.Throwable</pre>
 <div class="block">Gets the value of the .NET property TimeCreated.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>

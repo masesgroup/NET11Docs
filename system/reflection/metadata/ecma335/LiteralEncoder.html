@@ -295,8 +295,8 @@ extends <a href="../../../../system/ValueType.html" title="class in system">Valu
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/reflection/metadata/ecma335/LiteralEncoder.html#TaggedScalar-system.Action_1-system.Action_1-">TaggedScalar</a></span>(<a href="../../../../system/Action_1.html" title="class in system">Action_1</a>&nbsp;type,
-            <a href="../../../../system/Action_1.html" title="class in system">Action_1</a>&nbsp;scalar)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/reflection/metadata/ecma335/LiteralEncoder.html#TaggedScalar-system.Action_1-system.Action_1-">TaggedScalar</a></span>(<a href="../../../../system/Action_1.html" title="class in system">Action_1</a>&lt;<a href="../../../../system/reflection/metadata/ecma335/CustomAttributeElementTypeEncoder.html" title="class in system.reflection.metadata.ecma335">CustomAttributeElementTypeEncoder</a>&gt;&nbsp;type,
+            <a href="../../../../system/Action_1.html" title="class in system">Action_1</a>&lt;<a href="../../../../system/reflection/metadata/ecma335/ScalarEncoder.html" title="class in system.reflection.metadata.ecma335">ScalarEncoder</a>&gt;&nbsp;scalar)</code>
 <div class="block">Invokes the .NET member TaggedScalar.</div>
 </td>
 </tr>
@@ -309,8 +309,8 @@ extends <a href="../../../../system/ValueType.html" title="class in system">Valu
 </tr>
 <tr id="i11" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/reflection/metadata/ecma335/LiteralEncoder.html#TaggedVector-system.Action_1-system.Action_1-">TaggedVector</a></span>(<a href="../../../../system/Action_1.html" title="class in system">Action_1</a>&nbsp;arrayType,
-            <a href="../../../../system/Action_1.html" title="class in system">Action_1</a>&nbsp;vector)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/reflection/metadata/ecma335/LiteralEncoder.html#TaggedVector-system.Action_1-system.Action_1-">TaggedVector</a></span>(<a href="../../../../system/Action_1.html" title="class in system">Action_1</a>&lt;<a href="../../../../system/reflection/metadata/ecma335/CustomAttributeArrayTypeEncoder.html" title="class in system.reflection.metadata.ecma335">CustomAttributeArrayTypeEncoder</a>&gt;&nbsp;arrayType,
+            <a href="../../../../system/Action_1.html" title="class in system">Action_1</a>&lt;<a href="../../../../system/reflection/metadata/ecma335/VectorEncoder.html" title="class in system.reflection.metadata.ecma335">VectorEncoder</a>&gt;&nbsp;vector)</code>
 <div class="block">Invokes the .NET member TaggedVector.</div>
 </td>
 </tr>
@@ -649,8 +649,8 @@ extends <a href="../../../../system/ValueType.html" title="class in system">Valu
 <ul class="blockList">
 <li class="blockList">
 <h4>TaggedScalar</h4>
-<pre>public&nbsp;void&nbsp;TaggedScalar(<a href="../../../../system/Action_1.html" title="class in system">Action_1</a>&nbsp;type,
-                         <a href="../../../../system/Action_1.html" title="class in system">Action_1</a>&nbsp;scalar)
+<pre>public&nbsp;void&nbsp;TaggedScalar(<a href="../../../../system/Action_1.html" title="class in system">Action_1</a>&lt;<a href="../../../../system/reflection/metadata/ecma335/CustomAttributeElementTypeEncoder.html" title="class in system.reflection.metadata.ecma335">CustomAttributeElementTypeEncoder</a>&gt;&nbsp;type,
+                         <a href="../../../../system/Action_1.html" title="class in system">Action_1</a>&lt;<a href="../../../../system/reflection/metadata/ecma335/ScalarEncoder.html" title="class in system.reflection.metadata.ecma335">ScalarEncoder</a>&gt;&nbsp;scalar)
                   throws java.lang.Throwable,
                          <a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
                          <a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
@@ -664,8 +664,8 @@ extends <a href="../../../../system/ValueType.html" title="class in system">Valu
 <div class="block">Invokes the .NET member TaggedScalar.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>type</code> - the argument of type <code>Action_1</code></dd>
-<dd><code>scalar</code> - the argument of type <code>Action_1</code></dd>
+<dd><code>type</code> - the argument of type <code>Action_1&lt;CustomAttributeElementTypeEncoder&gt;</code></dd>
+<dd><code>scalar</code> - the argument of type <code>Action_1&lt;ScalarEncoder&gt;</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
 <dd><code><a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code> - if the .NET member raises it</dd>
@@ -709,8 +709,8 @@ extends <a href="../../../../system/ValueType.html" title="class in system">Valu
 <ul class="blockList">
 <li class="blockList">
 <h4>TaggedVector</h4>
-<pre>public&nbsp;void&nbsp;TaggedVector(<a href="../../../../system/Action_1.html" title="class in system">Action_1</a>&nbsp;arrayType,
-                         <a href="../../../../system/Action_1.html" title="class in system">Action_1</a>&nbsp;vector)
+<pre>public&nbsp;void&nbsp;TaggedVector(<a href="../../../../system/Action_1.html" title="class in system">Action_1</a>&lt;<a href="../../../../system/reflection/metadata/ecma335/CustomAttributeArrayTypeEncoder.html" title="class in system.reflection.metadata.ecma335">CustomAttributeArrayTypeEncoder</a>&gt;&nbsp;arrayType,
+                         <a href="../../../../system/Action_1.html" title="class in system">Action_1</a>&lt;<a href="../../../../system/reflection/metadata/ecma335/VectorEncoder.html" title="class in system.reflection.metadata.ecma335">VectorEncoder</a>&gt;&nbsp;vector)
                   throws java.lang.Throwable,
                          <a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
                          <a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
@@ -724,8 +724,8 @@ extends <a href="../../../../system/ValueType.html" title="class in system">Valu
 <div class="block">Invokes the .NET member TaggedVector.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>arrayType</code> - the argument of type <code>Action_1</code></dd>
-<dd><code>vector</code> - the argument of type <code>Action_1</code></dd>
+<dd><code>arrayType</code> - the argument of type <code>Action_1&lt;CustomAttributeArrayTypeEncoder&gt;</code></dd>
+<dd><code>vector</code> - the argument of type <code>Action_1&lt;VectorEncoder&gt;</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
 <dd><code><a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code> - if the .NET member raises it</dd>

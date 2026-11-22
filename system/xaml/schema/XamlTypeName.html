@@ -230,7 +230,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <tr class="rowColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../system/xaml/schema/XamlTypeName.html#XamlTypeName-java.lang.String-java.lang.String-system.collections.generic.IEnumerable_1-">XamlTypeName</a></span>(java.lang.String&nbsp;xamlNamespace,
             java.lang.String&nbsp;name,
-            <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;typeArguments)</code>
+            <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/xaml/schema/XamlTypeName.html" title="class in system.xaml.schema">XamlTypeName</a>&gt;&nbsp;typeArguments)</code>
 <div class="block">Initializes a new instance by invoking the .NET constructor.</div>
 </td>
 </tr>
@@ -303,7 +303,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 </td>
 </tr>
 <tr id="i8" class="altColor">
-<td class="colFirst"><code><a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a></code></td>
+<td class="colFirst"><code><a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&lt;<a href="../../../system/xaml/schema/XamlTypeName.html" title="class in system.xaml.schema">XamlTypeName</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/xaml/schema/XamlTypeName.html#getTypeArguments--">getTypeArguments</a></span>()</code>
 <div class="block">Gets the value of the .NET property TypeArguments.</div>
 </td>
@@ -316,7 +316,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 </td>
 </tr>
 <tr id="i10" class="altColor">
-<td class="colFirst"><code>static <a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a></code></td>
+<td class="colFirst"><code>static <a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&lt;<a href="../../../system/xaml/schema/XamlTypeName.html" title="class in system.xaml.schema">XamlTypeName</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/xaml/schema/XamlTypeName.html#ParseList-java.lang.String-system.xaml.IXamlNamespaceResolver-">ParseList</a></span>(java.lang.String&nbsp;typeNameList,
          <a href="../../../system/xaml/IXamlNamespaceResolver.html" title="interface in system.xaml">IXamlNamespaceResolver</a>&nbsp;namespaceResolver)</code>
 <div class="block">Invokes the .NET member ParseList.</div>
@@ -342,7 +342,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 </tr>
 <tr id="i14" class="altColor">
 <td class="colFirst"><code>static java.lang.String</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/xaml/schema/XamlTypeName.html#ToString-system.collections.generic.IList_1-system.xaml.INamespacePrefixLookup-">ToString</a></span>(<a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&nbsp;typeNameList,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/xaml/schema/XamlTypeName.html#ToString-system.collections.generic.IList_1-system.xaml.INamespacePrefixLookup-">ToString</a></span>(<a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&lt;<a href="../../../system/xaml/schema/XamlTypeName.html" title="class in system.xaml.schema">XamlTypeName</a>&gt;&nbsp;typeNameList,
         <a href="../../../system/xaml/INamespacePrefixLookup.html" title="interface in system.xaml">INamespacePrefixLookup</a>&nbsp;prefixLookup)</code>
 <div class="block">Invokes the .NET member ToString.</div>
 </td>
@@ -539,7 +539,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <h4>XamlTypeName</h4>
 <pre>public&nbsp;XamlTypeName(java.lang.String&nbsp;xamlNamespace,
                     java.lang.String&nbsp;name,
-                    <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;typeArguments)
+                    <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/xaml/schema/XamlTypeName.html" title="class in system.xaml.schema">XamlTypeName</a>&gt;&nbsp;typeArguments)
              throws java.lang.Throwable,
                     <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
                     <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
@@ -554,7 +554,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>xamlNamespace</code> - the argument of type <code>java.lang.String</code></dd>
 <dd><code>name</code> - the argument of type <code>java.lang.String</code></dd>
-<dd><code>typeArguments</code> - the argument of type <code>IEnumerable_1</code></dd>
+<dd><code>typeArguments</code> - the argument of type <code>IEnumerable_1&lt;XamlTypeName&gt;</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code> - if the .NET constructor fails</dd>
 <dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code> - if the .NET member raises it</dd>
@@ -781,8 +781,8 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <ul class="blockList">
 <li class="blockList">
 <h4>getTypeArguments</h4>
-<pre>public&nbsp;<a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&nbsp;getTypeArguments()
-                         throws java.lang.Throwable</pre>
+<pre>public&nbsp;<a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&lt;<a href="../../../system/xaml/schema/XamlTypeName.html" title="class in system.xaml.schema">XamlTypeName</a>&gt;&nbsp;getTypeArguments()
+                                       throws java.lang.Throwable</pre>
 <div class="block">Gets the value of the .NET property TypeArguments.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -843,19 +843,19 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <ul class="blockList">
 <li class="blockList">
 <h4>ParseList</h4>
-<pre>public static&nbsp;<a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&nbsp;ParseList(java.lang.String&nbsp;typeNameList,
-                                <a href="../../../system/xaml/IXamlNamespaceResolver.html" title="interface in system.xaml">IXamlNamespaceResolver</a>&nbsp;namespaceResolver)
-                         throws java.lang.Throwable,
-                                <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
-                                <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                                <a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
-                                <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                                <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
-                                <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
-                                <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                                <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
-                                <a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a>,
-                                <a href="../../../system/FormatException.html" title="class in system">FormatException</a></pre>
+<pre>public static&nbsp;<a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&lt;<a href="../../../system/xaml/schema/XamlTypeName.html" title="class in system.xaml.schema">XamlTypeName</a>&gt;&nbsp;ParseList(java.lang.String&nbsp;typeNameList,
+                                              <a href="../../../system/xaml/IXamlNamespaceResolver.html" title="interface in system.xaml">IXamlNamespaceResolver</a>&nbsp;namespaceResolver)
+                                       throws java.lang.Throwable,
+                                              <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                              <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                              <a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                              <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                              <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                              <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                              <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                              <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                              <a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a>,
+                                              <a href="../../../system/FormatException.html" title="class in system">FormatException</a></pre>
 <div class="block">Invokes the .NET member ParseList.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -941,7 +941,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <ul class="blockList">
 <li class="blockList">
 <h4>ToString</h4>
-<pre>public static&nbsp;java.lang.String&nbsp;ToString(<a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&nbsp;typeNameList,
+<pre>public static&nbsp;java.lang.String&nbsp;ToString(<a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&lt;<a href="../../../system/xaml/schema/XamlTypeName.html" title="class in system.xaml.schema">XamlTypeName</a>&gt;&nbsp;typeNameList,
                                         <a href="../../../system/xaml/INamespacePrefixLookup.html" title="interface in system.xaml">INamespacePrefixLookup</a>&nbsp;prefixLookup)
                                  throws java.lang.Throwable,
                                         <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
@@ -955,7 +955,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <div class="block">Invokes the .NET member ToString.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>typeNameList</code> - the argument of type <code>IList_1</code></dd>
+<dd><code>typeNameList</code> - the argument of type <code>IList_1&lt;XamlTypeName&gt;</code></dd>
 <dd><code>prefixLookup</code> - the argument of type <code>INamespacePrefixLookup</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value returned by the .NET member</dd>

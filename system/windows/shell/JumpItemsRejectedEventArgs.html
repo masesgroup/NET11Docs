@@ -216,8 +216,8 @@ extends <a href="../../../system/EventArgs.html" title="class in system">EventAr
 </td>
 </tr>
 <tr class="rowColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../system/windows/shell/JumpItemsRejectedEventArgs.html#JumpItemsRejectedEventArgs-system.collections.generic.IList_1-system.collections.generic.IList_1-">JumpItemsRejectedEventArgs</a></span>(<a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&nbsp;rejectedItems,
-                          <a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&nbsp;reasons)</code>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../system/windows/shell/JumpItemsRejectedEventArgs.html#JumpItemsRejectedEventArgs-system.collections.generic.IList_1-system.collections.generic.IList_1-">JumpItemsRejectedEventArgs</a></span>(<a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&lt;<a href="../../../system/windows/shell/JumpItem.html" title="class in system.windows.shell">JumpItem</a>&gt;&nbsp;rejectedItems,
+                          <a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&lt;<a href="../../../system/windows/shell/JumpItemRejectionReason.html" title="class in system.windows.shell">JumpItemRejectionReason</a>&gt;&nbsp;reasons)</code>
 <div class="block">Initializes a new instance by invoking the .NET constructor.</div>
 </td>
 </tr>
@@ -278,13 +278,13 @@ extends <a href="../../../system/EventArgs.html" title="class in system">EventAr
 </td>
 </tr>
 <tr id="i6" class="altColor">
-<td class="colFirst"><code><a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a></code></td>
+<td class="colFirst"><code><a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&lt;<a href="../../../system/windows/shell/JumpItem.html" title="class in system.windows.shell">JumpItem</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/shell/JumpItemsRejectedEventArgs.html#getRejectedItems--">getRejectedItems</a></span>()</code>
 <div class="block">Gets the value of the .NET property RejectedItems.</div>
 </td>
 </tr>
 <tr id="i7" class="rowColor">
-<td class="colFirst"><code><a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a></code></td>
+<td class="colFirst"><code><a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&lt;<a href="../../../system/windows/shell/JumpItemRejectionReason.html" title="class in system.windows.shell">JumpItemRejectionReason</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/shell/JumpItemsRejectedEventArgs.html#getRejectionReasons--">getRejectionReasons</a></span>()</code>
 <div class="block">Gets the value of the .NET property RejectionReasons.</div>
 </td>
@@ -297,13 +297,13 @@ extends <a href="../../../system/EventArgs.html" title="class in system">EventAr
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/shell/JumpItemsRejectedEventArgs.html#setRejectedItems-system.collections.generic.IList_1-">setRejectedItems</a></span>(<a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&nbsp;RejectedItems)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/shell/JumpItemsRejectedEventArgs.html#setRejectedItems-system.collections.generic.IList_1-">setRejectedItems</a></span>(<a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&lt;<a href="../../../system/windows/shell/JumpItem.html" title="class in system.windows.shell">JumpItem</a>&gt;&nbsp;RejectedItems)</code>
 <div class="block">Sets the value of the .NET property RejectedItems.</div>
 </td>
 </tr>
 <tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/shell/JumpItemsRejectedEventArgs.html#setRejectionReasons-system.collections.generic.IList_1-">setRejectionReasons</a></span>(<a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&nbsp;RejectionReasons)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/shell/JumpItemsRejectedEventArgs.html#setRejectionReasons-system.collections.generic.IList_1-">setRejectionReasons</a></span>(<a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&lt;<a href="../../../system/windows/shell/JumpItemRejectionReason.html" title="class in system.windows.shell">JumpItemRejectionReason</a>&gt;&nbsp;RejectionReasons)</code>
 <div class="block">Sets the value of the .NET property RejectionReasons.</div>
 </td>
 </tr>
@@ -441,8 +441,8 @@ extends <a href="../../../system/EventArgs.html" title="class in system">EventAr
 <ul class="blockList">
 <li class="blockList">
 <h4>JumpItemsRejectedEventArgs</h4>
-<pre>public&nbsp;JumpItemsRejectedEventArgs(<a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&nbsp;rejectedItems,
-                                  <a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&nbsp;reasons)
+<pre>public&nbsp;JumpItemsRejectedEventArgs(<a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&lt;<a href="../../../system/windows/shell/JumpItem.html" title="class in system.windows.shell">JumpItem</a>&gt;&nbsp;rejectedItems,
+                                  <a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&lt;<a href="../../../system/windows/shell/JumpItemRejectionReason.html" title="class in system.windows.shell">JumpItemRejectionReason</a>&gt;&nbsp;reasons)
                            throws java.lang.Throwable,
                                   <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
                                   <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
@@ -459,8 +459,8 @@ extends <a href="../../../system/EventArgs.html" title="class in system">EventAr
 <div class="block">Initializes a new instance by invoking the .NET constructor.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>rejectedItems</code> - the argument of type <code>IList_1</code></dd>
-<dd><code>reasons</code> - the argument of type <code>IList_1</code></dd>
+<dd><code>rejectedItems</code> - the argument of type <code>IList_1&lt;JumpItem&gt;</code></dd>
+<dd><code>reasons</code> - the argument of type <code>IList_1&lt;JumpItemRejectionReason&gt;</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code> - if the .NET constructor fails</dd>
 <dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code> - if the .NET member raises it</dd>
@@ -625,8 +625,8 @@ extends <a href="../../../system/EventArgs.html" title="class in system">EventAr
 <ul class="blockList">
 <li class="blockList">
 <h4>getRejectedItems</h4>
-<pre>public&nbsp;<a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&nbsp;getRejectedItems()
-                         throws java.lang.Throwable</pre>
+<pre>public&nbsp;<a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&lt;<a href="../../../system/windows/shell/JumpItem.html" title="class in system.windows.shell">JumpItem</a>&gt;&nbsp;getRejectedItems()
+                                   throws java.lang.Throwable</pre>
 <div class="block">Gets the value of the .NET property RejectedItems.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -644,8 +644,8 @@ extends <a href="../../../system/EventArgs.html" title="class in system">EventAr
 <ul class="blockList">
 <li class="blockList">
 <h4>getRejectionReasons</h4>
-<pre>public&nbsp;<a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&nbsp;getRejectionReasons()
-                            throws java.lang.Throwable</pre>
+<pre>public&nbsp;<a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&lt;<a href="../../../system/windows/shell/JumpItemRejectionReason.html" title="class in system.windows.shell">JumpItemRejectionReason</a>&gt;&nbsp;getRejectionReasons()
+                                                     throws java.lang.Throwable</pre>
 <div class="block">Gets the value of the .NET property RejectionReasons.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -680,7 +680,7 @@ extends <a href="../../../system/EventArgs.html" title="class in system">EventAr
 <ul class="blockList">
 <li class="blockList">
 <h4>setRejectedItems</h4>
-<pre>public&nbsp;void&nbsp;setRejectedItems(<a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&nbsp;RejectedItems)
+<pre>public&nbsp;void&nbsp;setRejectedItems(<a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&lt;<a href="../../../system/windows/shell/JumpItem.html" title="class in system.windows.shell">JumpItem</a>&gt;&nbsp;RejectedItems)
                       throws java.lang.Throwable</pre>
 <div class="block">Sets the value of the .NET property RejectedItems.</div>
 <dl>
@@ -699,7 +699,7 @@ extends <a href="../../../system/EventArgs.html" title="class in system">EventAr
 <ul class="blockListLast">
 <li class="blockList">
 <h4>setRejectionReasons</h4>
-<pre>public&nbsp;void&nbsp;setRejectionReasons(<a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&nbsp;RejectionReasons)
+<pre>public&nbsp;void&nbsp;setRejectionReasons(<a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&lt;<a href="../../../system/windows/shell/JumpItemRejectionReason.html" title="class in system.windows.shell">JumpItemRejectionReason</a>&gt;&nbsp;RejectionReasons)
                          throws java.lang.Throwable</pre>
 <div class="block">Sets the value of the .NET property RejectionReasons.</div>
 <dl>
